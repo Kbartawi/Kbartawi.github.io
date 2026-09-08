@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kbartawi.github.io/sitemap.xml

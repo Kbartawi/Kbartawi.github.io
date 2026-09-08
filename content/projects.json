@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 1,
+  "owner": "KB",
+  "title": "Khaled / Product portfolio",
+  "description": "Khaled is a founder in Dubai building practical products for quotation, customer support and property teams.",
+  "featuredProject": "quote-operations",
+  "about": "I’m Khaled, a founder based in Dubai. I build practical products around the work between a conversation and a decision: preparing a quotation, helping a customer, qualifying an enquiry and getting a tenancy ready. This is a living collection of that work.",
+  "projects": [
+    {
+      "slug": "quote-operations",
+      "name": "Quote Operations",
+      "theme": "hvac",
+      "category": "Commercial quoting",
+      "model": "B2B",
+      "modelDescription": "Quotation software for HVAC contractors and equipment teams.",
+      "audience": "HVAC contractors, estimators and commercial reviewers",
+      "buyer": "Commercial directors and quotation desk managers",
+      "users": "Estimators, sales engineers and commercial reviewers",
+      "market": "UAE",
+      "languages": [
+        "English",
+        "Arabic"
+      ],
+      "stage": "Public sample · Pilot preparation",
+      "headline": [
+        "Clear scope.",
+        "Reviewed quotes."
+      ],
+      "summary": "A quotation workspace that keeps the equipment request, price source, approval and revision together.",
+      "problem": "Equipment requirements, pricing questions and commercial approvals arrive in different places. Estimators need a complete request and a clear view of what still needs attention before a quotation goes out.",
+      "features": [
+        "Prepare equipment quantities, capacities and requirements in one request.",
+        "Build a sourced quotation and keep missing requirements visible.",
+        "Require a separate approver for each quotation version.",
+        "Create a revision without overwriting the approved version. Download HTML and CSV."
+      ],
+      "workflow": [
+        "Prepare the request",
+        "Review and approve",
+        "Create the next revision"
+      ],
+      "nextFocus": [
+        "Validate the workflow with an equipment team",
+        "Confirm commercial pricing rules for a pilot",
+        "Turn operational feedback into focused improvements"
+      ],
+      "website": "https://quote-operations.vercel.app",
+      "image": "/media/quote-operations.jpg",
+      "imageAlt": "Guided sample of the HVAC quotation workflow",
+      "demoNote": "Try the public sample workspace without signing in. The product website includes a narrated 40-second animated walkthrough using fictional requests and prices.",
+      "updatedAt": "2026-09-08",
+      "updates": [
+        {
+          "date": "2026-09-08",
+          "text": "Published the public sample workspace and a narrated 40-second walkthrough, covering request preparation, independent approval and revisions."
+        },
+        {
+          "date": "2026-09-07",
+          "text": "Updated the current demo, quotation export and full brand kit. The product now uses a shared green, paper and lime palette."
+        },
+        {
+          "date": "2026-09-04",
+          "text": "Added an estimator workspace with RFQ preparation, quotation review and revision comparison."
+        }
+      ],
+      "demoUrl": "https://quote-operations.vercel.app/workspace"
+    },
+    {
+      "slug": "oris",
+      "name": "Oris",
+      "theme": "oris",
+      "category": "Customer support",
+      "model": "B2B",
+      "modelDescription": "A customer experience platform for business teams.",
+      "audience": "E-commerce brands and customer support teams",
+      "buyer": "Customer experience and support leaders",
+      "users": "Support agents and the customers they help",
+      "market": "Arabic-speaking markets",
+      "languages": [
+        "English",
+        "Arabic"
+      ],
+      "stage": "Live product",
+      "headline": [
+        "Every conversation,",
+        "with context."
+      ],
+      "summary": "Arabic and English customer support built around business knowledge, useful answers and a clear handoff to a person.",
+      "problem": "Customers switch languages and channels. Support teams need the business context and conversation history in one place so the next person can help without starting again.",
+      "features": [
+        "Connect business knowledge to Arabic and English customer conversations.",
+        "Support WhatsApp and web chat, with voice in beta.",
+        "Find conversations that need attention, search loaded records and open the original conversation.",
+        "Prepare an internal handoff draft with the recorded context."
+      ],
+      "workflow": [
+        "Bring the business context",
+        "Support the conversation",
+        "Hand over with clarity"
+      ],
+      "nextFocus": [
+        "Voice quality and transfer",
+        "Broader channel coverage",
+        "Evidence from customer pilots"
+      ],
+      "website": "https://getoris.ai",
+      "image": null,
+      "imageAlt": "",
+      "demoNote": "Visit the public product website for the current product offering.",
+      "updatedAt": "2026-09-05",
+      "updates": [
+        {
+          "date": "2026-09-04",
+          "text": "Added a bilingual product experience and a focused conversation handoff desk."
+        }
+      ],
+      "demoUrl": null
+    },
+    {
+      "slug": "manzl",
+      "name": "Manzl",
+      "theme": "manzl",
+      "category": "Leasing enquiries",
+      "model": "B2B",
+      "modelDescription": "Leasing assistance for brokerages and property managers.",
+      "audience": "UAE brokerages and property management teams",
+      "buyer": "Heads of property management and leasing directors",
+      "users": "Leasing coordinators, agents and prospective tenants",
+      "market": "UAE",
+      "languages": [
+        "English",
+        "Arabic"
+      ],
+      "stage": "Working prototype",
+      "headline": [
+        "Meet Reem.",
+        "Move things forward."
+      ],
+      "summary": "An AI leasing assistant that qualifies enquiries, proposes viewing slots and prepares a useful handoff for the human agent.",
+      "problem": "Leasing enquiries arrive while agents are busy with viewings. Budget, area, move date and requirements get scattered across conversations, leaving the next agent to reconstruct the brief.",
+      "features": [
+        "Guide Arabic and English enquiries through the leasing qualification flow.",
+        "Bring budget, location, move date, bedrooms and cheque preferences together.",
+        "Keep missing details and the recorded next action visible beside the conversation.",
+        "Prepare a concise internal handoff and continue into the original lead record."
+      ],
+      "workflow": [
+        "Receive an enquiry",
+        "Qualify and propose a viewing",
+        "Prepare the agent handoff"
+      ],
+      "nextFocus": [
+        "One leasing desk pilot",
+        "Configured channel and calendar connections",
+        "Operational feedback from agents"
+      ],
+      "website": null,
+      "image": "/media/manzl-apartment.webp",
+      "imageAlt": "Illustrative apartment with warm natural materials",
+      "demoNote": "Working prototype. A public interactive demo is not available yet.",
+      "updatedAt": "2026-09-05",
+      "updates": [
+        {
+          "date": "2026-09-04",
+          "text": "Added a leasing qualification workspace with missing details and copyable handoff briefs."
+        }
+      ],
+      "demoUrl": null
+    },
+    {
+      "slug": "aqd",
+      "name": "Aqd",
+      "theme": "aqd",
+      "category": "Tenancy preparation",
+      "model": "B2B",
+      "modelDescription": "Team software for the week between a tenant saying yes and registration.",
+      "audience": "Dubai leasing teams and brokerages",
+      "buyer": "Heads of leasing and brokerage operations",
+      "users": "Leasing teams working with landlords and tenants",
+      "market": "Dubai",
+      "languages": [
+        "English",
+        "Arabic"
+      ],
+      "stage": "Working demo",
+      "headline": [
+        "A clearer start.",
+        "A calmer handoff."
+      ],
+      "summary": "A tenancy close pack that brings property details, documents, cheque planning and open items into one preparation flow.",
+      "problem": "After a tenant says yes, leasing teams still need to assemble documents, confirm details and agree the payment schedule. Those open items often remain scattered across WhatsApp threads.",
+      "features": [
+        "Prepare a tenancy pack through a guided workflow.",
+        "See readiness gaps, add suggested owners and prepare a clear handoff brief.",
+        "Plan an annual rent schedule with cheque counts and month-end dates.",
+        "Preview the pack through a PDF and print workflow."
+      ],
+      "workflow": [
+        "Collect the tenancy details",
+        "Resolve the open items",
+        "Prepare the close pack"
+      ],
+      "nextFocus": [
+        "Secure team sharing",
+        "Shared document workflow",
+        "Feedback from a leasing team pilot"
+      ],
+      "website": null,
+      "image": null,
+      "imageAlt": "",
+      "demoNote": "Working preparation demo; not publicly available yet. It does not verify identity or connect to government registration services.",
+      "updatedAt": "2026-09-05",
+      "updates": [
+        {
+          "date": "2026-09-04",
+          "text": "Added a readiness desk, suggested owners and a rent schedule planner."
+        }
+      ],
+      "demoUrl": null
+    }
+  ],
+  "github": "https://github.com/Kbartawi",
+  "intro": "I’m Khaled, a founder in Dubai.\nI build practical products for busy teams."
+}

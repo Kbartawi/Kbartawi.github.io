@@ -1,0 +1,12 @@
+{
+  "name": "kb-personal-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-portfolio.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
