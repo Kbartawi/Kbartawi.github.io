@@ -52,6 +52,10 @@
       "updates": [
         {
           "date": "2026-09-08",
+          "text": "Made the sample quotation directly accessible from the website and portfolio. Explore without an email, booking or account."
+        },
+        {
+          "date": "2026-09-08",
           "text": "Published the public sample workspace and a narrated 40-second walkthrough, covering request preparation, independent approval and revisions."
         },
         {
@@ -63,7 +67,7 @@
           "text": "Added an estimator workspace with RFQ preparation, quotation review and revision comparison."
         }
       ],
-      "demoUrl": "https://quote-operations.vercel.app/workspace"
+      "demoUrl": "https://quote-operations.vercel.app/workspace?demo=review"
     },
     {
       "slug": "oris",
