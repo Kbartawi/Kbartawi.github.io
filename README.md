@@ -1,6 +1,6 @@
 # Khaled / Product portfolio
 
-A personal portfolio for a founder in Dubai. The cream-and-ink gallery presents Quote Operations, Oris, Manzl and Aqd, with clear descriptions and current stages.
+
 
 ![Portfolio preview](docs/media/portfolio.png)
 
