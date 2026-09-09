@@ -21,10 +21,10 @@ The build writes the homepage, four project profiles, sitemap, metadata and a 40
 
 Use the public repository `Kbartawi/Kbartawi.github.io`. In Settings → Pages, select **Deploy from a branch**, branch **main**, folder **/docs**. The personal GitHub profile can link to this home once publication is verified.
 
-Quote Operations presents the current AI-assisted preparation workflow, with a current fictional quotation screenshot and links to the product website, narrated demo and public sample. Its copy distinguishes pasted email/WhatsApp requests from direct channel integrations, and keeps engineering and commercial review explicit. Oris links to its public product website. Manzl and Aqd have profiles without demo buttons because their demos are not publicly available. This repository contains only the curated public portfolio, not private product applications or review workspaces.
+Quote Operations focuses on preparing HVAC equipment quotes with less manual copying. Its profile shows the current review screenshot and links to the website, narrated app demonstration and prepared public sample. The copy distinguishes the local AI recording from the public sample and keeps company catalogue, prices and team setup explicit. Oris links to its public product website. Manzl and Aqd have profiles without demo buttons because their demos are not publicly available. This repository contains only the curated public portfolio, not private product applications or review workspaces.
 
 ## Current Quote Operations update · 9 September 2026
 
-The featured profile explains the actual workflow: add an English or Arabic request, review a prepared catalogue/pricing draft, resolve exceptions and request approval. Public demonstrations use fictional data. Company catalogue onboarding, integrations and customer ROI remain pilot work.
+The featured profile follows one simple workflow: add the request, check what needs a decision, then approve and download. The next pilot starts with one past request and its approved quotation. Public demonstrations use fictional data; company catalogues, approved selling prices, team access and measured customer results remain pilot work.
 
 Product: [quote-operations.vercel.app](https://quote-operations.vercel.app/) · [Watch the workflow](https://quote-operations.vercel.app/#qs-demo) · [Try the prepared sample](https://quote-operations.vercel.app/workspace?demo=review).
