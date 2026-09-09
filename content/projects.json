@@ -10,64 +10,57 @@
       "slug": "quote-operations",
       "name": "Quote Operations",
       "theme": "hvac",
-      "category": "Commercial quoting",
+      "category": "Equipment quotations",
       "model": "B2B",
-      "modelDescription": "Quotation software for HVAC contractors and equipment teams.",
-      "audience": "HVAC contractors, estimators and commercial reviewers",
-      "buyer": "Commercial directors and quotation desk managers",
-      "users": "Estimators, sales engineers and commercial reviewers",
+      "modelDescription": "AI-assisted quotation preparation for HVAC equipment sales teams.",
+      "audience": "HVAC equipment sales and estimating teams",
+      "buyer": "Sales directors and quotation desk managers",
+      "users": "Salespeople, estimators and engineering or commercial reviewers",
       "market": "UAE",
       "languages": [
         "English",
         "Arabic"
       ],
-      "stage": "Public sample · Pilot preparation",
+      "stage": "Working AI demo · Pilot preparation",
       "headline": [
-        "Clear scope.",
-        "Reviewed quotes."
+        "A request in.",
+        "A draft to review."
       ],
-      "summary": "A quotation workspace that keeps the equipment request, price source, approval and revision together.",
-      "problem": "Equipment requirements, pricing questions and commercial approvals arrive in different places. Estimators need a complete request and a clear view of what still needs attention before a quotation goes out.",
+      "summary": "AI-assisted equipment quotation preparation. Turn a customer request into a matched, priced draft, with the missing details and decisions together.",
+      "problem": "A salesperson receives a request by email or WhatsApp, then reads the equipment requirements, searches a catalogue, checks prices and asks colleagues about gaps. That preparation repeats for every quotation, while engineering and commercial decisions still need a person.",
       "features": [
-        "Prepare equipment quantities, capacities and requirements in one request.",
-        "Build a sourced quotation and keep missing requirements visible.",
-        "Require a separate approver for each quotation version.",
-        "Create a revision without overwriting the approved version. Download HTML and CSV."
+        "Paste an English or Arabic request from email or WhatsApp, or upload one printed PDF. Direct inbox and WhatsApp connections are not part of this pilot.",
+        "Watch the request being read, catalogue items being matched and available prices being applied. Useful results appear as they are ready.",
+        "Review the original request, proposed equipment and price source together. Missing quantities, unavailable prices and engineering questions stay visible.",
+        "Confirm the equipment and commercial terms, then request a separate approval before export. Keep the source and each quotation version."
       ],
       "workflow": [
-        "Prepare the request",
-        "Review and approve",
-        "Create the next revision"
+        "Add the request",
+        "Review the prepared draft",
+        "Resolve, approve and export"
       ],
       "nextFocus": [
-        "Validate the workflow with an equipment team",
-        "Confirm commercial pricing rules for a pilot",
-        "Turn operational feedback into focused improvements"
+        "Validate one quotation workflow with an equipment sales team",
+        "Connect a company-approved catalogue, pricing sources and review rules",
+        "Measure preparation time and the decisions still waiting on people"
       ],
-      "website": "https://quote-operations.vercel.app",
-      "image": "/media/quote-operations.jpg",
-      "imageAlt": "Guided sample of the HVAC quotation workflow",
-      "demoNote": "Try the public sample workspace without signing in. The product website includes a narrated 40-second animated walkthrough using fictional requests and prices.",
-      "updatedAt": "2026-09-08",
+      "website": "https://quote-operations.vercel.app/",
+      "image": "/media/quote-review-current.png",
+      "imageAlt": "Quote Operations draft review showing prepared equipment, source evidence and decisions needing a person. Fictional demonstration data.",
+      "demoNote": "Watch the AI preparation workflow on the product website, then try the public prepared sample without an account. The demonstration uses fictional equipment and prices.",
+      "updatedAt": "2026-09-09",
       "updates": [
         {
-          "date": "2026-09-08",
-          "text": "Made the sample quotation directly accessible from the website and portfolio. Explore without an email, booking or account."
+          "date": "2026-09-09",
+          "text": "Added visible AI preparation and a focused draft review: catalogue matches, price sources and unresolved equipment decisions in one place."
         },
         {
           "date": "2026-09-08",
-          "text": "Published the public sample workspace and a narrated 40-second walkthrough, covering request preparation, independent approval and revisions."
-        },
-        {
-          "date": "2026-09-07",
-          "text": "Updated the current demo, quotation export and full brand kit. The product now uses a shared green, paper and lime palette."
-        },
-        {
-          "date": "2026-09-04",
-          "text": "Added an estimator workspace with RFQ preparation, quotation review and revision comparison."
+          "text": "Opened the public sample without an email, booking or account."
         }
       ],
-      "demoUrl": "https://quote-operations.vercel.app/workspace?demo=review"
+      "demoUrl": "https://quote-operations.vercel.app/#qs-demo",
+      "demoLabel": "Watch the demo"
     },
     {
       "slug": "oris",
