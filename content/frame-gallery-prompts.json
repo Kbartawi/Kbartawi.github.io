@@ -1,0 +1,32 @@
+{
+  "createdAt": "2026-09-17",
+  "purpose": "Additional illustrative film stills for the approved Frame portfolio gallery. Not generated through the Frame application.",
+  "tool": "OpenAI image generation",
+  "reference": "docs/media/frame-film-concept.webp",
+  "prompts": [
+    {
+      "id": "frame-rear-tracking",
+      "prompt": "Use the attached image as a STYLE AND CONTINUITY REFERENCE ONLY. Create one new 16:9 cinematic film still from the same imagined coastal-driving film. Preserve the burnt-orange classic two-door sports car design, rugged lush coastal road, deep turquoise sea, golden late-afternoon sunlight, atmospheric jagged offshore islands, filmic realism, elegant teal/orange color grade and detailed natural textures. No text, captions, logos, UI or watermarks. Not a collage. Low rear-three-quarter tracking view close behind the orange sports car driving beside a stone guardwall. Road curves ahead along the cliff, ocean fills the right background. Shallow depth and subtle motion in road edges, crisp car, premium commercial film frame."
+    },
+    {
+      "id": "frame-bridge-wide",
+      "prompt": "Use the attached image as a STYLE AND CONTINUITY REFERENCE ONLY. Create one new 16:9 cinematic film still from the same imagined coastal-driving film. Preserve the burnt-orange classic two-door sports car design, rugged lush coastal road, deep turquoise sea, golden late-afternoon sunlight, atmospheric jagged offshore islands, filmic realism, elegant teal/orange color grade and detailed natural textures. No text, captions, logos, UI or watermarks. Not a collage. Wide side-on cinematic view of the same orange sports car crossing a graceful old stone coastal viaduct between green sea cliffs. Huge turquoise surf below, golden rays through coastal haze, car small but clearly readable. Environmental master shot in same film, realistic bridge and road geometry."
+    },
+    {
+      "id": "frame-overhead",
+      "prompt": "Use the attached image as a STYLE AND CONTINUITY REFERENCE ONLY. Create one new 16:9 cinematic film still from the same imagined coastal-driving film. Preserve the burnt-orange classic two-door sports car design, rugged lush coastal road, deep turquoise sea, golden late-afternoon sunlight, atmospheric jagged offshore islands, filmic realism, elegant teal/orange color grade and detailed natural textures. No text, captions, logos, UI or watermarks. Not a collage. High bird's-eye drone view of the same orange sports car navigating one sweeping hairpin bend above the turquoise ocean. Strong graphic road curve, warm stone guardwall, lush rocky hillside, sea spray on dark coastal rocks. Natural dusk-gold sunlight, same film grade."
+    },
+    {
+      "id": "frame-front-tracking",
+      "prompt": "Use the attached image as a STYLE AND CONTINUITY REFERENCE ONLY. Generate one new full-frame wide 16:9 cinematic commercial-film still in the SAME coastal driving story. Exact style match: the same burnt-orange classic two-door sports car with round headlamps, textured rugged green coastline, deep teal ocean, warm golden late-afternoon sun, faint mountains/islands, cinematic realistic textures, rich natural highlights and film grade. No text, logos, watermarks, graphic layouts or borders. Front-three-quarter low tracking camera, close to the orange car as it rounds the coastal bend. The rounded car nose and front wheel are tack-sharp; the stone guardwall, ocean and mountains retreat behind it. Keep car inside its lane, believable road geometry, premium automotive cinematography."
+    },
+    {
+      "id": "frame-detail",
+      "prompt": "Use the attached image as a STYLE AND CONTINUITY REFERENCE ONLY. Generate one new full-frame wide 16:9 cinematic commercial-film still in the SAME coastal driving story. Exact style match: the same burnt-orange classic two-door sports car with round headlamps, textured rugged green coastline, deep teal ocean, warm golden late-afternoon sun, faint mountains/islands, cinematic realistic textures, rich natural highlights and film grade. No text, logos, watermarks, graphic layouts or borders. Tight cinematic detail shot of the rear wheel and rear quarter of the moving orange car, warm glints along orange paint and chrome, stone guardwall and turquoise ocean visible out of focus behind. Visual detail insert with strong shallow depth of field and naturally directional wheel/road motion blur. Very tactile, filmic, no rendered text."
+    },
+    {
+      "id": "frame-ocean-establishing",
+      "prompt": "Use the attached image as a STYLE AND CONTINUITY REFERENCE ONLY. Generate one new full-frame wide 16:9 cinematic commercial-film still in the SAME coastal driving story. Exact style match: the same burnt-orange classic two-door sports car with round headlamps, textured rugged green coastline, deep teal ocean, warm golden late-afternoon sun, faint mountains/islands, cinematic realistic textures, rich natural highlights and film grade. No text, logos, watermarks, graphic layouts or borders. Wide establishing view from a rocky coastal overlook, the same orange car very small on the winding road in lower-left midground, dramatic teal surf against black rocks, lush cliffs and hazy islands. Camera lower and closer to the surf than the reference; golden sunlight from upper right with glowing sea spray. Distinct new composition, same imagined coastline."
+    }
+  ]
+}

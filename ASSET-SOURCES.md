@@ -10,3 +10,20 @@
 | media/portfolio.png and theme previews | Screenshots of this portfolio | Presentation preview, not product acceptance evidence |
 
 WebP copies are resized/encoded for delivery; source artwork remains in its original project. User reference images were not republished. No original Dubai Game source or production status was changed.
+
+## Expanded galleries — 17 September 2026
+
+The catalogue contains 28 images: Frame 7, Dubai Game 8, Quote Operations 4, Oris 3, Manzl 3 and Aqd 3. Full images retain their original proportions; the galleries use smaller WebP thumbnails and fetch larger versions when opened.
+
+Exact source-to-asset mapping: [content/gallery-sources.json](content/gallery-sources.json). Frame generation prompts and the approved reference: [content/frame-gallery-prompts.json](content/frame-gallery-prompts.json).
+
+| Gallery | Sources and classification |
+| --- | --- |
+| Frame | The approved coastal-driving illustration plus six new image-tool generations using it as a reference: rear tracking, bridge wide, coastal hairpin, front tracking, detail and ocean establishing. AI-generated film concepts for the portfolio; not output from the Frame application. |
+| Dubai Game | Existing Downtown and Marina art plus `marina-concept.png`, `CAL-LOC-01-1-B.png`, `LOC-16-1-madinat-establishing.png`, `LOC-15-1-al-seef-establishing.png`, `LOC-05-1-atlantis-palm-establishing.png` and `LOC-07-1-al-fahidi-establishing.png`. Existing AI visual development, not gameplay, verified geography or final approved art. |
+| Quote Operations | Existing requests, preparation, review and quotation-document screenshots from the project’s sample workspace. Actual interface, fictional products, customers and prices. |
+| Oris | Newly captured public website at `https://getoris.ai/`: hero, illustrated WhatsApp example and setup workflow. Website screenshots with marketing illustrations; not authenticated application screenshots. |
+| Manzl | Newly captured public website at `https://manzl.vercel.app/en` and seed-data walkthrough at `/en/demo`. Sample conversation, illustrated handoff and named fictional enquiry. No private or live customer data. |
+| Aqd | Newly captured interactive public demo at `https://aqd-gray.vercel.app/demo`: property details, cheques and preparation file. Fictional browser-only demo data. |
+
+All public-site captures were visually inspected on 17 September 2026. No live forms were submitted. Manzl’s public dashboard returned a server error during capture; it was excluded from the gallery. The working public walkthrough does not establish dashboard or backend readiness.

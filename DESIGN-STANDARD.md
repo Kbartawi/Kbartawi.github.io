@@ -4,6 +4,8 @@
 
 The owner requested a full portfolio upgrade on 17 September 2026: all six projects, professional founder/pilot biography, light and dark themes, richer project pages, actual Dubai Game concept art and clear A-to-Z Frame positioning. This supersedes the earlier rule to keep a three-column grid with 221px art. The earlier reference still informs deliberate typography and meaningful visuals.
 
+The owner explicitly approved this direction on 17 September: “Amazing, amazing.” The next request is additive: more images for every project, especially matching Frame and Dubai Game shots. Preserve the approved cards and layout. Frame’s visual reference is the orange sports car, rocky coast, turquoise water and golden-hour light. Dubai’s references are the existing Downtown and Marina artwork. This approval concerns the portfolio presentation, not final game art or product production readiness.
+
 ## Repeatable checklist
 
 - [ ] One consistent two-column project grid on desktop; one column on phone. Equal card structure and visual height at each breakpoint.
@@ -12,6 +14,8 @@ The owner requested a full portfolio upgrade on 17 September 2026: all six proje
 - [ ] Dubai Game uses the actual project’s Marina/Downtown/Burj assets. Do not substitute a newly invented old-town image. Label concept art and avoid gameplay claims.
 - [ ] Preserve product-specific branding within one system of spacing, navigation and controls.
 - [ ] Each project page includes overview, capabilities, audience, use cases, workflow, deliverables, technical/commercial readiness, verification gates, stack and next milestone.
+- [ ] Each project has a curated gallery. Match approved visual references; preserve complete images and landmarks. Clearly distinguish real product screens, public website captures, sample data and generated concept artwork.
+- [ ] Gallery images use optimized thumbnails and open into a full-size viewer. Verify phone layout, next/previous controls, keyboard arrows, Escape, focus return and ordinary image links without JavaScript.
 - [ ] Theme follows system preference initially; explicit user choice persists across pages and reloads. Both modes must be visually reviewed.
 - [ ] All work / Business / Creative filters expose pressed state and announce results without hiding keyboard focus unexpectedly.
 - [ ] Mobile controls are usable; project and section links work; focus is visible; reduced-motion preference is respected.
@@ -29,9 +33,23 @@ The owner requested a full portfolio upgrade on 17 September 2026: all six proje
 | Contrast | Targeted checks passed | Light muted body 5.36:1; light status label corrected from 4.03:1 to >4.5:1; dark body 7.81:1 and dark status 7.71:1 |
 | Full accessibility audit | Not checked | Targeted checks do not constitute certification |
 | Product backend acceptance | Not checked here | Portfolio work does not prove the linked products’ runtime workflows |
-| Owner aesthetic approval | Pending | Never infer approval from automated checks |
+| Owner aesthetic approval | Approved for the base design | Explicit “Amazing, amazing” feedback on 17 September; additional galleries requested in the same message |
 
-Reviewer category assessment (subjective): hierarchy 4/5, typography 4/5, color 4/5, spacing 4/5, components 4/5, responsiveness 4/5, motion 4/5, accessibility 4/5 subject to full audit, craft 4/5. Remaining evidence gap is actual owner feedback and wider device/accessibility testing.
+### Gallery verification — 17 September 2026
+
+| Area | Result | Evidence |
+| --- | --- | --- |
+| Coverage | Passed | All six project galleries; 28 captioned images (Frame 7, Dubai 8, Quote 4, Oris/Manzl/Aqd 3 each) |
+| Responsive themes | Passed | 6 galleries × 3 widths (375/768/1440) × 2 themes = 36 browser cases; no horizontal overflow or broken loaded images |
+| Full-size viewer | Passed | All 28 full-size images decoded; next/previous buttons and arrow keys, wraparound, Escape, close button, initial focus and focus return checked |
+| Progressive enhancement | Passed | The gallery image links open their actual WebP files with JavaScript disabled |
+| Existing controls | Passed | Light/dark persistence and all three project filters still work |
+| Visual review | Passed by reviewer | Both creative galleries in light/dark; phone viewer; all four business galleries inspected |
+| Browser errors | Passed | No browser exceptions or failed local asset requests during the 36-case run |
+
+Detailed local evidence: `Documents/Workspace Maintenance/portfolio-review/gallery-checks.json` and gallery screenshots. These checks cover the portfolio, not the product backends.
+
+Reviewer category assessment (subjective): hierarchy 4/5, typography 4/5, color 4/5, spacing 4/5, components 4/5, responsiveness 4/5, motion 4/5, accessibility 4/5 subject to full audit, craft 4/5. Wider device and accessibility testing remain open.
 
 ## Inspiration and provenance
 

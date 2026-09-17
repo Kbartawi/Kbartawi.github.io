@@ -46,6 +46,16 @@ for (const p of data.projects) {
     requireText(p.imageAlt, p.slug + '.imageAlt');
     await access(resolve(out, '.' + p.image));
   }
+  if (!p.gallery || !Array.isArray(p.gallery.items) || p.gallery.items.length < 3) throw new Error('Missing gallery: ' + p.slug);
+  for (const key of ['heading', 'description']) requireText(p.gallery[key], p.slug + '.gallery.' + key);
+  for (const shot of p.gallery.items) {
+    for (const key of ['title', 'caption', 'alt', 'kind']) requireText(shot[key], p.slug + '.gallery.' + key);
+    for (const key of ['src', 'thumb']) {
+      if (!localPath(shot[key])) throw new Error('Gallery image must be a local asset: ' + p.slug);
+      await access(resolve(out, '.' + shot[key]));
+    }
+    if (![shot.width, shot.height].every(n => Number.isInteger(n) && n > 0)) throw new Error('Invalid gallery image dimensions: ' + p.slug);
+  }
 }
 const featured = data.projects.find(p => p.slug === data.featuredProject);
 if (!featured) throw new Error('Featured project does not exist.');
@@ -102,13 +112,20 @@ function profile(p,index){
  const statusLabel={'passed':'Verified','open':'In progress','not-checked':'Not checked'};
  const facts=[['Audience',p.audience],['Model',p.modelDescription],['Market',p.market],['Languages',p.languages.join(' + ')]];
  return document(p.name+' / Khaled',p.summary,profileUrl(p),`<div class="breadcrumb"><a href="/#projects">← All work</a><span>${escape(p.name)}</span></div><section class="project-hero"><div class="project-heading">${mark(p)}<div class="project-badges">${tag(p.category)}${tag(p.cardStage||p.stage,'stage')}</div></div><div class="project-intro"><h1>${escape(p.headline[0])}<br><em>${escape(p.headline[1])}</em></h1><div><p class="lead">${escape(p.positioning||p.summary)}</p><p>${escape(p.outcome||p.summary)}</p><div class="project-actions">${p.demoUrl?`<a class="button-primary" href="${escape(p.demoUrl)}" target="_blank" rel="noopener noreferrer">${escape(p.demoLabel||'Explore demo')} ${arrow}</a>`:''}${p.website?`<a class="${p.demoUrl?'text-action':'button-primary'}" href="${escape(p.website)}" target="_blank" rel="noopener noreferrer">Product website ${arrow}</a>`:''}${!p.website&&!p.demoUrl?'<a class="text-action" href="#readiness">See current progress ↓</a>':''}</div></div></div></section>
- <section class="project-showcase" aria-label="${escape(p.name)} visual overview">${visual(p)}</section>${p.slug === 'dubai-game' ? '<figure class="world-gallery"><img src="/media/dubai-marina.webp" alt="Existing Dubai Game Marina concept: waterfront, yachts, towers and people; AI-generated visual development, not gameplay." loading="lazy"><figcaption>Dubai Marina / Original project visual development. AI-generated concept art, not gameplay.</figcaption></figure>' : ''}
- <nav class="page-sections" aria-label="Project sections"><a href="#overview">Overview</a><a href="#workflow">Workflow</a><a href="#readiness">Readiness</a><a href="#next">What’s next</a></nav>
+ <section class="project-showcase" aria-label="${escape(p.name)} visual overview">${visual(p)}</section>
+ <nav class="page-sections" aria-label="Project sections"><a href="#gallery">Gallery <span>${p.gallery.items.length}</span></a><a href="#overview">Overview</a><a href="#workflow">Workflow</a><a href="#readiness">Readiness</a><a href="#next">What’s next</a></nav>
+ ${gallery(p)}
  <section class="story-section" id="overview"><div><p class="eyebrow">WHY IT EXISTS</p><h2>A problem worth<br><em>solving.</em></h2><p class="body-copy">${escape(p.problem)}</p><dl class="project-facts">${facts.map(([k,v])=>`<div><dt>${k}</dt><dd>${escape(v)}</dd></div>`).join('')}</dl></div><div><p class="eyebrow">WHAT IT HELPS YOU DO</p><ol class="capabilities">${p.features.map((x,i)=>`<li><span>0${i+1}</span><p>${escape(x)}</p></li>`).join('')}</ol><div class="use-cases"><h3>Made for moments like these.</h3><ul>${cases.map(x=>`<li>${escape(x)}</li>`).join('')}</ul></div></div></section>
  <section class="workflow-section" id="workflow"><div class="section-bar"><div><p class="eyebrow">FROM START TO FINISH</p><h2>One clear workflow.</h2></div></div><ol class="workflow-grid">${p.workflow.map((x,i)=>`<li><span class="step-number">0${i+1}</span><h3>${escape(x)}</h3><p>${escape(deliverables[i]||'')}</p></li>`).join('')}</ol></section>
  <section class="readiness-section" id="readiness"><div><p class="eyebrow">THE HONEST PICTURE</p><h2>Where it stands.</h2><p class="section-description">Progress you can inspect.<br>Reviewed ${date(p.updatedAt)}.</p><div class="stack-label">BUILT WITH</div><div class="stack">${(p.stack||[]).map(x=>tag(x)).join('')}</div></div><div><div class="readiness-summary"><article><h3>Technical readiness</h3><p>${escape(p.technicalReadiness)}</p></article><article><h3>Commercial readiness</h3><p>${escape(p.commercialReadiness)}</p></article></div><ul class="readiness-checks">${checks.map(x=>`<li><div><span class="check-state state-${escape(x.status)}">${statusLabel[x.status]||'Not checked'}</span><strong>${escape(x.label)}</strong></div><p>${escape(x.detail)}</p></li>`).join('')}</ul><p class="evidence-note">${escape(p.demoNote)}</p></div></section>
  <section class="next-section" id="next"><div><p class="eyebrow">THE NEXT MILESTONE</p><h2>${escape(p.nextAction||p.nextFocus[0])}</h2></div><ul>${p.nextFocus.map(x=>`<li>${escape(x)}</li>`).join('')}</ul></section>
  <a class="next-project" href="${profileUrl(next)}"><div><span>NEXT PROJECT</span><strong>${escape(next.name)}</strong></div><span aria-hidden="true">↗</span></a>`);
+}
+
+function gallery(p) {
+ const creative = ['frame', 'dubai-game'].includes(p.slug);
+ return `<section class="gallery-section ${creative ? 'gallery-creative' : 'gallery-product'}" id="gallery" aria-labelledby="gallery-heading"><div class="section-bar"><div><p class="eyebrow">A CLOSER LOOK / ${String(p.gallery.items.length).padStart(2,'0')} IMAGES</p><h2 id="gallery-heading">${escape(p.gallery.heading)}</h2></div><p class="gallery-intro">${escape(p.gallery.description)}<span>Choose an image to explore it in full.</span></p></div><div class="gallery-grid">${p.gallery.items.map((shot,i) => `<figure class="gallery-shot"><a class="gallery-image" href="${escape(shot.src)}" data-gallery-item data-title="${escape(shot.title)}" data-caption="${escape(shot.caption)}" data-kind="${escape(shot.kind)}" aria-label="Open image ${i+1} of ${p.gallery.items.length}: ${escape(shot.title)}"><img src="${escape(shot.thumb)}" alt="${escape(shot.alt)}" width="${shot.width}" height="${shot.height}" loading="lazy" decoding="async"><span class="gallery-expand" aria-hidden="true">↗</span></a><figcaption><div class="gallery-meta"><span>${String(i+1).padStart(2,'0')} / ${escape(shot.kind)}</span></div><h3>${escape(shot.title)}</h3><p>${escape(shot.caption)}</p></figcaption></figure>`).join('')}</div></section>
+ <dialog class="gallery-viewer" id="gallery-viewer" aria-labelledby="viewer-title" aria-describedby="viewer-caption"><div class="viewer-toolbar"><span class="viewer-kind"></span><button class="viewer-close" type="button" aria-label="Close image viewer" autofocus>Close <span aria-hidden="true">×</span></button></div><div class="viewer-stage"><img class="viewer-image" alt=""><p class="viewer-error" hidden>That image could not load. <a class="viewer-retry" href="#">Open the image directly ↗</a></p></div><div class="viewer-details"><div class="viewer-caption"><h2 id="viewer-title"></h2><p id="viewer-caption"></p></div><div class="viewer-controls"><button type="button" class="viewer-previous" aria-label="Previous image">←</button><span class="viewer-counter" aria-live="polite" aria-atomic="true"></span><button type="button" class="viewer-next" aria-label="Next image">→</button><a class="viewer-original" target="_blank" rel="noopener noreferrer">Full resolution ↗</a></div></div></dialog>`;
 }
 
 await mkdir(out, { recursive: true });

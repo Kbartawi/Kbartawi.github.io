@@ -1,0 +1,219 @@
+{
+  "createdAt": "2026-09-17",
+  "sources": [
+    {
+      "slug": "frame",
+      "id": "frame-coastal-drive",
+      "source": "docs/media/frame-film-concept.webp",
+      "src": "/media/frame-film-concept.webp",
+      "thumb": "/media/gallery/frame-coastal-drive-thumb.webp"
+    },
+    {
+      "slug": "frame",
+      "id": "frame-rear-tracking",
+      "source": "Generated image/exec-787a5f46-291f-496b-a4d0-3117f23ac4a4.png",
+      "src": "/media/gallery/frame-rear-tracking.webp",
+      "thumb": "/media/gallery/frame-rear-tracking-thumb.webp"
+    },
+    {
+      "slug": "frame",
+      "id": "frame-bridge-wide",
+      "source": "Generated image/exec-8c7ca5df-5cd5-4e37-97a2-de24ce8dba0e.png",
+      "src": "/media/gallery/frame-bridge-wide.webp",
+      "thumb": "/media/gallery/frame-bridge-wide-thumb.webp"
+    },
+    {
+      "slug": "frame",
+      "id": "frame-hairpin",
+      "source": "Generated image/exec-637eeb17-adb5-4fd1-924b-ab9fe1010cb7.png",
+      "src": "/media/gallery/frame-hairpin.webp",
+      "thumb": "/media/gallery/frame-hairpin-thumb.webp"
+    },
+    {
+      "slug": "frame",
+      "id": "frame-front-tracking",
+      "source": "Generated image/exec-3daf8e37-d8ea-41fe-bfca-6f0677634bad.png",
+      "src": "/media/gallery/frame-front-tracking.webp",
+      "thumb": "/media/gallery/frame-front-tracking-thumb.webp"
+    },
+    {
+      "slug": "frame",
+      "id": "frame-detail",
+      "source": "Generated image/exec-55ed591c-9def-4ccc-adb9-6a45e23e646c.png",
+      "src": "/media/gallery/frame-detail.webp",
+      "thumb": "/media/gallery/frame-detail-thumb.webp"
+    },
+    {
+      "slug": "frame",
+      "id": "frame-ocean-establishing",
+      "source": "Generated image/exec-867ab14d-9234-42f0-abad-0d18c3b2ff74.png",
+      "src": "/media/gallery/frame-ocean-establishing.webp",
+      "thumb": "/media/gallery/frame-ocean-establishing-thumb.webp"
+    },
+    {
+      "slug": "dubai-game",
+      "id": "dubai-downtown",
+      "source": "docs/media/dubai-downtown.webp",
+      "src": "/media/dubai-downtown.webp",
+      "thumb": "/media/gallery/dubai-downtown-thumb.webp"
+    },
+    {
+      "slug": "dubai-game",
+      "id": "dubai-marina",
+      "source": "docs/media/dubai-marina.webp",
+      "src": "/media/dubai-marina.webp",
+      "thumb": "/media/gallery/dubai-marina-thumb.webp"
+    },
+    {
+      "slug": "dubai-game",
+      "id": "dubai-marina-cafe",
+      "source": "Dubai Game/assets/previous-exploration/marina-concept.png",
+      "src": "/media/gallery/dubai-marina-cafe.webp",
+      "thumb": "/media/gallery/dubai-marina-cafe-thumb.webp"
+    },
+    {
+      "slug": "dubai-game",
+      "id": "dubai-downtown-evening",
+      "source": "Dubai Game/assets/images/CAL-LOC-01-1-B.png",
+      "src": "/media/gallery/dubai-downtown-evening.webp",
+      "thumb": "/media/gallery/dubai-downtown-evening-thumb.webp"
+    },
+    {
+      "slug": "dubai-game",
+      "id": "dubai-madinat",
+      "source": "Dubai Game/assets/images/LOC-16-1-madinat-establishing.png",
+      "src": "/media/gallery/dubai-madinat.webp",
+      "thumb": "/media/gallery/dubai-madinat-thumb.webp"
+    },
+    {
+      "slug": "dubai-game",
+      "id": "dubai-al-seef",
+      "source": "Dubai Game/assets/images/LOC-15-1-al-seef-establishing.png",
+      "src": "/media/gallery/dubai-al-seef.webp",
+      "thumb": "/media/gallery/dubai-al-seef-thumb.webp"
+    },
+    {
+      "slug": "dubai-game",
+      "id": "dubai-atlantis",
+      "source": "Dubai Game/assets/images/LOC-05-1-atlantis-palm-establishing.png",
+      "src": "/media/gallery/dubai-atlantis.webp",
+      "thumb": "/media/gallery/dubai-atlantis-thumb.webp"
+    },
+    {
+      "slug": "dubai-game",
+      "id": "dubai-al-fahidi",
+      "source": "Dubai Game/assets/images/LOC-07-1-al-fahidi-establishing.png",
+      "src": "/media/gallery/dubai-al-fahidi.webp",
+      "thumb": "/media/gallery/dubai-al-fahidi-thumb.webp"
+    },
+    {
+      "slug": "quote-operations",
+      "id": "quote-requests",
+      "source": "Quote Operations/Media/requests.png",
+      "src": "/media/gallery/quote-requests.webp",
+      "thumb": "/media/gallery/quote-requests-thumb.webp"
+    },
+    {
+      "slug": "quote-operations",
+      "id": "quote-preparation",
+      "source": "Quote Operations/Media/preparation.png",
+      "src": "/media/gallery/quote-preparation.webp",
+      "thumb": "/media/gallery/quote-preparation-thumb.webp"
+    },
+    {
+      "slug": "quote-operations",
+      "id": "quote-review",
+      "source": "docs/media/quote-review-current.png",
+      "src": "/media/gallery/quote-review.webp",
+      "thumb": "/media/gallery/quote-review-thumb.webp"
+    },
+    {
+      "slug": "quote-operations",
+      "id": "quote-document",
+      "source": "Quote Operations/Media/quotation.png",
+      "src": "/media/gallery/quote-document.webp",
+      "thumb": "/media/gallery/quote-document-thumb.webp"
+    },
+    {
+      "slug": "oris",
+      "id": "oris-hero",
+      "source": "https://getoris.ai/",
+      "capturedAt": "2026-09-17",
+      "classification": "public website",
+      "src": "/media/gallery/oris-hero.webp",
+      "thumb": "/media/gallery/oris-hero-thumb.webp"
+    },
+    {
+      "slug": "oris",
+      "id": "oris-channels",
+      "source": "https://getoris.ai/",
+      "capturedAt": "2026-09-17",
+      "classification": "public website / illustrated sample",
+      "src": "/media/gallery/oris-channels.webp",
+      "thumb": "/media/gallery/oris-channels-thumb.webp"
+    },
+    {
+      "slug": "oris",
+      "id": "oris-workflow",
+      "source": "https://getoris.ai/",
+      "capturedAt": "2026-09-17",
+      "classification": "public website / illustrated workflow",
+      "src": "/media/gallery/oris-workflow.webp",
+      "thumb": "/media/gallery/oris-workflow-thumb.webp"
+    },
+    {
+      "slug": "manzl",
+      "id": "manzl-hero",
+      "source": "https://manzl.vercel.app/en",
+      "capturedAt": "2026-09-17",
+      "classification": "public website / sample conversation",
+      "src": "/media/gallery/manzl-hero.webp",
+      "thumb": "/media/gallery/manzl-hero-thumb.webp"
+    },
+    {
+      "slug": "manzl",
+      "id": "manzl-handoff-preview",
+      "source": "https://manzl.vercel.app/en",
+      "capturedAt": "2026-09-17",
+      "classification": "public website / sample handoff",
+      "src": "/media/gallery/manzl-handoff-preview.webp",
+      "thumb": "/media/gallery/manzl-handoff-preview-thumb.webp"
+    },
+    {
+      "slug": "manzl",
+      "id": "manzl-walkthrough",
+      "source": "https://manzl.vercel.app/en/demo",
+      "capturedAt": "2026-09-17",
+      "classification": "public seed-data walkthrough",
+      "src": "/media/gallery/manzl-walkthrough.webp",
+      "thumb": "/media/gallery/manzl-walkthrough-thumb.webp"
+    },
+    {
+      "slug": "aqd",
+      "id": "aqd-flat",
+      "source": "https://aqd-gray.vercel.app/demo",
+      "capturedAt": "2026-09-17",
+      "classification": "actual app screenshot / fictional demo data",
+      "src": "/media/gallery/aqd-flat.webp",
+      "thumb": "/media/gallery/aqd-flat-thumb.webp"
+    },
+    {
+      "slug": "aqd",
+      "id": "aqd-cheques",
+      "source": "https://aqd-gray.vercel.app/demo",
+      "capturedAt": "2026-09-17",
+      "classification": "actual app screenshot / fictional demo data",
+      "src": "/media/gallery/aqd-cheques.webp",
+      "thumb": "/media/gallery/aqd-cheques-thumb.webp"
+    },
+    {
+      "slug": "aqd",
+      "id": "aqd-file",
+      "source": "https://aqd-gray.vercel.app/demo",
+      "capturedAt": "2026-09-17",
+      "classification": "actual app screenshot / fictional demo data",
+      "src": "/media/gallery/aqd-file.webp",
+      "thumb": "/media/gallery/aqd-file-thumb.webp"
+    }
+  ]
+}

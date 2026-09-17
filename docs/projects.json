@@ -113,7 +113,53 @@
           "status": "open",
           "detail": "Confirm catalogue authority, selling prices, terms and the complete authenticated customer workflow."
         }
-      ]
+      ],
+      "gallery": {
+        "heading": "From request to quotation.",
+        "description": "Actual interface captures from the sample workspace: requests, preparation, review and a quotation document. All customer details, products and prices are fictional.",
+        "items": [
+          {
+            "src": "/media/gallery/quote-requests.webp",
+            "thumb": "/media/gallery/quote-requests-thumb.webp",
+            "width": 1440,
+            "height": 1000,
+            "title": "Know what needs attention",
+            "caption": "The requests workspace shows status and the next action for each sample enquiry.",
+            "alt": "Quote Operations requests screen showing three fictional projects and their next actions.",
+            "kind": "Product screenshot · Sample data"
+          },
+          {
+            "src": "/media/gallery/quote-preparation.webp",
+            "thumb": "/media/gallery/quote-preparation-thumb.webp",
+            "width": 1440,
+            "height": 900,
+            "title": "Prepare with the checks in view",
+            "caption": "The preparation screen explains extracted lines, matches and the items still needing a decision.",
+            "alt": "Quote Operations preparation result with equipment checks and a draft ready for review.",
+            "kind": "Product screenshot · Sample data"
+          },
+          {
+            "src": "/media/gallery/quote-review.webp",
+            "thumb": "/media/gallery/quote-review-thumb.webp",
+            "width": 1440,
+            "height": 1000,
+            "title": "Review before approval",
+            "caption": "The quotation review keeps the draft and its remaining decisions visible to the sales team.",
+            "alt": "Quote Operations quotation review interface with fictional sample equipment and prices.",
+            "kind": "Product screenshot · Sample data"
+          },
+          {
+            "src": "/media/gallery/quote-document.webp",
+            "thumb": "/media/gallery/quote-document-thumb.webp",
+            "width": 1440,
+            "height": 900,
+            "title": "A document ready to inspect",
+            "caption": "The printable quotation brings the equipment proposal into a clear document. Nothing in this sample is a commercial offer.",
+            "alt": "Quote Operations technical quotation preview marked as a fictional demonstration record.",
+            "kind": "Product screenshot · Sample data"
+          }
+        ]
+      }
     },
     {
       "slug": "oris",
@@ -221,7 +267,43 @@
           "status": "open",
           "detail": "Complete live tenant onboarding, channel acceptance and a documented pilot outcome."
         }
-      ]
+      ],
+      "gallery": {
+        "heading": "A closer look at the experience.",
+        "description": "Public website captures showing Oris’s Arabic and English support direction, illustrated conversations and setup workflow.",
+        "items": [
+          {
+            "src": "/media/gallery/oris-hero.webp",
+            "thumb": "/media/gallery/oris-hero-thumb.webp",
+            "width": 1440,
+            "height": 800,
+            "title": "Arabic-first customer experience",
+            "caption": "The landing page introduces support that moves naturally between Arabic and English.",
+            "alt": "Oris public website introducing Arabic and English customer support.",
+            "kind": "Public website screenshot"
+          },
+          {
+            "src": "/media/gallery/oris-channels.webp",
+            "thumb": "/media/gallery/oris-channels-thumb.webp",
+            "width": 1440,
+            "height": 1000,
+            "title": "An Arabic support conversation",
+            "caption": "An illustrated WhatsApp exchange shows the intended feel of a helpful, contextual reply.",
+            "alt": "Oris website sample WhatsApp conversation in Arabic.",
+            "kind": "Public website screenshot"
+          },
+          {
+            "src": "/media/gallery/oris-workflow.webp",
+            "thumb": "/media/gallery/oris-workflow-thumb.webp",
+            "width": 1440,
+            "height": 900,
+            "title": "Connect, configure, go live",
+            "caption": "The public workflow explains channels, agent procedures and replies through sample interface illustrations.",
+            "alt": "Oris website illustrations of channel setup, procedures and an Arabic reply.",
+            "kind": "Public website screenshot"
+          }
+        ]
+      }
     },
     {
       "slug": "manzl",
@@ -316,7 +398,7 @@
         {
           "label": "Hosting and data",
           "status": "open",
-          "detail": "The website demo is hosted on Vercel. The local API uses Hono and PGlite; production API hosting, access controls and live channel configuration need validation."
+          "detail": "The public website and sample walkthrough load. The dashboard returned a server error during the 17 September screenshot review. Hosted API, access controls and live channel configuration remain unverified."
         },
         {
           "label": "Customer validation",
@@ -328,7 +410,43 @@
           "status": "open",
           "detail": "Verify the WhatsApp account, calendar, hosted data and agent handoff with the intended leasing desk."
         }
-      ]
+      ],
+      "gallery": {
+        "heading": "A conversation, with a next step.",
+        "description": "Public website and seed-data walkthrough captures showing Reem, enquiry qualification and the handoff to a leasing team. Conversations and records are samples.",
+        "items": [
+          {
+            "src": "/media/gallery/manzl-hero.webp",
+            "thumb": "/media/gallery/manzl-hero-thumb.webp",
+            "width": 1440,
+            "height": 1000,
+            "title": "Meet Reem",
+            "caption": "A sample enquiry switches between Arabic and English in the website’s introduction to the leasing assistant.",
+            "alt": "Manzl public website showing Reem and a sample bilingual leasing enquiry.",
+            "kind": "Public website screenshot"
+          },
+          {
+            "src": "/media/gallery/manzl-handoff-preview.webp",
+            "thumb": "/media/gallery/manzl-handoff-preview-thumb.webp",
+            "width": 1440,
+            "height": 1000,
+            "title": "From chat to a useful handoff",
+            "caption": "The website’s sample lead summary brings budget, area, move-in timing and cheque preferences together.",
+            "alt": "Manzl website illustration of a sample lead handoff with budget, area and timing.",
+            "kind": "Public website screenshot"
+          },
+          {
+            "src": "/media/gallery/manzl-walkthrough.webp",
+            "thumb": "/media/gallery/manzl-walkthrough-thumb.webp",
+            "width": 1440,
+            "height": 900,
+            "title": "A sample handoff, in context",
+            "caption": "The public walkthrough shows Daniel’s seeded enquiry, the collected context and the next action for the team.",
+            "alt": "Manzl public demo walkthrough with the fictional Daniel Carter lead summary and next action.",
+            "kind": "Demo walkthrough · Sample data"
+          }
+        ]
+      }
     },
     {
       "slug": "aqd",
@@ -435,7 +553,43 @@
           "status": "open",
           "detail": "Establish safe document storage, authorized sharing and a tested team workflow before using real tenancy files."
         }
-      ]
+      ],
+      "gallery": {
+        "heading": "The details, brought together.",
+        "description": "Actual public demo screens with fictional sample data: property details, a cheque schedule and the preparation file. Captured from the browser-only demo.",
+        "items": [
+          {
+            "src": "/media/gallery/aqd-flat.webp",
+            "thumb": "/media/gallery/aqd-flat-thumb.webp",
+            "width": 1440,
+            "height": 1000,
+            "title": "One place for the property details",
+            "caption": "The sample pack keeps property and broker details together before the next handoff.",
+            "alt": "Aqd public demo showing fictional Marina Gate property and broker details.",
+            "kind": "Product screenshot · Sample data"
+          },
+          {
+            "src": "/media/gallery/aqd-cheques.webp",
+            "thumb": "/media/gallery/aqd-cheques-thumb.webp",
+            "width": 1440,
+            "height": 1000,
+            "title": "A cheque schedule that balances",
+            "caption": "Four sample rent cheques sit alongside the annual total in one readable schedule.",
+            "alt": "Aqd demo screen displaying four fictional rent cheques and the annual total.",
+            "kind": "Product screenshot · Sample data"
+          },
+          {
+            "src": "/media/gallery/aqd-file.webp",
+            "thumb": "/media/gallery/aqd-file-thumb.webp",
+            "width": 1440,
+            "height": 1000,
+            "title": "Spot the gaps before the handoff",
+            "caption": "The preparation preview distinguishes ready items, missing documents and notes needing attention.",
+            "alt": "Aqd sample preparation file showing completed items, a missing Emirates ID and follow-up notes.",
+            "kind": "Product screenshot · Sample data"
+          }
+        ]
+      }
     },
     {
       "slug": "frame",
@@ -537,7 +691,83 @@
           "status": "open",
           "detail": "Demonstrate a successful production, targeted revision, thumbnail and actual iPhone save before opening a public creation workflow."
         }
-      ]
+      ],
+      "gallery": {
+        "heading": "One story. Seven perspectives.",
+        "description": "A cinematic coastal drive, explored through wide shots, tracking shots and close detail. Illustrative film concepts for Frame’s creative direction.",
+        "items": [
+          {
+            "src": "/media/frame-film-concept.webp",
+            "thumb": "/media/gallery/frame-coastal-drive-thumb.webp",
+            "width": 1600,
+            "height": 900,
+            "title": "The open road",
+            "caption": "The original coastal-driving concept: an orange sports car, turquoise water and warm evening light.",
+            "alt": "Orange sports car following a coastal road beside teal water and sunlit cliffs.",
+            "kind": "AI film concept"
+          },
+          {
+            "src": "/media/gallery/frame-rear-tracking.webp",
+            "thumb": "/media/gallery/frame-rear-tracking-thumb.webp",
+            "width": 1672,
+            "height": 941,
+            "title": "Stay with the story",
+            "caption": "A closer rear tracking angle brings the car and the coastal road into the same frame.",
+            "alt": "Close rear three-quarter view of an orange sports car on a coastal road at golden hour.",
+            "kind": "AI film concept"
+          },
+          {
+            "src": "/media/gallery/frame-bridge-wide.webp",
+            "thumb": "/media/gallery/frame-bridge-wide-thumb.webp",
+            "width": 1672,
+            "height": 941,
+            "title": "A little more scale",
+            "caption": "A stone viaduct, a small car and a wide sweep of sea turn the landscape into part of the story.",
+            "alt": "Orange sports car crossing a stone coastal viaduct over turquoise surf.",
+            "kind": "AI film concept"
+          },
+          {
+            "src": "/media/gallery/frame-hairpin.webp",
+            "thumb": "/media/gallery/frame-hairpin-thumb.webp",
+            "width": 1672,
+            "height": 941,
+            "title": "Follow the curve",
+            "caption": "An elevated road bend changes the viewpoint while keeping the same warm light and coastal palette.",
+            "alt": "Elevated view of an orange sports car rounding a sweeping coastal road bend.",
+            "kind": "AI film concept"
+          },
+          {
+            "src": "/media/gallery/frame-front-tracking.webp",
+            "thumb": "/media/gallery/frame-front-tracking-thumb.webp",
+            "width": 1672,
+            "height": 941,
+            "title": "Into the next scene",
+            "caption": "A low front angle adds pace and a more immediate connection to the drive.",
+            "alt": "Low front three-quarter view of an orange vintage sports car beside a rocky coast.",
+            "kind": "AI film concept"
+          },
+          {
+            "src": "/media/gallery/frame-detail.webp",
+            "thumb": "/media/gallery/frame-detail-thumb.webp",
+            "width": 1672,
+            "height": 941,
+            "title": "The details carry it",
+            "caption": "A close study of the wheel, orange bodywork and reflected light gives the sequence a quieter beat.",
+            "alt": "Close-up of orange sports-car bodywork and rear wheel with softly focused ocean behind.",
+            "kind": "AI film concept"
+          },
+          {
+            "src": "/media/gallery/frame-ocean-establishing.webp",
+            "thumb": "/media/gallery/frame-ocean-establishing-thumb.webp",
+            "width": 1672,
+            "height": 941,
+            "title": "Room to breathe",
+            "caption": "A final wide view returns to the cliffs, surf and road. These are AI-generated portfolio concepts, not completed Frame productions.",
+            "alt": "Wide rocky coastline with teal waves and a small orange car on the cliffside road.",
+            "kind": "AI film concept"
+          }
+        ]
+      }
     },
     {
       "slug": "dubai-game",
@@ -638,7 +868,93 @@
           "status": "open",
           "detail": "Resolve the paused art review and validate an enjoyable playable slice with intended players."
         }
-      ]
+      ],
+      "gallery": {
+        "heading": "A world, waiting to be explored.",
+        "description": "Eight existing visual-development studies from the project, from Downtown and Marina to sunlit courtyards and canals. Concept artwork, not gameplay.",
+        "items": [
+          {
+            "src": "/media/dubai-downtown.webp",
+            "thumb": "/media/gallery/dubai-downtown-thumb.webp",
+            "width": 1600,
+            "height": 905,
+            "title": "Downtown, after the sun sets",
+            "caption": "The original Downtown study brings the full Burj silhouette, waterfront life and evening reflections together.",
+            "alt": "Dubai Game concept art of Downtown at blue hour with the complete Burj Khalifa silhouette.",
+            "kind": "AI visual development"
+          },
+          {
+            "src": "/media/dubai-marina.webp",
+            "thumb": "/media/gallery/dubai-marina-thumb.webp",
+            "width": 1600,
+            "height": 900,
+            "title": "A day by the Marina",
+            "caption": "The original Marina study: towers, yachts and people sharing a warm, open waterfront.",
+            "alt": "Dubai Game concept art of Marina towers, yachts and people along a sunlit waterfront.",
+            "kind": "AI visual development"
+          },
+          {
+            "src": "/media/gallery/dubai-marina-cafe.webp",
+            "thumb": "/media/gallery/dubai-marina-cafe-thumb.webp",
+            "width": 1920,
+            "height": 1080,
+            "title": "One more coffee, by the water",
+            "caption": "A second Marina perspective trades the wide promenade for café tables and the glow of dusk.",
+            "alt": "Dubai Marina concept study with outdoor café tables, pedestrians and warmly lit towers.",
+            "kind": "AI visual development"
+          },
+          {
+            "src": "/media/gallery/dubai-downtown-evening.webp",
+            "thumb": "/media/gallery/dubai-downtown-evening-thumb.webp",
+            "width": 1920,
+            "height": 1086,
+            "title": "The evening promenade",
+            "caption": "An alternate Downtown study explores a brighter promenade, café lighting and reflections.",
+            "alt": "Alternate Downtown Dubai concept with Burj Khalifa, café lighting and waterfront reflections.",
+            "kind": "AI visual development"
+          },
+          {
+            "src": "/media/gallery/dubai-madinat.webp",
+            "thumb": "/media/gallery/dubai-madinat-thumb.webp",
+            "width": 1920,
+            "height": 1080,
+            "title": "Life along the canal",
+            "caption": "A Madinat-inspired study of water, wind towers, boats and places to pause.",
+            "alt": "Madinat-inspired Dubai Game concept with a canal, boat, palms and wind-tower architecture.",
+            "kind": "AI visual development"
+          },
+          {
+            "src": "/media/gallery/dubai-al-seef.webp",
+            "thumb": "/media/gallery/dubai-al-seef-thumb.webp",
+            "width": 1920,
+            "height": 1080,
+            "title": "Stories on the waterfront",
+            "caption": "Al Seef-inspired textures, shaded façades and café life bring the city down to a human scale.",
+            "alt": "Al Seef-inspired waterfront concept with textured heritage façades, a wind tower and café promenade.",
+            "kind": "AI visual development"
+          },
+          {
+            "src": "/media/gallery/dubai-atlantis.webp",
+            "thumb": "/media/gallery/dubai-atlantis-thumb.webp",
+            "width": 1920,
+            "height": 1080,
+            "title": "Golden hour on the Palm",
+            "caption": "An Atlantis-inspired view studies warm light, the hotel silhouette and a quiet foreground.",
+            "alt": "Atlantis-inspired pink hotel silhouette across water at golden hour, with two foreground figures.",
+            "kind": "AI visual development"
+          },
+          {
+            "src": "/media/gallery/dubai-al-fahidi.webp",
+            "thumb": "/media/gallery/dubai-al-fahidi-thumb.webp",
+            "width": 1920,
+            "height": 1080,
+            "title": "A quieter corner of the city",
+            "caption": "An Al Fahidi-inspired alley completes the collection with sunlit walls, shade and a full wind tower.",
+            "alt": "Al Fahidi-inspired concept of a sunlit ochre alley, courtyard and complete wind tower.",
+            "kind": "AI visual development"
+          }
+        ]
+      }
     }
   ],
   "github": "https://github.com/Kbartawi",
