@@ -780,7 +780,7 @@
         "Verify reliable hosted operation and recovery",
         "Test usable video and thumbnail delivery on a phone"
       ],
-      "website": "https://frame-studio-amber.vercel.app/",
+      "website": null,
       "image": null,
       "imageAlt": "",
       "demoNote": "The public studio uses built-in sample data. Its displayed scores, prices and media are fixtures. The screenshots demonstrate the product interface; the coastal film stills are separate portfolio concepts.",

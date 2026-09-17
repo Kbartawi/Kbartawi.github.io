@@ -23,6 +23,8 @@ The 20 product screenshots use fictional data: Frame, Quote Operations and Aqd w
 
 Follow [the visual reference and checklist](DESIGN-STANDARD.md) before changing cards. Technical checks, visual review and owner approval are separate. Keep new cards in the existing system.
 
+Follow the [product review standard](PRODUCT-STANDARD.md) for customer context, technical and commercial readiness, evidence, messaging and next milestones. The website and GitHub profile should agree on those facts. The detailed automation operating record is maintained in the private Frame repository; this public repository contains no machine settings or private production data.
+
 ## Edit, build and check
 
 Requires Node.js 20 or newer; build and static checks have no package dependencies.
