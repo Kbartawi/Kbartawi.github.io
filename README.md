@@ -10,7 +10,7 @@ Explore [Frame’s actual creator studio](https://kbartawi.github.io/projects/fr
 
 The 20 product screenshots use fictional data: Frame, Quote Operations and Aqd were captured in their hosted demos; Oris and Manzl were captured from real application components in isolated local demos. They demonstrate interfaces, not live customer activity or production backend acceptance.
 
-## Readiness — 17 September 2026
+## Readiness — 18 September 2026
 
 | Area | Current state |
 | --- | --- |
@@ -47,7 +47,9 @@ Repository: `Kbartawi/Kbartawi.github.io`. GitHub Pages uses **Deploy from a bra
 - **Oris:** deployed application; tenant-specific channels, voice and customer outcomes require current evidence.
 - **Manzl:** hosted website and seeded leasing prototype; hosted API/data, private access and live channel acceptance are separate gates.
 - **Aqd:** browser-based preparation demo; no private cloud storage, production team accounts, payment collection or government registration.
-- **Frame:** hosted interactive creator-studio sample verified on 17 September; its ideas, script, scores, prices and media are fixture data. Live provider generation and the first accepted production film remain under validation.
+- **Frame:** hosted interactive creator-studio sample verified on 17 September; its ideas, script, scores, prices and media are fixture data. One real local personal-photo film completed and its download was verified, but its creative and voice quality were rejected. V2 adds a voice review gate and native iPhone editor source; mobile runtime verification and TestFlight release are still pending.
 - **Dubai Game:** preproduction, paused art review and prototype source; no verified playable consumer release or approved final art.
 
 Public samples use fictional data. Source code for the products is private. Never publish credentials, private customer records or unsupported revenue/traction claims in this repository.
+
+Frame updates must stay synchronized with the application README and GitHub personal profile. Technical completion, creative acceptance and release state are separate facts.

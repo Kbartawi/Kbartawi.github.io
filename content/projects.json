@@ -750,10 +750,10 @@
       "theme": "frame",
       "category": "AI video production",
       "model": "B2C",
-      "modelDescription": "AI video production for independent creators, from idea development to export.",
-      "audience": "Independent creators making explainers, cinematic shorts and product videos",
-      "buyer": "Individual creators — initial intended audience",
-      "users": "Creators reviewing ideas, scripts and generated footage",
+      "modelDescription": "Simple video creation from personal photos, clips or an idea, with optional AI generation.",
+      "audience": "People who want to make videos without learning editing or prompting",
+      "buyer": "Individuals making personal reels and small-business content — initial audience",
+      "users": "Beginners reviewing edits, voice and optional generated footage",
       "market": "Initial personal use; broader audience under validation",
       "languages": [
         "English"
@@ -763,7 +763,7 @@
         "Video production,",
         "from idea to export."
       ],
-      "summary": "An AI video studio in development, bringing ideas, scripts, visuals, voice and editing into one creator workflow.",
+      "summary": "A video-making tool for beginners, combining personal photos and clips with a guided edit, real recorded voice and optional AI generation.",
       "features": [
         "Start with a spoken or typed idea and develop it through a saved conversation.",
         "Plan the hook, research, script and visual storytelling around the selected format.",
@@ -776,28 +776,32 @@
         "Generate, edit, review and export"
       ],
       "nextFocus": [
-        "Validate one complete film and the intended voice",
-        "Verify reliable hosted operation and recovery",
-        "Test usable video and thumbnail delivery on a phone"
+        "Preview the edit and voice before paid generation",
+        "Verify local photo/video editing on iPhone",
+        "Measure cost per accepted film, including retries"
       ],
       "website": null,
       "image": null,
       "imageAlt": "",
       "demoNote": "The public studio uses built-in sample data. Its displayed scores, prices and media are fixtures. The screenshots demonstrate the product interface; the coastal film stills are separate portfolio concepts.",
-      "updatedAt": "2026-09-17",
+      "updatedAt": "2026-09-18",
       "updates": [
+        {
+          "date": "2026-09-18",
+          "text": "Completed a live local personal-photo film and verified playback/download. The result failed the founder’s creative and voice expectations. V2 adds voice review before video spending and starts a native iPhone editor for supplied photos/clips and real recorded voice; mobile runtime verification and TestFlight release remain open."
+        },
         {
           "date": "2026-09-17",
           "text": "Developing a conversation-led route from an idea to a short film. The next proof point is one complete, reviewed film with a reliable download."
         }
       ],
       "demoUrl": "https://frame-studio-amber.vercel.app/studio",
-      "technicalReadiness": "Hosted interactive studio sample is available; live provider generation and a completed production film still require acceptance.",
+      "technicalReadiness": "A local AI film completed with gallery playback and verified download. Its creative and voice quality were rejected. Native iPhone V2 source is in development; no TestFlight build is released.",
       "commercialReadiness": "Personal use first; acceptance, repeat use and production economics are unvalidated.",
-      "cardAudience": "Creators, brands and storytellers",
+      "cardAudience": "People making their first reels",
       "cardStage": "Prototype · In testing",
-      "positioning": "An AI video production studio, from the first idea to the finished export.",
-      "outcome": "Designed for creators to brief the studio, review ideas and scripts, and approve finished videos from their phone.",
+      "positioning": "Your moments and ideas, guided into a reel you want to share.",
+      "outcome": "Help a beginner choose a format, review the actual edit and voice, then save a reel without learning production tools.",
       "deliverables": [
         "A researched idea, timed script and scene-by-scene production plan",
         "Generated footage with a narration, sound and caption plan",
@@ -814,24 +818,26 @@
         "JavaScript",
         "Higgsfield API",
         "ElevenLabs",
-        "FFmpeg"
+        "FFmpeg",
+        "SwiftUI",
+        "AVFoundation"
       ],
-      "nextAction": "Complete one 30-second film, inspect the voice, visuals and captions, and verify that the finished video saves on an iPhone.",
+      "nextAction": "Verify the native photo/video editor on an iPhone, obtain creative acceptance for a reel and prepare a tested TestFlight build.",
       "readinessChecks": [
         {
           "label": "Product workflow",
           "status": "passed",
-          "detail": "The hosted sample supports a brief, three idea choices and a five-shot script review in the actual studio interface. It uses fixtures, not live provider generation."
+          "detail": "The web pipeline completed one real personal-photo film, including voice, captions, gallery playback and an identical downloaded file. Operator fixes were required. The public studio still uses fixtures."
         },
         {
           "label": "Verification",
           "status": "open",
-          "detail": "CI and provider-mocked tests are recorded. One complete live film with accepted visuals, narration and captions remains the key validation."
+          "detail": "Provider-mocked tests pass. The first live result was rejected for creative and voice quality. Native SwiftUI source exists, but iPhone runtime acceptance is pending."
         },
         {
           "label": "Hosting and data",
           "status": "open",
-          "detail": "Hosted /studio returned HTTP200 on 17 September and its built-in sample workflow was exercised. Live generation, persistence and production deployment acceptance remain open."
+          "detail": "The hosted studio is a static sample. Real generation runs on the private Mac with local storage; the new native editor is designed to render on-device. There is no public authenticated generation backend."
         },
         {
           "label": "Customer validation",
@@ -841,7 +847,7 @@
         {
           "label": "Release gate",
           "status": "open",
-          "detail": "Demonstrate a successful production, targeted revision, thumbnail and actual iPhone save before opening a public creation workflow."
+          "detail": "Accept a film for both technical and creative quality, verify native photo/video/voice export on-device, then complete signing, TestFlight upload and required Apple review. No TestFlight build is released."
         }
       ],
       "gallery": {
