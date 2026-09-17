@@ -4,7 +4,7 @@
 
 **[Open the portfolio](https://kbartawi.github.io/)** · [GitHub profile](https://github.com/Kbartawi)
 
-A portfolio of six projects: Quote Operations, Oris, Manzl, Aqd, Frame and Dubai Game. Light/dark themes, detailed project pages and 41 gallery images. Project content comes from one catalogue.
+A founder portfolio covering AI products for customer operations and video production, plus game development in preproduction. Six project profiles explain the intended users and buyers, current technical and commercial readiness, and the next validation milestone. Includes light/dark themes and 41 gallery images, maintained from one catalogue.
 
 Explore [Frame’s actual creator studio](https://kbartawi.github.io/projects/frame/#gallery-product), [Oris’s support workspace](https://kbartawi.github.io/projects/oris/#gallery-product), [Manzl’s leasing dashboard](https://kbartawi.github.io/projects/manzl/#gallery-product), six Quote Operations screens and five Aqd screens. Actual product views appear first. Website captures, Frame’s seven film concepts and [eight Dubai Game world studies](https://kbartawi.github.io/projects/dubai-game/#gallery) remain clearly identified.
 
@@ -27,7 +27,7 @@ Follow [the visual reference and checklist](DESIGN-STANDARD.md) before changing 
 
 Requires Node.js 20 or newer; build and static checks have no package dependencies.
 
-1. Edit `content/projects.json` for copy, readiness, updates, public links and gallery entries. Use `overview.type: "problem"` for an actual problem and `"fun"` for a creative project, with plain text in `overview.text`. Gallery assets include optimized thumbnails plus full-size images in `docs/media/gallery/`; keep source provenance in `content/gallery-sources.json`.
+1. Edit `content/projects.json` for copy, readiness, updates, public links and gallery entries. Use `overview.type: "problem"` for an actual problem and `"concept"` for exploratory work, with plain text in `overview.text`. Use professional, direct copy; distinguish verified progress from plans. Gallery assets include optimized thumbnails plus full-size images in `docs/media/gallery/`; keep source provenance in `content/gallery-sources.json`.
 2. Run `npm run build` and `npm run check`.
 3. Preview with `python3 -m http.server 4177 --directory docs` and open `http://localhost:4177`.
 4. Check all six project pages in both themes at phone, tablet and desktop widths. Test theme persistence, project filters, gallery navigation, keyboard controls, focus return and the image-link fallback without JavaScript. Preserve honest demo/production distinctions.

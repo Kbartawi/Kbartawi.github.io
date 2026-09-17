@@ -10,9 +10,11 @@ The owner then clarified: keep the website photographs, but add photographs of t
 
 ## Voice and copy
 
-The owner explicitly rejected “Curiosity, meet execution” and the repeated “A problem worth solving” heading. Write like a person explaining their own projects. Use direct labels: **Problem**, **How it works**, **Status**, **Screenshots**. A project made for fun does not need a manufactured business problem: use **A fun project** and explain the idea. The catalogue records this in `overview.type` (`problem` or `fun`) and `overview.text`.
+The owner explicitly rejected “Curiosity, meet execution” and the repeated “A problem worth solving” heading. The subsequent clarification is equally important: plain language must still present a credible founder to investors. Do not use the casual “Hi, I’m Khaled,” “here are my side projects,” or “a fun project” framing. Lead with the founder’s product focus, the intended customer, evidence of progress and the next validation milestone. Keep direct labels such as **Problem**, **How it works**, **Status** and **Screenshots**.
 
-Avoid motivational slogans, founder manifestos, rhyming sales lines and claims that every project solves an important problem. Keep the approved visual design; plain copy can still look good. Describe what the app does, what is available and what needs work. Refresh portfolio and GitHub preview images when visible copy changes so rejected slogans do not survive inside screenshots.
+Use **Concept** for exploratory work such as Dubai Game, with its preproduction stage clearly stated. Do not invent a customer problem, commercial traction or a business model to make a creative project sound investable. The catalogue records this in `overview.type` (`problem` or `concept`) and `overview.text`. This clarification supersedes the earlier casual wording while retaining its intent: direct, human copy without canned slogans.
+
+Avoid motivational slogans, founder manifestos, rhyming sales lines and claims that every project solves an important problem. Investor-facing does not mean unsupported growth, revenue, funding or readiness claims. Keep the approved visual design. Describe what the app does, who uses or buys it, what is verified and what needs work. Keep the website and GitHub profile consistent, and refresh preview images when visible copy changes.
 
 ## Repeatable checklist
 
@@ -64,6 +66,12 @@ Added 13 actual product screenshots, bringing the galleries to 41 images includi
 Verification passed after the change: 36 page/theme/viewport cases; all 41 full-size files decoded; correct product-first ordering and three-image collections; no overflow, missing images, browser exceptions or failed local assets. Viewer controls, keyboard/focus return, theme persistence, filters and no-JavaScript image links passed. Aqd’s transition timing was corrected before the selected captures were imported. Evidence: `Documents/Workspace Maintenance/portfolio-review/product-gallery-checks.json`.
 
 Reviewer category assessment (subjective): hierarchy 4/5, typography 4/5, color 4/5, spacing 4/5, components 4/5, responsiveness 4/5, motion 4/5, accessibility 4/5 subject to full audit, craft 4/5. Wider device and accessibility testing remain open.
+
+### Founder presentation review — 17 September 2026
+
+Replaced the casual homepage introduction with “Building AI products” and a specific focus on customer operations and video production. Product profiles now expose users, buyer, market and development stage. Dubai Game uses a **Concept** overview and retains its preproduction status. Commercial and technical readiness facts were preserved; no revenue, adoption or funding claims were added. The GitHub profile and its light/dark preview images follow the same positioning.
+
+Verification passed across 7 pages × 2 widths (375/1440) × 2 themes: no horizontal overflow or browser exceptions, no rejected casual wording, and correct overview/fact labels on every product. Desktop light, mobile dark and the Dubai concept overview were visually reviewed. Build and static-link checks passed. Local evidence: `Documents/Workspace Maintenance/portfolio-review/founder-copy-checks.json`.
 
 ## Inspiration and provenance
 

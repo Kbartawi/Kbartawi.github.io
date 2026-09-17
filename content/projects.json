@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "owner": "KB",
-  "title": "Khaled / Product portfolio",
-  "description": "Khaled, a pilot and founder in Dubai. Apps for customer support, equipment sales, leasing and video creation, plus a game set in Dubai.",
+  "title": "Khaled / Founder & pilot",
+  "description": "Dubai-based founder and pilot building AI products for customer operations and video production. Explore product demos, development stages and validation milestones.",
   "featuredProject": "quote-operations",
-  "about": "Most of my apps are for customer support, equipment sales and leasing. Frame started because I wanted an easier way to make videos. I’m also experimenting with a game set in Dubai.",
+  "about": "My product work focuses on customer support, equipment quotations, leasing and video production. I develop each product around a specific workflow, with clear review points and a defined next milestone.",
   "projects": [
     {
       "slug": "quote-operations",
@@ -24,9 +24,9 @@
       "stage": "Working demo · Pilot preparation",
       "headline": [
         "Equipment quotes,",
-        "without the copy-paste."
+        "ready for review."
       ],
-      "summary": "Read a request, match the equipment and prepare a quotation. The team checks the products and prices before approving it.",
+      "summary": "AI-assisted quotation preparation for HVAC sales teams. Match requests to equipment and pricing, with estimator and approver review.",
       "features": [
         "With AI set up, paste an English or Arabic request from email or WhatsApp, or upload one printed PDF equipment list. The app reads the lines and quantities.",
         "Review suggested products and available prices beside the request. Open a line to check where its product or price came from.",
@@ -204,7 +204,7 @@
         "Customer support",
         "in Arabic and English."
       ],
-      "summary": "Answer customer questions using the business’s policies and conversation history. The support team can take over when a person is needed.",
+      "summary": "Arabic and English customer support grounded in a company’s knowledge base, with conversation history and human handoff.",
       "features": [
         "Connect policies, FAQs and product knowledge to customer conversations.",
         "Support Arabic and English with dialect-aware response planning.",
@@ -398,10 +398,10 @@
       ],
       "stage": "Hosted demo · Seed-data prototype",
       "headline": [
-        "Meet Reem.",
-        "Your leasing assistant."
+        "AI assistance",
+        "for leasing teams."
       ],
-      "summary": "Reem asks about budget, area and move-in date, then helps arrange a viewing and passes the details to the leasing agent.",
+      "summary": "Reem qualifies leasing enquiries, captures tenant requirements and prepares viewing handoffs for UAE property teams.",
       "features": [
         "Guide Arabic and English enquiries through the leasing qualification flow.",
         "Bring budget, location, move date, bedrooms and cheque preferences together.",
@@ -597,7 +597,7 @@
         "Tenancy paperwork,",
         "all in one place."
       ],
-      "summary": "Keep the property details, documents and cheque schedule in one tenancy pack. See what’s still missing before passing it on.",
+      "summary": "A tenancy preparation workflow for Dubai leasing teams: documents, rent schedules and handoff details in one pack.",
       "features": [
         "Prepare a tenancy pack through a guided workflow.",
         "See readiness gaps, add suggested owners and prepare a clear handoff brief.",
@@ -760,10 +760,10 @@
       ],
       "stage": "Active prototype · Production validation",
       "headline": [
-        "Make a video,",
-        "from idea to final cut."
+        "Video production,",
+        "from idea to export."
       ],
-      "summary": "Plan the idea, write the script, create the scenes and edit the video in one studio.",
+      "summary": "An AI video studio in development, bringing ideas, scripts, visuals, voice and editing into one creator workflow.",
       "features": [
         "Start with a spoken or typed idea and develop it through a saved conversation.",
         "Plan the hook, research, script and visual storytelling around the selected format.",
@@ -797,7 +797,7 @@
       "cardAudience": "Creators, brands and storytellers",
       "cardStage": "Prototype · In testing",
       "positioning": "An AI video production studio, from the first idea to the finished export.",
-      "outcome": "The goal is to describe a video, review the ideas and script, then approve the result from your phone.",
+      "outcome": "Designed for creators to brief the studio, review ideas and scripts, and approve finished videos from their phone.",
       "deliverables": [
         "A researched idea, timed script and scene-by-scene production plan",
         "Generated footage with a narration, sound and caption plan",
@@ -977,7 +977,7 @@
       "demoLabel": "Explore studio sample",
       "overview": {
         "type": "problem",
-        "text": "I wanted to make videos without juggling separate tools for scripts, images, voice and editing—or explaining the same preferences every time."
+        "text": "Producing a video can mean moving between separate tools for scripts, images, voice and editing. Revisions require the same creative direction and preferences to be repeated. Frame is being built to keep that context in one production workflow."
       }
     },
     {
@@ -997,10 +997,10 @@
       ],
       "stage": "Preproduction · Art review paused",
       "headline": [
-        "A game",
+        "A game world,",
         "set in Dubai."
       ],
-      "summary": "A fun project exploring what a game set in Dubai could look like. So far: concept art, neighbourhood studies and early prototypes.",
+      "summary": "A Dubai-set game in preproduction, with concept art, district studies and prototype systems. The next milestone is a playable scene.",
       "features": [
         "Research the locations, cultural details and everyday stories that give Dubai its character.",
         "Develop a coherent cinematic world through environment and character direction.",
@@ -1033,8 +1033,8 @@
       "commercialReadiness": "Concept stage; no release, traction or monetization validation.",
       "cardAudience": "Players exploring Emirati stories",
       "cardStage": "Concept · Art review",
-      "positioning": "A game project set in Dubai, with local places, characters and stories.",
-      "outcome": "I’m starting with the places and characters, then working toward a small playable scene.",
+      "positioning": "A Dubai-set game in preproduction, built around local districts, characters and stories.",
+      "outcome": "Current work covers world design and early prototypes, leading toward a small playable scene.",
       "deliverables": [
         "A researched world direction with location and cultural references",
         "A reviewed collection of cinematic environment concepts",
@@ -1166,11 +1166,11 @@
         ]
       },
       "overview": {
-        "type": "fun",
-        "text": "I wanted to build a game set in Dubai and explore its streets, landmarks and everyday life. It’s a fun project, currently at the concept-art and early-prototype stage."
+        "type": "concept",
+        "text": "A game world rooted in Dubai’s districts, landmarks and local stories. The current work explores visual direction and early gameplay systems, with a small playable scene planned as the first development milestone."
       }
     }
   ],
   "github": "https://github.com/Kbartawi",
-  "intro": "I’m a pilot and founder in Dubai.\nHere are the apps and side projects I’m building."
+  "intro": "I build AI software for customer operations and video production.\nBased in Dubai, with a background in aviation."
 }
