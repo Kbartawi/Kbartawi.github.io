@@ -180,3 +180,37 @@ html{scroll-padding-top:28px}
 @media(max-width:450px){.portfolio-nav{gap:14px;font-size:12px}.public-portfolio .feature-heading{align-items:flex-start;flex-direction:column;gap:10px}.public-portfolio .feature-heading .tag{text-align:left;max-width:none}.public-portfolio .feature-content{padding-top:28px}}
 /* Quote Operations keeps its own green, paper and lime identity in the gallery. */
 .feature.hvac{background:#10241F}.feature.hvac .brand{color:#F4F6EE}.feature.hvac .brand>span,.feature.hvac h2 em{color:#CAFA75}.feature.hvac .open-button{background:#CAFA75;color:#10241F}.feature.hvac .feature-shade{background:linear-gradient(90deg,rgba(16,36,31,.97),rgba(16,36,31,.76) 45%,rgba(16,36,31,.22)),linear-gradient(0deg,rgba(16,36,31,.7),transparent 65%)}
+
+/* New project cards use the same editorial grid, with distinct workflow/world studies. */
+.frame{--accent:#a96546}.dubai{--accent:#46685e}
+.frame-visual{background:#242d2c;color:#f7f1e5;position:relative;padding:27px 28px;display:flex;flex-direction:column;justify-content:center;gap:21px;overflow:hidden}
+.frame-prompt{display:flex;align-items:center;gap:10px;font-size:12px;color:#e9e5d9;border:1px solid #56605a;padding:13px 12px;border-radius:6px;background:#303a36}
+.record-dot{display:block;width:8px;height:8px;border-radius:50%;background:#d0d774;flex-shrink:0}
+.wave{color:#d0d774;margin-left:auto;white-space:nowrap;font-size:13px;letter-spacing:1px}
+.film-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
+.film-strip>div{height:116px;position:relative;overflow:hidden;background:#d5d7c2;border-radius:3px;color:#303c36}
+.film-strip>div:nth-child(2){background:#b9c4b1}.film-strip>div:nth-child(3){background:#c7a38a}
+.film-strip>div>span{position:absolute;left:10px;top:10px;font-size:8px;letter-spacing:1px}
+.orbit{position:absolute;width:63px;height:63px;border:1px solid #667467;border-radius:50%;left:calc(50% - 31px);top:39px;box-shadow:12px -6px 0 -1px #d5d7c2,12px -6px 0 0 #667467}
+.story-lines{position:absolute;top:46px;left:22%;width:56%;height:40px;background:repeating-linear-gradient(to bottom,#607361 0px,#607361 2px,transparent 2px,transparent 10px)}
+.play-shape{position:absolute;left:calc(50% - 10px);top:49px;width:0;height:0;border-top:19px solid transparent;border-bottom:19px solid transparent;border-left:28px solid #5a453a}
+.visual-caption{display:flex;justify-content:space-between;gap:10px;font-size:8px;letter-spacing:1.2px;position:relative;z-index:2}
+.dubai-visual{position:relative;background:#d7cbb5;overflow:hidden;color:#314a43}
+.map-grid{position:absolute;inset:0;background-image:linear-gradient(#c8bba4 1px,transparent 1px),linear-gradient(90deg,#c8bba4 1px,transparent 1px);background-size:34px 34px;opacity:.65}
+.map-water{position:absolute;right:-40px;top:-60px;width:44%;height:430px;background:#89a69e;transform:rotate(20deg);border-left:10px solid #ece3d3}
+.map-road{position:absolute;width:70%;height:60px;left:30%;top:40%;border:9px double #f4edde;border-right:0;border-radius:45px 0 0 45px;transform:rotate(-24deg)}
+.map-blocks{position:absolute;left:47%;top:15%;width:100px;display:grid;grid-template-columns:repeat(2,1fr);gap:9px;transform:rotate(-24deg)}
+.map-blocks i{height:24px;background:#b6a086;border:1px solid #a99278}
+.map-title{position:absolute;top:25px;left:29px}.map-title>span{font-family:"Noto Sans Arabic",sans-serif;font-size:18px}.map-title strong{display:block;font-family:Newsreader,Georgia,serif;font-weight:450;font-size:29px;line-height:1.15;margin-top:12px}
+.map-pin{position:absolute;left:44%;bottom:64px;display:flex;gap:8px;align-items:center}.map-pin>span{width:11px;height:11px;background:#496b60;border:3px solid #f2eee0;border-radius:50%;box-shadow:0 0 0 1px #496b60}.map-pin b{font-size:7px;letter-spacing:1px;background:#eee6d6;padding:5px}
+.dubai-visual .visual-caption{position:absolute;bottom:23px;left:29px;right:25px}
+.theme-frame{--accent:#946347;--soft:#e7e7d9}.theme-dubai{--accent:#46685e;--soft:#e5e2d6}
+.public-portfolio .dubai .card-copy h2{font-family:Newsreader,Georgia,serif;font-weight:450;font-size:36px;line-height:1.1;letter-spacing:-.5px}
+@media(max-width:400px){.frame-visual{padding:22px 19px}.frame-prompt{font-size:10px}.wave{font-size:10px}.map-title strong{font-size:26px}.visual-caption{font-size:7px;letter-spacing:.8px}}
+.frame-visual{padding:18px 24px;gap:13px;flex-shrink:0}
+.frame-prompt{padding:10px;font-size:11px;min-height:38px}
+.film-strip>div{height:88px;flex-shrink:0}
+.orbit{top:31px;width:46px;height:46px;left:calc(50% - 23px)}
+.story-lines{top:35px;height:32px}.play-shape{top:35px;border-top-width:16px;border-bottom-width:16px;border-left-width:24px}
+@media(min-width:1100px){.public-portfolio .grid{grid-template-columns:repeat(6,minmax(0,1fr))}.public-portfolio .grid>.small{grid-column:span 2}.public-portfolio .grid>.frame,.public-portfolio .grid>.dubai{grid-column:span 3}}
+@media(min-width:761px) and (max-width:1099px){.public-portfolio .grid{grid-template-columns:repeat(2,minmax(0,1fr))}.public-portfolio .grid>.small:last-child:nth-child(odd){grid-column:1/-1}.frame-visual{gap:9px;padding-top:12px;padding-bottom:12px}.film-strip>div{height:76px}}

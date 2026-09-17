@@ -52,7 +52,7 @@
       "updates": [
         {
           "date": "2026-09-17",
-          "text": "Reviewed current technical and commercial stage and clarified the distinction between a hosted demo and a customer-ready service."
+          "text": "A prepared equipment quote can be reviewed in the public sample. The next step is a customer pilot with an approved catalogue and real team access."
         },
         {
           "date": "2026-09-09",
@@ -114,7 +114,7 @@
       "updates": [
         {
           "date": "2026-09-17",
-          "text": "Reviewed current technical and commercial stage and clarified the distinction between a hosted demo and a customer-ready service."
+          "text": "Arabic and English support, business knowledge and human handoff are implemented. Current channel acceptance and customer outcomes remain the focus."
         },
         {
           "date": "2026-09-04",
@@ -171,7 +171,7 @@
       "updates": [
         {
           "date": "2026-09-17",
-          "text": "Reviewed current technical and commercial stage and clarified the distinction between a hosted demo and a customer-ready service."
+          "text": "The leasing demo is available online. The next milestone is a real enquiry flowing through a verified API, viewing request and agent handoff."
         },
         {
           "date": "2026-09-04",
@@ -228,7 +228,7 @@
       "updates": [
         {
           "date": "2026-09-17",
-          "text": "Reviewed current technical and commercial stage and clarified the distinction between a hosted demo and a customer-ready service."
+          "text": "The tenancy preparation demo now has one canonical address. It keeps example packs in the browser; shared private team data is a future step."
         },
         {
           "date": "2026-09-04",
@@ -242,7 +242,7 @@
     {
       "slug": "frame",
       "name": "Frame",
-      "theme": "plain",
+      "theme": "frame",
       "category": "Video creation",
       "model": "B2C",
       "modelDescription": "Personal creator studio; commercial model under validation.",
@@ -258,7 +258,7 @@
         "Speak an idea.",
         "Shape a film."
       ],
-      "summary": "A conversational studio for researching ideas, developing scripts and coordinating a narrated short-video workflow.",
+      "summary": "Speak an idea. Develop the story, script and shots in one conversation, then review the film before you share it.",
       "problem": "Making a video means moving between research, scripting, visual generation, narration and editing. An upcoming creator needs a simpler way to direct that process and keep their preferences.",
       "features": [
         "Develop ideas and revise scripts through a saved conversation.",
@@ -284,7 +284,7 @@
       "updates": [
         {
           "date": "2026-09-17",
-          "text": "Added the creator-studio project with explicit production-validation gates."
+          "text": "Developing a conversation-led route from an idea to a short film. The next proof point is one complete, reviewed film with a reliable download."
         }
       ],
       "demoUrl": null,
@@ -294,7 +294,7 @@
     {
       "slug": "dubai-game",
       "name": "Dubai Game",
-      "theme": "plain",
+      "theme": "dubai",
       "category": "Game-world exploration",
       "model": "B2C",
       "modelDescription": "Game concept and preproduction; no commercial release.",
@@ -311,7 +311,7 @@
         "A Dubai world.",
         "An Emirati perspective."
       ],
-      "summary": "A game-world exploration combining researched visual development, Unreal prototype source and original environment-kit experiments.",
+      "summary": "A game world seen from an Emirati perspective. Familiar streets, local stories and a city worth exploring—starting with one playable slice.",
       "problem": "A Dubai setting needs local character, believable places and a coherent playable world. Attractive isolated images are not enough to establish that world or a game.",
       "features": [
         "Research Dubai locations and Emirati-led character direction.",
@@ -337,7 +337,7 @@
       "updates": [
         {
           "date": "2026-09-17",
-          "text": "Added the game-world exploration, clearly separated from a released or verified playable game."
+          "text": "Exploring a Dubai game world from an Emirati perspective. Art production is paused while visual direction is reviewed; a playable slice comes next."
         }
       ],
       "demoUrl": null,
@@ -346,5 +346,5 @@
     }
   ],
   "github": "https://github.com/Kbartawi",
-  "intro": "I’m Khaled, a founder in Dubai.\nI build practical products for busy teams."
+  "intro": "I’m Khaled, a founder in Dubai.\nI turn everyday friction into useful products."
 }
