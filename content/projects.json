@@ -63,8 +63,8 @@
           "text": "Opened the public sample without an email, booking or account."
         }
       ],
-      "demoUrl": "https://quote-operations.vercel.app/#qs-demo",
-      "demoLabel": "Watch the demo",
+      "demoUrl": "https://quote-operations.vercel.app/workspace?demo=review",
+      "demoLabel": "Try a sample quote",
       "technicalReadiness": "Working demo; authenticated customer AI and team acceptance remain pilot work.",
       "commercialReadiness": "Pilot preparation; customer outcomes and repeat use have not been validated.",
       "positioning": "AI-assisted equipment quotations, from customer request to reviewed offer.",
@@ -129,6 +129,16 @@
             "kind": "Product screenshot · Sample data"
           },
           {
+            "src": "/media/gallery/quote-request-source.webp",
+            "thumb": "/media/gallery/quote-request-source-thumb.webp",
+            "width": 1440,
+            "height": 1000,
+            "title": "Keep the request beside the work",
+            "caption": "The product’s request view keeps the original sample enquiry, customer details and equipment requirements together.",
+            "alt": "Quote Operations product interface showing a fictional equipment request and its source.",
+            "kind": "Product screenshot · Public demo"
+          },
+          {
             "src": "/media/gallery/quote-preparation.webp",
             "thumb": "/media/gallery/quote-preparation-thumb.webp",
             "width": 1440,
@@ -147,6 +157,16 @@
             "caption": "The quotation review keeps the draft and its remaining decisions visible to the sales team.",
             "alt": "Quote Operations quotation review interface with fictional sample equipment and prices.",
             "kind": "Product screenshot · Sample data"
+          },
+          {
+            "src": "/media/gallery/quote-price-evidence.webp",
+            "thumb": "/media/gallery/quote-price-evidence-thumb.webp",
+            "width": 1440,
+            "height": 1000,
+            "title": "See why a product was matched",
+            "caption": "Expanded match and price evidence makes the sample selection traceable before approval. Products and prices are fictional.",
+            "alt": "Quote Operations quotation screen with expanded sample product-match and price evidence.",
+            "kind": "Product screenshot · Public demo"
           },
           {
             "src": "/media/gallery/quote-document.webp",
@@ -269,9 +289,42 @@
         }
       ],
       "gallery": {
-        "heading": "A closer look at the experience.",
-        "description": "Public website captures showing Oris’s Arabic and English support direction, illustrated conversations and setup workflow.",
+        "heading": "Inside the support workspace.",
+        "description": "See the actual inbox, an Arabic conversation and the knowledge base, followed by the public website.",
         "items": [
+          {
+            "src": "/media/gallery/oris-product-inbox.webp",
+            "thumb": "/media/gallery/oris-product-inbox-thumb.webp",
+            "width": 1440,
+            "height": 900,
+            "title": "The support inbox",
+            "caption": "The support inbox brings conversations, channels and status into one place. The records and counts shown are fictional demo data.",
+            "alt": "Actual Oris product UI showing the support inbox with fictional conversations and status counts.",
+            "kind": "Product UI · Local demo",
+            "group": "product"
+          },
+          {
+            "src": "/media/gallery/oris-product-conversation.webp",
+            "thumb": "/media/gallery/oris-product-conversation-thumb.webp",
+            "width": 1440,
+            "height": 900,
+            "title": "An Arabic conversation, with context",
+            "caption": "An Arabic conversation sits beside its details and escalation controls. Messages, contact details and confidence values are local sample data.",
+            "alt": "Actual Oris product UI showing an Arabic sample conversation with details and escalation controls.",
+            "kind": "Product UI · Local demo",
+            "group": "product"
+          },
+          {
+            "src": "/media/gallery/oris-product-knowledge.webp",
+            "thumb": "/media/gallery/oris-product-knowledge-thumb.webp",
+            "width": 1440,
+            "height": 900,
+            "title": "The knowledge behind the answers",
+            "caption": "The knowledge-base interface brings upload controls and document status together. The sample records show the intended workflow.",
+            "alt": "Actual Oris knowledge-base product screen with upload controls and fictional document records.",
+            "kind": "Product UI · Local demo",
+            "group": "product"
+          },
           {
             "src": "/media/gallery/oris-hero.webp",
             "thumb": "/media/gallery/oris-hero-thumb.webp",
@@ -280,7 +333,8 @@
             "title": "Arabic-first customer experience",
             "caption": "The landing page introduces support that moves naturally between Arabic and English.",
             "alt": "Oris public website introducing Arabic and English customer support.",
-            "kind": "Public website screenshot"
+            "kind": "Public website screenshot",
+            "group": "website"
           },
           {
             "src": "/media/gallery/oris-channels.webp",
@@ -290,7 +344,8 @@
             "title": "An Arabic support conversation",
             "caption": "An illustrated WhatsApp exchange shows the intended feel of a helpful, contextual reply.",
             "alt": "Oris website sample WhatsApp conversation in Arabic.",
-            "kind": "Public website screenshot"
+            "kind": "Public website screenshot",
+            "group": "website"
           },
           {
             "src": "/media/gallery/oris-workflow.webp",
@@ -300,7 +355,22 @@
             "title": "Connect, configure, go live",
             "caption": "The public workflow explains channels, agent procedures and replies through sample interface illustrations.",
             "alt": "Oris website illustrations of channel setup, procedures and an Arabic reply.",
-            "kind": "Public website screenshot"
+            "kind": "Public website screenshot",
+            "group": "website"
+          }
+        ],
+        "groups": [
+          {
+            "id": "product",
+            "title": "Inside the product",
+            "layout": "product",
+            "description": "Actual application screens rendered locally with fictional conversations and document records."
+          },
+          {
+            "id": "website",
+            "title": "The public website",
+            "layout": "product",
+            "description": "Website and sample walkthrough captures introduce the product to prospective users."
           }
         ]
       }
@@ -412,9 +482,42 @@
         }
       ],
       "gallery": {
-        "heading": "A conversation, with a next step.",
-        "description": "Public website and seed-data walkthrough captures showing Reem, enquiry qualification and the handoff to a leasing team. Conversations and records are samples.",
+        "heading": "Inside the leasing workspace.",
+        "description": "Explore the real product interface for leads, conversations and viewings, followed by the public website.",
         "items": [
+          {
+            "src": "/media/gallery/manzl-product-pipeline.webp",
+            "thumb": "/media/gallery/manzl-product-pipeline-thumb.webp",
+            "width": 1440,
+            "height": 1000,
+            "title": "The leasing pipeline",
+            "caption": "The actual dashboard tracks enquiries and stages. The 30 leads, response times and qualification metrics belong to the fictional seed dataset.",
+            "alt": "Actual Manzl product dashboard with fictional leasing leads, qualification stages and sample metrics.",
+            "kind": "Product UI · Local demo",
+            "group": "product"
+          },
+          {
+            "src": "/media/gallery/manzl-product-conversation.webp",
+            "thumb": "/media/gallery/manzl-product-conversation-thumb.webp",
+            "width": 1440,
+            "height": 1000,
+            "title": "A conversation becomes a brief",
+            "caption": "Reem’s conversation appears alongside collected budget, area and bedroom requirements in the sample lead record.",
+            "alt": "Actual Manzl product UI showing a fictional qualification conversation and budget and area details.",
+            "kind": "Product UI · Local demo",
+            "group": "product"
+          },
+          {
+            "src": "/media/gallery/manzl-product-calendar.webp",
+            "thumb": "/media/gallery/manzl-product-calendar-thumb.webp",
+            "width": 1440,
+            "height": 1000,
+            "title": "A week of viewing slots",
+            "caption": "The calendar shows viewing slots, capacity and availability from the local seed dataset. It is sample inventory, not a live external calendar.",
+            "alt": "Actual Manzl product calendar showing fictional property viewing slots and sample capacity.",
+            "kind": "Product UI · Local demo",
+            "group": "product"
+          },
           {
             "src": "/media/gallery/manzl-hero.webp",
             "thumb": "/media/gallery/manzl-hero-thumb.webp",
@@ -423,7 +526,8 @@
             "title": "Meet Reem",
             "caption": "A sample enquiry switches between Arabic and English in the website’s introduction to the leasing assistant.",
             "alt": "Manzl public website showing Reem and a sample bilingual leasing enquiry.",
-            "kind": "Public website screenshot"
+            "kind": "Public website screenshot",
+            "group": "website"
           },
           {
             "src": "/media/gallery/manzl-handoff-preview.webp",
@@ -433,7 +537,8 @@
             "title": "From chat to a useful handoff",
             "caption": "The website’s sample lead summary brings budget, area, move-in timing and cheque preferences together.",
             "alt": "Manzl website illustration of a sample lead handoff with budget, area and timing.",
-            "kind": "Public website screenshot"
+            "kind": "Public website screenshot",
+            "group": "website"
           },
           {
             "src": "/media/gallery/manzl-walkthrough.webp",
@@ -443,7 +548,22 @@
             "title": "A sample handoff, in context",
             "caption": "The public walkthrough shows Daniel’s seeded enquiry, the collected context and the next action for the team.",
             "alt": "Manzl public demo walkthrough with the fictional Daniel Carter lead summary and next action.",
-            "kind": "Demo walkthrough · Sample data"
+            "kind": "Demo walkthrough · Sample data",
+            "group": "website"
+          }
+        ],
+        "groups": [
+          {
+            "id": "product",
+            "title": "Inside the product",
+            "layout": "product",
+            "description": "Actual dashboard, conversation and calendar screens from the local prototype’s fictional seed dataset."
+          },
+          {
+            "id": "website",
+            "title": "The public website",
+            "layout": "product",
+            "description": "Website and sample walkthrough captures introduce the product to prospective users."
           }
         ]
       }
@@ -501,7 +621,7 @@
           "text": "Added a readiness desk, suggested owners and a rent schedule planner."
         }
       ],
-      "demoUrl": null,
+      "demoUrl": "https://aqd-gray.vercel.app/demo",
       "technicalReadiness": "Interactive tenancy-pack demo; private accounts, shared storage and team sync are not implemented.",
       "commercialReadiness": "Team offer proposed; no checkout or validated customer outcomes.",
       "cardAudience": "Dubai leasing teams",
@@ -556,7 +676,7 @@
       ],
       "gallery": {
         "heading": "The details, brought together.",
-        "description": "Actual public demo screens with fictional sample data: property details, a cheque schedule and the preparation file. Captured from the browser-only demo.",
+        "description": "Five actual demo screens show the preparation flow: property, people, lease numbers, cheques and the file. All sample data stays in the browser.",
         "items": [
           {
             "src": "/media/gallery/aqd-flat.webp",
@@ -567,6 +687,26 @@
             "caption": "The sample pack keeps property and broker details together before the next handoff.",
             "alt": "Aqd public demo showing fictional Marina Gate property and broker details.",
             "kind": "Product screenshot · Sample data"
+          },
+          {
+            "src": "/media/gallery/aqd-parties.webp",
+            "thumb": "/media/gallery/aqd-parties-thumb.webp",
+            "width": 1440,
+            "height": 1000,
+            "title": "The people on the pack",
+            "caption": "The sample pack brings the tenant, landlord and identity details into the same workflow.",
+            "alt": "Aqd product demo displaying fictional tenant and landlord information.",
+            "kind": "Product screenshot · Public demo"
+          },
+          {
+            "src": "/media/gallery/aqd-lease.webp",
+            "thumb": "/media/gallery/aqd-lease-thumb.webp",
+            "width": 1440,
+            "height": 1000,
+            "title": "Make the numbers explicit",
+            "caption": "Rent, term and deposit are recorded together in the actual preparation interface. All values belong to the fictional demo.",
+            "alt": "Aqd demo showing sample rent, lease term and deposit fields.",
+            "kind": "Product screenshot · Public demo"
           },
           {
             "src": "/media/gallery/aqd-cheques.webp",
@@ -589,7 +729,8 @@
             "kind": "Product screenshot · Sample data"
           }
         ]
-      }
+      },
+      "demoLabel": "Explore product demo"
     },
     {
       "slug": "frame",
@@ -628,10 +769,10 @@
         "Verify reliable hosted operation and recovery",
         "Test usable video and thumbnail delivery on a phone"
       ],
-      "website": null,
+      "website": "https://frame-studio-amber.vercel.app/",
       "image": null,
       "imageAlt": "",
-      "demoNote": "Personal prototype under active development. Production tests and a ready deployment do not establish a finished film or reliable phone delivery. No public creation demo is offered here yet.",
+      "demoNote": "The public studio uses built-in sample data. Its displayed scores, prices and media are fixtures. The screenshots demonstrate the product interface; the coastal film stills are separate portfolio concepts.",
       "updatedAt": "2026-09-17",
       "updates": [
         {
@@ -639,8 +780,8 @@
           "text": "Developing a conversation-led route from an idea to a short film. The next proof point is one complete, reviewed film with a reliable download."
         }
       ],
-      "demoUrl": null,
-      "technicalReadiness": "Conversation and metered production prototype; live film completion and hosted operation are under validation.",
+      "demoUrl": "https://frame-studio-amber.vercel.app/studio",
+      "technicalReadiness": "Hosted interactive studio sample is available; live provider generation and a completed production film still require acceptance.",
       "commercialReadiness": "Personal use first; acceptance, repeat use and production economics are unvalidated.",
       "cardAudience": "Creators, brands and storytellers",
       "cardStage": "Prototype · In testing",
@@ -669,7 +810,7 @@
         {
           "label": "Product workflow",
           "status": "passed",
-          "detail": "Conversation, structured planning and the metered production workflow are implemented in the prototype."
+          "detail": "The hosted sample supports a brief, three idea choices and a five-shot script review in the actual studio interface. It uses fixtures, not live provider generation."
         },
         {
           "label": "Verification",
@@ -679,7 +820,7 @@
         {
           "label": "Hosting and data",
           "status": "open",
-          "detail": "Python and SQLite are the documented local runtime. The hosted address failed its last recorded health check; phone access and reliable recovery need verification."
+          "detail": "Hosted /studio returned HTTP200 on 17 September and its built-in sample workflow was exercised. Live generation, persistence and production deployment acceptance remain open."
         },
         {
           "label": "Customer validation",
@@ -693,9 +834,42 @@
         }
       ],
       "gallery": {
-        "heading": "One story. Seven perspectives.",
-        "description": "A cinematic coastal drive, explored through wide shots, tracking shots and close detail. Illustrative film concepts for Frame’s creative direction.",
+        "heading": "From the first idea to the shot plan.",
+        "description": "The actual creator studio comes first. The cinematic concept collection follows below.",
         "items": [
+          {
+            "src": "/media/gallery/frame-studio-start.webp",
+            "thumb": "/media/gallery/frame-studio-start-thumb.webp",
+            "width": 1440,
+            "height": 1200,
+            "title": "Start a film",
+            "caption": "Real Frame studio interface. Choose a format and posting platform, then type or speak an idea. Hosted sample.",
+            "alt": "Frame studio with video format choices, posting platform and an idea composer",
+            "kind": "Product UI · Hosted sample",
+            "group": "product"
+          },
+          {
+            "src": "/media/gallery/frame-studio-ideas.webp",
+            "thumb": "/media/gallery/frame-studio-ideas-thumb.webp",
+            "width": 1440,
+            "height": 1200,
+            "title": "Discuss the idea",
+            "caption": "The conversation and idea-selection screen, shown with Frame’s built-in football sample. No live generation was submitted.",
+            "alt": "Frame conversation with three football video idea cards and a saved short-film brief",
+            "kind": "Product UI · Hosted sample",
+            "group": "product"
+          },
+          {
+            "src": "/media/gallery/frame-studio-script.webp",
+            "thumb": "/media/gallery/frame-studio-script-thumb.webp",
+            "width": 1440,
+            "height": 1200,
+            "title": "Review the shot plan",
+            "caption": "A 30-second sample script with five shots, editorial feedback and the edit plan. The displayed score and price are fixture values, not measured results or a new charge.",
+            "alt": "Frame script review with five timed scenes, narration, visual descriptions and caption and sound instructions",
+            "kind": "Product UI · Hosted sample",
+            "group": "product"
+          },
           {
             "src": "/media/frame-film-concept.webp",
             "thumb": "/media/gallery/frame-coastal-drive-thumb.webp",
@@ -704,7 +878,8 @@
             "title": "The open road",
             "caption": "The original coastal-driving concept: an orange sports car, turquoise water and warm evening light.",
             "alt": "Orange sports car following a coastal road beside teal water and sunlit cliffs.",
-            "kind": "AI film concept"
+            "kind": "AI film concept",
+            "group": "film-concepts"
           },
           {
             "src": "/media/gallery/frame-rear-tracking.webp",
@@ -714,7 +889,8 @@
             "title": "Stay with the story",
             "caption": "A closer rear tracking angle brings the car and the coastal road into the same frame.",
             "alt": "Close rear three-quarter view of an orange sports car on a coastal road at golden hour.",
-            "kind": "AI film concept"
+            "kind": "AI film concept",
+            "group": "film-concepts"
           },
           {
             "src": "/media/gallery/frame-bridge-wide.webp",
@@ -724,7 +900,8 @@
             "title": "A little more scale",
             "caption": "A stone viaduct, a small car and a wide sweep of sea turn the landscape into part of the story.",
             "alt": "Orange sports car crossing a stone coastal viaduct over turquoise surf.",
-            "kind": "AI film concept"
+            "kind": "AI film concept",
+            "group": "film-concepts"
           },
           {
             "src": "/media/gallery/frame-hairpin.webp",
@@ -734,7 +911,8 @@
             "title": "Follow the curve",
             "caption": "An elevated road bend changes the viewpoint while keeping the same warm light and coastal palette.",
             "alt": "Elevated view of an orange sports car rounding a sweeping coastal road bend.",
-            "kind": "AI film concept"
+            "kind": "AI film concept",
+            "group": "film-concepts"
           },
           {
             "src": "/media/gallery/frame-front-tracking.webp",
@@ -744,7 +922,8 @@
             "title": "Into the next scene",
             "caption": "A low front angle adds pace and a more immediate connection to the drive.",
             "alt": "Low front three-quarter view of an orange vintage sports car beside a rocky coast.",
-            "kind": "AI film concept"
+            "kind": "AI film concept",
+            "group": "film-concepts"
           },
           {
             "src": "/media/gallery/frame-detail.webp",
@@ -754,7 +933,8 @@
             "title": "The details carry it",
             "caption": "A close study of the wheel, orange bodywork and reflected light gives the sequence a quieter beat.",
             "alt": "Close-up of orange sports-car bodywork and rear wheel with softly focused ocean behind.",
-            "kind": "AI film concept"
+            "kind": "AI film concept",
+            "group": "film-concepts"
           },
           {
             "src": "/media/gallery/frame-ocean-establishing.webp",
@@ -764,10 +944,26 @@
             "title": "Room to breathe",
             "caption": "A final wide view returns to the cliffs, surf and road. These are AI-generated portfolio concepts, not completed Frame productions.",
             "alt": "Wide rocky coastline with teal waves and a small orange car on the cliffside road.",
-            "kind": "AI film concept"
+            "kind": "AI film concept",
+            "group": "film-concepts"
+          }
+        ],
+        "groups": [
+          {
+            "id": "product",
+            "title": "Inside the product",
+            "layout": "product",
+            "description": "Actual screens from the hosted studio’s built-in sample: a brief, idea choices and a timed shot plan."
+          },
+          {
+            "id": "film-concepts",
+            "title": "Cinematic direction",
+            "layout": "creative",
+            "description": "The matching coastal-driving collection remains here as AI-generated film concepts for Frame’s visual direction."
           }
         ]
-      }
+      },
+      "demoLabel": "Explore studio sample"
     },
     {
       "slug": "dubai-game",

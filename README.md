@@ -4,9 +4,11 @@
 
 **[Open the portfolio](https://kbartawi.github.io/)** · [GitHub profile](https://github.com/Kbartawi)
 
-A living collection of six projects: Quote Operations, Oris, Manzl, Aqd, Frame and Dubai Game. A consistent card system, persistent light/dark themes, detailed product pages and 28 gallery images. Project content comes from one catalogue.
+A living collection of six projects: Quote Operations, Oris, Manzl, Aqd, Frame and Dubai Game. A consistent card system, persistent light/dark themes, detailed product pages and 41 gallery images. Project content comes from one catalogue.
 
-Explore [Frame’s seven-shot film-concept gallery](https://kbartawi.github.io/projects/frame/#gallery) and [eight Dubai Game world studies](https://kbartawi.github.io/projects/dubai-game/#gallery). Every other project includes three or four real interface, demo or public website captures. Captions identify what each image represents.
+Explore [Frame’s actual creator studio](https://kbartawi.github.io/projects/frame/#gallery-product), [Oris’s support workspace](https://kbartawi.github.io/projects/oris/#gallery-product), [Manzl’s leasing dashboard](https://kbartawi.github.io/projects/manzl/#gallery-product), six Quote Operations screens and five Aqd screens. Actual product views appear first. Website captures, Frame’s seven film concepts and [eight Dubai Game world studies](https://kbartawi.github.io/projects/dubai-game/#gallery) remain clearly identified.
+
+The 20 product screenshots use fictional data: Frame, Quote Operations and Aqd were captured in their hosted demos; Oris and Manzl were captured from real application components in isolated local demos. They demonstrate interfaces, not live customer activity or production backend acceptance.
 
 ## Readiness — 17 September 2026
 
@@ -43,7 +45,7 @@ Repository: `Kbartawi/Kbartawi.github.io`. GitHub Pages uses **Deploy from a bra
 - **Oris:** deployed application; tenant-specific channels, voice and customer outcomes require current evidence.
 - **Manzl:** hosted website and seeded leasing prototype; hosted API/data, private access and live channel acceptance are separate gates.
 - **Aqd:** browser-based preparation demo; no private cloud storage, production team accounts, payment collection or government registration.
-- **Frame:** active creator-studio prototype; first completed production film and reliable hosted operation remain under validation. The profile does not send visitors to an unverified creation demo.
+- **Frame:** hosted interactive creator-studio sample verified on 17 September; its ideas, script, scores, prices and media are fixture data. Live provider generation and the first accepted production film remain under validation.
 - **Dubai Game:** preproduction, paused art review and prototype source; no verified playable consumer release or approved final art.
 
 Public samples use fictional data. Source code for the products is private. Never publish credentials, private customer records or unsupported revenue/traction claims in this repository.

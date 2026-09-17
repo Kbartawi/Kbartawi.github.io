@@ -6,6 +6,8 @@ The owner requested a full portfolio upgrade on 17 September 2026: all six proje
 
 The owner explicitly approved this direction on 17 September: “Amazing, amazing.” The next request is additive: more images for every project, especially matching Frame and Dubai Game shots. Preserve the approved cards and layout. Frame’s visual reference is the orange sports car, rocky coast, turquoise water and golden-hour light. Dubai’s references are the existing Downtown and Marina artwork. This approval concerns the portfolio presentation, not final game art or product production readiness.
 
+The owner then clarified: keep the website photographs, but add photographs of the products. For software, this means the real application interface—its inbox, dashboard, composer, forms and workflow. Put product screens first; keep marketing website captures and creative output studies in clearly named supporting collections. A website screenshot alone does not satisfy a request to show the product. Use actual app components and safe demo data; identify local samples and provider fixtures honestly. Never manufacture a product screen and call it a screenshot.
+
 ## Repeatable checklist
 
 - [ ] One consistent two-column project grid on desktop; one column on phone. Equal card structure and visual height at each breakpoint.
@@ -48,6 +50,12 @@ The owner explicitly approved this direction on 17 September: “Amazing, amazin
 | Browser errors | Passed | No browser exceptions or failed local asset requests during the 36-case run |
 
 Detailed local evidence: `Documents/Workspace Maintenance/portfolio-review/gallery-checks.json` and gallery screenshots. These checks cover the portfolio, not the product backends.
+
+### Product-screen addition — 17 September 2026
+
+Added 13 actual product screenshots, bringing the galleries to 41 images including 20 product views. Oris, Manzl and Frame now lead with an “Inside the product” collection. The website and film-concept collections remain below it. Quote Operations and Aqd show six and five actual workflow screens respectively. Dubai Game remains explicitly concept art; there is no verified playable build to capture.
+
+Verification passed after the change: 36 page/theme/viewport cases; all 41 full-size files decoded; correct product-first ordering and three-image collections; no overflow, missing images, browser exceptions or failed local assets. Viewer controls, keyboard/focus return, theme persistence, filters and no-JavaScript image links passed. Aqd’s transition timing was corrected before the selected captures were imported. Evidence: `Documents/Workspace Maintenance/portfolio-review/product-gallery-checks.json`.
 
 Reviewer category assessment (subjective): hierarchy 4/5, typography 4/5, color 4/5, spacing 4/5, components 4/5, responsiveness 4/5, motion 4/5, accessibility 4/5 subject to full audit, craft 4/5. Wider device and accessibility testing remain open.
 

@@ -48,6 +48,17 @@ for (const p of data.projects) {
   }
   if (!p.gallery || !Array.isArray(p.gallery.items) || p.gallery.items.length < 3) throw new Error('Missing gallery: ' + p.slug);
   for (const key of ['heading', 'description']) requireText(p.gallery[key], p.slug + '.gallery.' + key);
+  if (p.gallery.groups) {
+    if (!Array.isArray(p.gallery.groups) || !p.gallery.groups.length) throw new Error('Invalid gallery groups: ' + p.slug);
+    const groupIds = new Set();
+    for (const group of p.gallery.groups) {
+      if (!slugPattern.test(group.id) || groupIds.has(group.id) || !['product','creative'].includes(group.layout)) throw new Error('Invalid gallery group: ' + p.slug);
+      groupIds.add(group.id);
+      for (const key of ['title','description']) requireText(group[key], p.slug + '.gallery.group.' + key);
+      if (!p.gallery.items.some(shot => shot.group === group.id)) throw new Error('Empty gallery group: ' + p.slug);
+    }
+    if (p.gallery.items.some(shot => !groupIds.has(shot.group))) throw new Error('Unassigned gallery image: ' + p.slug);
+  }
   for (const shot of p.gallery.items) {
     for (const key of ['title', 'caption', 'alt', 'kind']) requireText(shot[key], p.slug + '.gallery.' + key);
     for (const key of ['src', 'thumb']) {
@@ -123,8 +134,13 @@ function profile(p,index){
 }
 
 function gallery(p) {
- const creative = ['frame', 'dubai-game'].includes(p.slug);
- return `<section class="gallery-section ${creative ? 'gallery-creative' : 'gallery-product'}" id="gallery" aria-labelledby="gallery-heading"><div class="section-bar"><div><p class="eyebrow">A CLOSER LOOK / ${String(p.gallery.items.length).padStart(2,'0')} IMAGES</p><h2 id="gallery-heading">${escape(p.gallery.heading)}</h2></div><p class="gallery-intro">${escape(p.gallery.description)}<span>Choose an image to explore it in full.</span></p></div><div class="gallery-grid">${p.gallery.items.map((shot,i) => `<figure class="gallery-shot"><a class="gallery-image" href="${escape(shot.src)}" data-gallery-item data-title="${escape(shot.title)}" data-caption="${escape(shot.caption)}" data-kind="${escape(shot.kind)}" aria-label="Open image ${i+1} of ${p.gallery.items.length}: ${escape(shot.title)}"><img src="${escape(shot.thumb)}" alt="${escape(shot.alt)}" width="${shot.width}" height="${shot.height}" loading="lazy" decoding="async"><span class="gallery-expand" aria-hidden="true">↗</span></a><figcaption><div class="gallery-meta"><span>${String(i+1).padStart(2,'0')} / ${escape(shot.kind)}</span></div><h3>${escape(shot.title)}</h3><p>${escape(shot.caption)}</p></figcaption></figure>`).join('')}</div></section>
+ const groups = p.gallery.groups || [{id:null,layout:['frame','dubai-game'].includes(p.slug)?'creative':'product'}];
+ const titleTag = p.gallery.groups ? 'h4' : 'h3';
+ const figures = group => p.gallery.items.map((shot,i) => {
+   if (group.id && shot.group !== group.id) return '';
+   return `<figure class="gallery-shot"><a class="gallery-image" href="${escape(shot.src)}" data-gallery-item data-title="${escape(shot.title)}" data-caption="${escape(shot.caption)}" data-kind="${escape(shot.kind)}" aria-label="Open image ${i+1} of ${p.gallery.items.length}: ${escape(shot.title)}"><img src="${escape(shot.thumb)}" alt="${escape(shot.alt)}" width="${shot.width}" height="${shot.height}" loading="lazy" decoding="async"><span class="gallery-expand" aria-hidden="true">↗</span></a><figcaption><div class="gallery-meta"><span>${String(i+1).padStart(2,'0')} / ${escape(shot.kind)}</span></div><${titleTag}>${escape(shot.title)}</${titleTag}><p>${escape(shot.caption)}</p></figcaption></figure>`;
+ }).join('');
+ return `<section class="gallery-section" id="gallery" aria-labelledby="gallery-heading"><div class="section-bar"><div><p class="eyebrow">A CLOSER LOOK / ${String(p.gallery.items.length).padStart(2,'0')} IMAGES</p><h2 id="gallery-heading">${escape(p.gallery.heading)}</h2></div><p class="gallery-intro">${escape(p.gallery.description)}<span>Choose an image to explore it in full.</span></p></div>${groups.map(group => `<section class="gallery-group gallery-${group.layout}"${group.id ? ` id="gallery-${escape(group.id)}" aria-labelledby="gallery-title-${escape(group.id)}"` : ' aria-label="Project images"'}>${group.id ? `<div class="gallery-group-heading"><h3 id="gallery-title-${escape(group.id)}">${escape(group.title)}</h3><p>${escape(group.description)}</p></div>` : ''}<div class="gallery-grid">${figures(group)}</div></section>`).join('')}</section>
  <dialog class="gallery-viewer" id="gallery-viewer" aria-labelledby="viewer-title" aria-describedby="viewer-caption"><div class="viewer-toolbar"><span class="viewer-kind"></span><button class="viewer-close" type="button" aria-label="Close image viewer" autofocus>Close <span aria-hidden="true">×</span></button></div><div class="viewer-stage"><img class="viewer-image" alt=""><p class="viewer-error" hidden>That image could not load. <a class="viewer-retry" href="#">Open the image directly ↗</a></p></div><div class="viewer-details"><div class="viewer-caption"><h2 id="viewer-title"></h2><p id="viewer-caption"></p></div><div class="viewer-controls"><button type="button" class="viewer-previous" aria-label="Previous image">←</button><span class="viewer-counter" aria-live="polite" aria-atomic="true"></span><button type="button" class="viewer-next" aria-label="Next image">→</button><a class="viewer-original" target="_blank" rel="noopener noreferrer">Full resolution ↗</a></div></div></dialog>`;
 }
 

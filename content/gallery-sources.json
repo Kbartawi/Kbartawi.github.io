@@ -214,6 +214,148 @@
       "classification": "actual app screenshot / fictional demo data",
       "src": "/media/gallery/aqd-file.webp",
       "thumb": "/media/gallery/aqd-file-thumb.webp"
+    },
+    {
+      "slug": "oris",
+      "id": "oris-product-inbox",
+      "source": "Oris-AI/app/dashboard/conversations/page.tsx",
+      "sourceCommit": "5a85a7a7f7e87c0f825cfa6367d6985f539b85ee",
+      "route": "/dashboard/conversations",
+      "capturedAt": "2026-09-17",
+      "classification": "Product UI · Local demo",
+      "sample": "Real existing product components with isolated sample identity and intercepted synthetic API fixtures.",
+      "src": "/media/gallery/oris-product-inbox.webp",
+      "thumb": "/media/gallery/oris-product-inbox-thumb.webp"
+    },
+    {
+      "slug": "oris",
+      "id": "oris-product-conversation",
+      "source": "Oris-AI/app/dashboard/conversations/[id]/page.tsx",
+      "sourceCommit": "5a85a7a7f7e87c0f825cfa6367d6985f539b85ee",
+      "route": "/dashboard/conversations/sample-1",
+      "capturedAt": "2026-09-17",
+      "classification": "Product UI · Local demo",
+      "sample": "Real existing product components with isolated sample identity and intercepted synthetic API fixtures.",
+      "src": "/media/gallery/oris-product-conversation.webp",
+      "thumb": "/media/gallery/oris-product-conversation-thumb.webp"
+    },
+    {
+      "slug": "oris",
+      "id": "oris-product-knowledge",
+      "source": "Oris-AI/app/dashboard/documents/page.tsx",
+      "sourceCommit": "5a85a7a7f7e87c0f825cfa6367d6985f539b85ee",
+      "route": "/dashboard/documents",
+      "capturedAt": "2026-09-17",
+      "classification": "Product UI · Local demo",
+      "sample": "Real existing product components with isolated sample identity and intercepted synthetic API fixtures.",
+      "src": "/media/gallery/oris-product-knowledge.webp",
+      "thumb": "/media/gallery/oris-product-knowledge-thumb.webp"
+    },
+    {
+      "slug": "frame",
+      "id": "frame-studio-start",
+      "source": "https://frame-studio-amber.vercel.app/studio",
+      "sourceCommit": "34f73aaef0ff0b9e2964f002fc7c6b22b40e8a93",
+      "capturedAt": "2026-09-17",
+      "classification": "Product UI · Hosted sample",
+      "sample": "Same production studio interface using the repository’s browser-only sample adapter; no live AI/provider generation. Displayed scores and costs belong to sample fixtures. No customer data.",
+      "src": "/media/gallery/frame-studio-start.webp",
+      "thumb": "/media/gallery/frame-studio-start-thumb.webp"
+    },
+    {
+      "slug": "frame",
+      "id": "frame-studio-ideas",
+      "source": "https://frame-studio-amber.vercel.app/studio",
+      "sourceCommit": "34f73aaef0ff0b9e2964f002fc7c6b22b40e8a93",
+      "capturedAt": "2026-09-17",
+      "classification": "Product UI · Hosted sample",
+      "sample": "Same production studio interface using the repository’s browser-only sample adapter; no live AI/provider generation. Displayed scores and costs belong to sample fixtures. No customer data.",
+      "src": "/media/gallery/frame-studio-ideas.webp",
+      "thumb": "/media/gallery/frame-studio-ideas-thumb.webp"
+    },
+    {
+      "slug": "frame",
+      "id": "frame-studio-script",
+      "source": "https://frame-studio-amber.vercel.app/studio",
+      "sourceCommit": "34f73aaef0ff0b9e2964f002fc7c6b22b40e8a93",
+      "capturedAt": "2026-09-17",
+      "classification": "Product UI · Hosted sample",
+      "sample": "Same production studio interface using the repository’s browser-only sample adapter; no live AI/provider generation. Displayed scores and costs belong to sample fixtures. No customer data.",
+      "src": "/media/gallery/frame-studio-script.webp",
+      "thumb": "/media/gallery/frame-studio-script-thumb.webp"
+    },
+    {
+      "slug": "manzl",
+      "id": "manzl-product-pipeline",
+      "source": "Manzl demo-hardening/en/dashboard",
+      "sourceCommit": "6df57f0bfa5ef94d67ebd589ad533fc36f31433d",
+      "capturedAt": "2026-09-17",
+      "classification": "Product UI · Local demo",
+      "sample": "Actual local seeded product UI; mock LLM and WhatsApp; seeded calendar; no real customers",
+      "src": "/media/gallery/manzl-product-pipeline.webp",
+      "thumb": "/media/gallery/manzl-product-pipeline-thumb.webp"
+    },
+    {
+      "slug": "manzl",
+      "id": "manzl-product-conversation",
+      "source": "Manzl demo-hardening/en/dashboard/leads/lead_005",
+      "sourceCommit": "6df57f0bfa5ef94d67ebd589ad533fc36f31433d",
+      "capturedAt": "2026-09-17",
+      "classification": "Product UI · Local demo",
+      "sample": "Actual local seeded product UI; mock LLM and WhatsApp; seeded calendar; no real customers",
+      "src": "/media/gallery/manzl-product-conversation.webp",
+      "thumb": "/media/gallery/manzl-product-conversation-thumb.webp"
+    },
+    {
+      "slug": "manzl",
+      "id": "manzl-product-calendar",
+      "source": "Manzl demo-hardening/en/dashboard/calendar",
+      "sourceCommit": "6df57f0bfa5ef94d67ebd589ad533fc36f31433d",
+      "capturedAt": "2026-09-17",
+      "classification": "Product UI · Local demo",
+      "sample": "Actual local seeded product UI; mock LLM and WhatsApp; seeded calendar; no real customers",
+      "src": "/media/gallery/manzl-product-calendar.webp",
+      "thumb": "/media/gallery/manzl-product-calendar-thumb.webp"
+    },
+    {
+      "slug": "quote-operations",
+      "id": "quote-request-source",
+      "source": "https://quote-operations.vercel.app/workspace?demo=review",
+      "capturedAt": "2026-09-17",
+      "classification": "Product screenshot · Public demo",
+      "sample": "Public browser-only demonstration with fictional data.",
+      "src": "/media/gallery/quote-request-source.webp",
+      "thumb": "/media/gallery/quote-request-source-thumb.webp"
+    },
+    {
+      "slug": "quote-operations",
+      "id": "quote-price-evidence",
+      "source": "https://quote-operations.vercel.app/workspace?demo=review",
+      "capturedAt": "2026-09-17",
+      "classification": "Product screenshot · Public demo",
+      "sample": "Public browser-only demonstration with fictional data.",
+      "src": "/media/gallery/quote-price-evidence.webp",
+      "thumb": "/media/gallery/quote-price-evidence-thumb.webp"
+    },
+    {
+      "slug": "aqd",
+      "id": "aqd-parties",
+      "source": "https://aqd-gray.vercel.app/demo",
+      "capturedAt": "2026-09-17",
+      "classification": "Product screenshot · Public demo",
+      "sample": "Public browser-only demonstration with fictional data.",
+      "src": "/media/gallery/aqd-parties.webp",
+      "thumb": "/media/gallery/aqd-parties-thumb.webp"
+    },
+    {
+      "slug": "aqd",
+      "id": "aqd-lease",
+      "source": "https://aqd-gray.vercel.app/demo",
+      "capturedAt": "2026-09-17",
+      "classification": "Product screenshot · Public demo",
+      "sample": "Public browser-only demonstration with fictional data.",
+      "src": "/media/gallery/aqd-lease.webp",
+      "thumb": "/media/gallery/aqd-lease-thumb.webp"
     }
   ]
 }

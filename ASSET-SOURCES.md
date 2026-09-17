@@ -13,7 +13,7 @@ WebP copies are resized/encoded for delivery; source artwork remains in its orig
 
 ## Expanded galleries — 17 September 2026
 
-The catalogue contains 28 images: Frame 7, Dubai Game 8, Quote Operations 4, Oris 3, Manzl 3 and Aqd 3. Full images retain their original proportions; the galleries use smaller WebP thumbnails and fetch larger versions when opened.
+The initial expansion contained 28 images. The product-screen addition below brings the catalogue to 41: Frame 10, Dubai Game 8, Quote Operations 6, Oris 6, Manzl 6 and Aqd 5. Full images retain their original proportions; the galleries use smaller WebP thumbnails and fetch larger versions when opened.
 
 Exact source-to-asset mapping: [content/gallery-sources.json](content/gallery-sources.json). Frame generation prompts and the approved reference: [content/frame-gallery-prompts.json](content/frame-gallery-prompts.json).
 
@@ -27,3 +27,17 @@ Exact source-to-asset mapping: [content/gallery-sources.json](content/gallery-so
 | Aqd | Newly captured interactive public demo at `https://aqd-gray.vercel.app/demo`: property details, cheques and preparation file. Fictional browser-only demo data. |
 
 All public-site captures were visually inspected on 17 September 2026. No live forms were submitted. Manzl’s public dashboard returned a server error during capture; it was excluded from the gallery. The working public walkthrough does not establish dashboard or backend readiness.
+
+## Actual product screens — 17 September 2026
+
+The owner clarified that product photographs should show the software itself. Thirteen additional actual product screenshots now lead the galleries; website imagery and film concepts stay in separate supporting collections. Quote Operations and Aqd already had seven product screens, bringing the total to 20.
+
+| Product | Added screenshots | Provenance |
+| --- | --- | --- |
+| Frame | Studio start, idea conversation and script/shot plan | Actual hosted `/studio` sample, HTTP200; source revision `34f73aa`. Built-in browser fixtures, no live provider generations. Scores and prices are illustrative sample values. |
+| Oris | Conversations inbox, Arabic conversation and knowledge base | Actual application components from `origin/main` revision `5a85a7a`. Isolated local snapshot with a sample identity adapter and intercepted synthetic API fixtures; no production credentials or customer data. |
+| Manzl | Lead pipeline, qualification conversation and viewing calendar | Actual Next/Hono/PGlite demo from `demo-hardening` revision `6df57f0`, isolated fresh database and fictional seed records. Mock LLM/WhatsApp; calendar is sample inventory. Dashboard metrics are seeded, not customer performance. |
+| Quote Operations | Original request/source and expanded match/price evidence | Actual hosted browser-only sample at `/workspace?demo=review`; fictional equipment, customer and price data. |
+| Aqd | Tenant/owner details and lease numbers | Actual hosted `/demo`; fictional browser-only sample. Captures made after panel transitions completed. |
+
+No product layout or styling was invented for these screenshots. Captures were inspected individually. Temporary demo authentication/fixtures were confined to isolated `/tmp` copies; canonical application source was not edited. Existing Dubai Game art remains concept work because no verified playable build is available.
