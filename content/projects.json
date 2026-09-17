@@ -788,7 +788,7 @@
       "updates": [
         {
           "date": "2026-09-18",
-          "text": "Completed a live local personal-photo film and verified playback/download. The result failed the founder’s creative and voice expectations. V2 adds voice review before video spending and starts a native iPhone editor for supplied photos/clips and real recorded voice; six native Simulator tests now pass, including real MP4 export, mixed media, audio and gallery persistence. Physical-device checks and TestFlight release remain open."
+          "text": "Completed a live local personal-photo film and verified playback/download. The result failed the founder’s creative and voice expectations. V2 adds voice review before video spending and starts a native iPhone editor for supplied photos/clips and real recorded voice; six native Simulator tests now pass, including real MP4 export, mixed media, audio and gallery persistence. OpenAI Marin/Cedar voice previews are now connected and mocked-tested; audio quality auditions are pending. Physical-device checks and TestFlight release remain open."
         },
         {
           "date": "2026-09-17",
