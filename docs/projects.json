@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "owner": "KB",
   "title": "Khaled / Product portfolio",
-  "description": "Khaled is a founder in Dubai building practical products for quotation, customer support and property teams.",
+  "description": "Khaled is a founder in Dubai building practical software for business teams and exploring creator tools and Emirati game worlds.",
   "featuredProject": "quote-operations",
-  "about": "I’m Khaled, a founder based in Dubai. I build practical products around the work between a conversation and a decision: preparing a quotation, helping a customer, qualifying an enquiry and getting a tenancy ready. This is a living collection of that work.",
+  "about": "I’m Khaled, a founder based in Dubai. I build practical software around the work between a conversation and a decision: preparing a quotation, helping a customer, qualifying an enquiry and getting a tenancy ready. I’m also exploring simpler tools for video creators and an Emirati-led game world. This is a living collection of work at different stages.",
   "projects": [
     {
       "slug": "quote-operations",
@@ -48,8 +48,12 @@
       "image": "/media/quote-review-current.png",
       "imageAlt": "Quote Operations equipment review showing requested items beside suggested products, quantities and prices. Fictional sample data.",
       "demoNote": "Watch real app clicks with local AI and fictional data, then try the prepared public sample without an account. Company catalogues, approved prices and team access still need setup. Email and WhatsApp are not connected automatically.",
-      "updatedAt": "2026-09-09",
+      "updatedAt": "2026-09-17",
       "updates": [
+        {
+          "date": "2026-09-17",
+          "text": "Reviewed current technical and commercial stage and clarified the distinction between a hosted demo and a customer-ready service."
+        },
         {
           "date": "2026-09-09",
           "text": "Simplified the request list and quotation review, made the website clearer for HVAC sales teams, and focused the demo on preparing the quote and checking the details."
@@ -60,7 +64,9 @@
         }
       ],
       "demoUrl": "https://quote-operations.vercel.app/#qs-demo",
-      "demoLabel": "Watch the demo"
+      "demoLabel": "Watch the demo",
+      "technicalReadiness": "Working demo; authenticated customer AI and team acceptance remain pilot work.",
+      "commercialReadiness": "Pilot preparation; customer outcomes and repeat use have not been validated."
     },
     {
       "slug": "oris",
@@ -77,7 +83,7 @@
         "English",
         "Arabic"
       ],
-      "stage": "Live product",
+      "stage": "Deployed app · Pilot validation",
       "headline": [
         "Every conversation,",
         "with context."
@@ -86,7 +92,7 @@
       "problem": "Customers switch languages and channels. Support teams need the business context and conversation history in one place so the next person can help without starting again.",
       "features": [
         "Connect business knowledge to Arabic and English customer conversations.",
-        "Support WhatsApp and web chat, with voice in beta.",
+        "WhatsApp and web-chat integrations are implemented; tenant setup and live acceptance need verification. Voice is in beta.",
         "Find conversations that need attention, search loaded records and open the original conversation.",
         "Prepare an internal handoff draft with the recorded context."
       ],
@@ -104,14 +110,20 @@
       "image": null,
       "imageAlt": "",
       "demoNote": "Visit the public product website for the current product offering.",
-      "updatedAt": "2026-09-05",
+      "updatedAt": "2026-09-17",
       "updates": [
+        {
+          "date": "2026-09-17",
+          "text": "Reviewed current technical and commercial stage and clarified the distinction between a hosted demo and a customer-ready service."
+        },
         {
           "date": "2026-09-04",
           "text": "Added a bilingual product experience and a focused conversation handoff desk."
         }
       ],
-      "demoUrl": null
+      "demoUrl": null,
+      "technicalReadiness": "Deployed application; tenant-specific messaging, voice and full acceptance need verification.",
+      "commercialReadiness": "Subscription offer published; paying-customer outcomes are not reported here."
     },
     {
       "slug": "manzl",
@@ -128,7 +140,7 @@
         "English",
         "Arabic"
       ],
-      "stage": "Working prototype",
+      "stage": "Hosted demo · Seed-data prototype",
       "headline": [
         "Meet Reem.",
         "Move things forward."
@@ -151,18 +163,24 @@
         "Configured channel and calendar connections",
         "Operational feedback from agents"
       ],
-      "website": null,
+      "website": "https://manzl.vercel.app",
       "image": "/media/manzl-apartment.webp",
       "imageAlt": "Illustrative apartment with warm natural materials",
-      "demoNote": "Working prototype. A public interactive demo is not available yet.",
-      "updatedAt": "2026-09-05",
+      "demoNote": "Public website demo with seeded examples. A production WhatsApp account, calendar, hosted API, access controls and customer acceptance are not established by this sample.",
+      "updatedAt": "2026-09-17",
       "updates": [
+        {
+          "date": "2026-09-17",
+          "text": "Reviewed current technical and commercial stage and clarified the distinction between a hosted demo and a customer-ready service."
+        },
         {
           "date": "2026-09-04",
           "text": "Added a leasing qualification workspace with missing details and copyable handoff briefs."
         }
       ],
-      "demoUrl": null
+      "demoUrl": null,
+      "technicalReadiness": "Bilingual seeded-data prototype; production access and channel acceptance remain open.",
+      "commercialReadiness": "Pilot offer proposed; no validated customer outcomes reported."
     },
     {
       "slug": "aqd",
@@ -179,7 +197,7 @@
         "English",
         "Arabic"
       ],
-      "stage": "Working demo",
+      "stage": "Hosted demo · Browser-only data",
       "headline": [
         "A clearer start.",
         "A calmer handoff."
@@ -202,18 +220,129 @@
         "Shared document workflow",
         "Feedback from a leasing team pilot"
       ],
-      "website": null,
+      "website": "https://aqd-gray.vercel.app",
       "image": null,
       "imageAlt": "",
-      "demoNote": "Working preparation demo; not publicly available yet. It does not verify identity or connect to government registration services.",
-      "updatedAt": "2026-09-05",
+      "demoNote": "Public preparation demo using browser storage and share hashes. Use fictional data. No production cloud document storage, identity verification, government registration or payment collection.",
+      "updatedAt": "2026-09-17",
       "updates": [
+        {
+          "date": "2026-09-17",
+          "text": "Reviewed current technical and commercial stage and clarified the distinction between a hosted demo and a customer-ready service."
+        },
         {
           "date": "2026-09-04",
           "text": "Added a readiness desk, suggested owners and a rent schedule planner."
         }
       ],
-      "demoUrl": null
+      "demoUrl": null,
+      "technicalReadiness": "Interactive tenancy-pack demo; private accounts, shared storage and team sync are not implemented.",
+      "commercialReadiness": "Team offer proposed; no checkout or validated customer outcomes."
+    },
+    {
+      "slug": "frame",
+      "name": "Frame",
+      "theme": "plain",
+      "category": "Video creation",
+      "model": "B2C",
+      "modelDescription": "Personal creator studio; commercial model under validation.",
+      "audience": "Creators who want to develop an idea into a short video",
+      "buyer": "Individual creators — initial intended audience",
+      "users": "Creators reviewing ideas, scripts and generated footage",
+      "market": "Initial personal use; broader audience under validation",
+      "languages": [
+        "English"
+      ],
+      "stage": "Active prototype · Production validation",
+      "headline": [
+        "Speak an idea.",
+        "Shape a film."
+      ],
+      "summary": "A conversational studio for researching ideas, developing scripts and coordinating a narrated short-video workflow.",
+      "problem": "Making a video means moving between research, scripting, visual generation, narration and editing. An upcoming creator needs a simpler way to direct that process and keep their preferences.",
+      "features": [
+        "Develop ideas and revise scripts through a saved conversation.",
+        "Use format-specific creative guidance to plan hooks, visual proof and complete payoffs.",
+        "Coordinate a metered video workflow with recorded jobs and explicit review.",
+        "Work toward a finished narrated, captioned film; a successful end-to-end production run remains a validation gate."
+      ],
+      "workflow": [
+        "Describe the idea",
+        "Develop the script and scenes",
+        "Generate, review and revise"
+      ],
+      "nextFocus": [
+        "Validate one complete film and the intended voice",
+        "Verify reliable hosted operation and recovery",
+        "Test usable video and thumbnail delivery on a phone"
+      ],
+      "website": null,
+      "image": null,
+      "imageAlt": "",
+      "demoNote": "Personal prototype under active development. Production tests and a ready deployment do not establish a finished film or reliable phone delivery. No public creation demo is offered here yet.",
+      "updatedAt": "2026-09-17",
+      "updates": [
+        {
+          "date": "2026-09-17",
+          "text": "Added the creator-studio project with explicit production-validation gates."
+        }
+      ],
+      "demoUrl": null,
+      "technicalReadiness": "Conversation and metered production prototype; live film completion and hosted operation are under validation.",
+      "commercialReadiness": "Personal use first; acceptance, repeat use and production economics are unvalidated."
+    },
+    {
+      "slug": "dubai-game",
+      "name": "Dubai Game",
+      "theme": "plain",
+      "category": "Game-world exploration",
+      "model": "B2C",
+      "modelDescription": "Game concept and preproduction; no commercial release.",
+      "audience": "Players interested in Dubai and Emirati-led fictional worlds",
+      "buyer": "Potential players; commercial model not validated",
+      "users": "Players — intended audience for a future playable build",
+      "market": "Dubai-inspired world; intended audience under development",
+      "languages": [
+        "English",
+        "Arabic — planned cultural context"
+      ],
+      "stage": "Preproduction · Art review paused",
+      "headline": [
+        "A Dubai world.",
+        "An Emirati perspective."
+      ],
+      "summary": "A game-world exploration combining researched visual development, Unreal prototype source and original environment-kit experiments.",
+      "problem": "A Dubai setting needs local character, believable places and a coherent playable world. Attractive isolated images are not enough to establish that world or a game.",
+      "features": [
+        "Research Dubai locations and Emirati-led character direction.",
+        "Explore cinematic concept art with explicit cultural and quality review.",
+        "Develop Unreal gameplay prototype source and mission-rule tests.",
+        "Experiment with original Blender environment assets; current test assets are not approved final art."
+      ],
+      "workflow": [
+        "Research the world",
+        "Prototype its systems",
+        "Review culture, quality and playability"
+      ],
+      "nextFocus": [
+        "Resolve the art direction before resuming production",
+        "Verify an Unreal build and actual gameplay",
+        "Review the first complete scene with intended players"
+      ],
+      "website": null,
+      "image": null,
+      "imageAlt": "",
+      "demoNote": "Preproduction research and source prototype. No verified playable consumer build or user-approved final art. The image sprint is paused for quality review.",
+      "updatedAt": "2026-09-17",
+      "updates": [
+        {
+          "date": "2026-09-17",
+          "text": "Added the game-world exploration, clearly separated from a released or verified playable game."
+        }
+      ],
+      "demoUrl": null,
+      "technicalReadiness": "Research, prototype source and geometry checks; an editor/playable build remains unverified.",
+      "commercialReadiness": "Concept stage; no release, traction or monetization validation."
     }
   ],
   "github": "https://github.com/Kbartawi",

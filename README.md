@@ -1,30 +1,43 @@
 # Khaled / Product portfolio
 
-
-
 ![Portfolio preview](docs/media/portfolio.png)
 
-Canonical public home: **[kbartawi.github.io](https://kbartawi.github.io/)**.
+**[Open the portfolio](https://kbartawi.github.io/)** · [GitHub profile](https://github.com/Kbartawi)
 
-## Edit and build
+A living collection of six projects: Quote Operations, Oris, Manzl, Aqd, Frame and Dubai Game. Keep the existing typography, layout and visual style; project content comes from one catalogue.
+
+## Readiness — 17 September 2026
+
+| Area | Current state |
+| --- | --- |
+| Technical | Static portfolio with validated JSON content and generated project profiles. Built with Node.js; served by GitHub Pages. A working portfolio is not proof that each linked app is production-ready. |
+| Commercial | Founder portfolio, not a paid service. Individual project pages distinguish prototypes, pilot preparation and unvalidated commercial outcomes. |
+| Hosting / data | [kbartawi.github.io](https://kbartawi.github.io/), GitHub Pages `main` → `/docs`. No Vercel or Supabase dependency is needed. Public content only. |
+| Next gate | Keep project stages, public links and evidence current; review the published pages after each content change. |
+
+## Edit, build and check
 
 Requires Node.js 20 or newer; there are no package dependencies.
 
-1. Edit `content/projects.json` for copy, stages, updates and public links.
+1. Edit `content/projects.json` for copy, readiness, updates and public links.
 2. Run `npm run build`.
 3. Preview with `python3 -m http.server 4177 --directory docs` and open `http://localhost:4177`.
-4. Commit source and generated `docs/` together.
+4. Check all six project pages and their links. Preserve honest demo/production distinctions.
+5. Commit source and generated `docs/` together.
 
-The build writes the homepage, four project profiles, sitemap, metadata and a 404 page into `docs/`. Shared fonts, CSS and selected visual assets also live there. `docs/.nojekyll` ensures GitHub Pages serves the static files directly. Set `PORTFOLIO_SITE_URL` when intentionally moving to another origin.
+The build writes the homepage, six project profiles, sitemap, metadata and 404 page. Shared fonts, CSS and selected visual assets remain in `docs/`. `docs/.nojekyll` allows GitHub Pages to serve the files directly. Use `PORTFOLIO_SITE_URL` only when intentionally moving the site origin.
 
 ## Publish
 
-Use the public repository `Kbartawi/Kbartawi.github.io`. In Settings → Pages, select **Deploy from a branch**, branch **main**, folder **/docs**. The personal GitHub profile can link to this home once publication is verified.
+Repository: `Kbartawi/Kbartawi.github.io`. GitHub Pages uses **Deploy from a branch**, **main**, **/docs**. Verify the Pages run and public response after pushing. Update the separate `Kbartawi/Kbartawi` profile README when the featured projects change.
 
-Quote Operations focuses on preparing HVAC equipment quotes with less manual copying. Its profile shows the current review screenshot and links to the website, narrated app demonstration and prepared public sample. The copy distinguishes the local AI recording from the public sample and keeps company catalogue, prices and team setup explicit. Oris links to its public product website. Manzl and Aqd have profiles without demo buttons because their demos are not publicly available. This repository contains only the curated public portfolio, not private product applications or review workspaces.
+## Project truth
 
-## Current Quote Operations update · 9 September 2026
+- **Quote Operations:** public fictional sample and local configured AI rehearsal; real customer catalogues, prices, team access and measured pilot results remain acceptance work.
+- **Oris:** deployed application; tenant-specific channels, voice and customer outcomes require current evidence.
+- **Manzl:** hosted website and seeded leasing prototype; hosted API/data, private access and live channel acceptance are separate gates.
+- **Aqd:** browser-based preparation demo; no private cloud storage, production team accounts, payment collection or government registration.
+- **Frame:** active creator-studio prototype; first completed production film and reliable hosted operation remain under validation. The profile does not send visitors to an unverified creation demo.
+- **Dubai Game:** preproduction, paused art review and prototype source; no verified playable consumer release or approved final art.
 
-The featured profile follows one simple workflow: add the request, check what needs a decision, then approve and download. The next pilot starts with one past request and its approved quotation. Public demonstrations use fictional data; company catalogues, approved selling prices, team access and measured customer results remain pilot work.
-
-Product: [quote-operations.vercel.app](https://quote-operations.vercel.app/) · [Watch the workflow](https://quote-operations.vercel.app/#qs-demo) · [Try the prepared sample](https://quote-operations.vercel.app/workspace?demo=review).
+Public samples use fictional data. Source code for the products is private. Never publish credentials, private customer records or unsupported revenue/traction claims in this repository.
