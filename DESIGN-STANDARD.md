@@ -30,6 +30,7 @@ Avoid motivational slogans, founder manifestos, rhyming sales lines and claims t
 - [ ] All work / Business / Creative filters expose pressed state and announce results without hiding keyboard focus unexpectedly.
 - [ ] Mobile controls are usable; project and section links work; focus is visible; reduced-motion preference is respected.
 - [ ] Run build and check. Review generated content, phone layouts, public deployment and source-of-truth asset captions.
+- [ ] GitHub light/dark portfolio previews must include all six complete cards. Capture the full rendered page before cropping to the project section; a viewport-only screenshot silently truncates the lower rows. Check image dimensions and visually inspect the final Frame/Dubai row, then refresh the profile image URLs when publishing.
 
 ## Verification — 17 September 2026
 
