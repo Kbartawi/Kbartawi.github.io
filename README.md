@@ -15,6 +15,10 @@ A living collection of six projects: Quote Operations, Oris, Manzl, Aqd, Frame a
 | Hosting / data | [kbartawi.github.io](https://kbartawi.github.io/), GitHub Pages `main` → `/docs`. No Vercel or Supabase dependency is needed. Public content only. |
 | Next gate | Keep project stages, public links and evidence current; review the published pages after each content change. |
 
+## Design and review
+
+Follow [the visual reference and checklist](DESIGN-STANDARD.md) before changing cards. Technical checks, visual review and owner approval are separate. Keep new cards in the existing system.
+
 ## Edit, build and check
 
 Requires Node.js 20 or newer; there are no package dependencies.

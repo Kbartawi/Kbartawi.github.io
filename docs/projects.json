@@ -123,7 +123,9 @@
       ],
       "demoUrl": null,
       "technicalReadiness": "Deployed application; tenant-specific messaging, voice and full acceptance need verification.",
-      "commercialReadiness": "Subscription offer published; paying-customer outcomes are not reported here."
+      "commercialReadiness": "Subscription offer published; paying-customer outcomes are not reported here.",
+      "cardAudience": "E-commerce and support teams",
+      "cardStage": "Pilot validation"
     },
     {
       "slug": "manzl",
@@ -180,7 +182,9 @@
       ],
       "demoUrl": null,
       "technicalReadiness": "Bilingual seeded-data prototype; production access and channel acceptance remain open.",
-      "commercialReadiness": "Pilot offer proposed; no validated customer outcomes reported."
+      "commercialReadiness": "Pilot offer proposed; no validated customer outcomes reported.",
+      "cardAudience": "UAE leasing teams",
+      "cardStage": "Working prototype"
     },
     {
       "slug": "aqd",
@@ -237,7 +241,9 @@
       ],
       "demoUrl": null,
       "technicalReadiness": "Interactive tenancy-pack demo; private accounts, shared storage and team sync are not implemented.",
-      "commercialReadiness": "Team offer proposed; no checkout or validated customer outcomes."
+      "commercialReadiness": "Team offer proposed; no checkout or validated customer outcomes.",
+      "cardAudience": "Dubai leasing teams",
+      "cardStage": "Browser-based demo"
     },
     {
       "slug": "frame",
@@ -258,7 +264,7 @@
         "Speak an idea.",
         "Shape a film."
       ],
-      "summary": "Speak an idea. Develop the story, script and shots in one conversation, then review the film before you share it.",
+      "summary": "Turn a spoken idea into a script, scenes and a short film to review. One conversation, from the first thought to the final cut.",
       "problem": "Making a video means moving between research, scripting, visual generation, narration and editing. An upcoming creator needs a simpler way to direct that process and keep their preferences.",
       "features": [
         "Develop ideas and revise scripts through a saved conversation.",
@@ -289,7 +295,9 @@
       ],
       "demoUrl": null,
       "technicalReadiness": "Conversation and metered production prototype; live film completion and hosted operation are under validation.",
-      "commercialReadiness": "Personal use first; acceptance, repeat use and production economics are unvalidated."
+      "commercialReadiness": "Personal use first; acceptance, repeat use and production economics are unvalidated.",
+      "cardAudience": "Independent video creators",
+      "cardStage": "Prototype · In testing"
     },
     {
       "slug": "dubai-game",
@@ -308,10 +316,10 @@
       ],
       "stage": "Preproduction · Art review paused",
       "headline": [
-        "A Dubai world.",
-        "An Emirati perspective."
+        "A familiar city.",
+        "A different story."
       ],
-      "summary": "A game world seen from an Emirati perspective. Familiar streets, local stories and a city worth exploring—starting with one playable slice.",
+      "summary": "An Emirati-led game-world exploration, starting with the places, details and everyday stories that make Dubai feel like home.",
       "problem": "A Dubai setting needs local character, believable places and a coherent playable world. Attractive isolated images are not enough to establish that world or a game.",
       "features": [
         "Research Dubai locations and Emirati-led character direction.",
@@ -330,8 +338,8 @@
         "Review the first complete scene with intended players"
       ],
       "website": null,
-      "image": null,
-      "imageAlt": "",
+      "image": "/media/dubai-courtyard-concept.png",
+      "imageAlt": "AI-generated architectural concept of a Dubai-inspired courtyard; not game footage or approved game art.",
       "demoNote": "Preproduction research and source prototype. No verified playable consumer build or user-approved final art. The image sprint is paused for quality review.",
       "updatedAt": "2026-09-17",
       "updates": [
@@ -342,7 +350,9 @@
       ],
       "demoUrl": null,
       "technicalReadiness": "Research, prototype source and geometry checks; an editor/playable build remains unverified.",
-      "commercialReadiness": "Concept stage; no release, traction or monetization validation."
+      "commercialReadiness": "Concept stage; no release, traction or monetization validation.",
+      "cardAudience": "Players exploring Emirati stories",
+      "cardStage": "Concept · Art review"
     }
   ],
   "github": "https://github.com/Kbartawi",
