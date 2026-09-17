@@ -788,7 +788,7 @@
       "updates": [
         {
           "date": "2026-09-18",
-          "text": "Completed a live local personal-photo film and verified playback/download. The result failed the founder’s creative and voice expectations. V2 adds voice review before video spending and starts a native iPhone editor for supplied photos/clips and real recorded voice; six native Simulator tests now pass, including real MP4 export, mixed media, audio and gallery persistence. OpenAI Marin/Cedar voice previews are now connected and mocked-tested; audio quality auditions are pending. Physical-device checks and TestFlight release remain open."
+          "text": "Frame V2 adds lower-cost Kling 3.0 Standard alongside Seedance 2.5, with explicit estimates and existing-job protection. The native iPhone editor now saves resumable drafts; typed title, leave/resume, local render and gallery save were checked through the interface. 174 mocked backend tests and 12 native Simulator tests pass. The earlier AI film was creatively rejected; OpenAI voice acceptance, paid Kling quality comparison, real-device checks and TestFlight remain open."
         },
         {
           "date": "2026-09-17",
@@ -796,7 +796,7 @@
         }
       ],
       "demoUrl": "https://frame-studio-amber.vercel.app/studio",
-      "technicalReadiness": "A local AI film completed with gallery playback and verified download. Its creative and voice quality were rejected. Native iPhone V2 compiles and passes six Simulator tests; photo import, local export and gallery save were checked through the UI. Real-device acceptance and TestFlight release remain pending.",
+      "technicalReadiness": "Native iPhone V2 supports resumable drafts and passes 12 Simulator tests. Photo import, typed title, leave/resume, export and gallery save were checked through the UI, including visible title pixels in the exported file. The web studio offers Kling and Seedance with spending/recovery checks; 174 mocked tests pass. Creative AI acceptance, real-device operation and TestFlight release remain pending.",
       "commercialReadiness": "Personal use first; acceptance, repeat use and production economics are unvalidated.",
       "cardAudience": "People making their first reels",
       "cardStage": "Prototype · In testing",
