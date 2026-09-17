@@ -1,39 +1,40 @@
-# Portfolio design standard
+# Portfolio design and release standard
 
-## Reference
+## Current direction
 
-Use commit `efdeb04` as the accepted visual reference for Oris, Manzl and Aqd. The owner specifically values the cards’ composition, useful content and consistency. Compare rendered output, not just CSS declarations. Preserve each product identity inside a shared editorial structure.
+The owner requested a full portfolio upgrade on 17 September 2026: all six projects, professional founder/pilot biography, light and dark themes, richer project pages, actual Dubai Game concept art and clear A-to-Z Frame positioning. This supersedes the earlier rule to keep a three-column grid with 221px art. The earlier reference still informs deliberate typography and meaningful visuals.
 
-## Card checklist
+## Repeatable checklist
 
-- [ ] Equal supporting-card widths at each breakpoint; no special larger slots for newly added projects.
-- [ ] Same order: brand/category, visual, two-line outcome, brief description, For/Stage, Meet action.
-- [ ] Visuals show one recognizable product artifact or place. Avoid generic symbol collections and tiny diagram labels.
-- [ ] Desktop art is 221px high; phone art 250px. Headers, titles and actions align within each row.
-- [ ] Keep warm paper, quiet borders, existing fonts and restrained product-specific accents.
-- [ ] Short audience and stage labels; detailed technical/commercial evidence lives on the project page.
-- [ ] Concept images and mockups are labelled. Never imply a working demo, approved game asset or measured outcome without evidence.
-- [ ] Review original and new cards together at 375px, 768px and 1280px. Check image cropping, text fit, focus and touch targets.
-- [ ] Build and link checks are technical evidence only. Aesthetic approval remains a separate decision.
+- [ ] One consistent two-column project grid on desktop; one column on phone. Equal card structure and visual height at each breakpoint.
+- [ ] Each card immediately explains the product with relevant imagery, outcome, audience and stage.
+- [ ] Frame clearly describes AI production from idea, script and visuals through voice, edit and export. Do not use an unrelated novelty-video idea as its identity.
+- [ ] Dubai Game uses the actual project’s Marina/Downtown/Burj assets. Do not substitute a newly invented old-town image. Label concept art and avoid gameplay claims.
+- [ ] Preserve product-specific branding within one system of spacing, navigation and controls.
+- [ ] Each project page includes overview, capabilities, audience, use cases, workflow, deliverables, technical/commercial readiness, verification gates, stack and next milestone.
+- [ ] Theme follows system preference initially; explicit user choice persists across pages and reloads. Both modes must be visually reviewed.
+- [ ] All work / Business / Creative filters expose pressed state and announce results without hiding keyboard focus unexpectedly.
+- [ ] Mobile controls are usable; project and section links work; focus is visible; reduced-motion preference is respected.
+- [ ] Run build and check. Review generated content, phone layouts, public deployment and source-of-truth asset captions.
 
-## Review — 17 September 2026
+## Verification — 17 September 2026
 
-| Check | Result | Evidence |
+| Area | Result | Evidence |
 | --- | --- | --- |
-| Historical comparison | Passed | Rendered efdeb04 locally; original three cards compared with new additions; independent source audit agreed on artifact specificity and equal geometry |
-| Shared geometry | Passed | All five supporting cards measured ~379px at 1280, 346px at 768, 331px at 375 |
-| Desktop alignment | Passed with small font variation | All art 221px, title starts 364px below card top; CTA positions within each row identical; facts vary by about 3px with brand typography |
-| Mobile layout | Passed | No horizontal page overflow at 375/768/1280; nav targets 44px high |
-| Images | Passed | Browser reported no broken images; Dubai image reviewed in crop and labelled AI-generated concept |
-| Content | Passed | Concrete Frame AC-leash draft, concise audience/stage; detailed uncertainty retained on profiles |
-| Keyboard focus | Passed | Visible focus ring observed on card; whole card is a semantic link |
-| Formal contrast audit | Not checked | No claim of a complete WCAG audit |
-| Owner aesthetic approval | Pending | Corrected design shown for review; do not describe as owner-approved |
+| Page/layout coverage | Passed | 7 pages × 3 viewport widths (375/768/1440) × 2 themes = 42 checks; no horizontal overflow or broken loaded images |
+| Theme | Passed | Real light/dark clicks, reload persistence and theme retained through every page |
+| Filters | Passed | Real clicks produce 6/4/2 cards and updated live-region text |
+| Console | Passed | No browser exceptions in UI run |
+| Visual inspection | Passed by reviewer | All six cards in light mode, both creative cards in both modes, Frame phone page reviewed from screenshots |
+| Contrast | Targeted checks passed | Light muted body 5.36:1; light status label corrected from 4.03:1 to >4.5:1; dark body 7.81:1 and dark status 7.71:1 |
+| Full accessibility audit | Not checked | Targeted checks do not constitute certification |
+| Product backend acceptance | Not checked here | Portfolio work does not prove the linked products’ runtime workflows |
+| Owner aesthetic approval | Pending | Never infer approval from automated checks |
 
-### Reviewer assessment (subjective, 1–5)
+Reviewer category assessment (subjective): hierarchy 4/5, typography 4/5, color 4/5, spacing 4/5, components 4/5, responsiveness 4/5, motion 4/5, accessibility 4/5 subject to full audit, craft 4/5. Remaining evidence gap is actual owner feedback and wider device/accessibility testing.
 
-Hierarchy 4; typography 4; color 4 (contrast audit still open); spacing 4; components 4; responsive 4; motion 4 (minimal, existing reduced-motion support); accessibility 4 (not certification); craft 4. Main remaining limitation: the final row has two cards in the original three-column grid. Equal dimensions are preserved deliberately instead of stretching those two cards. This is not a 5/5 or a guarantee of owner approval.
+## Inspiration and provenance
 
-## Asset provenance
+Studied [Higgsfield](https://higgsfield.ai/) for prominent cinematic media and direct creative-workflow communication. Its assets and brand were not copied. See [ASSET-SOURCES.md](ASSET-SOURCES.md) for the images used here.
 
-`docs/media/dubai-courtyard-concept.png` was generated for this portfolio on 17 September 2026 using the built-in image tool. It is an illustrative, fictional Dubai-inspired architectural mood study, not historical documentation, game footage or an approved production asset. The Frame panel is a code-rendered illustrative concept using the owner’s AC-leash idea, not a screenshot of an executed film job.
+Local UI evidence and screenshots: Documents/Workspace Maintenance/portfolio-review. The website screenshots are also used in the profile’s theme-aware preview.

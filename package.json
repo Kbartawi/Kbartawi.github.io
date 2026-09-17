@@ -4,7 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node scripts/build-portfolio.mjs"
+    "build": "node scripts/build-portfolio.mjs",
+    "check": "node --check scripts/build-portfolio.mjs && node --check docs/theme-init.js && node --check docs/portfolio.js && node scripts/verify-static.mjs"
   },
   "engines": {
     "node": ">=20"

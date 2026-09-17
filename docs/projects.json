@@ -23,10 +23,10 @@
       ],
       "stage": "Working demo · Pilot preparation",
       "headline": [
-        "Equipment quotes.",
-        "Less manual work."
+        "From request",
+        "to reviewed quote."
       ],
-      "summary": "Prepare equipment quotes without copying every line by hand. Check suggested products, available prices and missing details in one draft.",
+      "summary": "Read the equipment request, prepare a quotation and bring the decisions into one place. Sales teams check products, prices and missing details before a colleague approves the offer.",
       "problem": "A customer asks for a price. Someone still has to read the equipment list, copy the quantities, find the right products and check the selling prices. When details are missing, the quote goes back to a colleague for a decision.",
       "features": [
         "With AI set up, paste an English or Arabic request from email or WhatsApp, or upload one printed PDF equipment list. The app reads the lines and quantities.",
@@ -66,7 +66,54 @@
       "demoUrl": "https://quote-operations.vercel.app/#qs-demo",
       "demoLabel": "Watch the demo",
       "technicalReadiness": "Working demo; authenticated customer AI and team acceptance remain pilot work.",
-      "commercialReadiness": "Pilot preparation; customer outcomes and repeat use have not been validated."
+      "commercialReadiness": "Pilot preparation; customer outcomes and repeat use have not been validated.",
+      "positioning": "AI-assisted equipment quotations, from customer request to reviewed offer.",
+      "outcome": "Give the estimating team a clear draft to review and the customer a quotation the team can stand behind.",
+      "deliverables": [
+        "An equipment draft with quantities, suggested products and price sources",
+        "A review queue for missing information and technical or commercial decisions",
+        "A versioned quotation ready for approval, PDF export and customer handoff"
+      ],
+      "useCases": [
+        "Turn an English or Arabic email request into equipment lines for review",
+        "Compare a printed PDF equipment list with an approved product and selling-price catalogue",
+        "Revise a customer offer while preserving the earlier quotation and approval history"
+      ],
+      "stack": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Supabase",
+        "Vitest"
+      ],
+      "nextAction": "Run one representative customer request through separate estimator and approver accounts using reviewed selling prices.",
+      "readinessChecks": [
+        {
+          "label": "Product workflow",
+          "status": "passed",
+          "detail": "The public sample demonstrates request review, decisions and quotation output using fictional data."
+        },
+        {
+          "label": "Verification",
+          "status": "passed",
+          "detail": "The September release records automated and browser checks; GitHub CI passed on 9 September. This content update did not rerun the suite."
+        },
+        {
+          "label": "Hosting and data",
+          "status": "open",
+          "detail": "Vercel and the Supabase team API are configured. Named customer access, cross-device acceptance and backup recovery still need verification."
+        },
+        {
+          "label": "Customer validation",
+          "status": "not-checked",
+          "detail": "No verified paid adoption, repeat customer use or measured time-saving evidence is reported."
+        },
+        {
+          "label": "Release gate",
+          "status": "open",
+          "detail": "Confirm catalogue authority, selling prices, terms and the complete authenticated customer workflow."
+        }
+      ]
     },
     {
       "slug": "oris",
@@ -85,16 +132,16 @@
       ],
       "stage": "Deployed app · Pilot validation",
       "headline": [
-        "Every conversation,",
-        "with context."
+        "Your customers’ language.",
+        "Your business context."
       ],
-      "summary": "Arabic and English customer support built around business knowledge, useful answers and a clear handoff to a person.",
+      "summary": "Bring business knowledge into customer conversations and give the support team a clear handoff when a person is needed. Built around Arabic and English service across chat, messaging and voice.",
       "problem": "Customers switch languages and channels. Support teams need the business context and conversation history in one place so the next person can help without starting again.",
       "features": [
-        "Connect business knowledge to Arabic and English customer conversations.",
-        "WhatsApp and web-chat integrations are implemented; tenant setup and live acceptance need verification. Voice is in beta.",
-        "Find conversations that need attention, search loaded records and open the original conversation.",
-        "Prepare an internal handoff draft with the recorded context."
+        "Connect policies, FAQs and product knowledge to customer conversations.",
+        "Support Arabic and English with dialect-aware response planning.",
+        "Manage messaging and web-chat conversations through a shared support workspace.",
+        "Escalate questions that need human judgment and carry the context into the handoff."
       ],
       "workflow": [
         "Bring the business context",
@@ -125,7 +172,56 @@
       "technicalReadiness": "Deployed application; tenant-specific messaging, voice and full acceptance need verification.",
       "commercialReadiness": "Subscription offer published; paying-customer outcomes are not reported here.",
       "cardAudience": "E-commerce and support teams",
-      "cardStage": "Pilot validation"
+      "cardStage": "Pilot validation",
+      "positioning": "Arabic and English customer support grounded in the knowledge of your business.",
+      "outcome": "Help customers get useful answers while keeping the human support team informed and in control.",
+      "deliverables": [
+        "Customer replies informed by the business knowledge base",
+        "A conversation record with context for the support team",
+        "An escalation and handoff path when a conversation needs a person"
+      ],
+      "useCases": [
+        "Answer recurring delivery, returns and product-policy questions for an e-commerce brand",
+        "Support conversations that move between Arabic and English",
+        "Hand a difficult request to a human agent with the previous conversation and business context"
+      ],
+      "stack": [
+        "Next.js",
+        "TypeScript",
+        "Supabase",
+        "Clerk",
+        "Anthropic",
+        "Cohere",
+        "Twilio"
+      ],
+      "nextAction": "Verify one tenant’s live support conversation from incoming message through answer and human handoff.",
+      "readinessChecks": [
+        {
+          "label": "Product workflow",
+          "status": "passed",
+          "detail": "The application contains business-knowledge retrieval, conversation management, channel integrations and handoff functionality."
+        },
+        {
+          "label": "Verification",
+          "status": "passed",
+          "detail": "GitHub CI passed on 4 September. Current dialect quality, live channel delivery and voice acceptance were not retested in this review."
+        },
+        {
+          "label": "Hosting and data",
+          "status": "open",
+          "detail": "The app is deployed on Vercel with Supabase and Clerk. Verify the intended tenant configuration and recovery before customer operation."
+        },
+        {
+          "label": "Customer validation",
+          "status": "not-checked",
+          "detail": "Subscription pricing is published; paying-customer results and measured service improvements are not verified here."
+        },
+        {
+          "label": "Release gate",
+          "status": "open",
+          "detail": "Complete live tenant onboarding, channel acceptance and a documented pilot outcome."
+        }
+      ]
     },
     {
       "slug": "manzl",
@@ -145,9 +241,9 @@
       "stage": "Hosted demo · Seed-data prototype",
       "headline": [
         "Meet Reem.",
-        "Move things forward."
+        "Get the viewing moving."
       ],
-      "summary": "An AI leasing assistant that qualifies enquiries, proposes viewing slots and prepares a useful handoff for the human agent.",
+      "summary": "Reem brings the budget, area, move date and requirements together, proposes a viewing and gives the leasing agent a concise brief. Built for rental conversations in Arabic and English.",
       "problem": "Leasing enquiries arrive while agents are busy with viewings. Budget, area, move date and requirements get scattered across conversations, leaving the next agent to reconstruct the brief.",
       "features": [
         "Guide Arabic and English enquiries through the leasing qualification flow.",
@@ -184,7 +280,55 @@
       "technicalReadiness": "Bilingual seeded-data prototype; production access and channel acceptance remain open.",
       "commercialReadiness": "Pilot offer proposed; no validated customer outcomes reported.",
       "cardAudience": "UAE leasing teams",
-      "cardStage": "Working prototype"
+      "cardStage": "Working prototype",
+      "positioning": "A leasing assistant that takes an enquiry from first reply to viewing handoff.",
+      "outcome": "Give the next leasing agent a clear picture of the tenant and the next step toward a viewing.",
+      "deliverables": [
+        "A structured tenant brief with budget, area and move-in needs",
+        "A proposed viewing slot linked to the conversation",
+        "An agent handoff summary with the qualification and next action"
+      ],
+      "useCases": [
+        "Qualify a new rental enquiry while a leasing agent is out at viewings",
+        "Clarify budget and location preferences in an Arabic or English conversation",
+        "Pass a viewing-ready lead to the leasing desk without reconstructing the chat"
+      ],
+      "stack": [
+        "Next.js",
+        "Hono",
+        "TypeScript",
+        "PGlite",
+        "Drizzle",
+        "Vitest"
+      ],
+      "nextAction": "Validate one real enquiry-to-viewing workflow with a leasing team before committing to a live pilot.",
+      "readinessChecks": [
+        {
+          "label": "Product workflow",
+          "status": "passed",
+          "detail": "A seeded demonstration covers bilingual qualification, proposed viewing slots and agent handoff."
+        },
+        {
+          "label": "Verification",
+          "status": "open",
+          "detail": "Scripted conversation evaluations and API tests are present. Rerun the full verification suite before a pilot; a design workflow is not full-stack acceptance."
+        },
+        {
+          "label": "Hosting and data",
+          "status": "open",
+          "detail": "The website demo is hosted on Vercel. The local API uses Hono and PGlite; production API hosting, access controls and live channel configuration need validation."
+        },
+        {
+          "label": "Customer validation",
+          "status": "not-checked",
+          "detail": "A team pilot offer is proposed. No verified signed or paid pilot and no customer conversion results are reported."
+        },
+        {
+          "label": "Release gate",
+          "status": "open",
+          "detail": "Verify the WhatsApp account, calendar, hosted data and agent handoff with the intended leasing desk."
+        }
+      ]
     },
     {
       "slug": "aqd",
@@ -203,10 +347,10 @@
       ],
       "stage": "Hosted demo · Browser-only data",
       "headline": [
-        "A clearer start.",
-        "A calmer handoff."
+        "The tenant said yes.",
+        "Bring the rest together."
       ],
-      "summary": "A tenancy close pack that brings property details, documents, cheque planning and open items into one preparation flow.",
+      "summary": "Gather the property details, people, documents and payment schedule into one guided tenancy pack. See what is missing and prepare a clear file for the next handoff.",
       "problem": "After a tenant says yes, leasing teams still need to assemble documents, confirm details and agree the payment schedule. Those open items often remain scattered across WhatsApp threads.",
       "features": [
         "Prepare a tenancy pack through a guided workflow.",
@@ -243,16 +387,64 @@
       "technicalReadiness": "Interactive tenancy-pack demo; private accounts, shared storage and team sync are not implemented.",
       "commercialReadiness": "Team offer proposed; no checkout or validated customer outcomes.",
       "cardAudience": "Dubai leasing teams",
-      "cardStage": "Browser-based demo"
+      "cardStage": "Browser-based demo",
+      "positioning": "One tenancy close pack for the week between “yes” and registration.",
+      "outcome": "Help the leasing team see what is ready, what is missing and what needs to happen before registration.",
+      "deliverables": [
+        "A tenancy pack containing the property and rental details",
+        "A checklist of missing documents and unresolved items",
+        "A cheque schedule and a printable PDF for review"
+      ],
+      "useCases": [
+        "Prepare the close pack after a tenant agrees to rent a property",
+        "Check which identity and tenancy details are still missing before handoff",
+        "Review an annual rent schedule and share an example pack with a colleague"
+      ],
+      "stack": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "jsPDF",
+        "Browser storage"
+      ],
+      "nextAction": "Review the tenancy-pack workflow with one leasing team, then define secure access and document storage for a pilot.",
+      "readinessChecks": [
+        {
+          "label": "Product workflow",
+          "status": "passed",
+          "detail": "The interactive demo supports an editable pack, readiness gaps, rent planning and PDF output."
+        },
+        {
+          "label": "Verification",
+          "status": "open",
+          "detail": "Build and lint commands exist, but no automated test suite was found. Record the complete browser acceptance walk before a pilot."
+        },
+        {
+          "label": "Hosting and data",
+          "status": "open",
+          "detail": "The Vercel demo uses browser storage and share hashes. Private cloud documents, team accounts and synchronized data are not implemented."
+        },
+        {
+          "label": "Customer validation",
+          "status": "not-checked",
+          "detail": "A team subscription offer is proposed; there is no checkout or verified paid customer evidence."
+        },
+        {
+          "label": "Release gate",
+          "status": "open",
+          "detail": "Establish safe document storage, authorized sharing and a tested team workflow before using real tenancy files."
+        }
+      ]
     },
     {
       "slug": "frame",
       "name": "Frame",
       "theme": "frame",
-      "category": "Video creation",
+      "category": "AI video production",
       "model": "B2C",
-      "modelDescription": "Personal creator studio; commercial model under validation.",
-      "audience": "Creators who want to develop an idea into a short video",
+      "modelDescription": "AI video production for independent creators, from idea development to export.",
+      "audience": "Independent creators making explainers, cinematic shorts and product videos",
       "buyer": "Individual creators — initial intended audience",
       "users": "Creators reviewing ideas, scripts and generated footage",
       "market": "Initial personal use; broader audience under validation",
@@ -261,21 +453,21 @@
       ],
       "stage": "Active prototype · Production validation",
       "headline": [
-        "Speak an idea.",
-        "Shape a film."
+        "Your idea.",
+        "A finished video."
       ],
-      "summary": "Turn a spoken idea into a script, scenes and a short film to review. One conversation, from the first thought to the final cut.",
+      "summary": "An AI video studio from A to Z: develop the idea, write the script, create scenes, add voice and edit the final cut.",
       "problem": "Making a video means moving between research, scripting, visual generation, narration and editing. An upcoming creator needs a simpler way to direct that process and keep their preferences.",
       "features": [
-        "Develop ideas and revise scripts through a saved conversation.",
-        "Use format-specific creative guidance to plan hooks, visual proof and complete payoffs.",
-        "Coordinate a metered video workflow with recorded jobs and explicit review.",
-        "Work toward a finished narrated, captioned film; a successful end-to-end production run remains a validation gate."
+        "Start with a spoken or typed idea and develop it through a saved conversation.",
+        "Plan the hook, research, script and visual storytelling around the selected format.",
+        "Coordinate scene generation, voiceover, sound, captions and editing through one production workflow.",
+        "Review the film, request focused revisions and prepare the video and thumbnail for download."
       ],
       "workflow": [
-        "Describe the idea",
-        "Develop the script and scenes",
-        "Generate, review and revise"
+        "Describe and develop the idea",
+        "Approve the script and production direction",
+        "Generate, edit, review and export"
       ],
       "nextFocus": [
         "Validate one complete film and the intended voice",
@@ -296,8 +488,56 @@
       "demoUrl": null,
       "technicalReadiness": "Conversation and metered production prototype; live film completion and hosted operation are under validation.",
       "commercialReadiness": "Personal use first; acceptance, repeat use and production economics are unvalidated.",
-      "cardAudience": "Independent video creators",
-      "cardStage": "Prototype · In testing"
+      "cardAudience": "Creators, brands and storytellers",
+      "cardStage": "Prototype · In testing",
+      "positioning": "An AI video production studio, from the first idea to the finished export.",
+      "outcome": "Give a creator one place to direct the complete production and review the result before sharing it.",
+      "deliverables": [
+        "A researched idea, timed script and scene-by-scene production plan",
+        "Generated footage with a narration, sound and caption plan",
+        "An edited video export with a thumbnail and reviewable production history"
+      ],
+      "useCases": [
+        "Turn a spoken observation into a short explainer with a clear hook and payoff",
+        "Develop a cinematic short or product video without coordinating separate production tools",
+        "Ask for a targeted scene or script revision while preserving the rest of the film"
+      ],
+      "stack": [
+        "Python",
+        "SQLite",
+        "JavaScript",
+        "Higgsfield API",
+        "ElevenLabs",
+        "FFmpeg"
+      ],
+      "nextAction": "Complete one 30-second film, inspect the voice, visuals and captions, and verify that the finished video saves on an iPhone.",
+      "readinessChecks": [
+        {
+          "label": "Product workflow",
+          "status": "passed",
+          "detail": "Conversation, structured planning and the metered production workflow are implemented in the prototype."
+        },
+        {
+          "label": "Verification",
+          "status": "open",
+          "detail": "CI and provider-mocked tests are recorded. One complete live film with accepted visuals, narration and captions remains the key validation."
+        },
+        {
+          "label": "Hosting and data",
+          "status": "open",
+          "detail": "Python and SQLite are the documented local runtime. The hosted address failed its last recorded health check; phone access and reliable recovery need verification."
+        },
+        {
+          "label": "Customer validation",
+          "status": "not-checked",
+          "detail": "Personal use comes first. Real-user completion, repeat use and cost per accepted film are not yet validated."
+        },
+        {
+          "label": "Release gate",
+          "status": "open",
+          "detail": "Demonstrate a successful production, targeted revision, thumbnail and actual iPhone save before opening a public creation workflow."
+        }
+      ]
     },
     {
       "slug": "dubai-game",
@@ -316,16 +556,16 @@
       ],
       "stage": "Preproduction · Art review paused",
       "headline": [
-        "A familiar city.",
-        "A different story."
+        "Dubai as a world",
+        "you can step into."
       ],
-      "summary": "An Emirati-led game-world exploration, starting with the places, details and everyday stories that make Dubai feel like home.",
+      "summary": "Explore a cinematic Dubai through its neighbourhoods, landmarks and everyday stories. The project brings local cultural research, environment design and gameplay prototyping together into a city game concept.",
       "problem": "A Dubai setting needs local character, believable places and a coherent playable world. Attractive isolated images are not enough to establish that world or a game.",
       "features": [
-        "Research Dubai locations and Emirati-led character direction.",
-        "Explore cinematic concept art with explicit cultural and quality review.",
-        "Develop Unreal gameplay prototype source and mission-rule tests.",
-        "Experiment with original Blender environment assets; current test assets are not approved final art."
+        "Research the locations, cultural details and everyday stories that give Dubai its character.",
+        "Develop a coherent cinematic world through environment and character direction.",
+        "Prototype movement, missions, landmark photography and small encounters in Unreal.",
+        "Review environments for cultural authenticity, visual quality and the experience of playing them."
       ],
       "workflow": [
         "Research the world",
@@ -338,8 +578,8 @@
         "Review the first complete scene with intended players"
       ],
       "website": null,
-      "image": "/media/dubai-courtyard-concept.png",
-      "imageAlt": "AI-generated architectural concept of a Dubai-inspired courtyard; not game footage or approved game art.",
+      "image": "/media/dubai-downtown.webp",
+      "imageAlt": "Existing Dubai Game concept art: a blue-hour Downtown waterfront with the Burj Khalifa, people and cafe; AI-generated, not gameplay.",
       "demoNote": "Preproduction research and source prototype. No verified playable consumer build or user-approved final art. The image sprint is paused for quality review.",
       "updatedAt": "2026-09-17",
       "updates": [
@@ -352,7 +592,53 @@
       "technicalReadiness": "Research, prototype source and geometry checks; an editor/playable build remains unverified.",
       "commercialReadiness": "Concept stage; no release, traction or monetization validation.",
       "cardAudience": "Players exploring Emirati stories",
-      "cardStage": "Concept · Art review"
+      "cardStage": "Concept · Art review",
+      "positioning": "An Emirati-led city game concept built around the places and stories of Dubai.",
+      "outcome": "Build toward a playable Dubai that feels recognisable, culturally grounded and worth exploring.",
+      "deliverables": [
+        "A researched world direction with location and cultural references",
+        "A reviewed collection of cinematic environment concepts",
+        "A prototype mission and environment kit for developing the first playable scene"
+      ],
+      "useCases": [
+        "Explore a neighbourhood through a short character-led mission",
+        "Discover landmarks through a walking and photography objective",
+        "Test how local places, movement and encounters fit together in a playable city scene"
+      ],
+      "stack": [
+        "Unreal Engine",
+        "C++",
+        "Blender",
+        "Python"
+      ],
+      "nextAction": "Agree the visual direction, then compile and playtest one complete Unreal scene before expanding production.",
+      "readinessChecks": [
+        {
+          "label": "Product workflow",
+          "status": "open",
+          "detail": "World research, concept art, mission source and environment experiments exist. They do not yet form a verified playable build."
+        },
+        {
+          "label": "Verification",
+          "status": "passed",
+          "detail": "Engine-independent mission tests and geometry/export checks are recorded; Unreal compilation and editor playtesting remain unverified."
+        },
+        {
+          "label": "Hosting and data",
+          "status": "not-checked",
+          "detail": "A local Unreal/Blender project needs no web database at this stage. Distribution and large-asset storage are not yet selected."
+        },
+        {
+          "label": "Customer validation",
+          "status": "not-checked",
+          "detail": "No consumer release, player traction or monetization evidence is reported."
+        },
+        {
+          "label": "Release gate",
+          "status": "open",
+          "detail": "Resolve the paused art review and validate an enjoyable playable slice with intended players."
+        }
+      ]
     }
   ],
   "github": "https://github.com/Kbartawi",

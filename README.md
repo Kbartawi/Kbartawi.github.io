@@ -4,7 +4,7 @@
 
 **[Open the portfolio](https://kbartawi.github.io/)** · [GitHub profile](https://github.com/Kbartawi)
 
-A living collection of six projects: Quote Operations, Oris, Manzl, Aqd, Frame and Dubai Game. Keep the existing typography, layout and visual style; project content comes from one catalogue.
+A living collection of six projects: Quote Operations, Oris, Manzl, Aqd, Frame and Dubai Game. A consistent card system, persistent light/dark themes and detailed product pages. Project content comes from one catalogue.
 
 ## Readiness — 17 September 2026
 
@@ -21,12 +21,12 @@ Follow [the visual reference and checklist](DESIGN-STANDARD.md) before changing 
 
 ## Edit, build and check
 
-Requires Node.js 20 or newer; there are no package dependencies.
+Requires Node.js 20 or newer; build and static checks have no package dependencies.
 
 1. Edit `content/projects.json` for copy, readiness, updates and public links.
-2. Run `npm run build`.
+2. Run `npm run build` and `npm run check`.
 3. Preview with `python3 -m http.server 4177 --directory docs` and open `http://localhost:4177`.
-4. Check all six project pages and their links. Preserve honest demo/production distinctions.
+4. Check all six project pages in both themes at phone, tablet and desktop widths. Test theme persistence and project filters. Preserve honest demo/production distinctions.
 5. Commit source and generated `docs/` together.
 
 The build writes the homepage, six project profiles, sitemap, metadata and 404 page. Shared fonts, CSS and selected visual assets remain in `docs/`. `docs/.nojekyll` allows GitHub Pages to serve the files directly. Use `PORTFOLIO_SITE_URL` only when intentionally moving the site origin.

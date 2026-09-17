@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const out = resolve(root, 'docs');
-const styleVersion = createHash('sha256').update(await readFile(resolve(out, 'portfolio.css'))).digest('hex').slice(0, 10);
+const styleVersion = createHash('sha256').update(await readFile(resolve(out, 'portfolio.css'))).update(await readFile(resolve(out, 'portfolio.js'))).update(await readFile(resolve(out, 'theme-init.js'))).digest('hex').slice(0, 10);
 const data = JSON.parse(await readFile(resolve(root, 'content/projects.json'), 'utf8'));
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const date = value => new Intl.DateTimeFormat('en', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }).format(new Date(value + 'T12:00:00Z'));
@@ -26,8 +26,8 @@ for (const p of data.projects) {
   if (typeof p.slug !== 'string' || !slugPattern.test(p.slug) || ids.has(p.slug)) throw new Error('Project slugs must be unique: ' + p.slug);
   ids.add(p.slug);
   if (!themes.has(p.theme) || !models.has(p.model)) throw new Error('Unknown theme or business model: ' + p.slug);
-  for (const key of ['name','category','modelDescription','audience','buyer','users','market','stage','summary','problem','demoNote','technicalReadiness','commercialReadiness']) requireText(p[key], p.slug + '.' + key);
-  for (const key of ['headline','features','workflow','nextFocus','languages']) {
+  for (const key of ['name','category','modelDescription','audience','buyer','users','market','stage','summary','problem','demoNote','technicalReadiness','commercialReadiness','positioning','outcome','nextAction']) requireText(p[key], p.slug + '.' + key);
+  for (const key of ['headline','features','workflow','nextFocus','languages','deliverables','useCases','stack']) {
     if (!Array.isArray(p[key]) || !p[key].length || p[key].some(x => typeof x !== 'string' || !x.trim())) throw new Error('Invalid list: ' + p.slug + '.' + key);
   }
   if (p.headline.length !== 2 || p.workflow.length !== 3 || !isDate(p.updatedAt)) throw new Error('Invalid headline, workflow or date: ' + p.slug);
@@ -35,6 +35,12 @@ for (const p of data.projects) {
   if (p.website !== null && !safeWebsite(p.website)) throw new Error('Website must use HTTPS: ' + p.slug);
   if (p.demoUrl !== null && !safeWebsite(p.demoUrl)) throw new Error('Demo URL must use HTTPS: ' + p.slug);
   if (p.demoLabel !== undefined) requireText(p.demoLabel, p.slug + '.demoLabel');
+  if (!Array.isArray(p.readinessChecks) || p.readinessChecks.length < 3) throw new Error('Missing readiness checklist: ' + p.slug);
+  for (const check of p.readinessChecks) {
+    requireText(check.label, p.slug + '.check.label');
+    requireText(check.detail, p.slug + '.check.detail');
+    if (!['passed','open','not-checked'].includes(check.status)) throw new Error('Invalid readiness status: ' + p.slug);
+  }
   if (p.image !== null) {
     if (!localPath(p.image)) throw new Error('Image must be a local asset: ' + p.slug);
     requireText(p.imageAlt, p.slug + '.imageAlt');
@@ -56,88 +62,66 @@ if (origin) {
   origin = u.origin;
 }
 
-const mark = p => `<span class="brand ${escape(p.theme)}">${escape(p.name.toLowerCase())}${p.theme === 'aqd' ? '<span lang="ar">عقد</span>' : p.theme === 'oris' ? '<span aria-hidden="true">✳</span>' : '<span>.</span>'}</span>`;
+// Shared, accessible portfolio views. Content remains in the catalogue.
 const arrow = '<span aria-hidden="true">↗</span>';
-const modelName = model => ({B2B:'Business to business',B2C:'Business to consumer',B2B2C:'Business to business to consumer'})[model];
 const profileUrl = p => '/projects/' + p.slug + '/';
-const facts = p => `<dl class="card-facts"><div><dt>For</dt><dd>${escape(p.cardAudience || p.audience)}</dd></div><div><dt>Stage</dt><dd>${escape(p.cardStage || p.stage)}</dd></div></dl>`;
-
-function visual(p) {
-  if (p.theme === 'frame') return `<div class="card-visual frame-visual" role="img" aria-label="Illustrative Frame concept: a spoken idea about wearable air conditioning becomes a short-film script, not a live product screenshot"><div class="frame-request">Make a film about wearable air conditioning.</div><div class="frame-draft"><div class="draft-meta"><span>SHORT FILM / 30 SEC</span><span class="draft-state">DRAFT</span></div><strong>An AC. On a leash.</strong><p>You could stay cool in the desert.<br>Just don’t let go.</p><div class="draft-footer"><span>Story → Scenes → Film</span><span>Concept workflow</span></div></div></div>`;
-  if (p.theme === 'dubai') return `<div class="card-visual"><img src="${escape(p.image)}" alt="${escape(p.imageAlt)}" width="1672" height="941" loading="lazy"><span class="property-caption">Architectural concept · AI-generated</span></div>`;
-  if (p.theme === 'oris') return `<div class="card-visual oris-visual" aria-hidden="true"><div class="chat" lang="ar" dir="rtl">هل التوصيل متاح إلى الشارقة؟</div><div class="chat reply">The right context.<br><strong>A more useful handoff.</strong></div><span class="signal"><i></i> Human attention</span></div>`;
-  if (p.theme === 'aqd') return `<div class="card-visual aqd-visual" aria-hidden="true"><div class="readiness-paper"><span>PREPARATION NOTES</span><div><i>✓</i> Property details</div><div><i>✓</i> Rent schedule</div><div class="open-item"><i>○</i> Tenant documents</div><p>One clear place to begin.</p></div></div>`;
-  if (p.image) return `<div class="card-visual"><img src="${escape(p.image)}" alt="${escape(p.imageAlt)}" width="1672" height="941" loading="lazy"><span class="property-caption">${escape(p.category)}</span></div>`;
-  return `<div class="card-visual plain-visual"><span>${escape(p.category)}</span><strong>${escape(p.name)}</strong></div>`;
+const tag = (text, cls = '') => `<span class="tag ${cls}">${escape(text)}</span>`;
+const mark = p => `<span class="brand brand-${escape(p.theme)}">${escape(p.name.toLowerCase())}${p.theme === 'oris' ? '<span>✳</span>' : p.theme === 'aqd' ? '<span lang="ar">عقد</span>' : '<span>.</span>'}</span>`;
+const icon = name => name === 'sun' ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>' : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 15.5A8.5 8.5 0 0 1 8.5 4 8.5 8.5 0 1 0 20 15.5Z"/></svg>';
+function header() {
+  return `<header class="site-header"><a class="monogram" href="/" aria-label="Khaled portfolio home">kb<span>/</span></a><nav aria-label="Main navigation"><a href="/#projects">Work</a><a href="/#about">About</a><a href="${escape(data.github)}" target="_blank" rel="noopener noreferrer">GitHub ${arrow}</a></nav><div class="theme-control" role="group" aria-label="Color theme"><button type="button" data-theme-choice="light" aria-label="Use light theme" aria-pressed="false">${icon('sun')}</button><button type="button" data-theme-choice="dark" aria-label="Use dark theme" aria-pressed="false">${icon('moon')}</button></div></header>`;
 }
-
-function header(current) {
-  return `<header class="top"><a class="monogram" href="/" aria-label="${escape(data.owner)} portfolio home">${escape(data.owner.toLowerCase())}<span> / </span></a><span class="edition">PRODUCT PORTFOLIO</span><nav class="portfolio-nav" aria-label="Main navigation"><a href="/#projects"${current === 'projects' ? ' aria-current="page"' : ''}>Projects</a><a href="/#about">About</a><a href="${escape(data.github)}" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav></header>`;
-}
-
 function footer() {
-  return `<footer><a class="monogram" href="/">${escape(data.owner.toLowerCase())}<span> / </span></a><p>A living collection of products.<br>Updated ${date(latestDate)}</p><p>Public samples use example data.<br>Architectural imagery is illustrative.</p></footer>`;
+ return `<footer class="site-footer"><a class="monogram" href="/">kb<span>/</span></a><p>Built with intent. Always in progress.<br><span>Dubai, UAE · ${date(latestDate)}</span></p><a href="${escape(data.github)}" target="_blank" rel="noopener noreferrer">Find me on GitHub ${arrow}</a></footer>`;
 }
-
-function document(title, description, path, body, theme = '') {
-  return `<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="index,follow"><title>${escape(title)}</title><meta name="description" content="${escape(description)}"><meta property="og:type" content="website"><meta property="og:image" content="${origin}/media/portfolio.png"><meta property="og:title" content="${escape(title)}"><meta property="og:description" content="${escape(description)}">${origin ? `<link rel="canonical" href="${origin}${path}"><meta property="og:url" content="${origin}${path}">` : ''}<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/fonts.css"><link rel="stylesheet" href="/review.css"><link rel="stylesheet" href="/portfolio.css?v=${styleVersion}"></head><body class="public-portfolio ${escape(theme)}"><a class="skip" href="#main">Skip to content</a>${header(path === '/' ? 'projects' : '')}<main id="main">${body}</main>${footer()}</body></html>\n`;
+function document(title, description, path, body) {
+ return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escape(title)}</title><meta name="description" content="${escape(description)}"><meta name="color-scheme" content="light dark"><meta property="og:type" content="website"><meta property="og:image" content="${origin}/media/portfolio.png"><meta property="og:title" content="${escape(title)}"><meta property="og:description" content="${escape(description)}"><link rel="canonical" href="${origin}${path}"><meta property="og:url" content="${origin}${path}"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><script src="/theme-init.js?v=${styleVersion}"></script><link rel="stylesheet" href="/fonts.css"><link rel="stylesheet" href="/portfolio.css?v=${styleVersion}"><script src="/portfolio.js?v=${styleVersion}" defer></script></head><body><a class="skip" href="#main">Skip to content</a>${header()}<main id="main">${body}</main>${footer()}</body></html>
+`;
 }
-
-function feature(p) {
-  return `<a class="feature project ${escape(p.theme)}" href="${profileUrl(p)}">${p.image ? `<img src="${escape(p.image)}" alt="${escape(p.imageAlt)}" width="1672" height="941" fetchpriority="high">` : ''}<div class="feature-shade"></div><div class="feature-heading">${mark(p)}<span class="tag">${escape(p.model)} / ${escape(p.category).toUpperCase()}</span></div><div class="feature-content"><p class="eyebrow">${escape(p.audience).toUpperCase()}</p><h2>${escape(p.headline[0])}<br><em>${escape(p.headline[1])}</em></h2><p>${escape(p.summary)}</p><span class="open-button">Meet ${escape(p.name)} ${arrow}</span></div><div class="feature-foot"><span>${escape(p.stage)}</span><span>${escape(p.market)} · ${p.languages.map(escape).join(' + ')}</span></div></a>`;
+function visual(p) {
+ if(p.slug==='frame') return `<div class="project-art art-frame" role="img" aria-label="Illustrative AI video studio workflow, from a brief through scenes, voice and edit to export"><div class="studio-top"><span class="studio-wordmark">frame<span>●</span></span><span>YOUR AI VIDEO STUDIO · CONCEPT</span></div><div class="studio-screen"><img src="/media/frame-film-concept.webp" alt="" loading="lazy"><span class="screen-badge">A story worth watching.</span><span class="screen-time">00:12 / 00:30</span></div><div class="studio-timeline"><span>01</span><i></i><i></i><i></i><i></i><i></i><span>00:30</span></div><div class="studio-steps"><span>Idea</span><b>→</b><span>Script</span><b>→</b><span>Scenes</span><b>→</b><span>Voice</span><b>→</b><span>Edit</span><b>→</b><strong>Export ↗</strong></div></div>`;
+ if(p.slug==='dubai-game') return `<div class="project-art art-dubai"><img src="${escape(p.image)}" alt="${escape(p.imageAlt)}" loading="lazy"><div class="world-caption"><span>WORLD IN DEVELOPMENT</span><strong>Dubai, reimagined.</strong><span>Original project concept art · Not gameplay</span></div></div>`;
+ if(p.slug==='oris') return `<div class="project-art art-oris" role="img" aria-label="Illustrative Oris conversation in Arabic with business context and a human handoff"><div class="support-ui"><div class="support-header"><span class="support-avatar">o✳</span><div><strong>A little context.<br>A better answer.</strong></div><span class="online-dot"></span></div><div class="support-message customer" lang="ar" dir="rtl">هل التوصيل متاح إلى الشارقة؟</div><div class="support-message agent">Yes — we deliver to Sharjah.<br><strong>Let me check the details for you.</strong></div><div class="support-source"><span>✳</span><div>Grounded in business knowledge<br><strong>Ready for a human when needed</strong></div></div></div><span class="art-label">ILLUSTRATIVE CONVERSATION</span></div>`;
+ if(p.slug==='aqd') return `<div class="project-art art-aqd" role="img" aria-label="Illustrative Aqd tenancy preparation pack with property details, cheque schedule and documents"><div class="aqd-paper"><div class="paper-top"><span>aqd <i lang="ar">عقد</i></span><span>TENANCY PACK / 01</span></div><h3>A clear path<br>to the next chapter.</h3><div class="paper-row"><span>✓</span>Property & agreement</div><div class="paper-row"><span>✓</span>Rent & cheque schedule</div><div class="paper-row"><span>○</span>Documents to complete</div><div class="paper-foot">Prepared. Organized. Ready to review.</div></div><span class="art-label">ILLUSTRATIVE PREPARATION PACK</span></div>`;
+ if(p.slug==='manzl') return `<div class="project-art art-manzl"><img src="${escape(p.image)}" alt="${escape(p.imageAlt)}" loading="lazy"><div class="viewing-card"><span class="viewing-avatar">R</span><div><strong>Meet Reem.</strong><span>Enquiry → Qualification → Viewing</span></div><span>↗</span></div><span class="art-label">ILLUSTRATIVE PROPERTY</span></div>`;
+ return `<div class="project-art art-quote"><div class="quote-window"><div class="quote-toolbar"><span>quote operations<span>.</span></span><span>SAMPLE QUOTATION</span></div><img src="${escape(p.image)}" alt="${escape(p.imageAlt)}" loading="lazy"></div><div class="quote-chip">A request in. A draft to review. ${arrow}</div><span class="art-label">FICTIONAL SAMPLE DATA</span></div>`;
 }
-
-function card(p, index) {
-  return `<a class="project small ${escape(p.theme)}" href="${profileUrl(p)}"><div class="card-heading">${mark(p)}<span>${String(index + 2).padStart(2, '0')} / ${escape(p.model)}<br>${escape(p.category).toUpperCase()}</span></div>${visual(p)}<div class="card-copy"><h2>${escape(p.headline[0])}<br><em>${escape(p.headline[1])}</em></h2><p>${escape(p.summary)}</p>${facts(p)}<span class="text-link">Meet ${escape(p.name)} ${arrow}</span></div></a>`;
+function card(p,index) {
+ return `<article class="project-card ${escape(p.theme)}" data-category="${p.model==='B2B'?'business':'creative'}"><a class="card-link" href="${profileUrl(p)}"><div class="card-top">${mark(p)}<span>${String(index+1).padStart(2,'0')} / ${escape(p.category)}</span></div>${visual(p)}<div class="card-body"><div class="card-meta">${tag(p.model)}${tag(p.cardStage || p.stage,'stage')}</div><h3>${escape(p.headline[0])}<br><em>${escape(p.headline[1])}</em></h3><p>${escape(p.summary)}</p><div class="card-bottom"><span>For ${escape(p.cardAudience || p.audience)}</span><span class="card-arrow" aria-hidden="true">↗</span></div></div></a></article>`;
 }
-
-function home() {
-  const number = words[data.projects.length] || String(data.projects.length);
-  const modelSummary = [...new Set(data.projects.map(p => p.model))].join(' · ');
-  const updates = data.projects.flatMap(p => p.updates.map(u => ({...u, p}))).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 6);
-  return document(data.title, data.description, '/', `
-    <section class="intro"><p class="eyebrow">KHALED · FOUNDER IN DUBAI</p><h1>${number} products.<br><span>A clearer point of view.</span></h1><div class="intro-bottom"><p>${escape(data.intro).replace(/\n/g, '<br>')}</p><p class="review-note">${escape(modelSummary)} products · Arabic + English<br>Explore the audience, the product and what comes next.</p></div></section>
-    <section id="projects" aria-label="Projects">${feature(featured)}<div class="grid">${data.projects.filter(p => p !== featured).map(card).join('')}</div></section>
-    <section class="about-work" id="about"><div><p class="eyebrow">ABOUT THE WORK</p><h2>Different problems.<br><span>A practical point of view.</span></h2></div><div><p>${escape(data.about)}</p><p>Each profile explains the product’s audience and current stage. Public product links are included where available; projects still in development are clearly labelled.</p></div></section>
-    <section class="portfolio-updates" aria-labelledby="updates-title"><div class="updates-heading"><p class="eyebrow">LATEST PROJECT UPDATES</p><h2 id="updates-title">The work keeps moving.</h2></div><div>${updates.map(u => `<a class="update-row" href="${profileUrl(u.p)}"><time datetime="${u.date}">${date(u.date)}</time><div><strong>${escape(u.p.name)}</strong><p>${escape(u.text)}</p></div>${arrow}</a>`).join('')}</div></section>
-  `);
+function home(){
+ return document(data.title,data.description,'/',`<section class="hero"><p class="eyebrow"><span class="live-dot"></span>KHALED / FOUNDER & PILOT / DUBAI</p><h1>Curiosity, meet<br><em>execution.</em></h1><div class="hero-bottom"><p>I build software for the work we do.<br>And the things we’ve always wanted to create.</p><a class="text-action" href="#projects">Explore the work <span aria-hidden="true">↓</span></a></div><div class="hero-index"><span>01 / Better business</span><span>02 / Creative freedom</span><span>03 / New worlds</span><span class="index-count">SIX PROJECTS. ONE BUILDER.</span></div></section>
+ <section id="projects" class="work-section" aria-labelledby="work-heading"><div class="section-bar"><div><p class="eyebrow">THE PORTFOLIO</p><h2 id="work-heading">Selected work<span>.</span></h2></div><div class="filters" role="group" aria-label="Filter projects"><button type="button" data-filter="all" aria-pressed="true">All work <span>6</span></button><button type="button" data-filter="business" aria-pressed="false">Business <span>4</span></button><button type="button" data-filter="creative" aria-pressed="false">Creative <span>2</span></button></div></div><p id="filter-status" class="sr-only" role="status" aria-live="polite">Showing all 6 projects.</p><div class="project-grid">${data.projects.map(card).join('')}</div></section>
+ <section class="about-section" id="about"><div><p class="eyebrow">A LITTLE ABOUT ME</p><h2>A builder’s curiosity.<br><em>A pilot’s discipline.</em></h2></div><div><p>I’m Khaled, a founder and pilot based in Dubai. I’m interested in what happens when a complicated process becomes something people can actually use.</p><p>That takes me from customer conversations and equipment quotes to AI filmmaking and an Emirati game world. Different projects, the same approach: understand the problem, build carefully, test honestly.</p><div class="principles"><span>Clear systems</span><span>Useful products</span><span>Details matter</span></div><a class="text-action" href="${escape(data.github)}" target="_blank" rel="noopener noreferrer">More on GitHub ${arrow}</a></div></section>
+ <section class="colophon"><p class="eyebrow">WORK, IN CONTEXT</p><p>Each project has its own story, workflow and readiness checklist. Some are available to explore; others are still taking shape. Open a project to see where it stands.</p></section>`);
 }
-
-function profile(p, index) {
-  const next = data.projects[(index + 1) % data.projects.length];
-  const pairs = [['Business model', p.model + ' · ' + modelName(p.model)], ['For', p.audience], ['Buyer', p.buyer], ['Users', p.users], ['Market', p.market], ['Languages', p.languages.join(' + ')], ['Stage', p.stage], ['Technical readiness', p.technicalReadiness || 'See the current project notes.'], ['Commercial readiness', p.commercialReadiness || 'Not established by this profile.'], ['Profile updated', date(p.updatedAt)]];
-  return document(p.name + ' / ' + p.category + ' / ' + data.owner, p.summary, profileUrl(p), `
-    <div class="profile-breadcrumb"><a href="/#projects">All projects</a><span aria-hidden="true">/</span><span>${escape(p.name)}</span></div>
-    <section class="profile-hero"><div><div class="profile-brand">${mark(p)}<span class="profile-chip">${escape(p.model)} · ${escape(p.category)}</span></div><h1>${escape(p.headline[0])}<br><em>${escape(p.headline[1])}</em></h1><p class="profile-summary">${escape(p.summary)}</p><div class="profile-actions">${p.demoUrl ? `<a class="primary-link" href="${escape(p.demoUrl)}" target="_blank" rel="noopener noreferrer">${escape(p.demoLabel || 'Try the demo')} ${arrow}</a>` : ''}${p.website ? `<a class="${p.demoUrl ? 'secondary-link' : 'primary-link'}" href="${escape(p.website)}" target="_blank" rel="noopener noreferrer">Visit product website ${arrow}</a>` : ''}</div><p class="profile-demo-note">${escape(p.demoNote)}</p></div><aside class="profile-facts" aria-label="Project at a glance"><p class="eyebrow">AT A GLANCE</p><dl>${pairs.map(([key, value]) => `<div><dt>${escape(key)}</dt><dd>${escape(value)}</dd></div>`).join('')}</dl></aside></section>
-    <section class="profile-story"><div><p class="eyebrow">THE PROBLEM</p><h2>Why it exists.</h2><p>${escape(p.problem)}</p></div><div><p class="eyebrow">THE PRODUCT</p><h2>What it does.</h2><ol class="capability-list">${p.features.map((f, i) => `<li><span>${String(i + 1).padStart(2, '0')}</span><p>${escape(f)}</p></li>`).join('')}</ol></div></section>
-    <section class="profile-flow" aria-labelledby="flow-title"><div><p class="eyebrow">WHERE IT FITS</p><h2 id="flow-title">One clear workflow.</h2></div><ol>${p.workflow.map((step, i) => `<li><span>0${i + 1}</span><h3>${escape(step)}</h3></li>`).join('')}</ol></section>
-    <section class="profile-roadmap"><div><p class="eyebrow">WHAT COMES NEXT</p><h2>The current focus.</h2><ul>${p.nextFocus.map(f => `<li>${escape(f)}</li>`).join('')}</ul><p class="roadmap-note">These are areas of work, not release-date commitments.</p></div><div><p class="eyebrow">PROJECT UPDATES</p>${p.updates.slice(0, 5).map(u => `<article class="project-update"><time datetime="${u.date}">${date(u.date)}</time><p>${escape(u.text)}</p></article>`).join('')}</div></section>
-    <section class="profile-close"><div><p class="eyebrow">${p.demoUrl || p.website ? 'EXPLORE THE PRODUCT' : 'IN DEVELOPMENT'}</p><h2>${p.demoUrl || p.website ? 'Explore ' + escape(p.name) + '.' : 'Follow the work as it takes shape.'}</h2><p>${p.demoUrl ? 'The public sample uses fictional data.' : p.website ? 'Visit the product website to learn more.' : 'This project is still being developed. There is no public demo link yet.'}</p></div>${p.demoUrl || p.website ? `<a class="primary-link" href="${escape(p.demoUrl || p.website)}" target="_blank" rel="noopener noreferrer">${p.demoUrl ? escape(p.demoLabel || 'Try the demo') : 'Visit ' + escape(p.name)} ${arrow}</a>` : `<a class="secondary-link" href="/#projects">Explore the other projects ${arrow}</a>`}</section>
-    ${data.projects.length > 1 ? `<a class="next-project" href="${profileUrl(next)}"><span>Next project</span><strong>${escape(next.name)}</strong>${arrow}</a>` : ''}
-  `, 'profile-page theme-' + p.theme);
+function profile(p,index){
+ const next=data.projects[(index+1)%data.projects.length];
+ const deliverables=p.deliverables||p.features.slice(0,3);const cases=p.useCases||[p.audience];
+ const checks=p.readinessChecks||[];
+ const statusLabel={'passed':'Verified','open':'In progress','not-checked':'Not checked'};
+ const facts=[['Audience',p.audience],['Model',p.modelDescription],['Market',p.market],['Languages',p.languages.join(' + ')]];
+ return document(p.name+' / Khaled',p.summary,profileUrl(p),`<div class="breadcrumb"><a href="/#projects">← All work</a><span>${escape(p.name)}</span></div><section class="project-hero"><div class="project-heading">${mark(p)}<div class="project-badges">${tag(p.category)}${tag(p.cardStage||p.stage,'stage')}</div></div><div class="project-intro"><h1>${escape(p.headline[0])}<br><em>${escape(p.headline[1])}</em></h1><div><p class="lead">${escape(p.positioning||p.summary)}</p><p>${escape(p.outcome||p.summary)}</p><div class="project-actions">${p.demoUrl?`<a class="button-primary" href="${escape(p.demoUrl)}" target="_blank" rel="noopener noreferrer">${escape(p.demoLabel||'Explore demo')} ${arrow}</a>`:''}${p.website?`<a class="${p.demoUrl?'text-action':'button-primary'}" href="${escape(p.website)}" target="_blank" rel="noopener noreferrer">Product website ${arrow}</a>`:''}${!p.website&&!p.demoUrl?'<a class="text-action" href="#readiness">See current progress ↓</a>':''}</div></div></div></section>
+ <section class="project-showcase" aria-label="${escape(p.name)} visual overview">${visual(p)}</section>${p.slug === 'dubai-game' ? '<figure class="world-gallery"><img src="/media/dubai-marina.webp" alt="Existing Dubai Game Marina concept: waterfront, yachts, towers and people; AI-generated visual development, not gameplay." loading="lazy"><figcaption>Dubai Marina / Original project visual development. AI-generated concept art, not gameplay.</figcaption></figure>' : ''}
+ <nav class="page-sections" aria-label="Project sections"><a href="#overview">Overview</a><a href="#workflow">Workflow</a><a href="#readiness">Readiness</a><a href="#next">What’s next</a></nav>
+ <section class="story-section" id="overview"><div><p class="eyebrow">WHY IT EXISTS</p><h2>A problem worth<br><em>solving.</em></h2><p class="body-copy">${escape(p.problem)}</p><dl class="project-facts">${facts.map(([k,v])=>`<div><dt>${k}</dt><dd>${escape(v)}</dd></div>`).join('')}</dl></div><div><p class="eyebrow">WHAT IT HELPS YOU DO</p><ol class="capabilities">${p.features.map((x,i)=>`<li><span>0${i+1}</span><p>${escape(x)}</p></li>`).join('')}</ol><div class="use-cases"><h3>Made for moments like these.</h3><ul>${cases.map(x=>`<li>${escape(x)}</li>`).join('')}</ul></div></div></section>
+ <section class="workflow-section" id="workflow"><div class="section-bar"><div><p class="eyebrow">FROM START TO FINISH</p><h2>One clear workflow.</h2></div></div><ol class="workflow-grid">${p.workflow.map((x,i)=>`<li><span class="step-number">0${i+1}</span><h3>${escape(x)}</h3><p>${escape(deliverables[i]||'')}</p></li>`).join('')}</ol></section>
+ <section class="readiness-section" id="readiness"><div><p class="eyebrow">THE HONEST PICTURE</p><h2>Where it stands.</h2><p class="section-description">Progress you can inspect.<br>Reviewed ${date(p.updatedAt)}.</p><div class="stack-label">BUILT WITH</div><div class="stack">${(p.stack||[]).map(x=>tag(x)).join('')}</div></div><div><div class="readiness-summary"><article><h3>Technical readiness</h3><p>${escape(p.technicalReadiness)}</p></article><article><h3>Commercial readiness</h3><p>${escape(p.commercialReadiness)}</p></article></div><ul class="readiness-checks">${checks.map(x=>`<li><div><span class="check-state state-${escape(x.status)}">${statusLabel[x.status]||'Not checked'}</span><strong>${escape(x.label)}</strong></div><p>${escape(x.detail)}</p></li>`).join('')}</ul><p class="evidence-note">${escape(p.demoNote)}</p></div></section>
+ <section class="next-section" id="next"><div><p class="eyebrow">THE NEXT MILESTONE</p><h2>${escape(p.nextAction||p.nextFocus[0])}</h2></div><ul>${p.nextFocus.map(x=>`<li>${escape(x)}</li>`).join('')}</ul></section>
+ <a class="next-project" href="${profileUrl(next)}"><div><span>NEXT PROJECT</span><strong>${escape(next.name)}</strong></div><span aria-hidden="true">↗</span></a>`);
 }
 
 await mkdir(out, { recursive: true });
 await writeFile(resolve(out, 'index.html'), home());
 await writeFile(resolve(out, '.nojekyll'), '');
-await writeFile(resolve(out, '404.html'), document('Page not found / KB', 'Return to the product portfolio.', '/404.html', '<section class="intro"><p class="eyebrow">PAGE NOT FOUND</p><h1>Let’s get you back<br><span>to the work.</span></h1><div class="intro-bottom"><a class="primary-link" href="/">Explore the projects ↗</a></div></section>'));
+await writeFile(resolve(out, '404.html'), document('Page not found / Khaled', 'Return to the portfolio.', '/404.html', '<section class="hero"><p class="eyebrow">404 / PAGE NOT FOUND</p><h1>Back to<br><em>the work.</em></h1><a class="button-primary" href="/">Explore the portfolio ↗</a></section>'));
 await mkdir(resolve(out, 'projects'), { recursive: true });
 const previousManifest = await readFile(resolve(out, 'project-manifest.json'), 'utf8').then(JSON.parse).catch(() => ({slugs: []}));
-for (const slug of previousManifest.slugs || []) {
-  if (slugPattern.test(slug) && !ids.has(slug)) await rm(resolve(out, 'projects', slug), {recursive: true, force: true});
-}
-for (const [i, p] of data.projects.entries()) {
-  await mkdir(resolve(out, 'projects', p.slug), { recursive: true });
-  await writeFile(resolve(out, 'projects', p.slug, 'index.html'), profile(p, i));
-}
+for (const slug of previousManifest.slugs || []) if (slugPattern.test(slug) && !ids.has(slug)) await rm(resolve(out, 'projects', slug), {recursive: true, force: true});
+for (const [i, p] of data.projects.entries()) {await mkdir(resolve(out, 'projects', p.slug), { recursive: true });await writeFile(resolve(out, 'projects', p.slug, 'index.html'), profile(p, i));}
 await writeFile(resolve(out, 'project-manifest.json'), JSON.stringify({schemaVersion: 1, updatedAt: latestDate, slugs: [...ids]}, null, 2) + '\n');
 await writeFile(resolve(out, 'projects.json'), JSON.stringify(data, null, 2) + '\n');
-await writeFile(resolve(out, 'robots.txt'), 'User-agent: *\nAllow: /\n' + (origin ? 'Sitemap: ' + origin + '/sitemap.xml\n' : ''));
-if (origin) {
-  const entries = [['/', latestDate], ...data.projects.map(p => [profileUrl(p), p.updatedAt])];
-  await writeFile(resolve(out, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${entries.map(([path, updated]) => `<url><loc>${escape(origin + path)}</loc><lastmod>${updated}</lastmod></url>`).join('')}</urlset>\n`);
-} else {
-  await rm(resolve(out, 'sitemap.xml'), { force: true });
-}
-console.log('Built the portfolio and ' + data.projects.length + ' project profiles from content/projects.json.');
+await writeFile(resolve(out, 'robots.txt'), 'User-agent: *\nAllow: /\nSitemap: '+origin+'/sitemap.xml\n');
+const entries=[['/',latestDate],...data.projects.map(p=>[profileUrl(p),p.updatedAt])];
+await writeFile(resolve(out,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${entries.map(([path,updated])=>`<url><loc>${escape(origin+path)}</loc><lastmod>${updated}</lastmod></url>`).join('')}</urlset>\n`);
+console.log('Built the portfolio and '+data.projects.length+' project profiles.');
