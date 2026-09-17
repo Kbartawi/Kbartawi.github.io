@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "owner": "KB",
   "title": "Khaled / Product portfolio",
-  "description": "Khaled is a founder in Dubai building practical software for business teams and exploring creator tools and Emirati game worlds.",
+  "description": "Khaled, a pilot and founder in Dubai. Apps for customer support, equipment sales, leasing and video creation, plus a game set in Dubai.",
   "featuredProject": "quote-operations",
-  "about": "I’m Khaled, a founder based in Dubai. I build practical software around the work between a conversation and a decision: preparing a quotation, helping a customer, qualifying an enquiry and getting a tenancy ready. I’m also exploring simpler tools for video creators and an Emirati-led game world. This is a living collection of work at different stages.",
+  "about": "Most of my apps are for customer support, equipment sales and leasing. Frame started because I wanted an easier way to make videos. I’m also experimenting with a game set in Dubai.",
   "projects": [
     {
       "slug": "quote-operations",
@@ -23,11 +23,10 @@
       ],
       "stage": "Working demo · Pilot preparation",
       "headline": [
-        "From request",
-        "to reviewed quote."
+        "Equipment quotes,",
+        "without the copy-paste."
       ],
-      "summary": "Read the equipment request, prepare a quotation and bring the decisions into one place. Sales teams check products, prices and missing details before a colleague approves the offer.",
-      "problem": "A customer asks for a price. Someone still has to read the equipment list, copy the quantities, find the right products and check the selling prices. When details are missing, the quote goes back to a colleague for a decision.",
+      "summary": "Read a request, match the equipment and prepare a quotation. The team checks the products and prices before approving it.",
       "features": [
         "With AI set up, paste an English or Arabic request from email or WhatsApp, or upload one printed PDF equipment list. The app reads the lines and quantities.",
         "Review suggested products and available prices beside the request. Open a line to check where its product or price came from.",
@@ -68,7 +67,7 @@
       "technicalReadiness": "Working demo; authenticated customer AI and team acceptance remain pilot work.",
       "commercialReadiness": "Pilot preparation; customer outcomes and repeat use have not been validated.",
       "positioning": "AI-assisted equipment quotations, from customer request to reviewed offer.",
-      "outcome": "Give the estimating team a clear draft to review and the customer a quotation the team can stand behind.",
+      "outcome": "The draft keeps missing details and price sources visible for the person reviewing it.",
       "deliverables": [
         "An equipment draft with quantities, suggested products and price sources",
         "A review queue for missing information and technical or commercial decisions",
@@ -115,7 +114,7 @@
         }
       ],
       "gallery": {
-        "heading": "From request to quotation.",
+        "heading": "Quote Operations screenshots",
         "description": "Actual interface captures from the sample workspace: requests, preparation, review and a quotation document. All customer details, products and prices are fictional.",
         "items": [
           {
@@ -123,7 +122,7 @@
             "thumb": "/media/gallery/quote-requests-thumb.webp",
             "width": 1440,
             "height": 1000,
-            "title": "Know what needs attention",
+            "title": "Requests",
             "caption": "The requests workspace shows status and the next action for each sample enquiry.",
             "alt": "Quote Operations requests screen showing three fictional projects and their next actions.",
             "kind": "Product screenshot · Sample data"
@@ -133,7 +132,7 @@
             "thumb": "/media/gallery/quote-request-source-thumb.webp",
             "width": 1440,
             "height": 1000,
-            "title": "Keep the request beside the work",
+            "title": "Customer request",
             "caption": "The product’s request view keeps the original sample enquiry, customer details and equipment requirements together.",
             "alt": "Quote Operations product interface showing a fictional equipment request and its source.",
             "kind": "Product screenshot · Public demo"
@@ -143,7 +142,7 @@
             "thumb": "/media/gallery/quote-preparation-thumb.webp",
             "width": 1440,
             "height": 900,
-            "title": "Prepare with the checks in view",
+            "title": "Draft preparation",
             "caption": "The preparation screen explains extracted lines, matches and the items still needing a decision.",
             "alt": "Quote Operations preparation result with equipment checks and a draft ready for review.",
             "kind": "Product screenshot · Sample data"
@@ -153,7 +152,7 @@
             "thumb": "/media/gallery/quote-review-thumb.webp",
             "width": 1440,
             "height": 1000,
-            "title": "Review before approval",
+            "title": "Quotation review",
             "caption": "The quotation review keeps the draft and its remaining decisions visible to the sales team.",
             "alt": "Quote Operations quotation review interface with fictional sample equipment and prices.",
             "kind": "Product screenshot · Sample data"
@@ -163,7 +162,7 @@
             "thumb": "/media/gallery/quote-price-evidence-thumb.webp",
             "width": 1440,
             "height": 1000,
-            "title": "See why a product was matched",
+            "title": "Product and price evidence",
             "caption": "Expanded match and price evidence makes the sample selection traceable before approval. Products and prices are fictional.",
             "alt": "Quote Operations quotation screen with expanded sample product-match and price evidence.",
             "kind": "Product screenshot · Public demo"
@@ -173,12 +172,16 @@
             "thumb": "/media/gallery/quote-document-thumb.webp",
             "width": 1440,
             "height": 900,
-            "title": "A document ready to inspect",
+            "title": "Quotation document",
             "caption": "The printable quotation brings the equipment proposal into a clear document. Nothing in this sample is a commercial offer.",
             "alt": "Quote Operations technical quotation preview marked as a fictional demonstration record.",
             "kind": "Product screenshot · Sample data"
           }
         ]
+      },
+      "overview": {
+        "type": "problem",
+        "text": "A customer asks for a price. Someone still has to read the equipment list, copy the quantities, find the right products and check the selling prices. When details are missing, the quote goes back to a colleague for a decision."
       }
     },
     {
@@ -198,11 +201,10 @@
       ],
       "stage": "Deployed app · Pilot validation",
       "headline": [
-        "Your customers’ language.",
-        "Your business context."
+        "Customer support",
+        "in Arabic and English."
       ],
-      "summary": "Bring business knowledge into customer conversations and give the support team a clear handoff when a person is needed. Built around Arabic and English service across chat, messaging and voice.",
-      "problem": "Customers switch languages and channels. Support teams need the business context and conversation history in one place so the next person can help without starting again.",
+      "summary": "Answer customer questions using the business’s policies and conversation history. The support team can take over when a person is needed.",
       "features": [
         "Connect policies, FAQs and product knowledge to customer conversations.",
         "Support Arabic and English with dialect-aware response planning.",
@@ -210,9 +212,9 @@
         "Escalate questions that need human judgment and carry the context into the handoff."
       ],
       "workflow": [
-        "Bring the business context",
-        "Support the conversation",
-        "Hand over with clarity"
+        "Add your business information",
+        "Answer customer questions",
+        "Hand over to the support team"
       ],
       "nextFocus": [
         "Voice quality and transfer",
@@ -239,8 +241,8 @@
       "commercialReadiness": "Subscription offer published; paying-customer outcomes are not reported here.",
       "cardAudience": "E-commerce and support teams",
       "cardStage": "Pilot validation",
-      "positioning": "Arabic and English customer support grounded in the knowledge of your business.",
-      "outcome": "Help customers get useful answers while keeping the human support team informed and in control.",
+      "positioning": "AI customer support in Arabic and English, using your business’s policies and information.",
+      "outcome": "The support team can read the conversation, check the context and take over when needed.",
       "deliverables": [
         "Customer replies informed by the business knowledge base",
         "A conversation record with context for the support team",
@@ -289,7 +291,7 @@
         }
       ],
       "gallery": {
-        "heading": "Inside the support workspace.",
+        "heading": "Oris screenshots",
         "description": "See the actual inbox, an Arabic conversation and the knowledge base, followed by the public website.",
         "items": [
           {
@@ -297,7 +299,7 @@
             "thumb": "/media/gallery/oris-product-inbox-thumb.webp",
             "width": 1440,
             "height": 900,
-            "title": "The support inbox",
+            "title": "Support inbox",
             "caption": "The support inbox brings conversations, channels and status into one place. The records and counts shown are fictional demo data.",
             "alt": "Actual Oris product UI showing the support inbox with fictional conversations and status counts.",
             "kind": "Product UI · Local demo",
@@ -308,7 +310,7 @@
             "thumb": "/media/gallery/oris-product-conversation-thumb.webp",
             "width": 1440,
             "height": 900,
-            "title": "An Arabic conversation, with context",
+            "title": "Arabic conversation",
             "caption": "An Arabic conversation sits beside its details and escalation controls. Messages, contact details and confidence values are local sample data.",
             "alt": "Actual Oris product UI showing an Arabic sample conversation with details and escalation controls.",
             "kind": "Product UI · Local demo",
@@ -319,7 +321,7 @@
             "thumb": "/media/gallery/oris-product-knowledge-thumb.webp",
             "width": 1440,
             "height": 900,
-            "title": "The knowledge behind the answers",
+            "title": "Knowledge base",
             "caption": "The knowledge-base interface brings upload controls and document status together. The sample records show the intended workflow.",
             "alt": "Actual Oris knowledge-base product screen with upload controls and fictional document records.",
             "kind": "Product UI · Local demo",
@@ -330,7 +332,7 @@
             "thumb": "/media/gallery/oris-hero-thumb.webp",
             "width": 1440,
             "height": 800,
-            "title": "Arabic-first customer experience",
+            "title": "Website homepage",
             "caption": "The landing page introduces support that moves naturally between Arabic and English.",
             "alt": "Oris public website introducing Arabic and English customer support.",
             "kind": "Public website screenshot",
@@ -341,7 +343,7 @@
             "thumb": "/media/gallery/oris-channels-thumb.webp",
             "width": 1440,
             "height": 1000,
-            "title": "An Arabic support conversation",
+            "title": "Website conversation example",
             "caption": "An illustrated WhatsApp exchange shows the intended feel of a helpful, contextual reply.",
             "alt": "Oris website sample WhatsApp conversation in Arabic.",
             "kind": "Public website screenshot",
@@ -352,7 +354,7 @@
             "thumb": "/media/gallery/oris-workflow-thumb.webp",
             "width": 1440,
             "height": 900,
-            "title": "Connect, configure, go live",
+            "title": "Website setup guide",
             "caption": "The public workflow explains channels, agent procedures and replies through sample interface illustrations.",
             "alt": "Oris website illustrations of channel setup, procedures and an Arabic reply.",
             "kind": "Public website screenshot",
@@ -373,6 +375,10 @@
             "description": "Website and sample walkthrough captures introduce the product to prospective users."
           }
         ]
+      },
+      "overview": {
+        "type": "problem",
+        "text": "Customers switch languages and channels. Support teams need the business context and conversation history in one place so the next person can help without starting again."
       }
     },
     {
@@ -393,10 +399,9 @@
       "stage": "Hosted demo · Seed-data prototype",
       "headline": [
         "Meet Reem.",
-        "Get the viewing moving."
+        "Your leasing assistant."
       ],
-      "summary": "Reem brings the budget, area, move date and requirements together, proposes a viewing and gives the leasing agent a concise brief. Built for rental conversations in Arabic and English.",
-      "problem": "Leasing enquiries arrive while agents are busy with viewings. Budget, area, move date and requirements get scattered across conversations, leaving the next agent to reconstruct the brief.",
+      "summary": "Reem asks about budget, area and move-in date, then helps arrange a viewing and passes the details to the leasing agent.",
       "features": [
         "Guide Arabic and English enquiries through the leasing qualification flow.",
         "Bring budget, location, move date, bedrooms and cheque preferences together.",
@@ -434,7 +439,7 @@
       "cardAudience": "UAE leasing teams",
       "cardStage": "Working prototype",
       "positioning": "A leasing assistant that takes an enquiry from first reply to viewing handoff.",
-      "outcome": "Give the next leasing agent a clear picture of the tenant and the next step toward a viewing.",
+      "outcome": "The agent gets the conversation and requirements together, so they can continue from where Reem left off.",
       "deliverables": [
         "A structured tenant brief with budget, area and move-in needs",
         "A proposed viewing slot linked to the conversation",
@@ -482,7 +487,7 @@
         }
       ],
       "gallery": {
-        "heading": "Inside the leasing workspace.",
+        "heading": "Manzl screenshots",
         "description": "Explore the real product interface for leads, conversations and viewings, followed by the public website.",
         "items": [
           {
@@ -490,7 +495,7 @@
             "thumb": "/media/gallery/manzl-product-pipeline-thumb.webp",
             "width": 1440,
             "height": 1000,
-            "title": "The leasing pipeline",
+            "title": "Lead pipeline",
             "caption": "The actual dashboard tracks enquiries and stages. The 30 leads, response times and qualification metrics belong to the fictional seed dataset.",
             "alt": "Actual Manzl product dashboard with fictional leasing leads, qualification stages and sample metrics.",
             "kind": "Product UI · Local demo",
@@ -501,7 +506,7 @@
             "thumb": "/media/gallery/manzl-product-conversation-thumb.webp",
             "width": 1440,
             "height": 1000,
-            "title": "A conversation becomes a brief",
+            "title": "Qualification conversation",
             "caption": "Reem’s conversation appears alongside collected budget, area and bedroom requirements in the sample lead record.",
             "alt": "Actual Manzl product UI showing a fictional qualification conversation and budget and area details.",
             "kind": "Product UI · Local demo",
@@ -512,7 +517,7 @@
             "thumb": "/media/gallery/manzl-product-calendar-thumb.webp",
             "width": 1440,
             "height": 1000,
-            "title": "A week of viewing slots",
+            "title": "Viewing calendar",
             "caption": "The calendar shows viewing slots, capacity and availability from the local seed dataset. It is sample inventory, not a live external calendar.",
             "alt": "Actual Manzl product calendar showing fictional property viewing slots and sample capacity.",
             "kind": "Product UI · Local demo",
@@ -523,7 +528,7 @@
             "thumb": "/media/gallery/manzl-hero-thumb.webp",
             "width": 1440,
             "height": 1000,
-            "title": "Meet Reem",
+            "title": "Website homepage",
             "caption": "A sample enquiry switches between Arabic and English in the website’s introduction to the leasing assistant.",
             "alt": "Manzl public website showing Reem and a sample bilingual leasing enquiry.",
             "kind": "Public website screenshot",
@@ -534,7 +539,7 @@
             "thumb": "/media/gallery/manzl-handoff-preview-thumb.webp",
             "width": 1440,
             "height": 1000,
-            "title": "From chat to a useful handoff",
+            "title": "Website handoff example",
             "caption": "The website’s sample lead summary brings budget, area, move-in timing and cheque preferences together.",
             "alt": "Manzl website illustration of a sample lead handoff with budget, area and timing.",
             "kind": "Public website screenshot",
@@ -545,7 +550,7 @@
             "thumb": "/media/gallery/manzl-walkthrough-thumb.webp",
             "width": 1440,
             "height": 900,
-            "title": "A sample handoff, in context",
+            "title": "Public demo walkthrough",
             "caption": "The public walkthrough shows Daniel’s seeded enquiry, the collected context and the next action for the team.",
             "alt": "Manzl public demo walkthrough with the fictional Daniel Carter lead summary and next action.",
             "kind": "Demo walkthrough · Sample data",
@@ -566,6 +571,10 @@
             "description": "Website and sample walkthrough captures introduce the product to prospective users."
           }
         ]
+      },
+      "overview": {
+        "type": "problem",
+        "text": "Leasing enquiries arrive while agents are busy with viewings. Budget, area, move date and requirements get scattered across conversations, leaving the next agent to reconstruct the brief."
       }
     },
     {
@@ -585,11 +594,10 @@
       ],
       "stage": "Hosted demo · Browser-only data",
       "headline": [
-        "The tenant said yes.",
-        "Bring the rest together."
+        "Tenancy paperwork,",
+        "all in one place."
       ],
-      "summary": "Gather the property details, people, documents and payment schedule into one guided tenancy pack. See what is missing and prepare a clear file for the next handoff.",
-      "problem": "After a tenant says yes, leasing teams still need to assemble documents, confirm details and agree the payment schedule. Those open items often remain scattered across WhatsApp threads.",
+      "summary": "Keep the property details, documents and cheque schedule in one tenancy pack. See what’s still missing before passing it on.",
       "features": [
         "Prepare a tenancy pack through a guided workflow.",
         "See readiness gaps, add suggested owners and prepare a clear handoff brief.",
@@ -626,8 +634,8 @@
       "commercialReadiness": "Team offer proposed; no checkout or validated customer outcomes.",
       "cardAudience": "Dubai leasing teams",
       "cardStage": "Browser-based demo",
-      "positioning": "One tenancy close pack for the week between “yes” and registration.",
-      "outcome": "Help the leasing team see what is ready, what is missing and what needs to happen before registration.",
+      "positioning": "A preparation pack for the paperwork after a tenant says yes.",
+      "outcome": "Review the missing details, then download the pack for the leasing team.",
       "deliverables": [
         "A tenancy pack containing the property and rental details",
         "A checklist of missing documents and unresolved items",
@@ -675,7 +683,7 @@
         }
       ],
       "gallery": {
-        "heading": "The details, brought together.",
+        "heading": "Aqd screenshots",
         "description": "Five actual demo screens show the preparation flow: property, people, lease numbers, cheques and the file. All sample data stays in the browser.",
         "items": [
           {
@@ -683,7 +691,7 @@
             "thumb": "/media/gallery/aqd-flat-thumb.webp",
             "width": 1440,
             "height": 1000,
-            "title": "One place for the property details",
+            "title": "Property details",
             "caption": "The sample pack keeps property and broker details together before the next handoff.",
             "alt": "Aqd public demo showing fictional Marina Gate property and broker details.",
             "kind": "Product screenshot · Sample data"
@@ -693,7 +701,7 @@
             "thumb": "/media/gallery/aqd-parties-thumb.webp",
             "width": 1440,
             "height": 1000,
-            "title": "The people on the pack",
+            "title": "Tenant and landlord",
             "caption": "The sample pack brings the tenant, landlord and identity details into the same workflow.",
             "alt": "Aqd product demo displaying fictional tenant and landlord information.",
             "kind": "Product screenshot · Public demo"
@@ -703,7 +711,7 @@
             "thumb": "/media/gallery/aqd-lease-thumb.webp",
             "width": 1440,
             "height": 1000,
-            "title": "Make the numbers explicit",
+            "title": "Lease numbers",
             "caption": "Rent, term and deposit are recorded together in the actual preparation interface. All values belong to the fictional demo.",
             "alt": "Aqd demo showing sample rent, lease term and deposit fields.",
             "kind": "Product screenshot · Public demo"
@@ -713,7 +721,7 @@
             "thumb": "/media/gallery/aqd-cheques-thumb.webp",
             "width": 1440,
             "height": 1000,
-            "title": "A cheque schedule that balances",
+            "title": "Cheque schedule",
             "caption": "Four sample rent cheques sit alongside the annual total in one readable schedule.",
             "alt": "Aqd demo screen displaying four fictional rent cheques and the annual total.",
             "kind": "Product screenshot · Sample data"
@@ -723,14 +731,18 @@
             "thumb": "/media/gallery/aqd-file-thumb.webp",
             "width": 1440,
             "height": 1000,
-            "title": "Spot the gaps before the handoff",
+            "title": "Preparation file",
             "caption": "The preparation preview distinguishes ready items, missing documents and notes needing attention.",
             "alt": "Aqd sample preparation file showing completed items, a missing Emirates ID and follow-up notes.",
             "kind": "Product screenshot · Sample data"
           }
         ]
       },
-      "demoLabel": "Explore product demo"
+      "demoLabel": "Explore product demo",
+      "overview": {
+        "type": "problem",
+        "text": "After a tenant says yes, leasing teams still need to assemble documents, confirm details and agree the payment schedule. Those open items often remain scattered across WhatsApp threads."
+      }
     },
     {
       "slug": "frame",
@@ -748,11 +760,10 @@
       ],
       "stage": "Active prototype · Production validation",
       "headline": [
-        "Your idea.",
-        "A finished video."
+        "Make a video,",
+        "from idea to final cut."
       ],
-      "summary": "An AI video studio from A to Z: develop the idea, write the script, create scenes, add voice and edit the final cut.",
-      "problem": "Making a video means moving between research, scripting, visual generation, narration and editing. An upcoming creator needs a simpler way to direct that process and keep their preferences.",
+      "summary": "Plan the idea, write the script, create the scenes and edit the video in one studio.",
       "features": [
         "Start with a spoken or typed idea and develop it through a saved conversation.",
         "Plan the hook, research, script and visual storytelling around the selected format.",
@@ -786,7 +797,7 @@
       "cardAudience": "Creators, brands and storytellers",
       "cardStage": "Prototype · In testing",
       "positioning": "An AI video production studio, from the first idea to the finished export.",
-      "outcome": "Give a creator one place to direct the complete production and review the result before sharing it.",
+      "outcome": "The goal is to describe a video, review the ideas and script, then approve the result from your phone.",
       "deliverables": [
         "A researched idea, timed script and scene-by-scene production plan",
         "Generated footage with a narration, sound and caption plan",
@@ -834,7 +845,7 @@
         }
       ],
       "gallery": {
-        "heading": "From the first idea to the shot plan.",
+        "heading": "Frame studio",
         "description": "The actual creator studio comes first. The cinematic concept collection follows below.",
         "items": [
           {
@@ -842,7 +853,7 @@
             "thumb": "/media/gallery/frame-studio-start-thumb.webp",
             "width": 1440,
             "height": 1200,
-            "title": "Start a film",
+            "title": "Start a video",
             "caption": "Real Frame studio interface. Choose a format and posting platform, then type or speak an idea. Hosted sample.",
             "alt": "Frame studio with video format choices, posting platform and an idea composer",
             "kind": "Product UI · Hosted sample",
@@ -853,7 +864,7 @@
             "thumb": "/media/gallery/frame-studio-ideas-thumb.webp",
             "width": 1440,
             "height": 1200,
-            "title": "Discuss the idea",
+            "title": "Choose an idea",
             "caption": "The conversation and idea-selection screen, shown with Frame’s built-in football sample. No live generation was submitted.",
             "alt": "Frame conversation with three football video idea cards and a saved short-film brief",
             "kind": "Product UI · Hosted sample",
@@ -864,7 +875,7 @@
             "thumb": "/media/gallery/frame-studio-script-thumb.webp",
             "width": 1440,
             "height": 1200,
-            "title": "Review the shot plan",
+            "title": "Review the script",
             "caption": "A 30-second sample script with five shots, editorial feedback and the edit plan. The displayed score and price are fixture values, not measured results or a new charge.",
             "alt": "Frame script review with five timed scenes, narration, visual descriptions and caption and sound instructions",
             "kind": "Product UI · Hosted sample",
@@ -875,7 +886,7 @@
             "thumb": "/media/gallery/frame-coastal-drive-thumb.webp",
             "width": 1600,
             "height": 900,
-            "title": "The open road",
+            "title": "Coastal road",
             "caption": "The original coastal-driving concept: an orange sports car, turquoise water and warm evening light.",
             "alt": "Orange sports car following a coastal road beside teal water and sunlit cliffs.",
             "kind": "AI film concept",
@@ -886,7 +897,7 @@
             "thumb": "/media/gallery/frame-rear-tracking-thumb.webp",
             "width": 1672,
             "height": 941,
-            "title": "Stay with the story",
+            "title": "Rear tracking shot",
             "caption": "A closer rear tracking angle brings the car and the coastal road into the same frame.",
             "alt": "Close rear three-quarter view of an orange sports car on a coastal road at golden hour.",
             "kind": "AI film concept",
@@ -897,7 +908,7 @@
             "thumb": "/media/gallery/frame-bridge-wide-thumb.webp",
             "width": 1672,
             "height": 941,
-            "title": "A little more scale",
+            "title": "Coastal bridge",
             "caption": "A stone viaduct, a small car and a wide sweep of sea turn the landscape into part of the story.",
             "alt": "Orange sports car crossing a stone coastal viaduct over turquoise surf.",
             "kind": "AI film concept",
@@ -908,7 +919,7 @@
             "thumb": "/media/gallery/frame-hairpin-thumb.webp",
             "width": 1672,
             "height": 941,
-            "title": "Follow the curve",
+            "title": "Road bend",
             "caption": "An elevated road bend changes the viewpoint while keeping the same warm light and coastal palette.",
             "alt": "Elevated view of an orange sports car rounding a sweeping coastal road bend.",
             "kind": "AI film concept",
@@ -919,7 +930,7 @@
             "thumb": "/media/gallery/frame-front-tracking-thumb.webp",
             "width": 1672,
             "height": 941,
-            "title": "Into the next scene",
+            "title": "Front tracking shot",
             "caption": "A low front angle adds pace and a more immediate connection to the drive.",
             "alt": "Low front three-quarter view of an orange vintage sports car beside a rocky coast.",
             "kind": "AI film concept",
@@ -930,7 +941,7 @@
             "thumb": "/media/gallery/frame-detail-thumb.webp",
             "width": 1672,
             "height": 941,
-            "title": "The details carry it",
+            "title": "Wheel and bodywork",
             "caption": "A close study of the wheel, orange bodywork and reflected light gives the sequence a quieter beat.",
             "alt": "Close-up of orange sports-car bodywork and rear wheel with softly focused ocean behind.",
             "kind": "AI film concept",
@@ -941,7 +952,7 @@
             "thumb": "/media/gallery/frame-ocean-establishing-thumb.webp",
             "width": 1672,
             "height": 941,
-            "title": "Room to breathe",
+            "title": "Wide coastline",
             "caption": "A final wide view returns to the cliffs, surf and road. These are AI-generated portfolio concepts, not completed Frame productions.",
             "alt": "Wide rocky coastline with teal waves and a small orange car on the cliffside road.",
             "kind": "AI film concept",
@@ -963,7 +974,11 @@
           }
         ]
       },
-      "demoLabel": "Explore studio sample"
+      "demoLabel": "Explore studio sample",
+      "overview": {
+        "type": "problem",
+        "text": "I wanted to make videos without juggling separate tools for scripts, images, voice and editing—or explaining the same preferences every time."
+      }
     },
     {
       "slug": "dubai-game",
@@ -982,11 +997,10 @@
       ],
       "stage": "Preproduction · Art review paused",
       "headline": [
-        "Dubai as a world",
-        "you can step into."
+        "A game",
+        "set in Dubai."
       ],
-      "summary": "Explore a cinematic Dubai through its neighbourhoods, landmarks and everyday stories. The project brings local cultural research, environment design and gameplay prototyping together into a city game concept.",
-      "problem": "A Dubai setting needs local character, believable places and a coherent playable world. Attractive isolated images are not enough to establish that world or a game.",
+      "summary": "A fun project exploring what a game set in Dubai could look like. So far: concept art, neighbourhood studies and early prototypes.",
       "features": [
         "Research the locations, cultural details and everyday stories that give Dubai its character.",
         "Develop a coherent cinematic world through environment and character direction.",
@@ -1019,8 +1033,8 @@
       "commercialReadiness": "Concept stage; no release, traction or monetization validation.",
       "cardAudience": "Players exploring Emirati stories",
       "cardStage": "Concept · Art review",
-      "positioning": "An Emirati-led city game concept built around the places and stories of Dubai.",
-      "outcome": "Build toward a playable Dubai that feels recognisable, culturally grounded and worth exploring.",
+      "positioning": "A game project set in Dubai, with local places, characters and stories.",
+      "outcome": "I’m starting with the places and characters, then working toward a small playable scene.",
       "deliverables": [
         "A researched world direction with location and cultural references",
         "A reviewed collection of cinematic environment concepts",
@@ -1066,7 +1080,7 @@
         }
       ],
       "gallery": {
-        "heading": "A world, waiting to be explored.",
+        "heading": "Dubai Game artwork",
         "description": "Eight existing visual-development studies from the project, from Downtown and Marina to sunlit courtyards and canals. Concept artwork, not gameplay.",
         "items": [
           {
@@ -1074,7 +1088,7 @@
             "thumb": "/media/gallery/dubai-downtown-thumb.webp",
             "width": 1600,
             "height": 905,
-            "title": "Downtown, after the sun sets",
+            "title": "Downtown at dusk",
             "caption": "The original Downtown study brings the full Burj silhouette, waterfront life and evening reflections together.",
             "alt": "Dubai Game concept art of Downtown at blue hour with the complete Burj Khalifa silhouette.",
             "kind": "AI visual development"
@@ -1084,7 +1098,7 @@
             "thumb": "/media/gallery/dubai-marina-thumb.webp",
             "width": 1600,
             "height": 900,
-            "title": "A day by the Marina",
+            "title": "Dubai Marina",
             "caption": "The original Marina study: towers, yachts and people sharing a warm, open waterfront.",
             "alt": "Dubai Game concept art of Marina towers, yachts and people along a sunlit waterfront.",
             "kind": "AI visual development"
@@ -1094,7 +1108,7 @@
             "thumb": "/media/gallery/dubai-marina-cafe-thumb.webp",
             "width": 1920,
             "height": 1080,
-            "title": "One more coffee, by the water",
+            "title": "Marina café",
             "caption": "A second Marina perspective trades the wide promenade for café tables and the glow of dusk.",
             "alt": "Dubai Marina concept study with outdoor café tables, pedestrians and warmly lit towers.",
             "kind": "AI visual development"
@@ -1104,7 +1118,7 @@
             "thumb": "/media/gallery/dubai-downtown-evening-thumb.webp",
             "width": 1920,
             "height": 1086,
-            "title": "The evening promenade",
+            "title": "Downtown promenade",
             "caption": "An alternate Downtown study explores a brighter promenade, café lighting and reflections.",
             "alt": "Alternate Downtown Dubai concept with Burj Khalifa, café lighting and waterfront reflections.",
             "kind": "AI visual development"
@@ -1114,7 +1128,7 @@
             "thumb": "/media/gallery/dubai-madinat-thumb.webp",
             "width": 1920,
             "height": 1080,
-            "title": "Life along the canal",
+            "title": "Madinat canal",
             "caption": "A Madinat-inspired study of water, wind towers, boats and places to pause.",
             "alt": "Madinat-inspired Dubai Game concept with a canal, boat, palms and wind-tower architecture.",
             "kind": "AI visual development"
@@ -1124,7 +1138,7 @@
             "thumb": "/media/gallery/dubai-al-seef-thumb.webp",
             "width": 1920,
             "height": 1080,
-            "title": "Stories on the waterfront",
+            "title": "Al Seef waterfront",
             "caption": "Al Seef-inspired textures, shaded façades and café life bring the city down to a human scale.",
             "alt": "Al Seef-inspired waterfront concept with textured heritage façades, a wind tower and café promenade.",
             "kind": "AI visual development"
@@ -1134,7 +1148,7 @@
             "thumb": "/media/gallery/dubai-atlantis-thumb.webp",
             "width": 1920,
             "height": 1080,
-            "title": "Golden hour on the Palm",
+            "title": "Atlantis at sunset",
             "caption": "An Atlantis-inspired view studies warm light, the hotel silhouette and a quiet foreground.",
             "alt": "Atlantis-inspired pink hotel silhouette across water at golden hour, with two foreground figures.",
             "kind": "AI visual development"
@@ -1144,15 +1158,19 @@
             "thumb": "/media/gallery/dubai-al-fahidi-thumb.webp",
             "width": 1920,
             "height": 1080,
-            "title": "A quieter corner of the city",
+            "title": "Al Fahidi alley",
             "caption": "An Al Fahidi-inspired alley completes the collection with sunlit walls, shade and a full wind tower.",
             "alt": "Al Fahidi-inspired concept of a sunlit ochre alley, courtyard and complete wind tower.",
             "kind": "AI visual development"
           }
         ]
+      },
+      "overview": {
+        "type": "fun",
+        "text": "I wanted to build a game set in Dubai and explore its streets, landmarks and everyday life. It’s a fun project, currently at the concept-art and early-prototype stage."
       }
     }
   ],
   "github": "https://github.com/Kbartawi",
-  "intro": "I’m Khaled, a founder in Dubai.\nI turn everyday friction into useful products."
+  "intro": "I’m a pilot and founder in Dubai.\nHere are the apps and side projects I’m building."
 }

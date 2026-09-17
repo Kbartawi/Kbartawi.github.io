@@ -8,6 +8,12 @@ The owner explicitly approved this direction on 17 September: “Amazing, amazin
 
 The owner then clarified: keep the website photographs, but add photographs of the products. For software, this means the real application interface—its inbox, dashboard, composer, forms and workflow. Put product screens first; keep marketing website captures and creative output studies in clearly named supporting collections. A website screenshot alone does not satisfy a request to show the product. Use actual app components and safe demo data; identify local samples and provider fixtures honestly. Never manufacture a product screen and call it a screenshot.
 
+## Voice and copy
+
+The owner explicitly rejected “Curiosity, meet execution” and the repeated “A problem worth solving” heading. Write like a person explaining their own projects. Use direct labels: **Problem**, **How it works**, **Status**, **Screenshots**. A project made for fun does not need a manufactured business problem: use **A fun project** and explain the idea. The catalogue records this in `overview.type` (`problem` or `fun`) and `overview.text`.
+
+Avoid motivational slogans, founder manifestos, rhyming sales lines and claims that every project solves an important problem. Keep the approved visual design; plain copy can still look good. Describe what the app does, what is available and what needs work. Refresh portfolio and GitHub preview images when visible copy changes so rejected slogans do not survive inside screenshots.
+
 ## Repeatable checklist
 
 - [ ] One consistent two-column project grid on desktop; one column on phone. Equal card structure and visual height at each breakpoint.
