@@ -47,7 +47,7 @@ Repository: `Kbartawi/Kbartawi.github.io`. GitHub Pages uses **Deploy from a bra
 - **Oris:** deployed application; tenant-specific channels, voice and customer outcomes require current evidence.
 - **Manzl:** hosted website and seeded leasing prototype; hosted API/data, private access and live channel acceptance are separate gates.
 - **Aqd:** browser-based preparation demo; no private cloud storage, production team accounts, payment collection or government registration.
-- **Frame:** hosted interactive creator-studio sample verified on 17 September; its ideas, script, scores, prices and media are fixture data. One real local personal-photo film completed and its download was verified, but its creative and voice quality were rejected. V2 adds a voice review gate and native iPhone editor source; mobile runtime verification and TestFlight release are still pending.
+- **Frame:** hosted interactive creator-studio sample verified on 17 September; its ideas, script, scores, prices and media are fixture data. One real local personal-photo film completed and its download was verified, but its creative and voice quality were rejected. V2 adds voice review and a native iPhone editor. The native app compiles, passes six Simulator tests and completed photo import → local export → gallery save through the UI. Real-device acceptance and TestFlight release remain pending.
 - **Dubai Game:** preproduction, paused art review and prototype source; no verified playable consumer release or approved final art.
 
 Public samples use fictional data. Source code for the products is private. Never publish credentials, private customer records or unsupported revenue/traction claims in this repository.

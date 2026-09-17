@@ -788,7 +788,7 @@
       "updates": [
         {
           "date": "2026-09-18",
-          "text": "Completed a live local personal-photo film and verified playback/download. The result failed the founder’s creative and voice expectations. V2 adds voice review before video spending and starts a native iPhone editor for supplied photos/clips and real recorded voice; mobile runtime verification and TestFlight release remain open."
+          "text": "Completed a live local personal-photo film and verified playback/download. The result failed the founder’s creative and voice expectations. V2 adds voice review before video spending and starts a native iPhone editor for supplied photos/clips and real recorded voice; six native Simulator tests now pass, including real MP4 export, mixed media, audio and gallery persistence. Physical-device checks and TestFlight release remain open."
         },
         {
           "date": "2026-09-17",
@@ -796,7 +796,7 @@
         }
       ],
       "demoUrl": "https://frame-studio-amber.vercel.app/studio",
-      "technicalReadiness": "A local AI film completed with gallery playback and verified download. Its creative and voice quality were rejected. Native iPhone V2 source is in development; no TestFlight build is released.",
+      "technicalReadiness": "A local AI film completed with gallery playback and verified download. Its creative and voice quality were rejected. Native iPhone V2 compiles and passes six Simulator tests; photo import, local export and gallery save were checked through the UI. Real-device acceptance and TestFlight release remain pending.",
       "commercialReadiness": "Personal use first; acceptance, repeat use and production economics are unvalidated.",
       "cardAudience": "People making their first reels",
       "cardStage": "Prototype · In testing",
