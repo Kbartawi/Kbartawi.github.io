@@ -758,7 +758,7 @@
       "languages": [
         "English"
       ],
-      "stage": "Active prototype · Production validation",
+      "stage": "Internal iPhone beta · Acceptance testing",
       "headline": [
         "Video production,",
         "from idea to export."
@@ -788,7 +788,7 @@
       "updates": [
         {
           "date": "2026-09-18",
-          "text": "Native Frame V2 now produces an unsigned Release archive, version 2.0.0 (1), for arm64 iPhones on iOS 17 or newer. App icon and privacy checks pass. Signing and upload await the owner’s Apple Account sign-in in Xcode; no TestFlight build is released. The offline editor supports drafts, gallery recovery and safer import, export and voice saving, with 44 Simulator tests. It has no Frame login or AI provider integration. The earlier import/title/resume/export/gallery flow was checked through the interface; the latest controls and physical-device acceptance remain open. The separate web studio offers Kling and Seedance with 174 mocked tests; AI creative acceptance remains pending."
+          "text": "Frame 2.0.0 (1) is now available for owner-only internal TestFlight testing as “Frame: Photos to Reels”; the app itself is named Frame. The distribution-signed build was uploaded, processed by Apple and assigned to the internal group, with the owner invited. Installation and acceptance on a real iPhone remain unverified. This is not an external or public beta or an App Store release. The offline editor supports drafts, gallery recovery and safer import, export and voice saving, with 44 Simulator tests. It has no Frame login or cloud AI integration. The separate web studio offers Kling and Seedance with 174 mocked tests; AI creative acceptance remains pending."
         },
         {
           "date": "2026-09-17",
@@ -796,10 +796,10 @@
         }
       ],
       "demoUrl": "https://frame-studio-amber.vercel.app/studio",
-      "technicalReadiness": "Native V2 passes 44 Simulator tests and builds an unsigned Release archive, version 2.0.0 (1), for arm64/iOS 17+. Icon and privacy checks pass. Signing and upload await the owner’s Apple Account sign-in in Xcode. The earlier import/title/resume/export/gallery flow was verified through the UI; the latest controls, actual Photos/sharing and physical-device acceptance remain open. The separate web studio offers Kling and Seedance with 174 mocked tests. No TestFlight build is released.",
+      "technicalReadiness": "Frame 2.0.0 (1) is distribution-signed, uploaded, processed by Apple and available to the invited owner through internal TestFlight under “Frame: Photos to Reels”. The native editor passes 44 Simulator tests. The earlier import/title/resume/export/gallery flow was checked through the UI; real iPhone installation, the latest controls, Photos/sharing and physical-device acceptance remain unverified. The separate web studio offers Kling and Seedance with 174 mocked tests. No external/public beta or App Store release is available.",
       "commercialReadiness": "Personal use first; acceptance, repeat use and production economics are unvalidated.",
       "cardAudience": "People making their first reels",
-      "cardStage": "Prototype · In testing",
+      "cardStage": "Prototype · Internal iPhone beta",
       "positioning": "Your moments and ideas, guided into a reel you want to share.",
       "outcome": "Help a beginner choose a format, review the actual edit and voice, then save a reel without learning production tools.",
       "deliverables": [
@@ -822,7 +822,7 @@
         "SwiftUI",
         "AVFoundation"
       ],
-      "nextAction": "Sign the archived iPhone build, upload it for owner-only internal TestFlight, and verify photo, video and recorded-voice exports on the physical device.",
+      "nextAction": "Install the owner’s internal TestFlight build on a real iPhone and verify photo, video and recorded-voice exports, draft recovery, gallery use, Photos saving and sharing.",
       "readinessChecks": [
         {
           "label": "Product workflow",
@@ -832,12 +832,12 @@
         {
           "label": "Verification",
           "status": "open",
-          "detail": "44 native Simulator tests pass, and an unsigned iPhone Release archive builds with valid icon and privacy metadata. Physical-device acceptance remains pending. The web studio passes 174 mocked tests; its first live film was rejected for creative and voice quality."
+          "detail": "44 native Simulator tests pass. Frame 2.0.0 (1) is signed and processed for internal TestFlight, with the owner invited. Real iPhone installation and acceptance remain unverified. The web studio passes 174 mocked tests; its first live film was rejected for creative and voice quality."
         },
         {
           "label": "Hosting and data",
           "status": "open",
-          "detail": "The hosted studio is a static sample. Real AI generation runs on the private Mac. The native iPhone editor works offline and renders on-device, with no Frame login or AI provider integration. There is no public authenticated generation backend."
+          "detail": "The hosted studio is a static sample. Real AI generation runs on the private Mac. The native iPhone editor works offline and renders on-device, with no Frame login or cloud AI integration. There is no public authenticated generation backend."
         },
         {
           "label": "Customer validation",
@@ -847,7 +847,7 @@
         {
           "label": "Release gate",
           "status": "open",
-          "detail": "The unsigned iPhone archive is ready for signing. Owner Apple Account sign-in in Xcode is needed before signing and upload for internal TestFlight. Internal testing does not require external Beta App Review. No TestFlight build is released; physical-device acceptance is still pending."
+          "detail": "Owner-only internal TestFlight is available under “Frame: Photos to Reels”, with one processed build and one invited owner tester. The app display name remains Frame. Real iPhone installation and acceptance are the next gate. There is no external/public beta or App Store release."
         }
       ],
       "gallery": {
