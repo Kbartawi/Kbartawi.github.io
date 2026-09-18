@@ -777,7 +777,7 @@
       ],
       "nextFocus": [
         "Verify live script and shot direction before more media spending",
-        "Inspect generated images, video and voice, then execute the complete edit",
+        "Improve automatic visual continuity and review the completed film with the founder",
         "Connect the mobile client only after complete-film acceptance"
       ],
       "website": null,
@@ -786,6 +786,10 @@
       "demoNote": "The public studio uses built-in sample data. Its displayed scores, prices and media are fixtures. The screenshots demonstrate the product interface; the coastal film stills are separate portfolio concepts.",
       "updatedAt": "2026-09-18",
       "updates": [
+        {
+          "date": "2026-09-18",
+          "text": "Backend 0.8.6 completed a 30-second explainer in the local gallery: four real planning stages, Kling motion, operator-authored 3D diagrams, continuous narration, aligned captions and timed sound. The film cost about $2.27 including rejected work; 200 mocked tests, full media decoding, gallery playback and download integrity passed. Manual direction and repairs were still needed. Founder creative acceptance and a reliable unaided workflow remain pending."
+        },
         {
           "date": "2026-09-18",
           "text": "Product direction corrected after the founder rejected the slideshow: complete AI-directed films are the goal. Backend 0.8.5 adds staged planning and pre-spend review safeguards, verified with 189 mocked tests and a browser fixture. Actual media review, richer editing and the mobile connection remain unfinished. No new generation credits were spent."
@@ -800,7 +804,7 @@
         }
       ],
       "demoUrl": "https://frame-studio-amber.vercel.app/studio",
-      "technicalReadiness": "Backend 0.8.5 adds separate writer, director, editor and reviewer calls, timestamped shot actions, explicit generation routes and exact-image approval before animation for new drafts. 189 mocked backend tests pass; the new review controls were verified in an isolated browser fixture. No new live writing or media acceptance is claimed. Perceptual review and richer editing remain unfinished. Owner TestFlight 2.0.0 (1) is a separate offline editor with 44 native tests; no Frame login or cloud AI integration. Real-device acceptance remains pending.",
+      "technicalReadiness": "Backend 0.8.6 completed a 30-second explainer in the local gallery: four real planning stages, Kling motion, operator-authored 3D diagrams, continuous narration, aligned captions and timed sound. The film cost about $2.27 including rejected work; 200 mocked tests, full media decoding, gallery playback and download integrity passed. Manual direction and repairs were still needed. Founder creative acceptance and a reliable unaided workflow remain pending. Owner TestFlight 2.0.0 (1) remains a separate offline editor with 44 previously passing native tests; no Frame login/cloud AI integration or new device verification occurred in this film run.",
       "commercialReadiness": "Personal use first; acceptance, repeat use and production economics are unvalidated.",
       "cardAudience": "People making their first reels",
       "cardStage": "Prototype · Internal iPhone beta",
