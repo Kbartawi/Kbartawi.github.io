@@ -788,7 +788,7 @@
       "updates": [
         {
           "date": "2026-09-18",
-          "text": "Frame 2.0.0 (1) is now available for owner-only internal TestFlight testing as “Frame: Photos to Reels”; the app itself is named Frame. The distribution-signed build was uploaded, processed by Apple and assigned to the internal group, with the owner invited. Installation and acceptance on a real iPhone remain unverified. This is not an external or public beta or an App Store release. The offline editor supports drafts, gallery recovery and safer import, export and voice saving, with 44 Simulator tests. It has no Frame login or cloud AI integration. The separate web studio offers Kling and Seedance with 174 mocked tests; AI creative acceptance remains pending."
+          "text": "Frame 2.0.0 (1) is now available for owner-only internal TestFlight testing as “Frame: Photos to Reels”; the app itself is named Frame. The distribution-signed build was uploaded, processed by Apple and assigned to the internal group, with the owner invited. Installation and acceptance on a real iPhone remain unverified. This is not an external or public beta or an App Store release. The offline editor supports drafts, gallery recovery and safer import, export and voice saving, with 44 Simulator tests. It has no Frame login or cloud AI integration. The separate web studio offers Kling and Seedance with 174 mocked tests; AI creative acceptance remains pending. A subsequent simulator walkthrough verified editing, relaunch, gallery recovery, missing-video retry and completed Files sharing. The inspected export shows that landscape framing and template quality still need work."
         },
         {
           "date": "2026-09-17",
@@ -796,7 +796,7 @@
         }
       ],
       "demoUrl": "https://frame-studio-amber.vercel.app/studio",
-      "technicalReadiness": "Frame 2.0.0 (1) is distribution-signed, uploaded, processed by Apple and available to the invited owner through internal TestFlight under “Frame: Photos to Reels”. The native editor passes 44 Simulator tests. The earlier import/title/resume/export/gallery flow was checked through the UI; real iPhone installation, the latest controls, Photos/sharing and physical-device acceptance remain unverified. The separate web studio offers Kling and Seedance with 174 mocked tests. No external/public beta or App Store release is available.",
+      "technicalReadiness": "Frame 2.0.0 (1) is available to its invited owner through internal TestFlight as “Frame: Photos to Reels”. All 44 native and 174 mocked backend tests pass. Current-source simulator testing verifies multi-photo import, ordering, timing/title edits, full relaunch, export, gallery rename/restore, missing-video retry and Share to Files with matching file hashes. Real-iPhone installation, microphone and Photos acceptance remain unverified. Landscape framing and template quality need improvement. No external/public beta or App Store release is available.",
       "commercialReadiness": "Personal use first; acceptance, repeat use and production economics are unvalidated.",
       "cardAudience": "People making their first reels",
       "cardStage": "Prototype · Internal iPhone beta",
