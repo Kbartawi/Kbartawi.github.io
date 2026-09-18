@@ -788,7 +788,7 @@
       "updates": [
         {
           "date": "2026-09-18",
-          "text": "Frame V2 now supports resumable native drafts, gallery renaming and recoverable removal through Recently Deleted, Undo and Restore. Background voice saving waits for the finished take. Unreadable saved drafts and galleries are preserved, with a safe read retry. 27 native Simulator tests pass; the new controls still need visual and real-device acceptance. The earlier import/title/resume/export/gallery flow was checked through the interface. The web studio offers Kling and Seedance with explicit estimates and 174 mocked tests. AI creative acceptance and TestFlight remain open."
+          "text": "Frame V2 now supports resumable native drafts, gallery renaming and recoverable removal through Recently Deleted, Undo and Restore. Background voice saving waits for the finished take. Unreadable saved drafts and galleries are preserved, with a safe read retry. Imports save each moment before showing it and preserve earlier items on handled failure or cancellation. 32 native Simulator tests pass; the new controls still need visual and real-device acceptance. The earlier import/title/resume/export/gallery flow was checked through the interface. The web studio offers Kling and Seedance with explicit estimates and 174 mocked tests. AI creative acceptance and TestFlight remain open."
         },
         {
           "date": "2026-09-17",
@@ -796,7 +796,7 @@
         }
       ],
       "demoUrl": "https://frame-studio-amber.vercel.app/studio",
-      "technicalReadiness": "Native V2 passes 27 Simulator tests covering export, drafts, gallery rename/restore, voice finalization and protection of unreadable saved data. The earlier photo/title/resume/export/gallery flow was verified through the UI; the latest gallery, recording and recovery controls still need visual and real-device checks. The web studio offers Kling and Seedance with 174 mocked tests. AI creative acceptance and TestFlight release remain pending.",
+      "technicalReadiness": "Native V2 passes 32 Simulator tests covering export, drafts, gallery rename/restore, voice finalization, unreadable saved data and interrupted imports. The earlier photo/title/resume/export/gallery flow was verified through the UI; the latest gallery, recording, recovery and import controls still need visual and real-device checks. The web studio offers Kling and Seedance with 174 mocked tests. AI creative acceptance and TestFlight release remain pending.",
       "commercialReadiness": "Personal use first; acceptance, repeat use and production economics are unvalidated.",
       "cardAudience": "People making their first reels",
       "cardStage": "Prototype · In testing",
