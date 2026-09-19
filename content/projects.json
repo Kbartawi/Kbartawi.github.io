@@ -784,8 +784,12 @@
       "image": null,
       "imageAlt": "",
       "demoNote": "The public studio uses built-in sample data. Its displayed scores, prices and media are fixtures. The screenshots demonstrate the product interface; the coastal film stills are separate portfolio concepts.",
-      "updatedAt": "2026-09-18",
+      "updatedAt": "2026-09-20",
       "updates": [
+        {
+          "date": "2026-09-20",
+          "text": "Native Frame 2.0.1 (3) refresh adds a forest-green Studio home, three relatable illustrated comedy starters, editable local story notes and My videos navigation. All 44 native tests passed, with simulator checks of the new flows and notes after relaunch. The signed build was processed by Apple and assigned to Owner Testing (one existing tester). App Store Connect confirms that the owner installed the previous build on an iPhone 16 Pro. The mobile app still has no connected AI filmmaking; new-build device acceptance, creative acceptance and audience validation remain open."
+        },
         {
           "date": "2026-09-18",
           "text": "Backend 0.8.6 completed a 30-second explainer in the local gallery: four real planning stages, Kling motion, operator-authored 3D diagrams, continuous narration, aligned captions and timed sound. The film cost about $2.27 including rejected work; 200 mocked tests, full media decoding, gallery playback and download integrity passed. Manual direction and repairs were still needed. Founder creative acceptance and a reliable unaided workflow remain pending."
@@ -804,7 +808,7 @@
         }
       ],
       "demoUrl": "https://frame-studio-amber.vercel.app/studio",
-      "technicalReadiness": "Backend 0.8.6 completed a 30-second explainer in the local gallery: four real planning stages, Kling motion, operator-authored 3D diagrams, continuous narration, aligned captions and timed sound. The film cost about $2.27 including rejected work; 200 mocked tests, full media decoding, gallery playback and download integrity passed. Manual direction and repairs were still needed. Founder creative acceptance and a reliable unaided workflow remain pending. Owner TestFlight 2.0.0 (1) remains a separate offline editor with 44 previously passing native tests; no Frame login/cloud AI integration or new device verification occurred in this film run.",
+      "technicalReadiness": "Backend 0.8.6 completed a 30-second explainer in the local gallery: four real planning stages, Kling motion, operator-authored 3D diagrams, continuous narration, aligned captions and timed sound. The film cost about $2.27 including rejected work; 200 mocked tests, full media decoding, gallery playback and download integrity passed. Manual direction and repairs were still needed. Founder creative acceptance and a reliable unaided workflow remain pending. Native Frame 2.0.1 (3) refresh adds a forest-green Studio home, three relatable illustrated comedy starters, editable local story notes and My videos navigation. All 44 native tests passed, with simulator checks of the new flows and notes after relaunch. The signed build was processed by Apple and assigned to Owner Testing (one existing tester). App Store Connect confirms that the owner installed the previous build on an iPhone 16 Pro. The mobile app still has no connected AI filmmaking; new-build device acceptance, creative acceptance and audience validation remain open.",
       "commercialReadiness": "Personal use first; acceptance, repeat use and production economics are unvalidated.",
       "cardAudience": "People making their first reels",
       "cardStage": "Prototype · Internal iPhone beta",
@@ -840,7 +844,7 @@
         {
           "label": "Verification",
           "status": "open",
-          "detail": "44 native Simulator tests pass. Frame 2.0.0 (1) is signed and processed for internal TestFlight, with the owner invited. Real iPhone installation and acceptance remain unverified. The web studio passes 174 mocked tests; its first live film was rejected for creative and voice quality."
+          "detail": "44 native Simulator tests passed again with the refreshed home and local story notes. The previous TestFlight installation is verified; new-build installation and real-device acceptance remain open. Backend 0.8.6 has 200 mocked tests, but founder creative acceptance is still pending."
         },
         {
           "label": "Hosting and data",
@@ -855,7 +859,7 @@
         {
           "label": "Release gate",
           "status": "open",
-          "detail": "Owner-only internal TestFlight is available under “Frame: Photos to Reels”, with one processed build and one invited owner tester. The app display name remains Frame. Real iPhone installation and acceptance are the next gate. There is no external/public beta or App Store release."
+          "detail": "Frame 2.0.1 (3) is signed, processed and assigned to Owner Testing (one existing tester). App Store draft version and factual description are updated, with no public submission. The app has no connected mobile AI filmmaking."
         }
       ],
       "gallery": {
