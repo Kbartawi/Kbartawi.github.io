@@ -789,6 +789,10 @@
       "updates": [
         {
           "date": "2026-09-20",
+          "text": "Signed build 3.0.0 (7), uploaded at 13:18:15 Dubai, improves the interface and protects unsaved edits, follow-up drafts and newer saved content. The full suite executed 103 checks: 102 passed and one device-only skip. Simulator draft save/reopen and native Calendar cancel/save callbacks were verified. Build 7 processing completion and group assignment remain unverified; build 4 remains the only verified assigned internal beta."
+        },
+        {
+          "date": "2026-09-20",
           "text": "Signed Frame 3.0.0 (6) uploaded at 11:35:59 Dubai. The latest changes clarify foreground recording and save retries, and make all saved actions discoverable. Simulator UI verified finding and completing a fourth action; 25 targeted checks passed with one device-only skip, plus 27 iOS 18.5 compatibility checks. Apple processing/assignment for build 6 is unverified; build 4 remains the verified internal release."
         },
         {
@@ -813,7 +817,7 @@
         }
       ],
       "demoUrl": null,
-      "technicalReadiness": "Build 3.0.0 (4) remains verified in Owner Testing (Internal, one tester). Signed build 3.0.0 (6) uploaded successfully at 11:35:59 Dubai on 20 September 2026; its Apple processing and group assignment remain unverified. It includes local reminders, advance warning that recording pauses outside Frame, clearer save-retry guidance and an inline control to reveal every action. The latest candidate passed 25 targeted checks with one device-only skip and 27 iOS 18.5 compatibility checks. Physical-device acceptance and optional on-device AI quality remain unverified.",
+      "technicalReadiness": "Build 3.0.0 (4) remains verified in Owner Testing (Internal, one tester); signed build 3.0.0 (7) uploaded successfully at 13:18:15 Dubai on 20 September 2026. Build 7 improves visual fidelity, protects unsaved note edits and drafts, prevents stale changes from overwriting newer content, and corrects recording-resume setup. Its full suite executed 103 checks: 102 passed and one device-only check was skipped. Simulator draft save/reopen and native Calendar cancel/save callbacks were verified. Apple processing completion and group assignment for build 7 remain unverified. Physical microphone, recording recovery, on-device AI and language quality remain unverified.",
       "commercialReadiness": "Private beta available for owner testing. Repeat use and willingness to pay remain unvalidated; no paid launch is available.",
       "cardAudience": "People working across recurring conversations",
       "cardStage": "Internal beta · Device acceptance pending",
@@ -841,7 +845,7 @@
         {
           "label": "Native implementation",
           "status": "open",
-          "detail": "Latest build: 25 targeted checks passed with one device-only skip, plus 27 compatibility checks on iOS 18.5. Simulator UI verified discovering and completing an action beyond the first three. The earlier reminder suite passed 96 checks with one device-only skip; that is not a fresh full-suite run of build 6."
+          "detail": "Build 7: 103 checks executed, 102 passed and one device-only skip. Simulator draft save/reopen and native Calendar cancel/save callbacks were verified. Physical recording remains unverified: Simulator audio preparation stalled before recording, the attempt was terminated and no audio export was produced."
         },
         {
           "label": "Device and language quality",
@@ -851,12 +855,12 @@
         {
           "label": "Data and actions",
           "status": "open",
-          "detail": "On-device storage and optional AI; no automatic sending. Calendar closes safely when its editor is unavailable in Simulator, but successful device handoff remains unverified. Protected storage needs its physical-device check."
+          "detail": "Unsaved note/draft handling and stale-edit protection were improved. Simulator verified saving and reopening a draft and the native Calendar cancel/save callbacks. This is not physical-device Calendar, microphone or file-protection acceptance; AI/language checks still need a supported device."
         },
         {
           "label": "New assistant release",
           "status": "passed",
-          "detail": "Build 4 remains verified in Owner Testing (Internal, one tester). Signed build 6 uploaded at 11:35:59 Dubai on 20 September 2026; Apple processing and tester assignment remain unverified. New-build physical installation and acceptance are not claimed."
+          "detail": "Build 4 remains verified in Owner Testing (Internal, one tester). Signed build 3.0.0 (7) uploaded successfully at 13:18:15 Dubai on 20 September 2026. Apple processing completion and group assignment remain unverified. No build 7 availability or new-build physical acceptance is claimed."
         },
         {
           "label": "Customer usefulness",
