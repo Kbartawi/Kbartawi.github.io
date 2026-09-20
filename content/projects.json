@@ -789,6 +789,10 @@
       "updates": [
         {
           "date": "2026-09-20",
+          "text": "Development build15 passed the fresh-install microphone-permission workflow in an actual simulator recording. The recording fix is not yet delivered to TestFlight; build14 remains current with the Resume workaround."
+        },
+        {
+          "date": "2026-09-20",
           "text": "Known build14 issue: on a fresh installation, allowing microphone access can immediately pause recording at zero seconds. Tap Resume to continue. Reproduced in a fresh-install simulator workflow; a fix is in progress. Physical-phone cause remains unconfirmed. Build14 is still the delivered internal release."
         },
         {
@@ -1123,6 +1127,12 @@
         "caption": "78-second silent simulator recording with fictional data, captured during build 13 development. Shows task editing, original sources, completion receipts and the audio-only warning. This is local workflow evidence, not AI generation proof or physical-device acceptance. Build 3.0.0 (14) is now the latest verified internal TestFlight release; the video remains a development recording.",
         "previousSrc": "/media/frame/actual/build10/actual-build10-demo.mp4",
         "previousLabel": "Earlier build10 demo · 84 seconds · source-search fallback, not AI generation"
+      },
+      "permissionDemo": {
+        "src": "/media/frame/actual/build15-development/first-microphone-recording.mp4",
+        "poster": "/media/frame/actual/build15-development/permission-poster.jpg",
+        "title": "First microphone permission test · development build15",
+        "caption": "114-second silent simulator recording. Fresh-install microphone Allow continues recording; Home pauses capture; returning stays paused until Resume; Finish saves a 42-second original. Speech permission was denied after saving. This verifies recording controls and original-file preservation, not AI generation or acoustic quality. Development build15 is not yet delivered; build14 remains the current internal TestFlight release."
       }
     },
     {

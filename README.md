@@ -56,3 +56,5 @@ Latest Frame evidence: [local workflow demo](https://kbartawi.github.io/projects
 
 
 Known build14 issue: on a fresh installation, allowing microphone access can immediately pause recording at zero seconds. Tap Resume to continue. Reproduced in a fresh-install simulator workflow; a fix is in progress. Physical-phone cause remains unconfirmed. Build14 is still the delivered internal release.
+
+New development evidence: [fresh microphone-permission workflow](https://kbartawi.github.io/projects/frame/#permission-demo), 114 seconds, silent simulator capture from development build15. First Allow continues recording; background pauses; explicit Resume continues; Finish preserves the original before denied speech permission. No successful AI or acoustic-quality claim. Build14 remains current until Apple verifies a new delivery.
