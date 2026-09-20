@@ -54,3 +54,5 @@ Frame updates must stay synchronized with the application README and GitHub pers
 
 Latest Frame evidence: [local workflow demo](https://kbartawi.github.io/projects/frame/#demo), 78 seconds, silent, development build13. It shows task editing, source review, receipts and an audio-only warning—not successful AI generation. Build 3.0.0 (14) is the latest verified internal TestFlight release; this video remains a development recording. The earlier build10 video and all20 gallery images are preserved.
 
+
+Known build14 issue: on a fresh installation, allowing microphone access can immediately pause recording at zero seconds. Tap Resume to continue. Reproduced in a fresh-install simulator workflow; a fix is in progress. Physical-phone cause remains unconfirmed. Build14 is still the delivered internal release.

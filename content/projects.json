@@ -789,6 +789,10 @@
       "updates": [
         {
           "date": "2026-09-20",
+          "text": "Known build14 issue: on a fresh installation, allowing microphone access can immediately pause recording at zero seconds. Tap Resume to continue. Reproduced in a fresh-install simulator workflow; a fix is in progress. Physical-phone cause remains unconfirmed. Build14 is still the delivered internal release."
+        },
+        {
+          "date": "2026-09-20",
           "text": "Build 3.0.0 (14) completed Apple processing, has saved What to Test instructions and is assigned to Owner Testing (Internal, one tester). It improves microphone-permission recovery, explains recording blockers, offers a written-note fallback and restores explicit local AI draft retry. Final native checks: 183 executed, 180 passed, three skipped, zero failures. The reported physical-iPhone root cause and successful AI remain unverified."
         },
         {
@@ -805,7 +809,7 @@
         }
       ],
       "demoUrl": null,
-      "technicalReadiness": "Build 3.0.0 (14) is verified in internal TestFlight. Local capture, source-linked recall, reviewed tasks, drafts and manual Calendar handoff are implemented. The update improves microphone-permission recovery and local AI retry; its native suite executed 183 checks, with 180 passed and three skipped. Actual simulator recording controls and saved replay controls were exercised. Successful generation, acoustic quality and physical-device acceptance remain unverified. Cloud AI is disabled in Release.",
+      "technicalReadiness": "Build 3.0.0 (14) is verified in internal TestFlight. Local capture, source-linked recall, reviewed tasks, drafts and manual Calendar handoff are implemented. The update improves microphone-permission recovery and local AI retry; its native suite executed 183 checks, with 180 passed and three skipped. Actual simulator recording controls and saved replay controls were exercised. Successful generation, acoustic quality and physical-device acceptance remain unverified. Cloud AI is disabled in Release. Known build14 issue: on a fresh installation, allowing microphone access can immediately pause recording at zero seconds. Tap Resume to continue. Reproduced in a fresh-install simulator workflow; a fix is in progress. Physical-phone cause remains unconfirmed. Build14 is still the delivered internal release.",
       "commercialReadiness": "Private beta available for owner testing. Repeat use and willingness to pay remain unvalidated; no paid launch is available.",
       "cardAudience": "People working across recurring conversations",
       "cardStage": "Internal beta · Device acceptance pending",
@@ -833,7 +837,7 @@
         {
           "label": "Working app flows",
           "status": "open",
-          "detail": "Recording start, pause, resume, save and playback controls passed in the iOS 27 simulator. Manual notes, source navigation, tasks, drafts and Calendar handoff also have simulator evidence. These checks do not establish physical-device reliability. Build 12 completion and Dismiss persistence passed force-close/reopen checks in the simulator; Source and Reopen were also exercised during this cycle."
+          "detail": "Known build14 issue: on a fresh installation, allowing microphone access can immediately pause recording at zero seconds. Tap Resume to continue. Reproduced in a fresh-install simulator workflow; a fix is in progress. Physical-phone cause remains unconfirmed. Build14 is still the delivered internal release. Previously verified recording controls used an already-granted microphone permission."
         },
         {
           "label": "Voice and optional AI",
