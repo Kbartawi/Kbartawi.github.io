@@ -789,6 +789,10 @@
       "updates": [
         {
           "date": "2026-09-20",
+          "text": "Build 3.0.0 (13) completed Apple processing, has saved test instructions and is assigned to Owner Testing (Internal, one tester). This local-only update improves task editing, reviewed-action flow and capture capability warnings. Cloud AI is disabled in the release. Successful AI generation and physical-iPhone voice-to-action remain unverified."
+        },
+        {
+          "date": "2026-09-20",
           "text": "Build 3.0.0 (12) completed Apple processing and is assigned to internal Owner Testing. It adds an exact source quote to AI-proposed next steps, rejects changed or private source evidence, and keeps completion receipts with their original note after reopening the app. Reviewed due dates order pending tasks. Successful AI generation and physical-device acceptance remain unverified."
         },
         {
@@ -797,7 +801,7 @@
         }
       ],
       "demoUrl": null,
-      "technicalReadiness": "An internal iPhone beta with local capture, source-linked recall, reviewed tasks, drafts and manual Calendar handoff. Build 12 adds source-evidence guards and durable task completion state; its automated suite executed 149 checks, with 147 passed and two skipped. A separate live AI test failed. Successful generation and physical-device acceptance remain unverified. Optional AI requires an eligible device with iOS 26.4 or later and an enabled, ready Apple model. No cloud AI service is connected.",
+      "technicalReadiness": "An internal iPhone beta with local capture, source-linked recall, reviewed tasks, drafts and manual Calendar handoff. Build 13 improves task editing, reviewed-action flow and capture capability warnings; cloud AI is disabled in the release. Earlier build12 automated validation executed 149 checks,147 passed and two skipped; a separate live AI test failed. Successful generation and physical-device acceptance remain unverified. Optional AI requires an eligible device with iOS 26.4 or later and an enabled, ready Apple model.",
       "commercialReadiness": "Private beta available for owner testing. Repeat use and willingness to pay remain unvalidated; no paid launch is available.",
       "cardAudience": "People working across recurring conversations",
       "cardStage": "Internal beta · Device acceptance pending",
@@ -840,7 +844,7 @@
         {
           "label": "Internal distribution",
           "status": "passed",
-          "detail": "Build 3.0.0 (12) completed Apple processing and is verified in Owner Testing (Internal, one tester), with test instructions saved. Installation and acceptance on the physical iPhone remain unverified."
+          "detail": "Build 3.0.0 (13) completed Apple processing and is verified in Owner Testing (Internal, one tester), with What to Test saved. Installation and acceptance on the physical iPhone remain unverified."
         },
         {
           "label": "Customer usefulness",
@@ -1108,7 +1112,7 @@
         "src": "/media/frame/actual/build13-development/frame-local-workflow-demo.mp4",
         "poster": "/media/frame/actual/build13-development/demo-poster.jpg",
         "title": "Local workflow demo · development build13",
-        "caption": "78-second silent simulator recording with fictional data. Shows task editing, original sources, completion receipts and the audio-only warning. This is local development evidence, not AI generation proof or a delivered TestFlight13 release. Build12 remains the latest verified internal release.",
+        "caption": "78-second silent simulator recording with fictional data, captured during build 13 development. Shows task editing, original sources, completion receipts and the audio-only warning. This is local workflow evidence, not AI generation proof or physical-device acceptance. Build 3.0.0 (13) is now the latest verified internal TestFlight release; the video remains a development recording.",
         "previousSrc": "/media/frame/actual/build10/actual-build10-demo.mp4",
         "previousLabel": "Earlier build10 demo · 84 seconds · source-search fallback, not AI generation"
       }
