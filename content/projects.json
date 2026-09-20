@@ -768,7 +768,8 @@
         "Capture an idea or conversation, then keep the original recording alongside your editable note.",
         "Find earlier notes and open the source behind a memory answer.",
         "Review suggested tasks and follow-up drafts before acting.",
-        "Use light, dark or red night appearance, with local data controls."
+        "Use light, dark or red night appearance, with local data controls.",
+        "Build 5 adds optional local task reminders with generic notification text; its TestFlight availability is not yet verified."
       ],
       "workflow": [
         "Capture your words",
@@ -786,6 +787,10 @@
       "demoNote": "The visual overview is a workflow illustration, not an app screenshot. Earlier video assets remain archived separately and are not evidence of the assistant.",
       "updatedAt": "2026-09-20",
       "updates": [
+        {
+          "date": "2026-09-20",
+          "text": "Build 3.0.0 (5) adds optional local reminders and uploaded successfully at 06:04:09 Dubai. Its suite passed 96 checks with one device-only skip; Simulator verified permission, schedule/remove, delivered notification and navigation to the correct private note. Build 5 Apple processing/assignment is unverified. Build 4 remains the verified internal Owner Testing release."
+        },
         {
           "date": "2026-09-20",
           "text": "Frame 3.0.0 (4) is processed by Apple and assigned to Owner Testing (Internal, one tester), with What to Test saved. The native suite has 81 passing checks and one device-only skip. New-build installation, device AI and workflow acceptance remain unverified."
@@ -812,7 +817,7 @@
         }
       ],
       "demoUrl": null,
-      "technicalReadiness": "Native 3.0.0 (4) compiled, with 81 automated tests passing and one device-only protection check skipped. Apple processed the signed build and assigned it to Owner Testing (Internal, one tester); What to Test was saved. New-build installation and physical-device acceptance remain unverified. Optional local AI requires iOS 26.4+ on a compatible enabled device. Calendar device acceptance remains open.",
+      "technicalReadiness": "Build 3.0.0 (4) is processed by Apple and assigned to Owner Testing (Internal, one tester). Build 3.0.0 (5) uploaded successfully at 06:04:09 Dubai on 20 September 2026; Apple processing and group assignment for build 5 remain unverified. The build 5 suite has 96 passing tests and one device-only skip. Simulator checks verified notification permission, scheduling/removal, delivered notification and opening the correct private note from its tap. Physical-device installation and acceptance remain unverified; optional AI requires iOS 26.4+ and compatible enabled hardware.",
       "commercialReadiness": "Private beta available for owner testing. Repeat use and willingness to pay remain unvalidated; no paid launch is available.",
       "cardAudience": "People working across recurring conversations",
       "cardStage": "Internal beta · Device acceptance pending",
@@ -840,7 +845,7 @@
         {
           "label": "Native implementation",
           "status": "open",
-          "detail": "81 automated tests passed and one device-only protection check was skipped. A lower-OS AI compatibility fix was checked on iOS 26.0. Real microphone, supported-model output and language quality still need device acceptance."
+          "detail": "Build 5 has 96 passing tests and one device-only skip. Simulator reminder permission, scheduling/removal, notification delivery and navigation to the correct private note were verified. Device microphone/model/language acceptance remains open."
         },
         {
           "label": "Device and language quality",
@@ -855,7 +860,7 @@
         {
           "label": "New assistant release",
           "status": "passed",
-          "detail": "Apple processed Frame 3.0.0 (4) and assigned it to Owner Testing (Internal, one tester). What to Test was saved. This verifies internal distribution only; new-build installation and physical-device acceptance remain unverified."
+          "detail": "Build 4 remains verified in Owner Testing (Internal, one tester). Build 5 uploaded at 06:04:09 Dubai on 20 September 2026, but its Apple processing and tester assignment are not verified. No build 5 availability or physical-device acceptance is claimed."
         },
         {
           "label": "Customer usefulness",
