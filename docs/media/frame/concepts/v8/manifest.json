@@ -1,0 +1,167 @@
+{
+  "version": "frame-v8-approved-design-2026-09-20",
+  "kind": "Generated design concepts, fictional data; not current app screenshots",
+  "originalsPreserved": true,
+  "images": [
+    {
+      "order": 1,
+      "title": "Welcome",
+      "original": "/media/frame/concepts/v8/01-welcome.png",
+      "thumbnail": "/media/frame/concepts/v8/01-welcome.jpg",
+      "originalSha256": "45151348ece0b1f7892d8d4937d9ad4cfb0f5fa90b81f55b607127eba22433fc",
+      "width": 853,
+      "height": 1844,
+      "limitation": "Generated design concept; implementation may differ."
+    },
+    {
+      "order": 2,
+      "title": "Today",
+      "original": "/media/frame/concepts/v8/02-today.png",
+      "thumbnail": "/media/frame/concepts/v8/02-today.jpg",
+      "originalSha256": "067315063cb13cff96750729741ba0ebd6201f9d7a40c09f4c70bcf5bf31b096",
+      "width": 853,
+      "height": 1843,
+      "limitation": "Generated design concept; implementation may differ."
+    },
+    {
+      "order": 3,
+      "title": "Capture setup",
+      "original": "/media/frame/concepts/v8/03-capture-setup.png",
+      "thumbnail": "/media/frame/concepts/v8/03-capture-setup.jpg",
+      "originalSha256": "ae2f8b32dd2b911518871d9e217fbea3aa63a87dddf174fa1378340063d64cc0",
+      "width": 853,
+      "height": 1844,
+      "limitation": "Generated design concept; implementation may differ."
+    },
+    {
+      "order": 4,
+      "title": "Solo recording",
+      "original": "/media/frame/concepts/v8/04-solo-recording.png",
+      "thumbnail": "/media/frame/concepts/v8/04-solo-recording.jpg",
+      "originalSha256": "b333d4c0b1cd1bf621773ef56b8da10c7bf094c23703b8e87b715303ac92ed29",
+      "width": 853,
+      "height": 1843,
+      "limitation": "Generated design concept; implementation may differ."
+    },
+    {
+      "order": 5,
+      "title": "Conversation",
+      "original": "/media/frame/concepts/v8/05-conversation.png",
+      "thumbnail": "/media/frame/concepts/v8/05-conversation.jpg",
+      "originalSha256": "7692c38ac0418d11266b0fd5e22c15449f213adee0ccbc2e125b4f5ffbf2fc96",
+      "width": 853,
+      "height": 1844,
+      "limitation": "Generated design concept; implementation may differ."
+    },
+    {
+      "order": 6,
+      "title": "Live answer",
+      "original": "/media/frame/concepts/v8/06-live-answer.png",
+      "thumbnail": "/media/frame/concepts/v8/06-live-answer.jpg",
+      "originalSha256": "29e2d1556fc4be849ccc45a1ba15d6bfdd15afbf2ca0930c02ce115ee004b13b",
+      "width": 853,
+      "height": 1844,
+      "limitation": "Generated design concept; implementation may differ."
+    },
+    {
+      "order": 7,
+      "title": "Paused",
+      "original": "/media/frame/concepts/v8/07-paused.png",
+      "thumbnail": "/media/frame/concepts/v8/07-paused.jpg",
+      "originalSha256": "111a509ebfed9f6973ebec54f2c43db9a7036ca86c8da0dbb53b86654d2a0943",
+      "width": 853,
+      "height": 1843,
+      "limitation": "Generated design concept; implementation may differ."
+    },
+    {
+      "order": 8,
+      "title": "Understanding",
+      "original": "/media/frame/concepts/v8/08-understanding.png",
+      "thumbnail": "/media/frame/concepts/v8/08-understanding.jpg",
+      "originalSha256": "36f57bb99d3e5bb3f86bdeeab9abcf89933ebd4725a76d4d30be47cc05a090a3",
+      "width": 853,
+      "height": 1844,
+      "limitation": "Generated design concept; implementation may differ."
+    },
+    {
+      "order": 9,
+      "title": "Draft",
+      "original": "/media/frame/concepts/v8/09-draft.png",
+      "thumbnail": "/media/frame/concepts/v8/09-draft.jpg",
+      "originalSha256": "115f2488b80315f2810bd3c0f92a5dd7728909736b9ac45f9adae2f4c8cbe8a7",
+      "width": 854,
+      "height": 1842,
+      "limitation": "Generated design concept; implementation may differ."
+    },
+    {
+      "order": 10,
+      "title": "Plan",
+      "original": "/media/frame/concepts/v8/10-plan.png",
+      "thumbnail": "/media/frame/concepts/v8/10-plan.jpg",
+      "originalSha256": "eb847cc81cbc6e8816447604bd6a1fd4900abca923b3f09469acf5f23b28aa12",
+      "width": 853,
+      "height": 1844,
+      "limitation": "Concept only: calendar availability checking is not implemented."
+    },
+    {
+      "order": 11,
+      "title": "Receipt",
+      "original": "/media/frame/concepts/v8/11-receipt.png",
+      "thumbnail": "/media/frame/concepts/v8/11-receipt.jpg",
+      "originalSha256": "7a4fba8f7f53ada6dd3f1d8172bf870da4d97c203aeb416072ba27a2a4700a70",
+      "width": 853,
+      "height": 1844,
+      "limitation": "Concept only: View event and Undo are not implemented."
+    },
+    {
+      "order": 12,
+      "title": "Memory",
+      "original": "/media/frame/concepts/v8/12-memory.png",
+      "thumbnail": "/media/frame/concepts/v8/12-memory.jpg",
+      "originalSha256": "643d7ea196b8082aa66c747097ebf60c7a85b8a46e5a0fdf132d1911b70827ef",
+      "width": 853,
+      "height": 1843,
+      "limitation": "Generated design concept; implementation may differ."
+    },
+    {
+      "order": 13,
+      "title": "Project",
+      "original": "/media/frame/concepts/v8/13-project.png",
+      "thumbnail": "/media/frame/concepts/v8/13-project.jpg",
+      "originalSha256": "238955ad897d0745e14376aa509f1ac9abcfbdce142adbc777fcb9c2d1eab8a1",
+      "width": 853,
+      "height": 1844,
+      "limitation": "Generated design concept; implementation may differ."
+    },
+    {
+      "order": 14,
+      "title": "Memory answer",
+      "original": "/media/frame/concepts/v8/14-memory-answer.png",
+      "thumbnail": "/media/frame/concepts/v8/14-memory-answer.jpg",
+      "originalSha256": "f37db1d2571e6853db889347b51bcb74791f2ee0b77157fec3f983870a1c7a4a",
+      "width": 853,
+      "height": 1843,
+      "limitation": "Generated design concept; implementation may differ."
+    },
+    {
+      "order": 15,
+      "title": "Source",
+      "original": "/media/frame/concepts/v8/15-source.png",
+      "thumbnail": "/media/frame/concepts/v8/15-source.jpg",
+      "originalSha256": "8132cbfadce33c916c342bfee1c0528e571f5608aec12b27e5278c7782138195",
+      "width": 868,
+      "height": 1813,
+      "limitation": "Generated design concept; implementation may differ."
+    },
+    {
+      "order": 16,
+      "title": "Privacy",
+      "original": "/media/frame/concepts/v8/16-privacy.png",
+      "thumbnail": "/media/frame/concepts/v8/16-privacy.jpg",
+      "originalSha256": "b887bc10b2e24ca7a2c8325773c8e083a65d7114f6ca863b4c8f92327a4079eb",
+      "width": 853,
+      "height": 1843,
+      "limitation": "Historical concept only: this cloud-AI toggle, 30-day retention and account deletion do not describe the current on-device assistant."
+    }
+  ]
+}

@@ -784,7 +784,7 @@
       "website": null,
       "image": null,
       "imageAlt": "",
-      "demoNote": "The public overview is a labeled workflow illustration. Actual simulator screenshots have been captured separately; physical-device acceptance remains pending.",
+      "demoNote": "The gallery preserves the 16 original approved design concepts, not proof that every pictured feature is built. Actual simulator screenshots exist separately; physical-device acceptance remains pending.",
       "updatedAt": "2026-09-20",
       "updates": [
         {
@@ -826,7 +826,7 @@
         {
           "label": "Voice and optional AI",
           "status": "not-checked",
-          "detail": "On-device transcription depends on device and language support. Successful AI generation remains unverified: English generation reported the model not ready, and Arabic was unsupported in the tested configuration. Mixed Arabic–English quality remains unverified."
+          "detail": "On-device transcription depends on device and language support. Successful AI generation remains unverified: English generation failed in the simulator, with the cause not established; Arabic was unsupported in the tested configuration. Mixed Arabic–English quality remains unverified."
         },
         {
           "label": "Privacy and control",
@@ -835,8 +835,8 @@
         },
         {
           "label": "Internal distribution",
-          "status": "open",
-          "detail": "Owner-only internal beta under verification. Build 4 is the last verified assigned internal release; source improvements and uploaded builds are not proof of tester availability."
+          "status": "passed",
+          "detail": "Build 3.0.0 (8) completed Apple processing and is verified in Owner Testing (Internal, one tester), with test instructions saved. Installation and acceptance on the physical iPhone remain unverified."
         },
         {
           "label": "Customer usefulness",
@@ -845,9 +845,170 @@
         }
       ],
       "gallery": {
-        "heading": "Frame voice workspace",
-        "description": "Actual simulator screenshots exist in the implementation review. This public page currently shows a labeled workflow illustration; it is not a running-app screenshot or evidence of physical-device acceptance.",
-        "items": []
+        "heading": "Frame · the approved design direction",
+        "description": "All 16 original v8 design concepts, preserved as a named version. These generated images use fictional example data and are not running-app screenshots. The beta differs; captions identify important unimplemented concepts.",
+        "items": [
+          {
+            "title": "Welcome",
+            "caption": "Start with a voice note or explore an example.",
+            "alt": "Frame v8 Welcome — generated concept, fictional data",
+            "kind": "Design concept · not a running-app screenshot",
+            "src": "/media/frame/concepts/v8/01-welcome.png",
+            "thumb": "/media/frame/concepts/v8/01-welcome.jpg",
+            "width": 853,
+            "height": 1844
+          },
+          {
+            "title": "Today",
+            "caption": "One useful prompt, with capture always close.",
+            "alt": "Frame v8 Today — generated concept, fictional data",
+            "kind": "Design concept · not a running-app screenshot",
+            "src": "/media/frame/concepts/v8/02-today.png",
+            "thumb": "/media/frame/concepts/v8/02-today.jpg",
+            "width": 853,
+            "height": 1843
+          },
+          {
+            "title": "Capture setup",
+            "caption": "Choose a personal note or a conversation.",
+            "alt": "Frame v8 Capture setup — generated concept, fictional data",
+            "kind": "Design concept · not a running-app screenshot",
+            "src": "/media/frame/concepts/v8/03-capture-setup.png",
+            "thumb": "/media/frame/concepts/v8/03-capture-setup.jpg",
+            "width": 853,
+            "height": 1844
+          },
+          {
+            "title": "Solo recording",
+            "caption": "Speak freely, with honest recording controls.",
+            "alt": "Frame v8 Solo recording — generated concept, fictional data",
+            "kind": "Design concept · not a running-app screenshot",
+            "src": "/media/frame/concepts/v8/04-solo-recording.png",
+            "thumb": "/media/frame/concepts/v8/04-solo-recording.jpg",
+            "width": 853,
+            "height": 1843
+          },
+          {
+            "title": "Conversation",
+            "caption": "Record deliberately and ask for context.",
+            "alt": "Frame v8 Conversation — generated concept, fictional data",
+            "kind": "Design concept · not a running-app screenshot",
+            "src": "/media/frame/concepts/v8/05-conversation.png",
+            "thumb": "/media/frame/concepts/v8/05-conversation.jpg",
+            "width": 853,
+            "height": 1844
+          },
+          {
+            "title": "Live answer",
+            "caption": "A concise answer linked to the original source.",
+            "alt": "Frame v8 Live answer — generated concept, fictional data",
+            "kind": "Design concept · not a running-app screenshot",
+            "src": "/media/frame/concepts/v8/06-live-answer.png",
+            "thumb": "/media/frame/concepts/v8/06-live-answer.jpg",
+            "width": 853,
+            "height": 1844
+          },
+          {
+            "title": "Paused",
+            "caption": "See what was saved and choose how to continue.",
+            "alt": "Frame v8 Paused — generated concept, fictional data",
+            "kind": "Design concept · not a running-app screenshot",
+            "src": "/media/frame/concepts/v8/07-paused.png",
+            "thumb": "/media/frame/concepts/v8/07-paused.jpg",
+            "width": 853,
+            "height": 1843
+          },
+          {
+            "title": "Understanding",
+            "caption": "Correct the summary and review suggested commitments.",
+            "alt": "Frame v8 Understanding — generated concept, fictional data",
+            "kind": "Design concept · not a running-app screenshot",
+            "src": "/media/frame/concepts/v8/08-understanding.png",
+            "thumb": "/media/frame/concepts/v8/08-understanding.jpg",
+            "width": 853,
+            "height": 1844
+          },
+          {
+            "title": "Draft",
+            "caption": "An editable follow-up, ready for your review.",
+            "alt": "Frame v8 Draft — generated concept, fictional data",
+            "kind": "Design concept · not a running-app screenshot",
+            "src": "/media/frame/concepts/v8/09-draft.png",
+            "thumb": "/media/frame/concepts/v8/09-draft.jpg",
+            "width": 854,
+            "height": 1842
+          },
+          {
+            "title": "Plan",
+            "caption": "Preview the time and calendar before adding anything. Concept only: calendar availability checking is not implemented.",
+            "alt": "Frame v8 Plan — generated concept, fictional data",
+            "kind": "Design concept · not a running-app screenshot",
+            "src": "/media/frame/concepts/v8/10-plan.png",
+            "thumb": "/media/frame/concepts/v8/10-plan.jpg",
+            "width": 853,
+            "height": 1844
+          },
+          {
+            "title": "Receipt",
+            "caption": "A clear record of what happened and what remains. Concept only: View event and Undo are not implemented.",
+            "alt": "Frame v8 Receipt — generated concept, fictional data",
+            "kind": "Design concept · not a running-app screenshot",
+            "src": "/media/frame/concepts/v8/11-receipt.png",
+            "thumb": "/media/frame/concepts/v8/11-receipt.jpg",
+            "width": 853,
+            "height": 1844
+          },
+          {
+            "title": "Memory",
+            "caption": "Find notes and ask questions without filing everything.",
+            "alt": "Frame v8 Memory — generated concept, fictional data",
+            "kind": "Design concept · not a running-app screenshot",
+            "src": "/media/frame/concepts/v8/12-memory.png",
+            "thumb": "/media/frame/concepts/v8/12-memory.jpg",
+            "width": 853,
+            "height": 1843
+          },
+          {
+            "title": "Project",
+            "caption": "See decisions, commitments and the story so far.",
+            "alt": "Frame v8 Project — generated concept, fictional data",
+            "kind": "Design concept · not a running-app screenshot",
+            "src": "/media/frame/concepts/v8/13-project.png",
+            "thumb": "/media/frame/concepts/v8/13-project.jpg",
+            "width": 853,
+            "height": 1844
+          },
+          {
+            "title": "Memory answer",
+            "caption": "An answer you can trace back to your notes.",
+            "alt": "Frame v8 Memory answer — generated concept, fictional data",
+            "kind": "Design concept · not a running-app screenshot",
+            "src": "/media/frame/concepts/v8/14-memory-answer.png",
+            "thumb": "/media/frame/concepts/v8/14-memory-answer.jpg",
+            "width": 853,
+            "height": 1843
+          },
+          {
+            "title": "Source",
+            "caption": "Review the recording, transcript and cleaned summary.",
+            "alt": "Frame v8 Source — generated concept, fictional data",
+            "kind": "Design concept · not a running-app screenshot",
+            "src": "/media/frame/concepts/v8/15-source.png",
+            "thumb": "/media/frame/concepts/v8/15-source.jpg",
+            "width": 868,
+            "height": 1813
+          },
+          {
+            "title": "Privacy",
+            "caption": "Understand processing, retention and your choices. Historical concept only: this cloud-AI toggle, 30-day retention and account deletion do not describe the current on-device assistant.",
+            "alt": "Frame v8 Privacy — generated concept, fictional data",
+            "kind": "Design concept · not a running-app screenshot",
+            "src": "/media/frame/concepts/v8/16-privacy.png",
+            "thumb": "/media/frame/concepts/v8/16-privacy.jpg",
+            "width": 853,
+            "height": 1843
+          }
+        ]
       },
       "overview": {
         "type": "concept",
