@@ -51,3 +51,5 @@ Repository: `Kbartawi/Kbartawi.github.io`. GitHub Pages uses **Deploy from a bra
 Public samples use fictional data. Source code for the products is private. Never publish credentials, private customer records or unsupported revenue/traction claims in this repository.
 
 Frame updates must stay synchronized with the application README and GitHub personal profile. Technical completion, creative acceptance and release state are separate facts.
+
+Latest Frame evidence: [local workflow demo](https://kbartawi.github.io/projects/frame/#demo), 78 seconds, silent, development build13. It shows task editing, source review, receipts and an audio-only warning—not successful AI generation. Build13 is not delivered; build12 remains the latest verified internal release. The earlier build10 video and all20 gallery images are preserved.

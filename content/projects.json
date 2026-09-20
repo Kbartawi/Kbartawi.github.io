@@ -1105,10 +1105,12 @@
         "text": "Useful decisions get scattered across recordings and notes. Frame is being developed to connect deliberate capture, the original context behind a decision and a user-reviewed next step. The initial audience and repeat-use value remain hypotheses."
       },
       "demoVideo": {
-        "src": "/media/frame/actual/build10/actual-build10-demo.mp4",
-        "poster": "/media/frame/actual/build10/actual-task-receipt.jpg",
-        "title": "Actual app walkthrough · build10",
-        "caption": "84-second silent simulator walkthrough with fictional test data. Shows source search and reviewed task flows, including a clearly labeled source fallback—not successful AI generation. Build10 is verified in the internal Owner Testing group; this video is not evidence of physical-iPhone acceptance."
+        "src": "/media/frame/actual/build13-development/frame-local-workflow-demo.mp4",
+        "poster": "/media/frame/actual/build13-development/demo-poster.jpg",
+        "title": "Local workflow demo · development build13",
+        "caption": "78-second silent simulator recording with fictional data. Shows task editing, original sources, completion receipts and the audio-only warning. This is local development evidence, not AI generation proof or a delivered TestFlight13 release. Build12 remains the latest verified internal release.",
+        "previousSrc": "/media/frame/actual/build10/actual-build10-demo.mp4",
+        "previousLabel": "Earlier build10 demo · 84 seconds · source-search fallback, not AI generation"
       }
     },
     {
