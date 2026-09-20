@@ -789,7 +789,7 @@
       "updates": [
         {
           "date": "2026-09-20",
-          "text": "Build 3.0.0 (9) is verified in the internal Owner Testing group. It adds an optional chosen focus to the capture → review → recall → action workflow. Simulator checks support the implementation; physical-device acceptance and successful AI generation remain open."
+          "text": "Build 3.0.0 (10) is verified in the internal Owner Testing group. Simulator evidence covers source search, contextual saved excerpts and deliberate task review, with an actual demo available below. Physical-device acceptance and successful AI generation remain open."
         }
       ],
       "demoUrl": null,
@@ -836,7 +836,7 @@
         {
           "label": "Internal distribution",
           "status": "passed",
-          "detail": "Build 3.0.0 (9) completed Apple processing and is verified in Owner Testing (Internal, one tester), with test instructions saved. Installation and acceptance on the physical iPhone remain unverified."
+          "detail": "Build 3.0.0 (10) completed Apple processing and is verified in Owner Testing (Internal, one tester), with test instructions saved. Installation and acceptance on the physical iPhone remain unverified."
         },
         {
           "label": "Customer usefulness",
@@ -1103,8 +1103,8 @@
       "demoVideo": {
         "src": "/media/frame/actual/build10/actual-build10-demo.mp4",
         "poster": "/media/frame/actual/build10/actual-task-receipt.jpg",
-        "title": "Actual app walkthrough · build10 candidate",
-        "caption": "84-second silent simulator walkthrough with fictional test data. Shows source search and reviewed task flows, including a clearly labeled source fallback—not successful AI generation. Build9 remains the verified internal release; this candidate is not evidence of physical-iPhone acceptance."
+        "title": "Actual app walkthrough · build10",
+        "caption": "84-second silent simulator walkthrough with fictional test data. Shows source search and reviewed task flows, including a clearly labeled source fallback—not successful AI generation. Build10 is verified in the internal Owner Testing group; this video is not evidence of physical-iPhone acceptance."
       }
     },
     {
