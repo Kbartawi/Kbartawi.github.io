@@ -784,7 +784,7 @@
       "website": null,
       "image": null,
       "imageAlt": "",
-      "demoNote": "The gallery contains two updated references and the 16 original v8 concepts. These generated images are not running-app screenshots or proof every pictured feature is built. Physical-device acceptance remains pending.",
+      "demoNote": "The gallery separates19 generated reference images from one actual simulator screenshot. References are not proof that every pictured feature is built; physical-device acceptance remains pending.",
       "updatedAt": "2026-09-20",
       "updates": [
         {
@@ -846,8 +846,14 @@
       ],
       "gallery": {
         "heading": "Frame · updated references and original designs",
-        "description": "Two new references lead the gallery, followed by all 16 preserved v8 concepts. Generated visuals use fictional data; they are not proof of exact implementation or functioning integrations.",
+        "description": "A new usefulness reference joins two earlier updated references and all16 preserved v8 concepts. An actual simulator receipt appears separately below. Generated references are not running-app screenshots or proof of exact implementation.",
         "groups": [
+          {
+            "id": "usefulness-reference",
+            "title": "Usefulness flow · v10 reference",
+            "description": "A generated four-screen reference for capture, saved context and deliberate task review.",
+            "layout": "creative"
+          },
           {
             "id": "updated-references",
             "title": "Updated references · v9",
@@ -859,9 +865,26 @@
             "title": "Original approved design direction · v8 archive",
             "description": "All 16 originals preserved unchanged. Read the captions for important differences from the current beta.",
             "layout": "creative"
+          },
+          {
+            "id": "actual-implementation",
+            "title": "Actual implementation · simulator",
+            "description": "Running-app evidence with fictional test data, distinct from the generated design references. Physical-device acceptance remains pending.",
+            "layout": "product"
           }
         ],
         "items": [
+          {
+            "title": "Capture → context → reviewed task",
+            "caption": "Generated reference with fictional data, not an app screenshot. Shows the intended flow; Owner: You does not imply assigning tasks to other people.",
+            "alt": "Capture → context → reviewed task",
+            "kind": "Updated design reference",
+            "src": "/media/frame/concepts/v10/usefulness-flow-reference.png",
+            "thumb": "/media/frame/concepts/v10/usefulness-flow-reference.jpg",
+            "width": 1536,
+            "height": 1024,
+            "group": "usefulness-reference"
+          },
           {
             "title": "One thing for now · proposed focus loop",
             "caption": "Proposed visual direction for choosing one commitment, marking it done and setting an optional reminder. The layout is more polished than the current minimal focus implementation; reminder layout is not an exact app screenshot.",
@@ -1059,12 +1082,29 @@
             "width": 853,
             "height": 1843,
             "group": "v8-archive"
+          },
+          {
+            "title": "A saved task · actual simulator",
+            "caption": "Actual simulator screenshot with fictional test data. The task was saved in Frame; no reminder or Calendar event was created. This is not evidence of physical-device acceptance.",
+            "alt": "A saved task · actual simulator",
+            "kind": "Actual simulator screenshot",
+            "src": "/media/frame/actual/build10/actual-task-receipt.png",
+            "thumb": "/media/frame/actual/build10/actual-task-receipt.jpg",
+            "width": 1206,
+            "height": 2622,
+            "group": "actual-implementation"
           }
         ]
       },
       "overview": {
         "type": "concept",
         "text": "Useful decisions get scattered across recordings and notes. Frame is being developed to connect deliberate capture, the original context behind a decision and a user-reviewed next step. The initial audience and repeat-use value remain hypotheses."
+      },
+      "demoVideo": {
+        "src": "/media/frame/actual/build10/actual-build10-demo.mp4",
+        "poster": "/media/frame/actual/build10/actual-task-receipt.jpg",
+        "title": "Actual app walkthrough · build10 candidate",
+        "caption": "84-second silent simulator walkthrough with fictional test data. Shows source search and reviewed task flows, including a clearly labeled source fallback—not successful AI generation. Build9 remains the verified internal release; this candidate is not evidence of physical-iPhone acceptance."
       }
     },
     {

@@ -1,0 +1,20 @@
+{
+  "version": "frame-v10-usefulness-reference-2026-09-20",
+  "prior18Preserved": true,
+  "images": [
+    {
+      "original": "/media/frame/concepts/v10/usefulness-flow-reference.png",
+      "sha256": "629d9369eaf5e6f85b0ac017c2d5f23aebb5525cf3a777ae65a974908a3b63e8",
+      "kind": "Updated design reference",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "original": "/media/frame/actual/build10/actual-task-receipt.png",
+      "sha256": "44d80d3add8072b4f6d12b5f908153659ccc46ba447ee27e2a65ac0072160bc3",
+      "kind": "Actual simulator screenshot",
+      "width": 1206,
+      "height": 2622
+    }
+  ]
+}
