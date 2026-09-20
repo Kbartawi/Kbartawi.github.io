@@ -1,6 +1,6 @@
 # Product review standard
 
-The portfolio covers AI products for customer operations and video production, plus a game in preproduction. Each project has its own audience and development stage. This document defines how that progress is described and reviewed.
+The portfolio covers AI products for customer operations and personal workflows, plus a game in preproduction. Each project has its own audience and development stage. This document defines how that progress is described and reviewed.
 
 ## What each project should explain
 

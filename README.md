@@ -1,16 +1,14 @@
 # Khaled / Product portfolio
 
-![Portfolio preview](docs/media/portfolio.png)
-
 **[Open the portfolio](https://kbartawi.github.io/)** · [GitHub profile](https://github.com/Kbartawi)
 
-A founder portfolio covering AI products for customer operations and video production, plus game development in preproduction. Six project profiles explain the intended users and buyers, current technical and commercial readiness, and the next validation milestone. Includes light/dark themes and 41 gallery images, maintained from one catalogue.
+A founder portfolio covering AI products for customer operations and personal workflows, plus game development in preproduction. Six project profiles explain the intended users and buyers, current technical and commercial readiness, and the next validation milestone. Includes light/dark themes and curated gallery images, maintained from one catalogue.
 
-Explore [Frame’s actual creator studio](https://kbartawi.github.io/projects/frame/#gallery-product), [Oris’s support workspace](https://kbartawi.github.io/projects/oris/#gallery-product), [Manzl’s leasing dashboard](https://kbartawi.github.io/projects/manzl/#gallery-product), six Quote Operations screens and five Aqd screens. Actual product views appear first. Website captures, Frame’s seven film concepts and [eight Dubai Game world studies](https://kbartawi.github.io/projects/dubai-game/#gallery) remain clearly identified.
+Explore [Frame’s current development direction](https://kbartawi.github.io/projects/frame/), [Oris’s support workspace](https://kbartawi.github.io/projects/oris/#gallery-product), [Manzl’s leasing dashboard](https://kbartawi.github.io/projects/manzl/#gallery-product), six Quote Operations screens and five Aqd screens. Frame uses a labeled workflow illustration while device screenshots are pending. Other website captures and [eight Dubai Game world studies](https://kbartawi.github.io/projects/dubai-game/#gallery) remain clearly identified.
 
-The 20 product screenshots use fictional data: Frame, Quote Operations and Aqd were captured in their hosted demos; Oris and Manzl were captured from real application components in isolated local demos. They demonstrate interfaces, not live customer activity or production backend acceptance.
+Product screenshots use fictional data: Quote Operations and Aqd were captured in their hosted demos; Oris and Manzl were captured from real application components in isolated local demos. They demonstrate interfaces, not live customer activity or production backend acceptance.
 
-## Readiness — 18 September 2026
+## Readiness — 20 September 2026
 
 | Area | Current state |
 | --- | --- |
@@ -47,7 +45,7 @@ Repository: `Kbartawi/Kbartawi.github.io`. GitHub Pages uses **Deploy from a bra
 - **Oris:** deployed application; tenant-specific channels, voice and customer outcomes require current evidence.
 - **Manzl:** hosted website and seeded leasing prototype; hosted API/data, private access and live channel acceptance are separate gates.
 - **Aqd:** browser-based preparation demo; no private cloud storage, production team accounts, payment collection or government registration.
-- **Frame:** Backend 0.8.6 completed a 30-second explainer in the local gallery: four real planning stages, Kling motion, operator-authored 3D diagrams, continuous narration, aligned captions and timed sound. The film cost about $2.27 including rejected work; 200 mocked tests, full media decoding, gallery playback and download integrity passed. Manual direction and repairs were still needed. Founder creative acceptance and a reliable unaided workflow remain pending. Native Frame 2.0.1 (3) refresh adds a forest-green Studio home, three relatable illustrated comedy starters, editable local story notes and My videos navigation. All 44 native tests passed, with simulator checks of the new flows and notes after relaunch. The signed build was processed by Apple and assigned to Owner Testing (one existing tester). App Store Connect confirms that the owner installed the previous build on an iPhone 16 Pro. The mobile app still has no connected AI filmmaking; new-build device acceptance, creative acceptance and audience validation remain open.
+- **Frame:** Native voice-workspace prototype under review. Frame 3.0.0 (4) compiled with 81 passing automated checks and one device-only skip. Apple processed the build, assigned it to Owner Testing (Internal, one tester), and saved What to Test. New-build installation, device AI and physical-device acceptance remain unverified. Optional Apple on-device AI requires iOS 26.4+ and compatible enabled hardware. English output and supported on-device transcription only; mixed-language quality is unverified. No automatic sending, calendar availability lookup or connected third-party AI. Earlier video code, screenshots and release evidence are historical and do not certify the new assistant.
 - **Dubai Game:** preproduction, paused art review and prototype source; no verified playable consumer release or approved final art.
 
 Public samples use fictional data. Source code for the products is private. Never publish credentials, private customer records or unsupported revenue/traction claims in this repository.
