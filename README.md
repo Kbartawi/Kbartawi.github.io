@@ -45,11 +45,12 @@ Repository: `Kbartawi/Kbartawi.github.io`. GitHub Pages uses **Deploy from a bra
 - **Oris:** deployed application; tenant-specific channels, voice and customer outcomes require current evidence.
 - **Manzl:** hosted website and seeded leasing prototype; hosted API/data, private access and live channel acceptance are separate gates.
 - **Aqd:** browser-based preparation demo; no private cloud storage, production team accounts, payment collection or government registration.
-- **Frame:** Voice workspace in internal beta. Build 3.0.0 (13) completed Apple processing, has saved What to Test instructions and is assigned to Owner Testing (Internal, one tester). It improves local task editing, reviewed-action flow and capture capability warnings. Cloud AI is disabled in the release. Successful generation and physical-iPhone voice-to-action acceptance remain unverified. Optional local AI requires an eligible, enabled device with iOS 26.4 or later.
+- **Frame:** Build 3.0.0 (14) completed Apple processing, has saved What to Test instructions and is assigned to Owner Testing (Internal, one tester). It improves microphone recovery, explains recording blockers and offers written-note fallback and explicit local AI draft retry. Native checks: 183 executed, 180 passed, three skipped, zero failures. Cloud AI is disabled in Release. Successful AI and the physical-device cause/resolution remain unverified.
 - **Dubai Game:** preproduction, paused art review and prototype source; no verified playable consumer release or approved final art.
 
 Public samples use fictional data. Source code for the products is private. Never publish credentials, private customer records or unsupported revenue/traction claims in this repository.
 
 Frame updates must stay synchronized with the application README and GitHub personal profile. Technical completion, creative acceptance and release state are separate facts.
 
-Latest Frame evidence: [local workflow demo](https://kbartawi.github.io/projects/frame/#demo), 78 seconds, silent, development build13. It shows task editing, source review, receipts and an audio-only warning—not successful AI generation. Build 3.0.0 (13) is the latest verified internal TestFlight release; this video remains a development recording. The earlier build10 video and all20 gallery images are preserved.
+Latest Frame evidence: [local workflow demo](https://kbartawi.github.io/projects/frame/#demo), 78 seconds, silent, development build13. It shows task editing, source review, receipts and an audio-only warning—not successful AI generation. Build 3.0.0 (14) is the latest verified internal TestFlight release; this video remains a development recording. The earlier build10 video and all20 gallery images are preserved.
+
