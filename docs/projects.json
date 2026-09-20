@@ -784,7 +784,7 @@
       "website": null,
       "image": null,
       "imageAlt": "",
-      "demoNote": "The gallery preserves the 16 original approved design concepts, not proof that every pictured feature is built. Actual simulator screenshots exist separately; physical-device acceptance remains pending.",
+      "demoNote": "The gallery contains two updated references and the 16 original v8 concepts. These generated images are not running-app screenshots or proof every pictured feature is built. Physical-device acceptance remains pending.",
       "updatedAt": "2026-09-20",
       "updates": [
         {
@@ -845,9 +845,45 @@
         }
       ],
       "gallery": {
-        "heading": "Frame · the approved design direction",
-        "description": "All 16 original v8 design concepts, preserved as a named version. These generated images use fictional example data and are not running-app screenshots. The beta differs; captions identify important unimplemented concepts.",
+        "heading": "Frame · updated references and original designs",
+        "description": "Two new references lead the gallery, followed by all 16 preserved v8 concepts. Generated visuals use fictional data; they are not proof of exact implementation or functioning integrations.",
+        "groups": [
+          {
+            "id": "updated-references",
+            "title": "Updated references · v9",
+            "description": "One focus proposal and corrected privacy reference. These guide improvements; the app may differ.",
+            "layout": "creative"
+          },
+          {
+            "id": "v8-archive",
+            "title": "Original approved design direction · v8 archive",
+            "description": "All 16 originals preserved unchanged. Read the captions for important differences from the current beta.",
+            "layout": "creative"
+          }
+        ],
         "items": [
+          {
+            "title": "One thing for now · proposed focus loop",
+            "caption": "Proposed visual direction for choosing one commitment, marking it done and setting an optional reminder. The layout is more polished than the current minimal focus implementation; reminder layout is not an exact app screenshot.",
+            "alt": "One thing for now · proposed focus loop — generated reference, not app screenshot",
+            "kind": "Updated proposal",
+            "src": "/media/frame/concepts/v9/focus-loop-proposal.png",
+            "thumb": "/media/frame/concepts/v9/focus-loop-proposal.jpg",
+            "width": 1536,
+            "height": 1024,
+            "group": "updated-references"
+          },
+          {
+            "title": "Your data · corrected privacy reference",
+            "caption": "Updated reference reflecting local storage, eligible on-device Apple AI, private-note exclusion and text/task export. This is a generated design reference, not a running-app screenshot.",
+            "alt": "Your data · corrected privacy reference — generated reference, not app screenshot",
+            "kind": "Updated reference",
+            "src": "/media/frame/concepts/v9/privacy-corrected.png",
+            "thumb": "/media/frame/concepts/v9/privacy-corrected.jpg",
+            "width": 853,
+            "height": 1843,
+            "group": "updated-references"
+          },
           {
             "title": "Welcome",
             "caption": "Start with a voice note or explore an example.",
@@ -856,7 +892,8 @@
             "src": "/media/frame/concepts/v8/01-welcome.png",
             "thumb": "/media/frame/concepts/v8/01-welcome.jpg",
             "width": 853,
-            "height": 1844
+            "height": 1844,
+            "group": "v8-archive"
           },
           {
             "title": "Today",
@@ -866,7 +903,8 @@
             "src": "/media/frame/concepts/v8/02-today.png",
             "thumb": "/media/frame/concepts/v8/02-today.jpg",
             "width": 853,
-            "height": 1843
+            "height": 1843,
+            "group": "v8-archive"
           },
           {
             "title": "Capture setup",
@@ -876,7 +914,8 @@
             "src": "/media/frame/concepts/v8/03-capture-setup.png",
             "thumb": "/media/frame/concepts/v8/03-capture-setup.jpg",
             "width": 853,
-            "height": 1844
+            "height": 1844,
+            "group": "v8-archive"
           },
           {
             "title": "Solo recording",
@@ -886,7 +925,8 @@
             "src": "/media/frame/concepts/v8/04-solo-recording.png",
             "thumb": "/media/frame/concepts/v8/04-solo-recording.jpg",
             "width": 853,
-            "height": 1843
+            "height": 1843,
+            "group": "v8-archive"
           },
           {
             "title": "Conversation",
@@ -896,7 +936,8 @@
             "src": "/media/frame/concepts/v8/05-conversation.png",
             "thumb": "/media/frame/concepts/v8/05-conversation.jpg",
             "width": 853,
-            "height": 1844
+            "height": 1844,
+            "group": "v8-archive"
           },
           {
             "title": "Live answer",
@@ -906,7 +947,8 @@
             "src": "/media/frame/concepts/v8/06-live-answer.png",
             "thumb": "/media/frame/concepts/v8/06-live-answer.jpg",
             "width": 853,
-            "height": 1844
+            "height": 1844,
+            "group": "v8-archive"
           },
           {
             "title": "Paused",
@@ -916,7 +958,8 @@
             "src": "/media/frame/concepts/v8/07-paused.png",
             "thumb": "/media/frame/concepts/v8/07-paused.jpg",
             "width": 853,
-            "height": 1843
+            "height": 1843,
+            "group": "v8-archive"
           },
           {
             "title": "Understanding",
@@ -926,7 +969,8 @@
             "src": "/media/frame/concepts/v8/08-understanding.png",
             "thumb": "/media/frame/concepts/v8/08-understanding.jpg",
             "width": 853,
-            "height": 1844
+            "height": 1844,
+            "group": "v8-archive"
           },
           {
             "title": "Draft",
@@ -936,7 +980,8 @@
             "src": "/media/frame/concepts/v8/09-draft.png",
             "thumb": "/media/frame/concepts/v8/09-draft.jpg",
             "width": 854,
-            "height": 1842
+            "height": 1842,
+            "group": "v8-archive"
           },
           {
             "title": "Plan",
@@ -946,7 +991,8 @@
             "src": "/media/frame/concepts/v8/10-plan.png",
             "thumb": "/media/frame/concepts/v8/10-plan.jpg",
             "width": 853,
-            "height": 1844
+            "height": 1844,
+            "group": "v8-archive"
           },
           {
             "title": "Receipt",
@@ -956,7 +1002,8 @@
             "src": "/media/frame/concepts/v8/11-receipt.png",
             "thumb": "/media/frame/concepts/v8/11-receipt.jpg",
             "width": 853,
-            "height": 1844
+            "height": 1844,
+            "group": "v8-archive"
           },
           {
             "title": "Memory",
@@ -966,7 +1013,8 @@
             "src": "/media/frame/concepts/v8/12-memory.png",
             "thumb": "/media/frame/concepts/v8/12-memory.jpg",
             "width": 853,
-            "height": 1843
+            "height": 1843,
+            "group": "v8-archive"
           },
           {
             "title": "Project",
@@ -976,7 +1024,8 @@
             "src": "/media/frame/concepts/v8/13-project.png",
             "thumb": "/media/frame/concepts/v8/13-project.jpg",
             "width": 853,
-            "height": 1844
+            "height": 1844,
+            "group": "v8-archive"
           },
           {
             "title": "Memory answer",
@@ -986,7 +1035,8 @@
             "src": "/media/frame/concepts/v8/14-memory-answer.png",
             "thumb": "/media/frame/concepts/v8/14-memory-answer.jpg",
             "width": 853,
-            "height": 1843
+            "height": 1843,
+            "group": "v8-archive"
           },
           {
             "title": "Source",
@@ -996,7 +1046,8 @@
             "src": "/media/frame/concepts/v8/15-source.png",
             "thumb": "/media/frame/concepts/v8/15-source.jpg",
             "width": 868,
-            "height": 1813
+            "height": 1813,
+            "group": "v8-archive"
           },
           {
             "title": "Privacy",
@@ -1006,7 +1057,8 @@
             "src": "/media/frame/concepts/v8/16-privacy.png",
             "thumb": "/media/frame/concepts/v8/16-privacy.jpg",
             "width": 853,
-            "height": 1843
+            "height": 1843,
+            "group": "v8-archive"
           }
         ]
       },

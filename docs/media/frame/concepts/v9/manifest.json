@@ -1,0 +1,25 @@
+{
+  "version": "frame-v9-updated-references-2026-09-20",
+  "previousVersion": "frame-v8-approved-design-2026-09-20",
+  "originalV8ImagesUnchanged": true,
+  "images": [
+    {
+      "filename": "focus-loop-proposal.png",
+      "title": "One thing for now \u00b7 proposed focus loop",
+      "kind": "Updated proposal",
+      "sha256": "257f33b1de1765d42b3df93a15ae00074691bbdcd2d2127a95499c3c1eb93364",
+      "width": 1536,
+      "height": 1024,
+      "caption": "Proposed visual direction for choosing one commitment, marking it done and setting an optional reminder. The layout is more polished than the current minimal focus implementation; reminder layout is not an exact app screenshot."
+    },
+    {
+      "filename": "privacy-corrected.png",
+      "title": "Your data \u00b7 corrected privacy reference",
+      "kind": "Updated reference",
+      "sha256": "327a618a25e0619884ce30ca643cb0455526c3729c8d9efb2370bd14e23b7760",
+      "width": 853,
+      "height": 1843,
+      "caption": "Updated reference reflecting local storage, eligible on-device Apple AI, private-note exclusion and text/task export. This is a generated design reference, not a running-app screenshot."
+    }
+  ]
+}
