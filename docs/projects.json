@@ -763,13 +763,13 @@
         "Your words,",
         "useful again."
       ],
-      "summary": "Frame is being built to turn spoken thoughts and conversations into searchable notes, useful context and reviewed next steps.",
+      "summary": "A personal workspace for spoken thoughts, source-linked memory and next steps you choose.",
       "features": [
-        "Capture an idea or conversation, then keep the original recording alongside your editable note.",
-        "Find earlier notes and open the source behind a memory answer.",
-        "Review suggested tasks and follow-up drafts before acting.",
-        "Use light, dark or red night appearance, with local data controls.",
-        "The latest uploaded build includes optional local task reminders with generic notification text. Its TestFlight availability is not yet verified."
+        "Capture a thought or conversation deliberately, with local audio and editable notes.",
+        "Search saved notes, recover supporting passages and return to the original context.",
+        "Review tasks and prepare follow-up drafts; choose reminders and confirm calendar events yourself.",
+        "Keep selected notes out of AI and memory answers, with export and deletion controls.",
+        "Use optional Apple on-device AI on eligible devices, with light, olive-green dark and red night appearance."
       ],
       "workflow": [
         "Capture your words",
@@ -784,40 +784,16 @@
       "website": null,
       "image": null,
       "imageAlt": "",
-      "demoNote": "The visual overview is a workflow illustration, not an app screenshot. Earlier video assets remain archived separately and are not evidence of the assistant.",
+      "demoNote": "The public overview is a labeled workflow illustration. Actual simulator screenshots have been captured separately; physical-device acceptance remains pending.",
       "updatedAt": "2026-09-20",
       "updates": [
         {
           "date": "2026-09-20",
-          "text": "Signed build 3.0.0 (7), uploaded at 13:18:15 Dubai, improves the interface and protects unsaved edits, follow-up drafts and newer saved content. The full suite executed 103 checks: 102 passed and one device-only skip. Simulator draft save/reopen and native Calendar cancel/save callbacks were verified. Build 7 processing completion and group assignment remain unverified; build 4 remains the only verified assigned internal beta."
-        },
-        {
-          "date": "2026-09-20",
-          "text": "Signed Frame 3.0.0 (6) uploaded at 11:35:59 Dubai. The latest changes clarify foreground recording and save retries, and make all saved actions discoverable. Simulator UI verified finding and completing a fourth action; 25 targeted checks passed with one device-only skip, plus 27 iOS 18.5 compatibility checks. Apple processing/assignment for build 6 is unverified; build 4 remains the verified internal release."
-        },
-        {
-          "date": "2026-09-20",
-          "text": "Earlier video prototype — Native Frame 2.0.1 (3) refresh adds a forest-green Studio home, three relatable illustrated comedy starters, editable local story notes and My videos navigation. All 44 native tests passed, with simulator checks of the new flows and notes after relaunch. The signed build was processed by Apple and assigned to Owner Testing (one existing tester). App Store Connect confirms that the owner installed the previous build on an iPhone 16 Pro. The mobile app still has no connected AI filmmaking; new-build device acceptance, creative acceptance and audience validation remain open."
-        },
-        {
-          "date": "2026-09-18",
-          "text": "Earlier video prototype — Backend 0.8.6 completed a 30-second explainer in the local gallery: four real planning stages, Kling motion, operator-authored 3D diagrams, continuous narration, aligned captions and timed sound. The film cost about $2.27 including rejected work; 200 mocked tests, full media decoding, gallery playback and download integrity passed. Manual direction and repairs were still needed. Founder creative acceptance and a reliable unaided workflow remain pending."
-        },
-        {
-          "date": "2026-09-18",
-          "text": "Earlier video prototype — Product direction corrected after the founder rejected the slideshow: complete AI-directed films are the goal. Backend 0.8.5 adds staged planning and pre-spend review safeguards, verified with 189 mocked tests and a browser fixture. Actual media review, richer editing and the mobile connection remain unfinished. No new generation credits were spent."
-        },
-        {
-          "date": "2026-09-18",
-          "text": "Earlier video prototype — Frame 2.0.0 (1) is now available for owner-only internal TestFlight testing as “Frame: Photos to Reels”; the app itself is named Frame. The distribution-signed build was uploaded, processed by Apple and assigned to the internal group, with the owner invited. Installation and acceptance on a real iPhone remain unverified. This is not an external or public beta or an App Store release. The offline editor supports drafts, gallery recovery and safer import, export and voice saving, with 44 Simulator tests. It has no Frame login or cloud AI integration. The separate web studio offers Kling and Seedance with 174 mocked tests; AI creative acceptance remains pending. A subsequent simulator walkthrough verified editing, relaunch, gallery recovery, missing-video retry and completed Files sharing. The inspected export shows that landscape framing and template quality still need work."
-        },
-        {
-          "date": "2026-09-17",
-          "text": "Earlier video prototype — Developing a conversation-led route from an idea to a short film. The next proof point is one complete, reviewed film with a reliable download."
+          "text": "The current focus is a dependable capture → review → recall → action workflow. Recording and playback controls, manual notes, source navigation, tasks, drafts and Calendar handoff have simulator evidence. Physical-device acceptance and successful AI generation remain open."
         }
       ],
       "demoUrl": null,
-      "technicalReadiness": "Build 3.0.0 (4) remains verified in Owner Testing (Internal, one tester); signed build 3.0.0 (7) uploaded successfully at 13:18:15 Dubai on 20 September 2026. Build 7 improves visual fidelity, protects unsaved note edits and drafts, prevents stale changes from overwriting newer content, and corrects recording-resume setup. Its full suite executed 103 checks: 102 passed and one device-only check was skipped. Simulator draft save/reopen and native Calendar cancel/save callbacks were verified. Apple processing completion and group assignment for build 7 remain unverified. Physical microphone, recording recovery, on-device AI and language quality remain unverified.",
+      "technicalReadiness": "An internal iPhone beta with local capture, source-linked recall, reviewed tasks, drafts and manual Calendar handoff. Recording start, pause, resume, save and playback controls were exercised in the iOS 27 simulator. Physical-device acceptance and successful AI generation remain unverified. Optional AI requires an eligible device with iOS 26.4 or later and an enabled, ready Apple model.",
       "commercialReadiness": "Private beta available for owner testing. Repeat use and willingness to pay remain unvalidated; no paid launch is available.",
       "cardAudience": "People working across recurring conversations",
       "cardStage": "Internal beta · Device acceptance pending",
@@ -843,34 +819,34 @@
       "nextAction": "Verify capture, source recall and a reviewed next step on a real iPhone, then observe repeat use with a small beta.",
       "readinessChecks": [
         {
-          "label": "Native implementation",
+          "label": "Working app flows",
           "status": "open",
-          "detail": "Build 7: 103 checks executed, 102 passed and one device-only skip. Simulator draft save/reopen and native Calendar cancel/save callbacks were verified. Physical recording remains unverified: Simulator audio preparation stalled before recording, the attempt was terminated and no audio export was produced."
+          "detail": "Recording start, pause, resume, save and playback controls passed in the iOS 27 simulator. Manual notes, source navigation, tasks, drafts and Calendar handoff also have simulator evidence. These checks do not establish physical-device reliability."
         },
         {
-          "label": "Device and language quality",
+          "label": "Voice and optional AI",
           "status": "not-checked",
-          "detail": "AI requires iOS 26.4+ and a compatible enabled model. English output; mixed Arabic–English speech quality remains unverified."
+          "detail": "On-device transcription depends on device and language support. Successful AI generation remains unverified: English generation reported the model not ready, and Arabic was unsupported in the tested configuration. Mixed Arabic–English quality remains unverified."
         },
         {
-          "label": "Data and actions",
+          "label": "Privacy and control",
           "status": "open",
-          "detail": "Unsaved note/draft handling and stale-edit protection were improved. Simulator verified saving and reopening a draft and the native Calendar cancel/save callbacks. This is not physical-device Calendar, microphone or file-protection acceptance; AI/language checks still need a supported device."
+          "detail": "Private notes are excluded from AI and memory answers. Sharing, task acceptance, reminders and Calendar additions are deliberate user actions. Physical-device protection checks remain open."
         },
         {
-          "label": "New assistant release",
-          "status": "passed",
-          "detail": "Build 4 remains verified in Owner Testing (Internal, one tester). Signed build 3.0.0 (7) uploaded successfully at 13:18:15 Dubai on 20 September 2026. Apple processing completion and group assignment remain unverified. No build 7 availability or new-build physical acceptance is claimed."
+          "label": "Internal distribution",
+          "status": "open",
+          "detail": "Owner-only internal beta under verification. Build 4 is the last verified assigned internal release; source improvements and uploaded builds are not proof of tester availability."
         },
         {
           "label": "Customer usefulness",
           "status": "not-checked",
-          "detail": "No verified retention, paid customers or willingness-to-pay results for the assistant. Observe a small beta before charging."
+          "detail": "Repeat use and willingness to pay remain unvalidated. The next step is a small observed beta, before charging."
         }
       ],
       "gallery": {
         "heading": "Frame voice workspace",
-        "description": "Current app screenshots will be added after device verification. The workflow illustration is not a running-app screenshot.",
+        "description": "Actual simulator screenshots exist in the implementation review. This public page currently shows a labeled workflow illustration; it is not a running-app screenshot or evidence of physical-device acceptance.",
         "items": []
       },
       "overview": {
