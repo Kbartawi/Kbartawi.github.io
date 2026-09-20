@@ -777,23 +777,27 @@
         "Choose your next step"
       ],
       "nextFocus": [
-        "Verify recording, recovery and source recall on a real iPhone",
-        "Test supported-language transcription and on-device AI honestly",
-        "Measure whether people return because the remembered context is useful"
+        "Prove a real iPhone recording-to-reviewed-action loop",
+        "Benchmark names, changed dates, amounts, negation and mixed-language speech",
+        "Observe whether people voluntarily return to a commitment and its original context"
       ],
       "website": null,
       "image": null,
       "imageAlt": "",
-      "demoNote": "The gallery separates19 generated reference images from one actual simulator screenshot. References are not proof that every pictured feature is built; physical-device acceptance remains pending.",
+      "demoNote": "The gallery separates 19 generated reference images from one actual simulator screenshot. References are not proof that every pictured feature is built; physical-device acceptance remains pending.",
       "updatedAt": "2026-09-20",
       "updates": [
+        {
+          "date": "2026-09-20",
+          "text": "Build 3.0.0 (12) completed Apple processing and is assigned to internal Owner Testing. It adds an exact source quote to AI-proposed next steps, rejects changed or private source evidence, and keeps completion receipts with their original note after reopening the app. Reviewed due dates order pending tasks. Successful AI generation and physical-device acceptance remain unverified."
+        },
         {
           "date": "2026-09-20",
           "text": "Build 3.0.0 (10) is verified in the internal Owner Testing group. Simulator evidence covers source search, contextual saved excerpts and deliberate task review, with an actual demo available below. Physical-device acceptance and successful AI generation remain open."
         }
       ],
       "demoUrl": null,
-      "technicalReadiness": "An internal iPhone beta with local capture, source-linked recall, reviewed tasks, drafts and manual Calendar handoff. Recording start, pause, resume, save and playback controls were exercised in the iOS 27 simulator. Physical-device acceptance and successful AI generation remain unverified. Optional AI requires an eligible device with iOS 26.4 or later and an enabled, ready Apple model.",
+      "technicalReadiness": "An internal iPhone beta with local capture, source-linked recall, reviewed tasks, drafts and manual Calendar handoff. Build 12 adds source-evidence guards and durable task completion state; its automated suite executed 149 checks, with 147 passed and two skipped. A separate live AI test failed. Successful generation and physical-device acceptance remain unverified. Optional AI requires an eligible device with iOS 26.4 or later and an enabled, ready Apple model. No cloud AI service is connected.",
       "commercialReadiness": "Private beta available for owner testing. Repeat use and willingness to pay remain unvalidated; no paid launch is available.",
       "cardAudience": "People working across recurring conversations",
       "cardStage": "Internal beta · Device acceptance pending",
@@ -816,17 +820,17 @@
         "Foundation Models",
         "EventKitUI"
       ],
-      "nextAction": "Verify capture, source recall and a reviewed next step on a real iPhone, then observe repeat use with a small beta.",
+      "nextAction": "Prove one real voice-to-action loop on a supported iPhone, then run a seven-day voluntary-use pilot with a few testers.",
       "readinessChecks": [
         {
           "label": "Working app flows",
           "status": "open",
-          "detail": "Recording start, pause, resume, save and playback controls passed in the iOS 27 simulator. Manual notes, source navigation, tasks, drafts and Calendar handoff also have simulator evidence. These checks do not establish physical-device reliability."
+          "detail": "Recording start, pause, resume, save and playback controls passed in the iOS 27 simulator. Manual notes, source navigation, tasks, drafts and Calendar handoff also have simulator evidence. These checks do not establish physical-device reliability. Build 12 completion and Dismiss persistence passed force-close/reopen checks in the simulator; Source and Reopen were also exercised during this cycle."
         },
         {
           "label": "Voice and optional AI",
           "status": "not-checked",
-          "detail": "On-device transcription depends on device and language support. Successful AI generation remains unverified: English generation failed in the simulator, with the cause not established; Arabic was unsupported in the tested configuration. Mixed Arabic–English quality remains unverified."
+          "detail": "Successful generation remains unverified. A live simulator request failed; its safety service reported that the simulator was unsupported, while the host Mac had Apple Intelligence disabled. Arabic was unsupported in the tested configuration. These findings do not establish behavior on a supported iPhone, and mixed Arabic–English quality remains unverified."
         },
         {
           "label": "Privacy and control",
@@ -836,17 +840,17 @@
         {
           "label": "Internal distribution",
           "status": "passed",
-          "detail": "Build 3.0.0 (10) completed Apple processing and is verified in Owner Testing (Internal, one tester), with test instructions saved. Installation and acceptance on the physical iPhone remain unverified."
+          "detail": "Build 3.0.0 (12) completed Apple processing and is verified in Owner Testing (Internal, one tester), with test instructions saved. Installation and acceptance on the physical iPhone remain unverified."
         },
         {
           "label": "Customer usefulness",
           "status": "not-checked",
-          "detail": "Repeat use and willingness to pay remain unvalidated. The next step is a small observed beta, before charging."
+          "detail": "The proposed first audience is people who leave conversations with loose commitments. Repeat use and willingness to pay remain unvalidated. After the device gate, observe a seven-day beta: can people recover context and finish or revise their chosen next step without founder reminders?"
         }
       ],
       "gallery": {
         "heading": "Frame · updated references and original designs",
-        "description": "A new usefulness reference joins two earlier updated references and all16 preserved v8 concepts. An actual simulator receipt appears separately below. Generated references are not running-app screenshots or proof of exact implementation.",
+        "description": "A new usefulness reference joins two earlier updated references and all 16 preserved v8 concepts. An actual simulator receipt appears separately below. Generated references are not running-app screenshots or proof of exact implementation.",
         "groups": [
           {
             "id": "usefulness-reference",
