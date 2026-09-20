@@ -769,7 +769,7 @@
         "Find earlier notes and open the source behind a memory answer.",
         "Review suggested tasks and follow-up drafts before acting.",
         "Use light, dark or red night appearance, with local data controls.",
-        "Build 5 adds optional local task reminders with generic notification text; its TestFlight availability is not yet verified."
+        "The latest uploaded build includes optional local task reminders with generic notification text. Its TestFlight availability is not yet verified."
       ],
       "workflow": [
         "Capture your words",
@@ -789,11 +789,7 @@
       "updates": [
         {
           "date": "2026-09-20",
-          "text": "Build 3.0.0 (5) adds optional local reminders and uploaded successfully at 06:04:09 Dubai. Its suite passed 96 checks with one device-only skip; Simulator verified permission, schedule/remove, delivered notification and navigation to the correct private note. Build 5 Apple processing/assignment is unverified. Build 4 remains the verified internal Owner Testing release."
-        },
-        {
-          "date": "2026-09-20",
-          "text": "Frame 3.0.0 (4) is processed by Apple and assigned to Owner Testing (Internal, one tester), with What to Test saved. The native suite has 81 passing checks and one device-only skip. New-build installation, device AI and workflow acceptance remain unverified."
+          "text": "Signed Frame 3.0.0 (6) uploaded at 11:35:59 Dubai. The latest changes clarify foreground recording and save retries, and make all saved actions discoverable. Simulator UI verified finding and completing a fourth action; 25 targeted checks passed with one device-only skip, plus 27 iOS 18.5 compatibility checks. Apple processing/assignment for build 6 is unverified; build 4 remains the verified internal release."
         },
         {
           "date": "2026-09-20",
@@ -817,7 +813,7 @@
         }
       ],
       "demoUrl": null,
-      "technicalReadiness": "Build 3.0.0 (4) is processed by Apple and assigned to Owner Testing (Internal, one tester). Build 3.0.0 (5) uploaded successfully at 06:04:09 Dubai on 20 September 2026; Apple processing and group assignment for build 5 remain unverified. The build 5 suite has 96 passing tests and one device-only skip. Simulator checks verified notification permission, scheduling/removal, delivered notification and opening the correct private note from its tap. Physical-device installation and acceptance remain unverified; optional AI requires iOS 26.4+ and compatible enabled hardware.",
+      "technicalReadiness": "Build 3.0.0 (4) remains verified in Owner Testing (Internal, one tester). Signed build 3.0.0 (6) uploaded successfully at 11:35:59 Dubai on 20 September 2026; its Apple processing and group assignment remain unverified. It includes local reminders, advance warning that recording pauses outside Frame, clearer save-retry guidance and an inline control to reveal every action. The latest candidate passed 25 targeted checks with one device-only skip and 27 iOS 18.5 compatibility checks. Physical-device acceptance and optional on-device AI quality remain unverified.",
       "commercialReadiness": "Private beta available for owner testing. Repeat use and willingness to pay remain unvalidated; no paid launch is available.",
       "cardAudience": "People working across recurring conversations",
       "cardStage": "Internal beta · Device acceptance pending",
@@ -845,7 +841,7 @@
         {
           "label": "Native implementation",
           "status": "open",
-          "detail": "Build 5 has 96 passing tests and one device-only skip. Simulator reminder permission, scheduling/removal, notification delivery and navigation to the correct private note were verified. Device microphone/model/language acceptance remains open."
+          "detail": "Latest build: 25 targeted checks passed with one device-only skip, plus 27 compatibility checks on iOS 18.5. Simulator UI verified discovering and completing an action beyond the first three. The earlier reminder suite passed 96 checks with one device-only skip; that is not a fresh full-suite run of build 6."
         },
         {
           "label": "Device and language quality",
@@ -860,7 +856,7 @@
         {
           "label": "New assistant release",
           "status": "passed",
-          "detail": "Build 4 remains verified in Owner Testing (Internal, one tester). Build 5 uploaded at 06:04:09 Dubai on 20 September 2026, but its Apple processing and tester assignment are not verified. No build 5 availability or physical-device acceptance is claimed."
+          "detail": "Build 4 remains verified in Owner Testing (Internal, one tester). Signed build 6 uploaded at 11:35:59 Dubai on 20 September 2026; Apple processing and tester assignment remain unverified. New-build physical installation and acceptance are not claimed."
         },
         {
           "label": "Customer usefulness",
