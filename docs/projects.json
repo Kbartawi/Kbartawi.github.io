@@ -789,11 +789,7 @@
       "updates": [
         {
           "date": "2026-09-20",
-          "text": "Development build15 passed the fresh-install microphone-permission workflow in an actual simulator recording. The recording fix is not yet delivered to TestFlight; build14 remains current with the Resume workaround."
-        },
-        {
-          "date": "2026-09-20",
-          "text": "Known build14 issue: on a fresh installation, allowing microphone access can immediately pause recording at zero seconds. Tap Resume to continue. Reproduced in a fresh-install simulator workflow; a fix is in progress. Physical-phone cause remains unconfirmed. Build14 is still the delivered internal release."
+          "text": "Build 3.0.0 (15) completed Apple processing, has saved What to Test instructions and is assigned to Owner Testing (Internal, one tester), verified20:02Dubai. It fixes the first-microphone permission immediate-pause defect demonstrated in simulator QA. Final native checks:187executed,184passed,three skipped,zero failures. Actual background still pauses; resuming requires an explicit tap. Successful AI, acoustic quality and physical-phone acceptance remain unverified. Cloud AI is disabled in Release."
         },
         {
           "date": "2026-09-20",
@@ -813,7 +809,7 @@
         }
       ],
       "demoUrl": null,
-      "technicalReadiness": "Build 3.0.0 (14) is verified in internal TestFlight. Local capture, source-linked recall, reviewed tasks, drafts and manual Calendar handoff are implemented. The update improves microphone-permission recovery and local AI retry; its native suite executed 183 checks, with 180 passed and three skipped. Actual simulator recording controls and saved replay controls were exercised. Successful generation, acoustic quality and physical-device acceptance remain unverified. Cloud AI is disabled in Release. Known build14 issue: on a fresh installation, allowing microphone access can immediately pause recording at zero seconds. Tap Resume to continue. Reproduced in a fresh-install simulator workflow; a fix is in progress. Physical-phone cause remains unconfirmed. Build14 is still the delivered internal release.",
+      "technicalReadiness": "Build 3.0.0 (15) completed Apple processing, has saved What to Test instructions and is assigned to Owner Testing (Internal, one tester), verified20:02Dubai. It fixes the first-microphone permission immediate-pause defect demonstrated in simulator QA. Final native checks:187executed,184passed,three skipped,zero failures. Actual background still pauses; resuming requires an explicit tap. Successful AI, acoustic quality and physical-phone acceptance remain unverified. Cloud AI is disabled in Release. Build14 had an immediate zero-second pause after first microphone permission. Build15 fixes that defect in a fresh-install simulator workflow; this is not a physical-phone guarantee. Update the existing app through TestFlight without deleting the app or saved data.",
       "commercialReadiness": "Private beta available for owner testing. Repeat use and willingness to pay remain unvalidated; no paid launch is available.",
       "cardAudience": "People working across recurring conversations",
       "cardStage": "Internal beta · Device acceptance pending",
@@ -841,7 +837,7 @@
         {
           "label": "Working app flows",
           "status": "open",
-          "detail": "Known build14 issue: on a fresh installation, allowing microphone access can immediately pause recording at zero seconds. Tap Resume to continue. Reproduced in a fresh-install simulator workflow; a fix is in progress. Physical-phone cause remains unconfirmed. Build14 is still the delivered internal release. Previously verified recording controls used an already-granted microphone permission."
+          "detail": "Build14 had an immediate zero-second pause after first microphone permission. Build15 fixes that defect in a fresh-install simulator workflow; this is not a physical-phone guarantee. Update the existing app through TestFlight without deleting the app or saved data. Actual QA: first Allow keeps recording; Home pauses; return remains paused; explicit Resume continues; Finish saves the original even if speech permission is denied."
         },
         {
           "label": "Voice and optional AI",
@@ -856,7 +852,7 @@
         {
           "label": "Internal distribution",
           "status": "passed",
-          "detail": "Build 3.0.0 (14) completed Apple processing and is verified in Owner Testing (Internal, one tester), with What to Test saved. Physical installation and resolution of the reported recording issue remain unverified."
+          "detail": "Build 3.0.0 (15): Apple Complete, What to Test Saved and Owner Testing / Internal / one tester verified20:02Dubai. Apple build ID16c44f23-0d0f-474e-921b-f692d917035d. Physical installation remains unverified."
         },
         {
           "label": "Customer usefulness",
@@ -1124,7 +1120,7 @@
         "src": "/media/frame/actual/build13-development/frame-local-workflow-demo.mp4",
         "poster": "/media/frame/actual/build13-development/demo-poster.jpg",
         "title": "Local workflow demo · development build13",
-        "caption": "78-second silent simulator recording with fictional data, captured during build 13 development. Shows task editing, original sources, completion receipts and the audio-only warning. This is local workflow evidence, not AI generation proof or physical-device acceptance. Build 3.0.0 (14) is now the latest verified internal TestFlight release; the video remains a development recording.",
+        "caption": "78-second silent simulator recording with fictional data, captured during build 13 development. Shows task editing, original sources, completion receipts and the audio-only warning. This is local workflow evidence, not AI generation proof or physical-device acceptance. Build 3.0.0 (15) is now the latest verified internal TestFlight release; the video remains a development recording.",
         "previousSrc": "/media/frame/actual/build10/actual-build10-demo.mp4",
         "previousLabel": "Earlier build10 demo · 84 seconds · source-search fallback, not AI generation"
       },
@@ -1132,7 +1128,7 @@
         "src": "/media/frame/actual/build15-development/first-microphone-recording.mp4",
         "poster": "/media/frame/actual/build15-development/permission-poster.jpg",
         "title": "First microphone permission test · development build15",
-        "caption": "114-second silent simulator recording. Fresh-install microphone Allow continues recording; Home pauses capture; returning stays paused until Resume; Finish saves a 42-second original. Speech permission was denied after saving. This verifies recording controls and original-file preservation, not AI generation or acoustic quality. Development build15 is not yet delivered; build14 remains the current internal TestFlight release."
+        "caption": "114-second silent simulator recording. Fresh-install microphone Allow continues recording; Home pauses capture; returning stays paused until Resume; Finish saves a 42-second original. Speech permission was denied after saving. This verifies recording controls and original-file preservation, not AI generation or acoustic quality. Build3.0.0(15) is now the verified internal TestFlight release; this video remains labeled as its development QA capture. Update the existing app without deleting saved data."
       }
     },
     {
