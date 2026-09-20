@@ -769,7 +769,7 @@
         "Search saved notes, recover supporting passages and return to the original context.",
         "Review tasks and prepare follow-up drafts; choose reminders and confirm calendar events yourself.",
         "Keep selected notes out of AI and memory answers, with export and deletion controls.",
-        "Use optional Apple on-device AI on eligible devices, with light, olive-green dark and red night appearance."
+        "Optional Apple on-device AI support is being tested on eligible devices. Light, olive-green dark and red night appearance are available."
       ],
       "workflow": [
         "Capture your words",
@@ -941,7 +941,7 @@
           },
           {
             "title": "Live answer",
-            "caption": "A concise answer linked to the original source.",
+            "caption": "Proposed current-conversation coaching linked to an original source. This live coaching flow is not built; current Ask searches saved notes.",
             "alt": "Frame v8 Live answer — generated concept, fictional data",
             "kind": "Design concept · not a running-app screenshot",
             "src": "/media/frame/concepts/v8/06-live-answer.png",
