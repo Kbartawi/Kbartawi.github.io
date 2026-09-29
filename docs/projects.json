@@ -789,7 +789,7 @@
       "updates": [
         {
           "date": "2026-09-29",
-          "text": "Build 3.0.0 (19) is installed on the actual iPhone after fixing its storage launch blocker. A complete typed request produced a reviewed task and one calendar event, independently verified in Apple Calendar with the correct date, time and duration; its original source remains linked. Native checks: 211 total, 208 passed, three explicit skips, zero failures. Apple processing, saved instructions and Owner Testing/Internal/one tester assignment are verified. Voice-to-calendar, general AI quality and authenticated Google actions remain unverified. Cloud AI stays disabled in Release."
+          "text": "Build 3.0.0 (21) is installed on the actual iPhone through internal TestFlight. A saved synthetic conversation produced a corrected five-section proposal and follow-up draft; saved content, original-source review and old-version sharing protection were verified. The prior typed request to a real Calendar event remains verified. Native checks: 222 total, 219 passed, three explicit skips, zero failures. The physical PDF was saved and independently opened in Preview. An approved fictional self-test email with the PDF reached Mail’s queued result; Frame retained both receipts. Inbox delivery is not confirmed. Public App Store submission, voice-to-calendar, general AI quality and authenticated Google actions remain unverified. Cloud AI stays disabled in Release."
         },
         {
           "date": "2026-09-29",
@@ -821,7 +821,7 @@
         }
       ],
       "demoUrl": null,
-      "technicalReadiness": "Build 3.0.0 (19) is installed on the actual iPhone after fixing its storage launch blocker. A complete typed request produced a reviewed task and one calendar event, independently verified in Apple Calendar with the correct date, time and duration; its original source remains linked. Native checks: 211 total, 208 passed, three explicit skips, zero failures. Apple processing, saved instructions and Owner Testing/Internal/one tester assignment are verified. Voice-to-calendar, general AI quality and authenticated Google actions remain unverified. Cloud AI stays disabled in Release.",
+      "technicalReadiness": "Build 3.0.0 (21) is installed on the actual iPhone through internal TestFlight. A saved synthetic conversation produced a corrected five-section proposal and follow-up draft; saved content, original-source review and old-version sharing protection were verified. The prior typed request to a real Calendar event remains verified. Native checks: 222 total, 219 passed, three explicit skips, zero failures. The physical PDF was saved and independently opened in Preview. An approved fictional self-test email with the PDF reached Mail’s queued result; Frame retained both receipts. Inbox delivery is not confirmed. Public App Store submission, voice-to-calendar, general AI quality and authenticated Google actions remain unverified. Cloud AI stays disabled in Release.",
       "commercialReadiness": "Private beta available for owner testing. Repeat use and willingness to pay remain unvalidated; no paid launch is available.",
       "cardAudience": "People working across recurring conversations",
       "cardStage": "Internal beta · Device acceptance pending",
@@ -869,7 +869,7 @@
         {
           "label": "Internal distribution",
           "status": "passed",
-          "detail": "Build 3.0.0 (19) is installed on the actual iPhone after fixing its storage launch blocker. A complete typed request produced a reviewed task and one calendar event, independently verified in Apple Calendar with the correct date, time and duration; its original source remains linked. Native checks: 211 total, 208 passed, three explicit skips, zero failures. Apple processing, saved instructions and Owner Testing/Internal/one tester assignment are verified. Voice-to-calendar, general AI quality and authenticated Google actions remain unverified. Cloud AI stays disabled in Release."
+          "detail": "Build 3.0.0 (21) is installed on the actual iPhone through internal TestFlight. A saved synthetic conversation produced a corrected five-section proposal and follow-up draft; saved content, original-source review and old-version sharing protection were verified. The prior typed request to a real Calendar event remains verified. Native checks: 222 total, 219 passed, three explicit skips, zero failures. The physical PDF was saved and independently opened in Preview. An approved fictional self-test email with the PDF reached Mail’s queued result; Frame retained both receipts. Inbox delivery is not confirmed. Public App Store submission, voice-to-calendar, general AI quality and authenticated Google actions remain unverified. Cloud AI stays disabled in Release."
         },
         {
           "label": "Customer usefulness",
