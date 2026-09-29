@@ -789,7 +789,7 @@
       "updates": [
         {
           "date": "2026-09-29",
-          "text": "Build3.0.0(17) completed Apple processing, has saved test instructions and is assigned to Owner Testing/Internal/one tester, verified29September2026. It adds spoken task planning and optional Google/iPhone Calendar connections. Native checks202total:199passed,3explicit skips,0failures. Manual iPhone Calendar simulator save/read-back and Google sign-in launch verified; authenticated Google actions, audible replies and successful physical-phone voice understanding remain unverified. Cloud AI remains disabled in Release. Update the existing app through TestFlight without deleting its data."
+          "text": "Build 3.0.0 (18) fixes a physical-iPhone launch failure caused by rejecting Apple’s system storage alias. No reset or data deletion is required. Native checks: 205 total, 202 passed, three explicit skips, zero failures. The signed update uploaded on 29 September 2026 and completed Apple processing; saved instructions and Owner Testing/Internal/one tester assignment are verified. Installed as an update on the actual iPhone: the storage warning is gone and the recording screen opens. Successful voice-to-calendar acceptance remains pending. Google and iPhone Calendar connections are implemented; authenticated Google actions remain unverified. Cloud AI stays disabled in Release."
         },
         {
           "date": "2026-09-29",
@@ -821,7 +821,7 @@
         }
       ],
       "demoUrl": null,
-      "technicalReadiness": "Build3.0.0(17) completed Apple processing, has saved test instructions and is assigned to Owner Testing/Internal/one tester, verified29September2026. It adds spoken task planning and optional Google/iPhone Calendar connections. Native checks202total:199passed,3explicit skips,0failures. Manual iPhone Calendar simulator save/read-back and Google sign-in launch verified; authenticated Google actions, audible replies and successful physical-phone voice understanding remain unverified. Cloud AI remains disabled in Release. Update the existing app through TestFlight without deleting its data.",
+      "technicalReadiness": "Build 3.0.0 (18) fixes a physical-iPhone launch failure caused by rejecting Apple’s system storage alias. No reset or data deletion is required. Native checks: 205 total, 202 passed, three explicit skips, zero failures. The signed update uploaded on 29 September 2026 and completed Apple processing; saved instructions and Owner Testing/Internal/one tester assignment are verified. Installed as an update on the actual iPhone: the storage warning is gone and the recording screen opens. Successful voice-to-calendar acceptance remains pending. Google and iPhone Calendar connections are implemented; authenticated Google actions remain unverified. Cloud AI stays disabled in Release.",
       "commercialReadiness": "Private beta available for owner testing. Repeat use and willingness to pay remain unvalidated; no paid launch is available.",
       "cardAudience": "People working across recurring conversations",
       "cardStage": "Internal beta · Device acceptance pending",
@@ -869,7 +869,7 @@
         {
           "label": "Internal distribution",
           "status": "passed",
-          "detail": "Build3.0.0(17) completed Apple processing, has saved test instructions and is assigned to Owner Testing/Internal/one tester, verified29September2026. It adds spoken task planning and optional Google/iPhone Calendar connections. Native checks202total:199passed,3explicit skips,0failures. Manual iPhone Calendar simulator save/read-back and Google sign-in launch verified; authenticated Google actions, audible replies and successful physical-phone voice understanding remain unverified. Cloud AI remains disabled in Release. Update the existing app through TestFlight without deleting its data."
+          "detail": "Build 3.0.0 (18) fixes a physical-iPhone launch failure caused by rejecting Apple’s system storage alias. No reset or data deletion is required. Native checks: 205 total, 202 passed, three explicit skips, zero failures. The signed update uploaded on 29 September 2026 and completed Apple processing; saved instructions and Owner Testing/Internal/one tester assignment are verified. Installed as an update on the actual iPhone: the storage warning is gone and the recording screen opens. Successful voice-to-calendar acceptance remains pending. Google and iPhone Calendar connections are implemented; authenticated Google actions remain unverified. Cloud AI stays disabled in Release."
         },
         {
           "label": "Customer usefulness",
