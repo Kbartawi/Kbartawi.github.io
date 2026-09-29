@@ -1,3 +1,5 @@
+Frame status update —29September2026: Build16 is verified in internal Owner Testing as of29September2026. Candidate17 adds spoken task planning, optional Google/iPhone Calendar connections, availability checks and verified work-block receipts. The iPhone Calendar simulator save/read-back and Google sign-in launch were exercised. Authenticated Google actions and successful physical-phone voice-to-action remain unverified; candidate17 has not been delivered. Cloud AI remains disabled in Release.
+
 # Khaled / Product portfolio
 
 **[Open the portfolio](https://kbartawi.github.io/)** · [GitHub profile](https://github.com/Kbartawi)
@@ -50,9 +52,11 @@ Repository: `Kbartawi/Kbartawi.github.io`. GitHub Pages uses **Deploy from a bra
 
 Public samples use fictional data. Source code for the products is private. Never publish credentials, private customer records or unsupported revenue/traction claims in this repository.
 
+Build16 quick capture is verified assigned to internal Owner Testing on29September2026. Explicit onboarding asks for microphone access before opening capture, without starting recording. Static Home/Lock widgets and an iOS18+ control open Frame; unlock if asked, then tap Start. Widgets show no note content and do not record or run AI. Audio-only notes offer writing instead of unusable generation. Actual allow/deny and widget/control launch acceptance are pending. Build16 is the latest verified internal TestFlight release; AI quality and product-market fit remain unproven.
+
 Frame updates must stay synchronized with the application README and GitHub personal profile. Technical completion, creative acceptance and release state are separate facts.
 
-Latest Frame evidence: [local workflow demo](https://kbartawi.github.io/projects/frame/#demo), 78 seconds, silent, development build13. It shows task editing, source review, receipts and an audio-only warning—not successful AI generation. Build 3.0.0 (15) is the latest verified internal TestFlight release; this video remains a development recording. The earlier build10 video and all20 gallery images are preserved.
+Latest Frame evidence: [local workflow demo](https://kbartawi.github.io/projects/frame/#demo), 78 seconds, silent, development build13. It shows task editing, source review, receipts and an audio-only warning—not successful AI generation. Build3.0.0(16) is the latest verified internal TestFlight release; this video remains a development recording. The earlier build10 video and all20 gallery images are preserved.
 
 
 Build14 had an immediate zero-second pause after first microphone permission. Build15 fixes that defect in a fresh-install simulator workflow; this is not a physical-phone guarantee. Update the existing app through TestFlight without deleting the app or saved data.

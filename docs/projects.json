@@ -785,8 +785,16 @@
       "image": null,
       "imageAlt": "",
       "demoNote": "The gallery separates 19 generated reference images from one actual simulator screenshot. References are not proof that every pictured feature is built; physical-device acceptance remains pending.",
-      "updatedAt": "2026-09-20",
+      "updatedAt": "2026-09-29",
       "updates": [
+        {
+          "date": "2026-09-29",
+          "text": "Build16 is verified in internal Owner Testing as of29September2026. Candidate17 adds spoken task planning, optional Google/iPhone Calendar connections, availability checks and verified work-block receipts. The iPhone Calendar simulator save/read-back and Google sign-in launch were exercised. Authenticated Google actions and successful physical-phone voice-to-action remain unverified; candidate17 has not been delivered. Cloud AI remains disabled in Release."
+        },
+        {
+          "date": "2026-09-20",
+          "text": "Build16 quick capture is a development candidate, not yet delivered. Explicit onboarding asks for microphone access before opening capture, without starting recording. Static Home/Lock widgets and an iOS18+ control open Frame; unlock if asked, then tap Start. Widgets show no note content and do not record or run AI. Audio-only notes offer writing instead of unusable generation. Actual allow/deny and widget/control launch acceptance are pending. Build15 remains the latest verified internal TestFlight release; AI quality and product-market fit remain unproven."
+        },
         {
           "date": "2026-09-20",
           "text": "Build 3.0.0 (15) completed Apple processing, has saved What to Test instructions and is assigned to Owner Testing (Internal, one tester), verified20:02Dubai. It fixes the first-microphone permission immediate-pause defect demonstrated in simulator QA. Final native checks:187executed,184passed,three skipped,zero failures. Actual background still pauses; resuming requires an explicit tap. Successful AI, acoustic quality and physical-phone acceptance remain unverified. Cloud AI is disabled in Release."
@@ -809,7 +817,7 @@
         }
       ],
       "demoUrl": null,
-      "technicalReadiness": "Build 3.0.0 (15) completed Apple processing, has saved What to Test instructions and is assigned to Owner Testing (Internal, one tester), verified20:02Dubai. It fixes the first-microphone permission immediate-pause defect demonstrated in simulator QA. Final native checks:187executed,184passed,three skipped,zero failures. Actual background still pauses; resuming requires an explicit tap. Successful AI, acoustic quality and physical-phone acceptance remain unverified. Cloud AI is disabled in Release. Build14 had an immediate zero-second pause after first microphone permission. Build15 fixes that defect in a fresh-install simulator workflow; this is not a physical-phone guarantee. Update the existing app through TestFlight without deleting the app or saved data.",
+      "technicalReadiness": "Build16 is verified in internal Owner Testing as of29September2026. Candidate17 adds spoken task planning, optional Google/iPhone Calendar connections, availability checks and verified work-block receipts. The iPhone Calendar simulator save/read-back and Google sign-in launch were exercised. Authenticated Google actions and successful physical-phone voice-to-action remain unverified; candidate17 has not been delivered. Cloud AI remains disabled in Release.",
       "commercialReadiness": "Private beta available for owner testing. Repeat use and willingness to pay remain unvalidated; no paid launch is available.",
       "cardAudience": "People working across recurring conversations",
       "cardStage": "Internal beta · Device acceptance pending",
@@ -832,12 +840,17 @@
         "Foundation Models",
         "EventKitUI"
       ],
-      "nextAction": "Prove one real voice-to-action loop on a supported iPhone, then run a seven-day voluntary-use pilot with a few testers.",
+      "nextAction": "Verify Google Calendar authentication and one complete spoken-request-to-reviewed-calendar-block workflow on a supported iPhone.",
       "readinessChecks": [
         {
           "label": "Working app flows",
           "status": "open",
           "detail": "Build14 had an immediate zero-second pause after first microphone permission. Build15 fixes that defect in a fresh-install simulator workflow; this is not a physical-phone guarantee. Update the existing app through TestFlight without deleting the app or saved data. Actual QA: first Allow keeps recording; Home pauses; return remains paused; explicit Resume continues; Finish saves the original even if speech permission is denied."
+        },
+        {
+          "label": "Quick Capture candidate",
+          "status": "open",
+          "detail": "Build16 quick capture is a internal beta, assigned29September2026. Explicit onboarding asks for microphone access before opening capture, without starting recording. Static Home/Lock widgets and an iOS18+ control open Frame; unlock if asked, then tap Start. Widgets show no note content and do not record or run AI. Audio-only notes offer writing instead of unusable generation. Actual allow/deny and widget/control launch acceptance are pending. Build16 is the latest verified internal TestFlight release; AI quality and product-market fit remain unproven."
         },
         {
           "label": "Voice and optional AI",
@@ -852,7 +865,7 @@
         {
           "label": "Internal distribution",
           "status": "passed",
-          "detail": "Build 3.0.0 (15): Apple Complete, What to Test Saved and Owner Testing / Internal / one tester verified20:02Dubai. Apple build ID16c44f23-0d0f-474e-921b-f692d917035d. Physical installation remains unverified."
+          "detail": "Build16 Apple processing, saved test notes and Owner Testing/Internal/one tester assignment verified29September2026. Candidate17 not yet delivered."
         },
         {
           "label": "Customer usefulness",
@@ -1024,7 +1037,7 @@
           },
           {
             "title": "Plan",
-            "caption": "Preview the time and calendar before adding anything. Concept only: calendar availability checking is not implemented.",
+            "caption": "Preview the time and calendar before adding anything. Historical design concept. Candidate17 implements availability checks; authenticated Google and physical-device acceptance remain pending.",
             "alt": "Frame v8 Plan — generated concept, fictional data",
             "kind": "Design concept · not a running-app screenshot",
             "src": "/media/frame/concepts/v8/10-plan.png",
