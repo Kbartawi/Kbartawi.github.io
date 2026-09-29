@@ -789,6 +789,10 @@
       "updates": [
         {
           "date": "2026-09-29",
+          "text": "Build3.0.0(17) completed Apple processing, has saved test instructions and is assigned to Owner Testing/Internal/one tester, verified29September2026. It adds spoken task planning and optional Google/iPhone Calendar connections. Native checks202total:199passed,3explicit skips,0failures. Manual iPhone Calendar simulator save/read-back and Google sign-in launch verified; authenticated Google actions, audible replies and successful physical-phone voice understanding remain unverified. Cloud AI remains disabled in Release. Update the existing app through TestFlight without deleting its data."
+        },
+        {
+          "date": "2026-09-29",
           "text": "Build16 is verified in internal Owner Testing as of29September2026. Candidate17 adds spoken task planning, optional Google/iPhone Calendar connections, availability checks and verified work-block receipts. The iPhone Calendar simulator save/read-back and Google sign-in launch were exercised. Authenticated Google actions and successful physical-phone voice-to-action remain unverified; candidate17 has not been delivered. Cloud AI remains disabled in Release."
         },
         {
@@ -817,7 +821,7 @@
         }
       ],
       "demoUrl": null,
-      "technicalReadiness": "Build16 is verified in internal Owner Testing as of29September2026. Candidate17 adds spoken task planning, optional Google/iPhone Calendar connections, availability checks and verified work-block receipts. The iPhone Calendar simulator save/read-back and Google sign-in launch were exercised. Authenticated Google actions and successful physical-phone voice-to-action remain unverified; candidate17 has not been delivered. Cloud AI remains disabled in Release.",
+      "technicalReadiness": "Build3.0.0(17) completed Apple processing, has saved test instructions and is assigned to Owner Testing/Internal/one tester, verified29September2026. It adds spoken task planning and optional Google/iPhone Calendar connections. Native checks202total:199passed,3explicit skips,0failures. Manual iPhone Calendar simulator save/read-back and Google sign-in launch verified; authenticated Google actions, audible replies and successful physical-phone voice understanding remain unverified. Cloud AI remains disabled in Release. Update the existing app through TestFlight without deleting its data.",
       "commercialReadiness": "Private beta available for owner testing. Repeat use and willingness to pay remain unvalidated; no paid launch is available.",
       "cardAudience": "People working across recurring conversations",
       "cardStage": "Internal beta · Device acceptance pending",
@@ -865,7 +869,7 @@
         {
           "label": "Internal distribution",
           "status": "passed",
-          "detail": "Build16 Apple processing, saved test notes and Owner Testing/Internal/one tester assignment verified29September2026. Candidate17 not yet delivered."
+          "detail": "Build3.0.0(17) completed Apple processing, has saved test instructions and is assigned to Owner Testing/Internal/one tester, verified29September2026. It adds spoken task planning and optional Google/iPhone Calendar connections. Native checks202total:199passed,3explicit skips,0failures. Manual iPhone Calendar simulator save/read-back and Google sign-in launch verified; authenticated Google actions, audible replies and successful physical-phone voice understanding remain unverified. Cloud AI remains disabled in Release. Update the existing app through TestFlight without deleting its data."
         },
         {
           "label": "Customer usefulness",
