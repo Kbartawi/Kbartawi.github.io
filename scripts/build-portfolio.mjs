@@ -111,7 +111,7 @@ function document(title, description, path, body) {
 `;
 }
 function visual(p) {
- if(p.slug==='frame') return `<div class="project-art art-frame" role="img" aria-label="Illustration of the Frame workflow: capture your words, retrieve their original context, then review your next step. Not an app screenshot."><div class="studio-top"><span class="studio-wordmark">frame<span>●</span></span><span>WORKFLOW ILLUSTRATION</span></div><svg viewBox="0 0 520 260" width="100%" style="display:block;flex:1;min-height:0" aria-hidden="true"><path d="M76 64V202" fill="none" stroke="#536A5B" stroke-width="2"/><g fill="#C5F26A"><circle cx="76" cy="56" r="21"/><circle cx="76" cy="132" r="21"/><circle cx="76" cy="208" r="21"/></g><g fill="#182820" font-size="15" font-family="system-ui,sans-serif" text-anchor="middle"><text x="76" y="62">01</text><text x="76" y="138">02</text><text x="76" y="214">03</text></g><g fill="#F4F7F1" font-size="23" font-family="system-ui,sans-serif"><text x="119" y="51">Capture your words</text><text x="119" y="127">Find the original context</text><text x="119" y="203">Review your next step</text></g><g fill="#BAC7BE" font-size="14" font-family="system-ui,sans-serif"><text x="119" y="75">A thought or a conversation</text><text x="119" y="151">Source-linked notes and recall</text><text x="119" y="227">You decide what happens next</text></g></svg><div class="studio-steps"><span>Voice</span><b>→</b><span>Memory</span><b>→</b><strong>Reviewed action</strong></div></div>`;
+ if(p.slug==='frame') return `<div class="project-art art-frame" role="img" aria-label="Illustration of the Frame workflow: capture a thought, review a realistic plan, then check off the next step. Not an app screenshot."><div class="studio-top"><span class="studio-wordmark">frame<span>●</span></span><span>WORKFLOW ILLUSTRATION</span></div><svg viewBox="0 0 520 260" width="100%" style="display:block;flex:1;min-height:0" aria-hidden="true"><path d="M76 64V202" fill="none" stroke="#536A5B" stroke-width="2"/><g fill="#C5F26A"><circle cx="76" cy="56" r="21"/><circle cx="76" cy="132" r="21"/><circle cx="76" cy="208" r="21"/></g><g fill="#182820" font-size="15" font-family="system-ui,sans-serif" text-anchor="middle"><text x="76" y="62">01</text><text x="76" y="138">02</text><text x="76" y="214">03</text></g><g fill="#F4F7F1" font-size="23" font-family="system-ui,sans-serif"><text x="119" y="51">Capture your next step</text><text x="119" y="127">Plan a realistic day</text><text x="119" y="203">Check it off</text></g><g fill="#BAC7BE" font-size="14" font-family="system-ui,sans-serif"><text x="119" y="75">Type a thought and review it</text><text x="119" y="151">Tasks, prayers and routines together</text><text x="119" y="227">One next action, with Undo</text></g></svg><div class="studio-steps"><span>Capture</span><b>→</b><span>Plan</span><b>→</b><strong>Complete</strong></div></div>`;
  if(p.slug==='dubai-game') return `<div class="project-art art-dubai"><img src="${escape(p.image)}" alt="${escape(p.imageAlt)}" loading="lazy"><div class="world-caption"><span>WORLD IN DEVELOPMENT</span><strong>Downtown Dubai.</strong><span>Original project concept art · Not gameplay</span></div></div>`;
  if(p.slug==='oris') return `<div class="project-art art-oris" role="img" aria-label="Illustrative Oris conversation in Arabic with business context and a human handoff"><div class="support-ui"><div class="support-header"><span class="support-avatar">o✳</span><div><strong>Customer<br>conversation</strong></div><span class="online-dot"></span></div><div class="support-message customer" lang="ar" dir="rtl">هل التوصيل متاح إلى الشارقة؟</div><div class="support-message agent">Yes — we deliver to Sharjah.<br><strong>Let me check the details for you.</strong></div><div class="support-source"><span>✳</span><div>Business policies and context<br><strong>Hand over to the support team</strong></div></div></div><span class="art-label">ILLUSTRATIVE CONVERSATION</span></div>`;
  if(p.slug==='aqd') return `<div class="project-art art-aqd" role="img" aria-label="Illustrative Aqd tenancy preparation pack with property details, cheque schedule and documents"><div class="aqd-paper"><div class="paper-top"><span>aqd <i lang="ar">عقد</i></span><span>TENANCY PACK / 01</span></div><h3>Tenancy<br>preparation</h3><div class="paper-row"><span>✓</span>Property & agreement</div><div class="paper-row"><span>✓</span>Rent & cheque schedule</div><div class="paper-row"><span>○</span>Documents to complete</div><div class="paper-foot">Property · Rent · Documents</div></div><span class="art-label">ILLUSTRATIVE PREPARATION PACK</span></div>`;
@@ -135,7 +135,7 @@ function profile(p,index){
  const facts=[['Users',p.audience],['Buyer',p.buyer],['Market',p.market],['Stage',p.stage]];
  return document(p.name+' / Khaled',p.summary,profileUrl(p),`<div class="breadcrumb"><a href="/#projects">← All work</a><span>${escape(p.name)}</span></div><section class="project-hero"><div class="project-heading">${mark(p)}<div class="project-badges">${tag(p.category)}${tag(p.cardStage||p.stage,'stage')}</div></div><div class="project-intro"><h1>${escape(p.headline[0])}<br><em>${escape(p.headline[1])}</em></h1><div><p class="lead">${escape(p.positioning||p.summary)}</p><p>${escape(p.outcome||p.summary)}</p><div class="project-actions">${p.demoUrl?`<a class="button-primary" href="${escape(p.demoUrl)}" target="_blank" rel="noopener noreferrer">${escape(p.demoLabel||'Explore demo')} ${arrow}</a>`:''}${p.website?`<a class="${p.demoUrl?'text-action':'button-primary'}" href="${escape(p.website)}" target="_blank" rel="noopener noreferrer">Product website ${arrow}</a>`:''}${!p.website&&!p.demoUrl?'<a class="text-action" href="#readiness">See current progress ↓</a>':''}</div></div></div></section>
  <section class="project-showcase" aria-label="${escape(p.name)} visual overview">${visual(p)}</section>
- <nav class="page-sections" aria-label="Project sections">${p.demoVideo ? '<a href="#demo">Actual demo</a>' : ''}${p.gallery.items.length ? `<a href="#gallery">Gallery <span>${p.gallery.items.length}</span></a>` : ''}<a href="#overview">Overview</a><a href="#workflow">Workflow</a><a href="#readiness">Readiness</a><a href="#next">What’s next</a></nav>
+ <nav class="page-sections" aria-label="Project sections">${p.demoVideo ? `<a href="#demo">${p.slug === 'frame' ? 'Historical demo' : 'Actual demo'}</a>` : ''}${p.gallery.items.length ? `<a href="#gallery">Gallery <span>${p.gallery.items.length}</span></a>` : ''}<a href="#overview">Overview</a><a href="#workflow">Workflow</a><a href="#readiness">Readiness</a><a href="#next">What’s next</a></nav>
 ${p.permissionDemo ? `<section class="story-section" id="permission-demo"><div><h2>${escape(p.permissionDemo.title)}</h2><p class="body-copy">${escape(p.permissionDemo.caption)}</p><a class="text-action" href="${escape(p.permissionDemo.src)}">Open permission-test video directly ↗</a></div><div><video controls playsinline preload="metadata" poster="${escape(p.permissionDemo.poster)}" aria-label="${escape(p.permissionDemo.title)}" style="display:block;width:100%;max-width:420px;height:auto;margin:auto;border-radius:18px"><source src="${escape(p.permissionDemo.src)}" type="video/mp4">Use the direct video link.</video><p class="body-copy">Silent video · Actual simulator · Development evidence</p></div></section>` : ''}
 ${p.demoVideo ? `<section class="story-section" id="demo"><div><h2>${escape(p.demoVideo.title)}</h2><p class="body-copy">${escape(p.demoVideo.caption)}</p><a class="text-action" href="${escape(p.demoVideo.src)}">Open video directly ↗</a></div><div><video controls playsinline preload="metadata" poster="${escape(p.demoVideo.poster)}" aria-label="${escape(p.demoVideo.title)}" style="display:block;width:100%;max-width:420px;height:auto;margin:auto;border-radius:18px"><source src="${escape(p.demoVideo.src)}" type="video/mp4">Your browser does not support inline video. Use the direct link.</video><p class="body-copy">Silent video · Actual simulator · Fictional data</p>${p.demoVideo.previousSrc ? `<p class="body-copy"><a href="${escape(p.demoVideo.previousSrc)}">${escape(p.demoVideo.previousLabel)}</a></p>` : ''}</div></section>` : ''}${gallery(p) ? " " + gallery(p) + "\n" : ""}${p.slug === 'frame' ? '<p class="body-copy"><a href="/projects/frame/privacy/">Privacy and data</a> · <a href="/projects/frame/support/">Beta support</a></p>\n' : ''}
  <section class="story-section" id="overview"><div><h2>${p.overview.type === 'concept' ? 'Concept' : 'Problem'}</h2><p class="body-copy">${escape(p.overview.text)}</p><dl class="project-facts">${facts.map(([k,v])=>`<div><dt>${k}</dt><dd>${escape(v)}</dd></div>`).join('')}</dl></div><div><p class="eyebrow">${p.overview.type === 'concept' ? 'SCOPE' : 'FEATURES'}</p><ol class="capabilities">${p.features.map((x,i)=>`<li><span>0${i+1}</span><p>${escape(x)}</p></li>`).join('')}</ol><div class="use-cases"><h3>Examples</h3><ul>${cases.map(x=>`<li>${escape(x)}</li>`).join('')}</ul></div></div></section>
@@ -166,31 +166,76 @@ const previousManifest = await readFile(resolve(out, 'project-manifest.json'), '
 for (const slug of previousManifest.slugs || []) if (slugPattern.test(slug) && !ids.has(slug)) await rm(resolve(out, 'projects', slug), {recursive: true, force: true});
 for (const [i, p] of data.projects.entries()) {await mkdir(resolve(out, 'projects', p.slug), { recursive: true });await writeFile(resolve(out, 'projects', p.slug, 'index.html'), profile(p, i));}
 const frameInfoPages = [
- {slug: 'privacy', title: 'Frame privacy and data', description: 'How the current Frame iPhone assistant beta handles recordings, notes, AI processing and sharing.', sections: [
-  ['Scope', 'This page describes the Frame voice assistant beta, updated29September2026; includes candidate17 calendar connections when present in your build. The assistant is an owner-only internal beta under device verification. Features may differ between assigned builds; confirm the version shown in TestFlight. Earlier Frame video tools and their separately configured services are not covered by these assistant-specific statements.'],
-  ['Recording is your choice', 'Frame uses the microphone when you deliberately start recording. Inform other participants and obtain any required permission before recording a conversation. Capture pauses when Frame leaves the foreground. It does not secretly record other-app calls or listen continuously.'],
-  ['Storage and local processing', 'Notes, tasks and recordings are stored in Frame’s protected app storage on your iPhone. Supported speech recognition runs on-device. Optional summaries, answers and drafts use Apple’s on-device model on compatible devices with iOS 26.4 or later and the model enabled and ready. There is no third-party AI service, Frame account or Frame analytics service connected to this assistant beta. Device and language availability varies.'],
-  ['Private notes', 'Private notes are excluded from AI processing and memory answers. You can review them yourself. Text and task exports exclude private notes unless you explicitly enable their inclusion. The current export does not include audio files. Review an export before choosing where to share it.'],
-  ['Optional local reminders', 'In reminder-enabled builds, reminders are created only when you choose a time and grant notification permission. Notifications use generic wording rather than your task title or note text. A local task identifier lets a notification tap open its related note. Device notification settings control presentation; a notification is not proof you saw or completed the task.'],
-  ['Retention, deletion and backups', 'Recordings are retained with their notes until you delete them. Use Frame’s note deletion or Settings data-deletion controls to remove assistant data owned by Frame. Device backups may include app data according to your Apple/device settings. Deleting current app data does not erase earlier backups or copies already shared or exported. Frame does not control those copies.'],
-  ['Sharing and Calendar', 'Sharing happens only when you use the share controls. The destination you choose receives the content you share under its own practices. Build17 adds optional iPhone Calendar access and direct Google Calendar sign-in. After permission, Frame lists calendars, checks busy times, and saves only work blocks you review. Google receives the event title, time and an opaque task identifier, not recordings or source notes. Google sign-in requests calendar-list read, free/busy and event read/write access. Its SDK stores sign-in credentials in device-protected storage. Disconnect Google in Frame Settings to revoke the connection; change iPhone Calendar permission in system Settings. Earlier builds use Apple’s reviewed editor. Your chosen Calendar account may store or sync that event. Frame deletion does not remove Calendar events.'],
-  ['Apple services and feedback', 'TestFlight distribution, crash information, device diagnostics and feedback are governed separately by Apple and your platform settings. These are not Frame-operated analytics. If you send beta feedback, the information you choose to include may be visible to the developer through TestFlight. Avoid including sensitive recordings, passwords or private note content.'],
-  ['Questions', 'For this internal beta, use TestFlight’s Send Beta Feedback action for Frame. See the beta support page for troubleshooting and the details to include.']
- ]},
- {slug: 'support', title: 'Frame beta support', description: 'Get help with the current Frame iPhone voice assistant beta.', sections: [
-  ['Send feedback', 'Open TestFlight, choose Frame and use Send Beta Feedback. Include your app version, iPhone model, iOS version, what you expected and the steps that produced the issue. Do not include passwords or private recordings unless you deliberately choose to share them. This internal beta does not have a promised response time or a paid support plan.'],
-  ['Cannot record or transcribe', 'Check microphone and speech-recognition permissions in iPhone Settings. On-device recognition must support your selected language on that device. If transcription is unavailable, keep the saved recording and use a written note. Changing the language is not a guarantee of mixed-language accuracy.'],
-  ['AI unavailable', 'Optional generation requires a compatible Apple Intelligence iPhone, iOS 26.4 or later, and Apple’s enabled, ready on-device model. Frame explains unavailable states; notes and search remain usable. No cloud service is silently substituted. The interface and generated responses are English.'],
-  ['Recording interrupted', 'Returning from another app or a device interruption may leave capture paused. Check the visible recording state and resume or save deliberately. If Frame offers a recovered recording, review it before processing. Do not delete a recording you still need while investigating a problem.'],
-  ['Calendar or sharing', 'In build17, open Settings → Calendars to connect Google or calendars already on your iPhone. Review the selected calendar and work block before saving. Availability can change after a check; Frame does not reschedule in the background. Google sign-in remains restricted to approved beta users. Earlier builds use Apple’s calendar editor. If the editor is unavailable, close it and use Calendar directly. Check Calendar before retrying a save whose result is unclear. Sharing uses the destination you select; Frame cannot confirm delivery.'],
-  ['Reminders', 'If you have a reminder-enabled build, choose a time and allow notifications deliberately. Check iPhone notification settings if alerts are disabled. Notifications use generic text to avoid exposing your note on the lock screen. Simulator permission, scheduling/removal and notification navigation were checked; physical-device behavior still needs testing. Check your assigned version in TestFlight.'],
-  ['Export or delete', 'Use Settings to prepare a text/task export, with private notes excluded unless you opt in. Audio is not in that export. Use note deletion or assistant data-deletion controls for Frame-owned data. Shared files, backups and Calendar events must be managed separately.'],
-  ['Beta limits', 'The assistant is under device and usefulness validation. AI output may be wrong: check it against the original source. No paid plan, public release or professional-advice service is promised by this beta.']
- ]}
+  {
+    "slug": "privacy",
+    "title": "Frame privacy and data",
+    "description": "Data handling for the private Frame personal planner beta.",
+    "sections": [
+      [
+        "Local workspace",
+        "Saved tasks, prayers, routines, habits, goals, notes, trips, files and deliberate recordings are stored locally with protected writes. Device backups may include them. There is no Frame account, cloud sync, analytics service or connected third-party AI provider in this build."
+      ],
+      [
+        "Voice and optional AI",
+        "Recording is deliberate and requires microphone permission. Supported Apple Speech transcribes on-device; original audio is retained before review. Phone voice, playback and interruptions remain unverified. Optional Foundation Models generation requires eligible, ready Apple Intelligence and iOS 27 in this build. Selected saved context may be used for generation. The new planner has no per-note private/exclude-from-AI switch; old voice-memory promises do not apply."
+      ],
+      [
+        "Prayers and alerts",
+        "Prayer lookup sends the selected city, country and calculation settings to Aladhan over HTTPS. No automatic precise location access is used. Local alerts require notification permission. Task alerts can display titles, including on the lock screen according to iPhone preview settings. Real phone sound, Focus and actions remain acceptance gates."
+      ],
+      [
+        "Calendar and Reminders",
+        "Optional EventKit access uses calendars configured on the iPhone, including Google accounts. Frame reads appointments for planning and exports reviewed blocks; those accounts may sync events. Direct Google sign-in is not provided. Reminders imports selected copies while preserving originals. Live access and synchronization remain unverified."
+      ],
+      [
+        "Backups and external copies",
+        "Portable backups include saved attachments and are unencrypted after export. Unfinished note drafts and running routine state remain device-local. Archive/restore and local recovery are available. Sharing and calendar exports create external copies; local deletion or reset does not retract these copies or earlier device backups. Old voice/video storage is neither erased nor migrated into the new planner."
+      ],
+      [
+        "Apple and feedback",
+        "Apple TestFlight, diagnostics, device backups and feedback operate under Apple policies and your settings. Use Send Beta Feedback deliberately; avoid credentials and unrelated private files. Required-reason privacy declarations cover app-only preferences and local backup metadata. These declarations do not certify public App Store privacy answers."
+      ]
+    ]
+  },
+  {
+    "slug": "support",
+    "title": "Frame private beta support",
+    "description": "Help with the private Frame personal planner pilot.",
+    "sections": [
+      [
+        "Send feedback",
+        "Open TestFlight, select Frame and use Send Beta Feedback. Include version, iPhone/iOS, expected behavior and steps/error. Do not include passwords or private recordings without deliberately choosing specific content. No paid support or response-time promise is offered."
+      ],
+      [
+        "Start the morning",
+        "Update the existing app without deleting its data. Begin with a short manual plan and task checklist; try completion and Undo. Open Prayers online and verify city/calculation settings if using prayers. Keep a portable backup before important recovery experiments."
+      ],
+      [
+        "Voice or AI unavailable",
+        "Use written capture and manual review. Actual phone recording/transcription/playback are still under acceptance. Generated help requires iOS 27 and eligible, ready Apple Intelligence in this build. No cloud provider is silently substituted. One simulator AI reply does not establish phone availability or general quality."
+      ],
+      [
+        "Calendar and Reminders",
+        "Frame uses accounts already configured on your iPhone. Grant only the access you want, review the target calendar and check any exported event before retrying. Reminders copies selected items; originals stay in Reminders. Live Google synchronization and provider actions are not yet verified."
+      ],
+      [
+        "Prayer and task alerts",
+        "Enable alerts deliberately and check iPhone notification, preview and Focus settings. Task titles can appear in alerts. Refresh Prayers online before its displayed coverage expiry. Real phone sound/action delivery and all repeat-renewal cases need testing."
+      ],
+      [
+        "Backup and recovery",
+        "Portable backups contain personal workspace data and attachments and are unencrypted after export. Keep them private. Local restore validates and preserves the current workspace before replacement; inspect the success/error shown. Device backups and external exports must be managed separately."
+      ],
+      [
+        "Scope",
+        "This is a private personal-use pilot, currently 71% of the full PRD. Widgets, accounts/sync, app lock, contacts and dedicated health/finance modules are not available. Public App Store release and phone installation remain separate verification steps."
+      ]
+    ]
+  }
 ];
 for (const page of frameInfoPages) {
  const path = '/projects/frame/' + page.slug + '/';
- const body = `<div class="breadcrumb"><a href="/projects/frame/">← Frame</a><span>${escape(page.title)}</span></div><section class="project-hero"><p class="eyebrow">FRAME / INTERNAL BETA / 29 SEPTEMBER 2026</p><h1>${escape(page.title)}</h1><p class="lead">${escape(page.description)}</p><p class="body-copy"><a href="/projects/frame/privacy/">Privacy and data</a> · <a href="/projects/frame/support/">Beta support</a></p></section>${page.sections.map(([heading,text]) => `<section class="story-section"><div><h2>${escape(heading)}</h2></div><div><p class="body-copy">${escape(text)}</p></div></section>`).join('')}`;
+ const body = `<div class="breadcrumb"><a href="/projects/frame/">← Frame</a><span>${escape(page.title)}</span></div><section class="project-hero"><p class="eyebrow">FRAME / PRIVATE PERSONAL PLANNER / 3 OCTOBER 2026</p><h1>${escape(page.title)}</h1><p class="lead">${escape(page.description)}</p><p class="body-copy"><a href="/projects/frame/privacy/">Privacy and data</a> · <a href="/projects/frame/support/">Beta support</a></p></section>${page.sections.map(([heading,text]) => `<section class="story-section"><div><h2>${escape(heading)}</h2></div><div><p class="body-copy">${escape(text)}</p></div></section>`).join('')}`;
  await mkdir(resolve(out, 'projects/frame', page.slug), {recursive: true});
  await writeFile(resolve(out, 'projects/frame', page.slug, 'index.html'), document(page.title, page.description, path, body));
 }
