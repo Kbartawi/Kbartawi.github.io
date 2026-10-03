@@ -220,7 +220,7 @@ const frameInfoPages = [
       ],
       [
         "PDF search",
-        "Once build 37 is available, select a non-sensitive PDF deliberately or try the labelled sample. Enter a few words, inspect original matching passages, coverage and page links. Scans without selectable text are not transcribed. No match, unreadable sources and search limits are disclosed. Custom phone picker/Open in Frame acceptance is still pending."
+        "Once build 38 is available, select a non-sensitive PDF deliberately or try the labelled sample. Enter a few words, inspect original matching passages, coverage and page links. Scans without selectable text are not transcribed. No match, unreadable sources and search limits are disclosed. Custom phone picker/Open in Frame acceptance is still pending."
       ],
       [
         "Calendar and Reminders",
@@ -228,11 +228,11 @@ const frameInfoPages = [
       ],
       [
         "Prayer history",
-        "Once build 37 is available, open Prayers and History to inspect saved day counts or choose an earlier date. Check a prayer and tap again to undo; only that date changes. Future days are view-only. Saved check-offs remain with their chosen date when travelling or changing prayer settings."
+        "Once build 38 is available, open Prayers and History to inspect saved day counts or choose an earlier date. Check a prayer and tap again to undo; only that date changes. Future days are view-only. Saved check-offs remain with their chosen date when travelling or changing prayer settings."
       ],
       [
         "Prayer and task alerts",
-        "Enable alerts deliberately and check iPhone notification, preview and Focus settings. Task titles can appear in alerts. Refresh Prayers online before its displayed coverage expiry. Real phone sound/action delivery and all repeat-renewal cases need testing."
+        "Enable alerts deliberately and check iPhone notification, preview and Focus settings. Task titles can appear in alerts. Once build 38 is available, checked prayers remove pending alerts; Undo restores them only before prayer time. This scheduling behavior passed native tests, but actual phone delivery remains to be accepted. Refresh Prayers online before its displayed coverage expiry. Real phone sound/action delivery and all repeat-renewal cases need testing."
       ],
       [
         "Backup and recovery",
@@ -240,7 +240,7 @@ const frameInfoPages = [
       ],
       [
         "Scope",
-        "This is a private personal-use pilot, currently 71% of the full PRD. Widgets, accounts/sync, app lock, contacts and dedicated health/finance modules are not available. Public App Store release and phone installation remain separate verification steps."
+        "This is a private personal-use pilot, currently 75% of the full PRD. Widgets, accounts/sync, app lock, contacts and dedicated health/finance modules are not available. Public App Store release and phone installation remain separate verification steps."
       ]
     ]
   }
