@@ -765,7 +765,7 @@
       ],
       "summary": "Plan a realistic day, capture the next step and check it off in one calm personal workspace.",
       "features": [
-        "Today and a native day/week plan connect simple task capture, reviewed actions, shared check-offs and Undo; unfinished captures can be continued on this device.",
+        "Today and a native day/week plan connect reviewed capture, named editable routines, shared check-offs and Undo; unfinished captures can continue on this device.",
         "Daily prayers with saved date history, correction/Undo and completion-aware future alerts live beside routines, habits, goals, notes, files and trip checklists.",
         "Text capture proposes editable next steps; original audio and supported on-device transcription are implemented but phone acceptance is pending.",
         "Protected local storage, selected-PDF keyword search with exact page links, archive/restore and portable attachment backups. Saved matching excerpts enter chat/backups; exported copies are unencrypted.",
@@ -787,6 +787,10 @@
       "demoNote": "Current planner screenshots below are actual simulator observations with test data from build 33 development. Older voice-memory concepts and videos are historical evidence, not screenshots or feature promises of the new planner.",
       "updatedAt": "2026-10-04",
       "updates": [
+        {
+          "date": "2026-10-04",
+          "text": "Frame is a private personal planner: capture → review → plan → complete. Full-PRD readiness remains 75%. Build 33 remains verified Testing in the existing private Owner Testing group. Build 40 passed 246 native tests with zero failures and compiled a Release archive with required privacy declarations. Named routines now support ordered steps, durations/descriptions and weekly timing with reviewed conflicts and paired Undo. Routine timer recovery rejects reset/restore replacements. Assistant answers can be kept as one persistent note without overwriting later edits. New controls await rendered acceptance because the Mac is locked. Build 40 has not been uploaded. Phone voice/AI, live Calendar/Reminders, full accessibility, widgets and sync remain incomplete."
+        },
         {
           "date": "2026-10-04",
           "text": "Frame is a private personal planner: capture → review → plan → complete. Full-PRD readiness remains 75%. Build 33 remains verified Testing in the existing private Owner Testing group. Build 39 passed 213 native tests with zero failures and compiled a Release archive with required privacy declarations. Unfinished captures retain original words, review edits and exclusions; startup waits safely for protected saved data. Short task names save directly, while complex or longer input retains its full source in review. Intermediate note review/Continue/discard was observed; final quick-add, refresh and enlarged controls still need rendered acceptance. Build 39 has not been uploaded. Phone voice/AI, live Calendar/Reminders, full accessibility, widgets and sync remain incomplete."
@@ -845,7 +849,7 @@
         }
       ],
       "demoUrl": null,
-      "technicalReadiness": "Frame is a private personal planner: capture → review → plan → complete. Full-PRD readiness remains 75%. Build 33 remains verified Testing in the existing private Owner Testing group. Build 39 passed 213 native tests with zero failures and compiled a Release archive with required privacy declarations. Unfinished captures retain original words, review edits and exclusions; startup waits safely for protected saved data. Short task names save directly, while complex or longer input retains its full source in review. Intermediate note review/Continue/discard was observed; final quick-add, refresh and enlarged controls still need rendered acceptance. Build 39 has not been uploaded. Phone voice/AI, live Calendar/Reminders, full accessibility, widgets and sync remain incomplete.",
+      "technicalReadiness": "Frame is a private personal planner: capture → review → plan → complete. Full-PRD readiness remains 75%. Build 33 remains verified Testing in the existing private Owner Testing group. Build 40 passed 246 native tests with zero failures and compiled a Release archive with required privacy declarations. Named routines now support ordered steps, durations/descriptions and weekly timing with reviewed conflicts and paired Undo. Routine timer recovery rejects reset/restore replacements. Assistant answers can be kept as one persistent note without overwriting later edits. New controls await rendered acceptance because the Mac is locked. Build 40 has not been uploaded. Phone voice/AI, live Calendar/Reminders, full accessibility, widgets and sync remain incomplete.",
       "commercialReadiness": "Private personal-use pilot. No public App Store release, paid plan, retained-customer or revenue claim.",
       "cardAudience": "Private use for the owner and close friends",
       "cardStage": "Private pilot · 75% full PRD",
@@ -872,17 +876,17 @@
         "UserNotifications",
         "PDFKit"
       ],
-      "nextAction": "Complete final build 39 quick-add, immediate Continue, startup and large-text acceptance; deliver through private Owner Testing, then accept morning use, voice/alerts and real imports on a phone.",
+      "nextAction": "Accept the build 40 routine composer/runner and saved-note actions plus carried-forward recovery/accessibility gates; deliver through private Owner Testing, then verify morning use, voice/alerts and real imports on a phone.",
       "readinessChecks": [
         {
           "label": "Core manual workflow",
           "status": "passed",
-          "detail": "Build 39 passed 213 native tests/zero failures, including 30 new capture/startup tests. Intermediate note review/exclusion/Close/Continue/discard was observed. Final plain-title save, immediate cross-page discovery, startup and accessibility controls remain unaccepted; earlier prayer/PDF/schedule/button evidence remains scoped."
+          "detail": "Build 40 passed 246 native tests/zero failures, including 33 new routine and assistant-note checks. New controls and carried-forward final build 39 recovery/keyboard/accessibility acceptance remain pending; earlier rendered evidence keeps its scope."
         },
         {
           "label": "Final private delivery",
           "status": "open",
-          "detail": "Build 33 has saved instructions and verified Testing status in existing private Owner Testing. Build 39 compiled its privacy-manifest Release archive and is not uploaded; protected Apple API access awaits owner approval."
+          "detail": "Build 33 has saved instructions and verified Testing status in existing private Owner Testing. Build 40 compiled its privacy-manifest Release archive and is not uploaded; protected Apple API access awaits owner approval."
         },
         {
           "label": "Voice and AI",
