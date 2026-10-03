@@ -789,6 +789,10 @@
       "updates": [
         {
           "date": "2026-10-04",
+          "text": "Frame is a private personal planner: capture → review → plan → complete. Full-PRD readiness remains 75%. Build 33 remains last verified Testing in existing private Owner Testing. Build 42 passed 305 native tests with zero failures and compiled an unsigned Release archive with required privacy declarations. Recorded routine days preserve original activities, civil dates and timezones, using canonical check-offs with correction and Undo; unknown one-off completion dates stay disclosed. Task checks resolve current saved repeat behavior. Earlier build 41 scoped routine/source computer use remains historical. New history UI, full routine save/runner, keyboard/accessibility and physical phone acceptance remain open; the Mac is locked. Build 42 has not been uploaded. Existing Apple signing prerequisites and explicit API/Custom inspection decisions remain unresolved. Phone voice/AI, live Calendar/Reminders, widgets and sync remain incomplete."
+        },
+        {
+          "date": "2026-10-04",
           "text": "Frame is a private personal planner: capture → review → plan → complete. Full-PRD readiness remains 75%. Build 33 remains verified Testing in the existing private Owner Testing group. Build 41 passed 279 native tests with zero failures and compiled a Release archive with required privacy declarations. Existing planned activities can become named routines without duplication or altered timing/checks. Assistant saved-data answers open supporting records, preserve original excerpts and identify changes; generated context is labeled separately. Routine selection/weekday previews and day-source/check/change/undo/current passed scoped computer use. Full routine save/runner, keyboard/accessibility and physical phone acceptance remain open. Build 41 has not been uploaded; Apple API access awaits owner approval. Phone voice/AI, live Calendar/Reminders, widgets and sync remain incomplete."
         },
         {
@@ -853,7 +857,7 @@
         }
       ],
       "demoUrl": null,
-      "technicalReadiness": "Frame is a private personal planner: capture → review → plan → complete. Full-PRD readiness remains 75%. Build 33 remains verified Testing in the existing private Owner Testing group. Build 41 passed 279 native tests with zero failures and compiled a Release archive with required privacy declarations. Existing planned activities can become named routines without duplication or altered timing/checks. Assistant saved-data answers open supporting records, preserve original excerpts and identify changes; generated context is labeled separately. Routine selection/weekday previews and day-source/check/change/undo/current passed scoped computer use. Full routine save/runner, keyboard/accessibility and physical phone acceptance remain open. Build 41 has not been uploaded; Apple API access awaits owner approval. Phone voice/AI, live Calendar/Reminders, widgets and sync remain incomplete.",
+      "technicalReadiness": "Frame is a private personal planner: capture → review → plan → complete. Full-PRD readiness remains 75%. Build 33 remains last verified Testing in existing private Owner Testing. Build 42 passed 305 native tests with zero failures and compiled an unsigned Release archive with required privacy declarations. Recorded routine days preserve original activities, civil dates and timezones, using canonical check-offs with correction and Undo; unknown one-off completion dates stay disclosed. Task checks resolve current saved repeat behavior. Earlier build 41 scoped routine/source computer use remains historical. New history UI, full routine save/runner, keyboard/accessibility and physical phone acceptance remain open; the Mac is locked. Build 42 has not been uploaded. Existing Apple signing prerequisites and explicit API/Custom inspection decisions remain unresolved. Phone voice/AI, live Calendar/Reminders, widgets and sync remain incomplete.",
       "commercialReadiness": "Private personal-use pilot. No public App Store release, paid plan, retained-customer or revenue claim.",
       "cardAudience": "Private use for the owner and close friends",
       "cardStage": "Private pilot · 75% full PRD",
@@ -880,17 +884,17 @@
         "UserNotifications",
         "PDFKit"
       ],
-      "nextAction": "Accept routine Save/editor/runner, keyboard/largest-text/VoiceOver and carried-forward recovery gates; deliver through existing private Owner Testing, then verify real morning use, voice/alerts and approved imports on a phone.",
+      "nextAction": "Unlock the Mac and accept recorded routine history/core recovery/keyboard/largest-text/VoiceOver; resolve approved private signing and verify actual phone installation, morning use, voice/alerts and consented imports.",
       "readinessChecks": [
         {
           "label": "Core manual workflow",
           "status": "passed",
-          "detail": "Build 41 passed 279 native tests/zero failures, including 33 routine-membership and assistant-source regressions. Scoped rendered selection/previews, supporting records and day check/change/undo/current passed. Full routine Save/runner, keyboard/accessibility and phone acceptance remain open."
+          "detail": "Build 42 passed 305 native tests/zero failures, including 26 additional recorded-day, occurrence identity, correction/Undo, current-task and portable recovery regressions. New history UI and full routine/keyboard/accessibility/phone acceptance remain open; earlier build 41 observations retain their scope."
         },
         {
           "label": "Final private delivery",
           "status": "open",
-          "detail": "Build 33 has saved instructions and verified Testing status in existing private Owner Testing. Build 41 compiled its privacy-manifest Release archive and is not uploaded; protected Apple API access awaits owner approval."
+          "detail": "Build 33 remains verified Testing with saved instructions in existing private Owner Testing. Build 42 compiled an unsigned privacy-manifest archive and is not uploaded. Existing signing prerequisites, Custom inspection and protected API access remain unresolved."
         },
         {
           "label": "Voice and AI",
