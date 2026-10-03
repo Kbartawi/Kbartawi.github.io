@@ -180,6 +180,10 @@ const frameInfoPages = [
         "Recording is deliberate and requires microphone permission. Supported Apple Speech transcribes on-device; original audio is retained before review. Phone voice, playback and interruptions remain unverified. Optional Foundation Models generation requires eligible, ready Apple Intelligence and iOS 27 in this build. Selected saved context may be used for generation. The new planner has no per-note private/exclude-from-AI switch; old voice-memory promises do not apply."
       ],
       [
+        "Selected PDFs",
+        "Explicit search reads only chosen active PDF copies on-device, within disclosed file/page/text/result limits. Whole extracted text uses a bounded memory cache. Matching original excerpts and exact page citations saved in Ask remain in chat and portable backups. This is keyword retrieval, not semantic indexing, generated PDF interpretation or scanned-PDF transcription. Archived or changed source links fail safely. The synthetic sample contains no personal information."
+      ],
+      [
         "Prayers and alerts",
         "Prayer lookup sends the selected city, country and calculation settings to Aladhan over HTTPS. No automatic precise location access is used. Local alerts require notification permission. Task alerts can display titles, including on the lock screen according to iPhone preview settings. Real phone sound, Focus and actions remain acceptance gates."
       ],
@@ -213,6 +217,10 @@ const frameInfoPages = [
       [
         "Voice or AI unavailable",
         "Use written capture and manual review. Actual phone recording/transcription/playback are still under acceptance. Generated help requires iOS 27 and eligible, ready Apple Intelligence in this build. No cloud provider is silently substituted. One simulator AI reply does not establish phone availability or general quality."
+      ],
+      [
+        "PDF search",
+        "In build 36, select a non-sensitive PDF deliberately or try the labelled sample. Enter a few words, inspect original matching passages, coverage and page links. Scans without selectable text are not transcribed. No match, unreadable sources and search limits are disclosed. Custom phone picker/Open in Frame acceptance is still pending."
       ],
       [
         "Calendar and Reminders",

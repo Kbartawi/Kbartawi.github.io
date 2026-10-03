@@ -768,7 +768,7 @@
         "Today and Plan connect title-only tasks, reviewed timing and reversible check-offs.",
         "Daily prayers, routines, habits and goals live beside notes, files and trip checklists.",
         "Text capture proposes editable next steps; original audio and supported on-device transcription are implemented but phone acceptance is pending.",
-        "Protected local storage, PDF preview, archive/restore and portable attachment backups. Exported copies are unencrypted.",
+        "Protected local storage, selected-PDF keyword search with exact page links, archive/restore and portable attachment backups. Saved matching excerpts enter chat/backups; exported copies are unencrypted.",
         "Optional Apple on-device AI requires iOS 27 and eligible, ready hardware in this build. Cloud AI, sync and widgets are not connected."
       ],
       "workflow": [
@@ -787,6 +787,10 @@
       "demoNote": "Current planner screenshots below are actual simulator observations with test data from build 33 development. Older voice-memory concepts and videos are historical evidence, not screenshots or feature promises of the new planner.",
       "updatedAt": "2026-10-03",
       "updates": [
+        {
+          "date": "2026-10-03",
+          "text": "Frame is a private personal planner: capture → review → plan → complete. Full-PRD readiness is 74%. Build 33 remains verified Testing in the existing private Owner Testing group. Build 36 passed 161 native tests with zero failures and compiled a Release archive with required privacy declarations. Chosen PDFs now return original matching passages with exact page links and disclosed coverage; earlier schedule import preserves weekday workouts and check-offs. Build 36 has not been uploaded. Phone voice/AI, live Calendar/Reminders, full accessibility, widgets and sync remain incomplete."
+        },
         {
           "date": "2026-10-03",
           "text": "Frame is a private personal planner: capture → review → plan → complete. Full-PRD readiness is 72%. Build 33 remains verified Testing in the existing private Owner Testing group. Build 35 passed 141 native tests with zero failures, including actual schedule-image OCR, and compiled a Release archive with required privacy declarations. It preserves weekday workouts, descriptions and check-offs with reviewed apply/Undo, but has not been uploaded. Phone voice/AI, live Calendar/Reminders, full accessibility, widgets and sync remain incomplete."
@@ -829,21 +833,22 @@
         }
       ],
       "demoUrl": null,
-      "technicalReadiness": "Frame is a private personal planner: capture → review → plan → complete. Full-PRD readiness is 72%. Build 33 remains verified Testing in the existing private Owner Testing group. Build 35 passed 141 native tests with zero failures, including actual schedule-image OCR, and compiled a Release archive with required privacy declarations. It preserves weekday workouts, descriptions and check-offs with reviewed apply/Undo, but has not been uploaded. Phone voice/AI, live Calendar/Reminders, full accessibility, widgets and sync remain incomplete.",
+      "technicalReadiness": "Frame is a private personal planner: capture → review → plan → complete. Full-PRD readiness is 74%. Build 33 remains verified Testing in the existing private Owner Testing group. Build 36 passed 161 native tests with zero failures and compiled a Release archive with required privacy declarations. Chosen PDFs now return original matching passages with exact page links and disclosed coverage; earlier schedule import preserves weekday workouts and check-offs. Build 36 has not been uploaded. Phone voice/AI, live Calendar/Reminders, full accessibility, widgets and sync remain incomplete.",
       "commercialReadiness": "Private personal-use pilot. No public App Store release, paid plan, retained-customer or revenue claim.",
       "cardAudience": "Private use for the owner and close friends",
-      "cardStage": "Private pilot · 72% full PRD",
+      "cardStage": "Private pilot · 74% full PRD",
       "positioning": "Capture, planning and satisfying checklists in one personal workspace.",
       "outcome": "Keep the next realistic action clear and finish it without switching between separate planning apps.",
       "deliverables": [
         "A reviewed day/weekly system and shared task checklist",
         "Daily prayer, habit and routine completion",
-        "Saved notes, files, trip packing and recoverable local backups"
+        "Saved notes, selected-PDF passages, trip packing and recoverable local backups"
       ],
       "useCases": [
         "Bring in a daily-system image, review it and check off a realistic morning",
         "Turn a written thought into reviewed next steps",
-        "Keep personal notes, prayers and trip documents together"
+        "Keep personal notes, prayers and trip documents together",
+        "Choose a PDF, find the original passage and open its exact page"
       ],
       "stack": [
         "SwiftUI",
@@ -852,19 +857,20 @@
         "Vision",
         "Foundation Models",
         "EventKit",
-        "UserNotifications"
+        "UserNotifications",
+        "PDFKit"
       ],
-      "nextAction": "Deliver verified build 35 through private Owner Testing, then accept the actual image-to-system flow and daily checklist on a phone.",
+      "nextAction": "Deliver verified build 36 through private Owner Testing, then accept the actual schedule/PDF import and daily checklist on a phone.",
       "readinessChecks": [
         {
           "label": "Core manual workflow",
           "status": "passed",
-          "detail": "Build 35 passed 141 native tests/zero failures, including the original schedule raster. Selected simulator review, editing/removal, overlap approval, dated-plan preservation and persistent weekly Undo were observed. Earlier page/button evidence remains explicitly scoped."
+          "detail": "Build 36 passed 161 native tests/zero failures (20 new PDF regressions). Computer use verified original selected-PDF text, exact page 2 navigation, blank-page coverage, no matches, archived-source recovery, unchanged restore/restart and final dark contrast. Prior schedule/button evidence remains explicitly scoped."
         },
         {
           "label": "Final private delivery",
           "status": "open",
-          "detail": "Build 33 has saved instructions and verified Testing status in existing private Owner Testing. Build 35 compiled its privacy-manifest Release archive and is not uploaded; Apple delivery remains pending."
+          "detail": "Build 33 has saved instructions and verified Testing status in existing private Owner Testing. Build 36 compiled its privacy-manifest Release archive and is not uploaded; the protected Apple API route awaits owner-approved access."
         },
         {
           "label": "Voice and AI",
