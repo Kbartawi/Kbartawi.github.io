@@ -220,11 +220,15 @@ const frameInfoPages = [
       ],
       [
         "PDF search",
-        "In build 36, select a non-sensitive PDF deliberately or try the labelled sample. Enter a few words, inspect original matching passages, coverage and page links. Scans without selectable text are not transcribed. No match, unreadable sources and search limits are disclosed. Custom phone picker/Open in Frame acceptance is still pending."
+        "Once build 37 is available, select a non-sensitive PDF deliberately or try the labelled sample. Enter a few words, inspect original matching passages, coverage and page links. Scans without selectable text are not transcribed. No match, unreadable sources and search limits are disclosed. Custom phone picker/Open in Frame acceptance is still pending."
       ],
       [
         "Calendar and Reminders",
         "Frame uses accounts already configured on your iPhone. Grant only the access you want, review the target calendar and check any exported event before retrying. Reminders copies selected items; originals stay in Reminders. Live Google synchronization and provider actions are not yet verified."
+      ],
+      [
+        "Prayer history",
+        "Once build 37 is available, open Prayers and History to inspect saved day counts or choose an earlier date. Check a prayer and tap again to undo; only that date changes. Future days are view-only. Saved check-offs remain with their chosen date when travelling or changing prayer settings."
       ],
       [
         "Prayer and task alerts",
