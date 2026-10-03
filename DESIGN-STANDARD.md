@@ -20,7 +20,7 @@ Avoid motivational slogans, founder manifestos, rhyming sales lines and claims t
 
 - [ ] One consistent two-column project grid on desktop; one column on phone. Equal card structure and visual height at each breakpoint.
 - [ ] Each card immediately explains the product with relevant imagery, outcome, audience and stage.
-- [ ] Frame clearly describes AI production from idea, script and visuals through voice, edit and export. Do not use an unrelated novelty-video idea as its identity.
+- [ ] Frame describes its current private personal-planner workflow: capture, review, plan and complete. Separate current simulator screens from historical voice-memory/video concepts and do not imply full phone or AI acceptance.
 - [ ] Dubai Game uses the actual project’s Marina/Downtown/Burj assets. Do not substitute a newly invented old-town image. Label concept art and avoid gameplay claims.
 - [ ] Preserve product-specific branding within one system of spacing, navigation and controls.
 - [ ] Each project page includes overview, capabilities, audience, use cases, workflow, deliverables, technical/commercial readiness, verification gates, stack and next milestone.
