@@ -1,4 +1,4 @@
-Frame is a private personal planner: capture → review → plan → complete. Full-PRD readiness is 71%. Build 33 is verified Testing in the existing private Owner Testing group. Build 34 passed 118 native tests with zero failures and compiled a Release archive containing required privacy declarations; upload awaits renewed Apple signing credentials. Phone voice/AI, live Calendar/Reminders, full accessibility, widgets and sync remain incomplete.
+Frame is a private personal planner: capture → review → plan → complete. Full-PRD readiness is 72%. Build 33 remains verified Testing in the existing private Owner Testing group. Build 35 passed 141 native tests with zero failures, including actual schedule-image OCR, and compiled a Release archive with required privacy declarations. It preserves weekday workouts, descriptions and check-offs with reviewed apply/Undo, but has not been uploaded. Phone voice/AI, live Calendar/Reminders, full accessibility, widgets and sync remain incomplete.
 
 # Khaled / Product portfolio
 
@@ -47,7 +47,7 @@ Repository: `Kbartawi/Kbartawi.github.io`. GitHub Pages uses **Deploy from a bra
 - **Oris:** deployed application; tenant-specific channels, voice and customer outcomes require current evidence.
 - **Manzl:** hosted website and seeded leasing prototype; hosted API/data, private access and live channel acceptance are separate gates.
 - **Aqd:** browser-based preparation demo; no private cloud storage, production team accounts, payment collection or government registration.
-- **Frame:** Frame is a private personal planner: capture → review → plan → complete. Full-PRD readiness is 71%. Build 33 is verified Testing in the existing private Owner Testing group. Build 34 passed 118 native tests with zero failures and compiled a Release archive containing required privacy declarations; upload awaits renewed Apple signing credentials. Phone voice/AI, live Calendar/Reminders, full accessibility, widgets and sync remain incomplete.
+- **Frame:** Frame is a private personal planner: capture → review → plan → complete. Full-PRD readiness is 72%. Build 33 remains verified Testing in the existing private Owner Testing group. Build 35 passed 141 native tests with zero failures, including actual schedule-image OCR, and compiled a Release archive with required privacy declarations. It preserves weekday workouts, descriptions and check-offs with reviewed apply/Undo, but has not been uploaded. Phone voice/AI, live Calendar/Reminders, full accessibility, widgets and sync remain incomplete.
 - **Dubai Game:** preproduction, paused art review and prototype source; no verified playable consumer release or approved final art.
 
 Public samples use fictional data. Source code for the products is private. Never publish credentials, private customer records or unsupported revenue/traction claims in this repository.
