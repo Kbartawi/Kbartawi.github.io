@@ -220,7 +220,7 @@ const frameInfoPages = [
       ],
       [
         "PDF search",
-        "Once build 41 is available, select a non-sensitive PDF deliberately or try the labelled sample. Enter a few words, inspect original matching passages, coverage and page links. Scans without selectable text are not transcribed. No match, unreadable sources and search limits are disclosed. Custom phone picker/Open in Frame acceptance is still pending."
+        "Once build 42 is available, select a non-sensitive PDF deliberately or try the labelled sample. Enter a few words, inspect original matching passages, coverage and page links. Scans without selectable text are not transcribed. No match, unreadable sources and search limits are disclosed. Custom phone picker/Open in Frame acceptance is still pending."
       ],
       [
         "Calendar and Reminders",
@@ -228,11 +228,11 @@ const frameInfoPages = [
       ],
       [
         "Prayer history",
-        "Once build 41 is available, open Prayers and History to inspect saved day counts or choose an earlier date. Check a prayer and tap again to undo; only that date changes. Future days are view-only. Saved check-offs remain with their chosen date when travelling or changing prayer settings."
+        "Once build 42 is available, open Prayers and History to inspect saved day counts or choose an earlier date. Check a prayer and tap again to undo; only that date changes. Future days are view-only. Saved check-offs remain with their chosen date when travelling or changing prayer settings."
       ],
       [
         "Prayer and task alerts",
-        "Enable alerts deliberately and check iPhone notification, preview and Focus settings. Unfinished captures in build 41 remain protected on this device and can be continued; portable backups contain saved items and attachments, not unfinished drafts. Task titles can appear in alerts. Once build 41 is available, checked prayers remove pending alerts; Undo restores them only before prayer time. This scheduling behavior passed native tests, but actual phone delivery remains to be accepted. Refresh Prayers online before its displayed coverage expiry. Real phone sound/action delivery and all repeat-renewal cases need testing."
+        "Enable alerts deliberately and check iPhone notification, preview and Focus settings. Unfinished captures in build 42 remain protected on this device and can be continued; portable backups contain saved items and attachments, not unfinished drafts. Task titles can appear in alerts. Once build 42 is available, checked prayers remove pending alerts; Undo restores them only before prayer time. This scheduling behavior passed native tests, but actual phone delivery remains to be accepted. Refresh Prayers online before its displayed coverage expiry. Real phone sound/action delivery and all repeat-renewal cases need testing."
       ],
       [
         "Backup and recovery",
