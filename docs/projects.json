@@ -789,6 +789,10 @@
       "updates": [
         {
           "date": "2026-10-04",
+          "text": "Frame is a private personal planner: capture → review → plan → complete. Full-PRD readiness remains 75%. Build 42 passed 305 native tests with zero failures, signed and uploaded successfully on 4 October 2026 at 13:04 Dubai, and is verified Testing in the existing private Owner Testing group with one tester and saved instructions. Recorded routine days preserve original activities, dates and timezones using shared checks with correction and Undo; unknown one-off completion dates remain disclosed. Physical installation of build 42, history UI, full accessibility, phone voice/AI/alerts and live Calendar/Reminders still need acceptance. Widgets, sync, contacts and dedicated health/finance modules remain incomplete."
+        },
+        {
+          "date": "2026-10-04",
           "text": "Frame is a private personal planner: capture → review → plan → complete. Full-PRD readiness remains 75%. Build 33 remains last verified Testing in existing private Owner Testing. Build 42 passed 305 native tests with zero failures and compiled an unsigned Release archive with required privacy declarations. Recorded routine days preserve original activities, civil dates and timezones, using canonical check-offs with correction and Undo; unknown one-off completion dates stay disclosed. Task checks resolve current saved repeat behavior. Earlier build 41 scoped routine/source computer use remains historical. New history UI, full routine save/runner, keyboard/accessibility and physical phone acceptance remain open; the Mac is locked. Build 42 has not been uploaded. Existing Apple signing prerequisites and explicit API/Custom inspection decisions remain unresolved. Phone voice/AI, live Calendar/Reminders, widgets and sync remain incomplete."
         },
         {
@@ -857,7 +861,7 @@
         }
       ],
       "demoUrl": null,
-      "technicalReadiness": "Frame is a private personal planner: capture → review → plan → complete. Full-PRD readiness remains 75%. Build 33 remains last verified Testing in existing private Owner Testing. Build 42 passed 305 native tests with zero failures and compiled an unsigned Release archive with required privacy declarations. Recorded routine days preserve original activities, civil dates and timezones, using canonical check-offs with correction and Undo; unknown one-off completion dates stay disclosed. Task checks resolve current saved repeat behavior. Earlier build 41 scoped routine/source computer use remains historical. New history UI, full routine save/runner, keyboard/accessibility and physical phone acceptance remain open; the Mac is locked. Build 42 has not been uploaded. Existing Apple signing prerequisites and explicit API/Custom inspection decisions remain unresolved. Phone voice/AI, live Calendar/Reminders, widgets and sync remain incomplete.",
+      "technicalReadiness": "Frame is a private personal planner: capture → review → plan → complete. Full-PRD readiness remains 75%. Build 42 passed 305 native tests with zero failures, signed and uploaded successfully on 4 October 2026 at 13:04 Dubai, and is verified Testing in the existing private Owner Testing group with one tester and saved instructions. Recorded routine days preserve original activities, dates and timezones using shared checks with correction and Undo; unknown one-off completion dates remain disclosed. Physical installation of build 42, history UI, full accessibility, phone voice/AI/alerts and live Calendar/Reminders still need acceptance. Widgets, sync, contacts and dedicated health/finance modules remain incomplete.",
       "commercialReadiness": "Private personal-use pilot. No public App Store release, paid plan, retained-customer or revenue claim.",
       "cardAudience": "Private use for the owner and close friends",
       "cardStage": "Private pilot · 75% full PRD",
@@ -884,7 +888,7 @@
         "UserNotifications",
         "PDFKit"
       ],
-      "nextAction": "Unlock the Mac and accept recorded routine history/core recovery/keyboard/largest-text/VoiceOver; resolve approved private signing and verify actual phone installation, morning use, voice/alerts and consented imports.",
+      "nextAction": "Install TestFlight build 42 without deleting Frame, then verify real morning use, routine history, voice/alerts, accessibility and consented integrations.",
       "readinessChecks": [
         {
           "label": "Core manual workflow",
@@ -894,7 +898,7 @@
         {
           "label": "Final private delivery",
           "status": "open",
-          "detail": "Build 33 remains verified Testing with saved instructions in existing private Owner Testing. Build 42 compiled an unsigned privacy-manifest archive and is not uploaded. Existing signing prerequisites, Custom inspection and protected API access remain unresolved."
+          "detail": "Build 42 signed/uploaded at 13:04 Dubai on 4 October; Apple processing, saved instructions and Testing in existing one-tester Owner Testing are verified. Physical installation of build 42 remains unverified."
         },
         {
           "label": "Voice and AI",
