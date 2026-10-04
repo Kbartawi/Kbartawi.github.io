@@ -784,7 +784,7 @@
       "website": null,
       "image": null,
       "imageAlt": "",
-      "demoNote": "Current planner screenshots below are actual simulator observations with test data from build 33 development. Older voice-memory concepts and videos are historical evidence, not screenshots or feature promises of the new planner.",
+      "demoNote": "Only actual personal-planner product screenshots are shown here. These build 33 simulator captures use development test data; build 42 is available in private TestFlight and still needs phone acceptance.",
       "updatedAt": "2026-10-04",
       "updates": [
         {
@@ -888,7 +888,7 @@
         "UserNotifications",
         "PDFKit"
       ],
-      "nextAction": "Install TestFlight build 42 without deleting Frame, then verify real morning use, routine history, voice/alerts, accessibility and consented integrations.",
+      "nextAction": "Verify TestFlight build 42 on the phone and complete the full-PRD acceptance gates. Hold the next TestFlight upload until 100% readiness is supported by evidence.",
       "readinessChecks": [
         {
           "label": "Core manual workflow",
@@ -896,8 +896,8 @@
           "detail": "Build 42 passed 305 native tests/zero failures, including 26 additional recorded-day, occurrence identity, correction/Undo, current-task and portable recovery regressions. New history UI and full routine/keyboard/accessibility/phone acceptance remain open; earlier build 41 observations retain their scope."
         },
         {
-          "label": "Final private delivery",
-          "status": "open",
+          "label": "Private TestFlight delivery",
+          "status": "passed",
           "detail": "Build 42 signed/uploaded at 13:04 Dubai on 4 October; Apple processing, saved instructions and Testing in existing one-tester Owner Testing are verified. Physical installation of build 42 remains unverified."
         },
         {
@@ -918,50 +918,37 @@
         {
           "label": "Private morning usefulness",
           "status": "not-checked",
-          "detail": "Owner phone installation and a complete morning are not yet observed. No commercial validation or large-scale public-launch claim."
+          "detail": "Apple reported the owner installed earlier build 33; build 42 installation and a useful complete morning remain unverified. No commercial validation or large-scale public-launch claim."
         }
       ],
       "gallery": {
-        "heading": "Planner screenshots and historical design archive",
-        "description": "Current planner screens are actual simulator observations with test data. Older concepts and voice-memory videos remain labelled historical and do not describe current feature availability.",
+        "heading": "Frame product screens",
+        "description": "Actual screens from the personal planner. The next activity, your saved information and the assistant in one workspace.",
         "groups": [
           {
             "id": "planner-actual",
-            "title": "Current personal planner · actual simulator",
-            "description": "Build 33 development observations with test data; physical-phone acceptance and full PRD completion remain open.",
-            "layout": "product"
-          },
-          {
-            "id": "usefulness-reference",
-            "title": "Historical · Usefulness flow · v10 reference",
-            "description": "Earlier voice-memory direction. A generated four-screen reference for capture, saved context and deliberate task review.",
-            "layout": "creative"
-          },
-          {
-            "id": "updated-references",
-            "title": "Historical · Updated references · v9",
-            "description": "Earlier voice-memory direction. One focus proposal and corrected privacy reference. These guide improvements; the app may differ.",
-            "layout": "creative"
-          },
-          {
-            "id": "v8-archive",
-            "title": "Historical · Original approved design direction · v8 archive",
-            "description": "Earlier voice-memory direction. All 16 originals preserved unchanged. Read the captions for important differences from the current beta.",
-            "layout": "creative"
-          },
-          {
-            "id": "actual-implementation",
-            "title": "Historical · Actual implementation · simulator",
-            "description": "Earlier voice-memory direction. Running-app evidence with fictional test data, distinct from the generated design references. Physical-device acceptance remains pending.",
+            "title": "Frame personal planner · actual screens",
+            "description": "Actual build 33 simulator captures with test data. Build 42 is now in private TestFlight; these images are earlier interface evidence, not fresh build 42 phone acceptance.",
             "layout": "product"
           }
         ],
         "items": [
           {
+            "src": "/media/frame/actual/planner33/Frame33-Today.png",
+            "thumb": "/media/frame/actual/planner33/Frame33-Today.png",
+            "title": "Today · your next step",
+            "alt": "Frame Today screen with a next activity, Done button and planning summaries, using simulator test data.",
+            "kind": "Actual planner simulator · build 33",
+            "group": "planner-actual",
+            "caption": "Actual build 33 simulator capture from the current personal-planner direction, using development test data. Shows the next activity and shared checklist entry points. It is not a fresh build 42 or physical-phone acceptance screenshot.",
+            "width": 658,
+            "height": 1347
+          },
+          {
             "title": "Saved information search",
-            "caption": "Actual simulator with synthetic reading test data. Search spans saved entity text and file names; PDF content is not indexed.",
+            "caption": "Build 33 development capture. Actual simulator with synthetic reading test data. Search spans saved entity text and file names; PDF content is not indexed.",
             "alt": "Saved information search actual simulator screenshot",
-            "kind": "Actual planner simulator",
+            "kind": "Actual planner simulator · build 33",
             "src": "/media/frame/actual/planner33/Frame33-Search.png",
             "thumb": "/media/frame/actual/planner33/Frame33-Search.png",
             "width": 658,
@@ -970,254 +957,20 @@
           },
           {
             "title": "Ask Frame · local AI response",
-            "caption": "Actual matching iOS 27 simulator generated a short supportive response to a synthetic test prompt. This does not establish general AI quality or phone availability.",
+            "caption": "Build 33 development capture. Actual matching iOS 27 simulator generated a short supportive response to a synthetic test prompt. This does not establish general AI quality or phone availability.",
             "alt": "Ask Frame · local AI response actual simulator screenshot",
-            "kind": "Actual planner simulator",
+            "kind": "Actual planner simulator · build 33",
             "src": "/media/frame/actual/planner33/Frame33-Assistant.png",
             "thumb": "/media/frame/actual/planner33/Frame33-Assistant.png",
             "width": 658,
             "height": 1347,
             "group": "planner-actual"
-          },
-          {
-            "title": "Historical · Capture → context → reviewed task",
-            "caption": "Historical earlier product direction. Generated reference with fictional data, not an app screenshot. Shows the intended flow; Owner: You does not imply assigning tasks to other people.",
-            "alt": "Capture → context → reviewed task",
-            "kind": "Updated design reference",
-            "src": "/media/frame/concepts/v10/usefulness-flow-reference.png",
-            "thumb": "/media/frame/concepts/v10/usefulness-flow-reference.jpg",
-            "width": 1536,
-            "height": 1024,
-            "group": "usefulness-reference"
-          },
-          {
-            "title": "Historical · One thing for now · proposed focus loop",
-            "caption": "Historical earlier product direction. Proposed visual direction for choosing one commitment, marking it done and setting an optional reminder. The layout is more polished than the current minimal focus implementation; reminder layout is not an exact app screenshot.",
-            "alt": "One thing for now · proposed focus loop — generated reference, not app screenshot",
-            "kind": "Updated proposal",
-            "src": "/media/frame/concepts/v9/focus-loop-proposal.png",
-            "thumb": "/media/frame/concepts/v9/focus-loop-proposal.jpg",
-            "width": 1536,
-            "height": 1024,
-            "group": "updated-references"
-          },
-          {
-            "title": "Historical · Your data · corrected privacy reference",
-            "caption": "Historical earlier product direction. Updated reference reflecting local storage, eligible on-device Apple AI, private-note exclusion and text/task export. This is a generated design reference, not a running-app screenshot.",
-            "alt": "Your data · corrected privacy reference — generated reference, not app screenshot",
-            "kind": "Updated reference",
-            "src": "/media/frame/concepts/v9/privacy-corrected.png",
-            "thumb": "/media/frame/concepts/v9/privacy-corrected.jpg",
-            "width": 853,
-            "height": 1843,
-            "group": "updated-references"
-          },
-          {
-            "title": "Historical · Welcome",
-            "caption": "Historical earlier product direction. Start with a voice note or explore an example.",
-            "alt": "Frame v8 Welcome — generated concept, fictional data",
-            "kind": "Design concept · not a running-app screenshot",
-            "src": "/media/frame/concepts/v8/01-welcome.png",
-            "thumb": "/media/frame/concepts/v8/01-welcome.jpg",
-            "width": 853,
-            "height": 1844,
-            "group": "v8-archive"
-          },
-          {
-            "title": "Historical · Today",
-            "caption": "Historical earlier product direction. One useful prompt, with capture always close.",
-            "alt": "Frame v8 Today — generated concept, fictional data",
-            "kind": "Design concept · not a running-app screenshot",
-            "src": "/media/frame/concepts/v8/02-today.png",
-            "thumb": "/media/frame/concepts/v8/02-today.jpg",
-            "width": 853,
-            "height": 1843,
-            "group": "v8-archive"
-          },
-          {
-            "title": "Historical · Capture setup",
-            "caption": "Historical earlier product direction. Choose a personal note or a conversation.",
-            "alt": "Frame v8 Capture setup — generated concept, fictional data",
-            "kind": "Design concept · not a running-app screenshot",
-            "src": "/media/frame/concepts/v8/03-capture-setup.png",
-            "thumb": "/media/frame/concepts/v8/03-capture-setup.jpg",
-            "width": 853,
-            "height": 1844,
-            "group": "v8-archive"
-          },
-          {
-            "title": "Historical · Solo recording",
-            "caption": "Historical earlier product direction. Speak freely, with honest recording controls.",
-            "alt": "Frame v8 Solo recording — generated concept, fictional data",
-            "kind": "Design concept · not a running-app screenshot",
-            "src": "/media/frame/concepts/v8/04-solo-recording.png",
-            "thumb": "/media/frame/concepts/v8/04-solo-recording.jpg",
-            "width": 853,
-            "height": 1843,
-            "group": "v8-archive"
-          },
-          {
-            "title": "Historical · Conversation",
-            "caption": "Historical earlier product direction. Record deliberately and ask for context.",
-            "alt": "Frame v8 Conversation — generated concept, fictional data",
-            "kind": "Design concept · not a running-app screenshot",
-            "src": "/media/frame/concepts/v8/05-conversation.png",
-            "thumb": "/media/frame/concepts/v8/05-conversation.jpg",
-            "width": 853,
-            "height": 1844,
-            "group": "v8-archive"
-          },
-          {
-            "title": "Historical · Live answer",
-            "caption": "Historical earlier product direction. Proposed current-conversation coaching linked to an original source. This live coaching flow is not built; current Ask searches saved notes.",
-            "alt": "Frame v8 Live answer — generated concept, fictional data",
-            "kind": "Design concept · not a running-app screenshot",
-            "src": "/media/frame/concepts/v8/06-live-answer.png",
-            "thumb": "/media/frame/concepts/v8/06-live-answer.jpg",
-            "width": 853,
-            "height": 1844,
-            "group": "v8-archive"
-          },
-          {
-            "title": "Historical · Paused",
-            "caption": "Historical earlier product direction. See what was saved and choose how to continue.",
-            "alt": "Frame v8 Paused — generated concept, fictional data",
-            "kind": "Design concept · not a running-app screenshot",
-            "src": "/media/frame/concepts/v8/07-paused.png",
-            "thumb": "/media/frame/concepts/v8/07-paused.jpg",
-            "width": 853,
-            "height": 1843,
-            "group": "v8-archive"
-          },
-          {
-            "title": "Historical · Understanding",
-            "caption": "Historical earlier product direction. Correct the summary and review suggested commitments.",
-            "alt": "Frame v8 Understanding — generated concept, fictional data",
-            "kind": "Design concept · not a running-app screenshot",
-            "src": "/media/frame/concepts/v8/08-understanding.png",
-            "thumb": "/media/frame/concepts/v8/08-understanding.jpg",
-            "width": 853,
-            "height": 1844,
-            "group": "v8-archive"
-          },
-          {
-            "title": "Historical · Draft",
-            "caption": "Historical earlier product direction. An editable follow-up, ready for your review.",
-            "alt": "Frame v8 Draft — generated concept, fictional data",
-            "kind": "Design concept · not a running-app screenshot",
-            "src": "/media/frame/concepts/v8/09-draft.png",
-            "thumb": "/media/frame/concepts/v8/09-draft.jpg",
-            "width": 854,
-            "height": 1842,
-            "group": "v8-archive"
-          },
-          {
-            "title": "Historical · Plan",
-            "caption": "Historical earlier product direction. Preview the time and calendar before adding anything. Historical design concept. That historical candidate implemented availability checks; it is not current planner delivery evidence.",
-            "alt": "Frame v8 Plan — generated concept, fictional data",
-            "kind": "Design concept · not a running-app screenshot",
-            "src": "/media/frame/concepts/v8/10-plan.png",
-            "thumb": "/media/frame/concepts/v8/10-plan.jpg",
-            "width": 853,
-            "height": 1844,
-            "group": "v8-archive"
-          },
-          {
-            "title": "Historical · Receipt",
-            "caption": "Historical earlier product direction. A clear record of what happened and what remains. Concept only: View event and Undo are not implemented.",
-            "alt": "Frame v8 Receipt — generated concept, fictional data",
-            "kind": "Design concept · not a running-app screenshot",
-            "src": "/media/frame/concepts/v8/11-receipt.png",
-            "thumb": "/media/frame/concepts/v8/11-receipt.jpg",
-            "width": 853,
-            "height": 1844,
-            "group": "v8-archive"
-          },
-          {
-            "title": "Historical · Memory",
-            "caption": "Historical earlier product direction. Find notes and ask questions without filing everything.",
-            "alt": "Frame v8 Memory — generated concept, fictional data",
-            "kind": "Design concept · not a running-app screenshot",
-            "src": "/media/frame/concepts/v8/12-memory.png",
-            "thumb": "/media/frame/concepts/v8/12-memory.jpg",
-            "width": 853,
-            "height": 1843,
-            "group": "v8-archive"
-          },
-          {
-            "title": "Historical · Project",
-            "caption": "Historical earlier product direction. See decisions, commitments and the story so far.",
-            "alt": "Frame v8 Project — generated concept, fictional data",
-            "kind": "Design concept · not a running-app screenshot",
-            "src": "/media/frame/concepts/v8/13-project.png",
-            "thumb": "/media/frame/concepts/v8/13-project.jpg",
-            "width": 853,
-            "height": 1844,
-            "group": "v8-archive"
-          },
-          {
-            "title": "Historical · Memory answer",
-            "caption": "Historical earlier product direction. An answer you can trace back to your notes.",
-            "alt": "Frame v8 Memory answer — generated concept, fictional data",
-            "kind": "Design concept · not a running-app screenshot",
-            "src": "/media/frame/concepts/v8/14-memory-answer.png",
-            "thumb": "/media/frame/concepts/v8/14-memory-answer.jpg",
-            "width": 853,
-            "height": 1843,
-            "group": "v8-archive"
-          },
-          {
-            "title": "Historical · Source",
-            "caption": "Historical earlier product direction. Review the recording, transcript and cleaned summary.",
-            "alt": "Frame v8 Source — generated concept, fictional data",
-            "kind": "Design concept · not a running-app screenshot",
-            "src": "/media/frame/concepts/v8/15-source.png",
-            "thumb": "/media/frame/concepts/v8/15-source.jpg",
-            "width": 868,
-            "height": 1813,
-            "group": "v8-archive"
-          },
-          {
-            "title": "Historical · Privacy",
-            "caption": "Historical earlier product direction. Understand processing, retention and your choices. Historical concept only: this cloud-AI toggle, 30-day retention and account deletion do not describe the current on-device assistant.",
-            "alt": "Frame v8 Privacy — generated concept, fictional data",
-            "kind": "Design concept · not a running-app screenshot",
-            "src": "/media/frame/concepts/v8/16-privacy.png",
-            "thumb": "/media/frame/concepts/v8/16-privacy.jpg",
-            "width": 853,
-            "height": 1843,
-            "group": "v8-archive"
-          },
-          {
-            "title": "Historical · A saved task · actual simulator",
-            "caption": "Historical earlier product direction. Actual simulator screenshot with fictional test data. The task was saved in Frame; no reminder or Calendar event was created. This is not evidence of physical-device acceptance.",
-            "alt": "A saved task · actual simulator",
-            "kind": "Actual simulator screenshot",
-            "src": "/media/frame/actual/build10/actual-task-receipt.png",
-            "thumb": "/media/frame/actual/build10/actual-task-receipt.jpg",
-            "width": 1206,
-            "height": 2622,
-            "group": "actual-implementation"
           }
         ]
       },
       "overview": {
         "type": "problem",
         "text": "The day is split across calendars, task lists, notes and reminders. Frame brings the next realistic action and its supporting information into one private iPhone workspace. It is being built for personal use, with manual planning available while AI and device integrations are validated."
-      },
-      "demoVideo": {
-        "src": "/media/frame/actual/build13-development/frame-local-workflow-demo.mp4",
-        "poster": "/media/frame/actual/build13-development/demo-poster.jpg",
-        "title": "Historical voice-memory workflow · development build 13",
-        "caption": "Historical 78-second silent simulator recording with fictional data from the earlier voice-memory direction. Shows that older implementation’s task editing, source review and audio-only warning. It is not a demo of the current personal planner, phone AI or current delivery.",
-        "previousSrc": "/media/frame/actual/build10/actual-build10-demo.mp4",
-        "previousLabel": "Earlier historical voice-memory demo · build 10"
-      },
-      "permissionDemo": {
-        "src": "/media/frame/actual/build15-development/first-microphone-recording.mp4",
-        "poster": "/media/frame/actual/build15-development/permission-poster.jpg",
-        "title": "Historical microphone-permission QA · build 15",
-        "caption": "Historical 114-second silent simulator recording from the previous voice-memory implementation. It demonstrates that snapshot’s first-permission recording controls and original-file retention. Current planner phone voice and transcription require fresh acceptance."
       }
     },
     {

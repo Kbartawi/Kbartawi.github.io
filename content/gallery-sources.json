@@ -356,6 +356,13 @@
       "sample": "Public browser-only demonstration with fictional data.",
       "src": "/media/gallery/aqd-lease.webp",
       "thumb": "/media/gallery/aqd-lease-thumb.webp"
+    },
+    {
+      "slug": "frame",
+      "id": "frame-planner-today-build33",
+      "source": "Actual Frame build 33 simulator screenshot, synthetic development workspace, captured 3 October 2026; reviewed before publishing 4 October 2026.",
+      "src": "/media/frame/actual/planner33/Frame33-Today.png",
+      "thumb": "/media/frame/actual/planner33/Frame33-Today.png"
     }
   ]
 }

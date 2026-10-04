@@ -6,7 +6,7 @@ Frame is a private personal planner: capture → review → plan → complete. F
 
 A founder portfolio covering AI products for customer operations and personal workflows, plus game development in preproduction. Six project profiles explain the intended users and buyers, current technical and commercial readiness, and the next validation milestone. Includes light/dark themes and curated gallery images, maintained from one catalogue.
 
-Explore [Frame’s current development direction](https://kbartawi.github.io/projects/frame/), [Oris’s support workspace](https://kbartawi.github.io/projects/oris/#gallery-product), [Manzl’s leasing dashboard](https://kbartawi.github.io/projects/manzl/#gallery-product), six Quote Operations screens and five Aqd screens. Frame separates current planner simulator screenshots from historical voice-memory concepts and demos; phone acceptance is pending. Other website captures and [eight Dubai Game world studies](https://kbartawi.github.io/projects/dubai-game/#gallery) remain clearly identified.
+Explore [Frame’s current development direction](https://kbartawi.github.io/projects/frame/), [Oris’s support workspace](https://kbartawi.github.io/projects/oris/#gallery-product), [Manzl’s leasing dashboard](https://kbartawi.github.io/projects/manzl/#gallery-product), six Quote Operations screens and five Aqd screens. Frame presents actual personal-planner screenshots only; phone acceptance is pending. Other website captures and [eight Dubai Game world studies](https://kbartawi.github.io/projects/dubai-game/#gallery) remain clearly identified.
 
 Product screenshots use fictional data: Quote Operations and Aqd were captured in their hosted demos; Oris and Manzl were captured from real application components in isolated local demos. They demonstrate interfaces, not live customer activity or production backend acceptance.
 
@@ -53,4 +53,4 @@ Repository: `Kbartawi/Kbartawi.github.io`. GitHub Pages uses **Deploy from a bra
 Public samples use fictional data. Source code for the products is private. Never publish credentials, private customer records or unsupported revenue/traction claims in this repository.
 
 
-Historical Frame concepts and videos are retained and labelled by their original scope. Current planner delivery, phone acceptance and feature limits take precedence over those earlier milestones. Keep source/generated output and the personal profile synchronized.
+Frame’s public product entry and personal bio show actual planner screenshots only. Historical voice-memory videos and concept galleries have been removed from the presentation; their prior source remains recoverable in Git history. Hold further TestFlight uploads until full-PRD readiness and acceptance gates reach 100%. Keep source/generated output and the personal profile synchronized.
