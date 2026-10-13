@@ -1,11 +1,16 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-04",
+  "updatedAt": "2026-10-13",
   "slugs": [
     "quote-operations",
     "oris",
     "manzl",
     "aqd",
+    "scribe",
+    "clarity",
+    "cadence",
+    "apollo",
+    "sanad",
     "frame",
     "dubai-game"
   ]

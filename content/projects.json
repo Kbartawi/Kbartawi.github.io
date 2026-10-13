@@ -4,7 +4,7 @@
   "title": "Khaled / Founder & pilot",
   "description": "Dubai-based founder and pilot building AI products for customer operations and personal workflows. Explore prototypes, product progress and validation milestones.",
   "featuredProject": "quote-operations",
-  "about": "My product work focuses on customer support, equipment quotations, leasing and personal workflows. Frame is a private personal productivity workspace for planning the day and following through. Each product has a defined stage and specific next validation milestone.",
+  "about": "My product work focuses on customer support, equipment quotations, leasing, meeting tools and personal workflows. Frame is a private personal productivity workspace for planning the day and following through. Each product has a defined stage and specific next validation milestone.",
   "projects": [
     {
       "slug": "quote-operations",
@@ -743,6 +743,537 @@
         "type": "problem",
         "text": "After a tenant says yes, leasing teams still need to assemble documents, confirm details and agree the payment schedule. Those open items often remain scattered across WhatsApp threads."
       }
+    },
+    {
+      "theme": "plain",
+      "model": "B2B",
+      "languages": [
+        "English",
+        "Arabic"
+      ],
+      "market": "UAE",
+      "image": null,
+      "imageAlt": "",
+      "website": "https://github.com/Kbartawi/scribe-ai",
+      "demoUrl": null,
+      "gallery": {
+        "heading": "Scribe screens",
+        "description": "Verified product screens will be added when available. Until then the card uses an illustrative panel, not a screenshot.",
+        "items": []
+      },
+      "updatedAt": "2026-10-13",
+      "updates": [
+        {
+          "date": "2026-10-13",
+          "text": "Added to the portfolio in the existing project-card format."
+        }
+      ],
+      "slug": "scribe",
+      "name": "Scribe",
+      "category": "Meeting notes",
+      "modelDescription": "Private meeting-notes product branded Mahdar.",
+      "audience": "Teams that need private meeting minutes",
+      "buyer": "Operations and office leads",
+      "users": "Meeting hosts and note-takers",
+      "stage": "Private prototype",
+      "cardStage": "Private prototype",
+      "headline": [
+        "Private meeting notes,",
+        "written for you."
+      ],
+      "summary": "Private meeting-notes app branded Mahdar. Drafts minutes in Arabic and English, with attendees told at the start.",
+      "features": [
+        "Record or capture a meeting with every attendee told at the start.",
+        "Draft meeting minutes in Arabic and English for review.",
+        "Keep notes in a private workspace rather than a public demo."
+      ],
+      "workflow": [
+        "Capture the meeting",
+        "Draft the minutes",
+        "Review and share"
+      ],
+      "deliverables": [
+        "A private meeting record for the team",
+        "Draft minutes in Arabic and English",
+        "A reviewed note ready to share with attendees"
+      ],
+      "nextFocus": [
+        "Confirm attendee notice wording in Arabic and English",
+        "Review a full private meeting end to end",
+        "Decide hosting and retention rules for a first team pilot"
+      ],
+      "nextAction": "Complete a private end-to-end meeting capture and review the drafted minutes with one trusted team.",
+      "demoNote": "Private product. No public live demo is linked here. Repository: github.com/Kbartawi/scribe-ai.",
+      "technicalReadiness": "Private prototype in development; public acceptance evidence is not published here.",
+      "commercialReadiness": "Not offered as a public product yet; no customer outcome claims.",
+      "positioning": "Private meeting minutes for teams that need Arabic and English notes kept under their control.",
+      "outcome": "A reviewed set of minutes the team can share after the meeting.",
+      "useCases": [
+        "Capture a private internal meeting and draft the minutes",
+        "Produce Arabic and English notes from the same session",
+        "Review the draft before sharing it with attendees"
+      ],
+      "stack": [
+        "TypeScript",
+        "AI transcription and drafting"
+      ],
+      "overview": {
+        "type": "problem",
+        "text": "Teams still rewrite meeting notes by hand after calls. Scribe, branded Mahdar, drafts private minutes while keeping attendees informed that notes are being taken."
+      },
+      "readinessChecks": [
+        {
+          "label": "Product workflow",
+          "status": "open",
+          "detail": "Private prototype exists; a published end-to-end acceptance walk is not included in this portfolio yet."
+        },
+        {
+          "label": "Verification",
+          "status": "not-checked",
+          "detail": "Automated checks and public demo evidence are not published here."
+        },
+        {
+          "label": "Hosting and data",
+          "status": "open",
+          "detail": "Hosting and retention rules for a first team pilot still need confirmation."
+        },
+        {
+          "label": "Customer validation",
+          "status": "not-checked",
+          "detail": "No customer outcome evidence is claimed on this page."
+        },
+        {
+          "label": "Release gate",
+          "status": "open",
+          "detail": "Confirm attendee notice, private storage and review flow before wider use."
+        }
+      ],
+      "cardAudience": "Teams that need private meeting minutes"
+    },
+    {
+      "theme": "plain",
+      "model": "B2B",
+      "languages": [
+        "English",
+        "Arabic"
+      ],
+      "market": "UAE",
+      "image": null,
+      "imageAlt": "",
+      "website": "https://github.com/Kbartawi/clarity-live",
+      "demoUrl": null,
+      "gallery": {
+        "heading": "Clarity screens",
+        "description": "Verified product screens will be added when available. Until then the card uses an illustrative panel, not a screenshot.",
+        "items": []
+      },
+      "updatedAt": "2026-10-13",
+      "updates": [
+        {
+          "date": "2026-10-13",
+          "text": "Added to the portfolio in the existing project-card format."
+        }
+      ],
+      "slug": "clarity",
+      "name": "Clarity",
+      "category": "Live meetings",
+      "modelDescription": "Live meeting overlay and assistant branded Lamha.",
+      "audience": "People who take live customer or service calls",
+      "buyer": "Support and success managers",
+      "users": "Agents and specialists on live calls",
+      "stage": "Working prototype",
+      "cardStage": "Working prototype",
+      "headline": [
+        "Answers on screen,",
+        "while you talk."
+      ],
+      "summary": "Live meeting overlay branded Lamha. Shows facts and suggested answers on screen during a call, with a visible notice to everyone present.",
+      "features": [
+        "Show suggested answers and facts on screen during a live conversation.",
+        "Keep a visible sign on, and tell every person on the call at the start.",
+        "Support Arabic and English prompts for the person speaking."
+      ],
+      "workflow": [
+        "Start the call with notice",
+        "See prompts on screen",
+        "Continue or hand off"
+      ],
+      "deliverables": [
+        "A visible on-call assistant panel",
+        "Suggested answers grounded in prepared facts",
+        "A clear notice that assistance is active"
+      ],
+      "nextFocus": [
+        "Confirm the visible notice in Arabic and English",
+        "Review prompt quality on a real practice call",
+        "Decide when the assistant should stay silent"
+      ],
+      "nextAction": "Run a practice call with the visible notice on and review whether the prompts help without interrupting the conversation.",
+      "demoNote": "Working prototype. No public live demo is linked here. Repository: github.com/Kbartawi/clarity-live.",
+      "technicalReadiness": "Working prototype; live call acceptance on production systems is not claimed here.",
+      "commercialReadiness": "Not offered as a public product yet; no customer outcome claims.",
+      "positioning": "A visible live-meeting assistant that keeps every participant informed.",
+      "outcome": "Suggested answers appear on screen without hiding the assistant from the call.",
+      "useCases": [
+        "Take a customer call with facts visible on screen",
+        "Tell every participant that assistance is active",
+        "Use Arabic or English prompts during the conversation"
+      ],
+      "stack": [
+        "TypeScript",
+        "Live assistant overlay"
+      ],
+      "overview": {
+        "type": "problem",
+        "text": "During live calls, people need facts quickly without hiding assistance from the other participants. Clarity, branded Lamha, keeps prompts on screen and tells everyone at the start."
+      },
+      "readinessChecks": [
+        {
+          "label": "Product workflow",
+          "status": "open",
+          "detail": "Working prototype exists; published live-call acceptance evidence is not included here."
+        },
+        {
+          "label": "Verification",
+          "status": "not-checked",
+          "detail": "Automated checks and public demo evidence are not published here."
+        },
+        {
+          "label": "Hosting and data",
+          "status": "open",
+          "detail": "Call audio handling and retention rules still need confirmation for wider use."
+        },
+        {
+          "label": "Customer validation",
+          "status": "not-checked",
+          "detail": "No customer outcome evidence is claimed on this page."
+        },
+        {
+          "label": "Release gate",
+          "status": "open",
+          "detail": "Confirm visible notice behaviour and prompt quality before production calls."
+        }
+      ],
+      "cardAudience": "People who take live customer or service calls"
+    },
+    {
+      "theme": "plain",
+      "model": "B2B",
+      "languages": [
+        "English",
+        "Arabic"
+      ],
+      "market": "UAE",
+      "image": null,
+      "imageAlt": "",
+      "website": "https://github.com/Kbartawi/cadence",
+      "demoUrl": null,
+      "gallery": {
+        "heading": "Cadence screens",
+        "description": "Verified product screens will be added when available. Until then the card uses an illustrative panel, not a screenshot.",
+        "items": []
+      },
+      "updatedAt": "2026-10-13",
+      "updates": [
+        {
+          "date": "2026-10-13",
+          "text": "Added to the portfolio in the existing project-card format."
+        }
+      ],
+      "slug": "cadence",
+      "name": "Cadence",
+      "category": "Calendar booking",
+      "modelDescription": "Calendar booking app for appointments in Arabic and English.",
+      "audience": "Teams that take appointments",
+      "buyer": "Operations managers",
+      "users": "Schedulers and front-desk staff",
+      "stage": "Working prototype",
+      "cardStage": "Working prototype",
+      "headline": [
+        "Appointments,",
+        "booked and confirmed."
+      ],
+      "summary": "Calendar booking app for appointments in Arabic and English, with confirmations and reminders.",
+      "features": [
+        "Take appointment requests in Arabic and English.",
+        "Place bookings on a shared calendar.",
+        "Send confirmations and reminders to the person who booked."
+      ],
+      "workflow": [
+        "Receive the request",
+        "Book the slot",
+        "Confirm and remind"
+      ],
+      "deliverables": [
+        "A booked calendar slot",
+        "A confirmation for the attendee",
+        "A reminder before the appointment"
+      ],
+      "nextFocus": [
+        "Connect a real calendar for one team",
+        "Review confirmation wording in Arabic and English",
+        "Measure missed appointments against a simple baseline"
+      ],
+      "nextAction": "Connect one team calendar and complete a booking-to-reminder walk with fictional data.",
+      "demoNote": "Working prototype. No public live demo is linked here. Repository: github.com/Kbartawi/cadence.",
+      "technicalReadiness": "Working prototype; production calendar integrations are not claimed as complete here.",
+      "commercialReadiness": "Not offered as a public product yet; no customer outcome claims.",
+      "positioning": "Appointment booking with confirmations and reminders in Arabic and English.",
+      "outcome": "A confirmed appointment the attendee can rely on.",
+      "useCases": [
+        "Book a public or team appointment from a chat request",
+        "Send a confirmation in Arabic or English",
+        "Remind the attendee before the visit"
+      ],
+      "stack": [
+        "TypeScript",
+        "Calendar booking"
+      ],
+      "overview": {
+        "type": "problem",
+        "text": "Appointment requests arrive in chat and email, then get lost before a confirmation goes out. Cadence books the slot and sends confirmations and reminders."
+      },
+      "readinessChecks": [
+        {
+          "label": "Product workflow",
+          "status": "open",
+          "detail": "Working prototype exists; a published booking acceptance walk is not included here."
+        },
+        {
+          "label": "Verification",
+          "status": "not-checked",
+          "detail": "Automated checks and public demo evidence are not published here."
+        },
+        {
+          "label": "Hosting and data",
+          "status": "open",
+          "detail": "Calendar connection and reminder delivery still need confirmation for a pilot."
+        },
+        {
+          "label": "Customer validation",
+          "status": "not-checked",
+          "detail": "No customer outcome evidence is claimed on this page."
+        },
+        {
+          "label": "Release gate",
+          "status": "open",
+          "detail": "Confirm calendar write access, confirmations and reminders before live bookings."
+        }
+      ],
+      "cardAudience": "Teams that take appointments"
+    },
+    {
+      "theme": "plain",
+      "model": "B2B",
+      "languages": [
+        "English",
+        "Arabic"
+      ],
+      "market": "UAE",
+      "image": null,
+      "imageAlt": "",
+      "website": null,
+      "demoUrl": null,
+      "gallery": {
+        "heading": "Apollo screens",
+        "description": "Verified product screens will be added when available. Until then the card uses an illustrative panel, not a screenshot.",
+        "items": []
+      },
+      "updatedAt": "2026-10-13",
+      "updates": [
+        {
+          "date": "2026-10-13",
+          "text": "Added to the portfolio in the existing project-card format."
+        }
+      ],
+      "slug": "apollo",
+      "name": "Apollo",
+      "category": "Lead tracking",
+      "modelDescription": "Lead and contact tracker for follow-ups and case notes.",
+      "audience": "Sales and account teams",
+      "buyer": "Sales managers",
+      "users": "Salespeople and account owners",
+      "stage": "Working prototype",
+      "cardStage": "Working prototype",
+      "headline": [
+        "Leads and contacts,",
+        "kept in one place."
+      ],
+      "summary": "Lead and contact tracker that keeps cases and follow-ups together, and drafts the next message in Arabic or English for review.",
+      "features": [
+        "Keep contacts, cases and follow-ups in one place.",
+        "Draft the next message in Arabic or English for a person to approve.",
+        "See which follow-ups are still open."
+      ],
+      "workflow": [
+        "Capture the lead",
+        "Track the case",
+        "Draft the next follow-up"
+      ],
+      "deliverables": [
+        "A contact and case record",
+        "An open follow-up list",
+        "A draft message ready for approval"
+      ],
+      "nextFocus": [
+        "Import a small set of fictional contacts",
+        "Review draft-message quality before sending",
+        "Define the first team pilot checklist"
+      ],
+      "nextAction": "Walk one fictional lead from capture to an approved follow-up draft.",
+      "demoNote": "Working prototype. No public live demo or verified public repository link is published on this card yet.",
+      "technicalReadiness": "Working prototype; production CRM replacement claims are not made here.",
+      "commercialReadiness": "Not offered as a public product yet; no customer outcome claims.",
+      "positioning": "A lead and contact tracker with drafted follow-ups waiting for human approval.",
+      "outcome": "An open case with a drafted next message ready to review.",
+      "useCases": [
+        "Log a new lead and the first conversation notes",
+        "See which follow-ups are still open",
+        "Draft the next Arabic or English message for approval"
+      ],
+      "stack": [
+        "TypeScript",
+        "Lead and contact tracking"
+      ],
+      "overview": {
+        "type": "problem",
+        "text": "Leads and follow-ups often live in inboxes and chat threads. Apollo keeps contacts and cases together and drafts the next message for a person to approve."
+      },
+      "readinessChecks": [
+        {
+          "label": "Product workflow",
+          "status": "open",
+          "detail": "Working prototype exists; a published lead-to-follow-up acceptance walk is not included here."
+        },
+        {
+          "label": "Verification",
+          "status": "not-checked",
+          "detail": "Automated checks and public demo evidence are not published here."
+        },
+        {
+          "label": "Hosting and data",
+          "status": "open",
+          "detail": "Contact storage and access control still need confirmation for a pilot."
+        },
+        {
+          "label": "Customer validation",
+          "status": "not-checked",
+          "detail": "No customer outcome evidence is claimed on this page."
+        },
+        {
+          "label": "Release gate",
+          "status": "open",
+          "detail": "Confirm data ownership and approval of drafted messages before live outreach."
+        }
+      ],
+      "cardAudience": "Sales and account teams"
+    },
+    {
+      "theme": "plain",
+      "model": "B2B",
+      "languages": [
+        "English",
+        "Arabic"
+      ],
+      "market": "UAE",
+      "image": null,
+      "imageAlt": "",
+      "website": null,
+      "demoUrl": null,
+      "gallery": {
+        "heading": "Sanad screens",
+        "description": "Verified product screens will be added when available. Until then the card uses an illustrative panel, not a screenshot.",
+        "items": []
+      },
+      "updatedAt": "2026-10-13",
+      "updates": [
+        {
+          "date": "2026-10-13",
+          "text": "Added to the portfolio in the existing project-card format."
+        }
+      ],
+      "slug": "sanad",
+      "name": "Sanad",
+      "category": "Customer support",
+      "modelDescription": "Enterprise AI customer support agents grounded in company knowledge.",
+      "audience": "Enterprise support and service teams",
+      "buyer": "Heads of customer support and operations",
+      "users": "Support agents and supervisors",
+      "stage": "Working prototype",
+      "cardStage": "Working prototype",
+      "headline": [
+        "Customer support,",
+        "handled by AI agents."
+      ],
+      "summary": "Enterprise AI customer support agents. They resolve conversations across chat, WhatsApp, the web and email, grounded in company knowledge, and hand off to people when needed.",
+      "features": [
+        "Answer customers across chat, WhatsApp, the web and email.",
+        "Ground answers in the company’s own knowledge.",
+        "Hand the conversation to a human agent when a person is needed."
+      ],
+      "workflow": [
+        "Receive the conversation",
+        "Resolve from knowledge",
+        "Hand off when needed"
+      ],
+      "deliverables": [
+        "A supported customer conversation",
+        "Answers grounded in company knowledge",
+        "A clear handoff to a human agent when required"
+      ],
+      "nextFocus": [
+        "Load a controlled knowledge set for one support queue",
+        "Review handoff quality with a support supervisor",
+        "Confirm channel coverage for the first pilot"
+      ],
+      "nextAction": "Run a supervised pilot on one support queue with a controlled knowledge set and clear human handoff rules.",
+      "demoNote": "Khaled’s enterprise customer-support product. No public live demo link is published on this card yet.",
+      "technicalReadiness": "Working prototype; production deployment claims for named customers are not made here.",
+      "commercialReadiness": "Product in development; no revenue or customer-count claims are made here.",
+      "positioning": "Enterprise AI support agents that stay inside company knowledge and hand off to people when needed.",
+      "outcome": "A resolved customer conversation, or a clean handoff to a human agent.",
+      "useCases": [
+        "Answer a routine support question from company knowledge",
+        "Continue a WhatsApp or web conversation in Arabic or English",
+        "Hand a sensitive case to a human agent with context preserved"
+      ],
+      "stack": [
+        "TypeScript",
+        "AI support agents",
+        "Company knowledge retrieval"
+      ],
+      "overview": {
+        "type": "problem",
+        "text": "Enterprise support teams need consistent answers across channels without losing the option of a human handoff. Sanad runs AI support agents on company knowledge and passes the conversation to staff when a person is needed."
+      },
+      "readinessChecks": [
+        {
+          "label": "Product workflow",
+          "status": "open",
+          "detail": "Working prototype exists; a published multi-channel acceptance walk is not included here."
+        },
+        {
+          "label": "Verification",
+          "status": "not-checked",
+          "detail": "Automated checks and public demo evidence are not published here."
+        },
+        {
+          "label": "Hosting and data",
+          "status": "open",
+          "detail": "Knowledge hosting and channel credentials still need confirmation for each pilot."
+        },
+        {
+          "label": "Customer validation",
+          "status": "not-checked",
+          "detail": "No customer outcome evidence is claimed on this page."
+        },
+        {
+          "label": "Release gate",
+          "status": "open",
+          "detail": "Confirm knowledge coverage, handoff rules and channel monitoring before live traffic."
+        }
+      ],
+      "cardAudience": "Enterprise support and service teams"
     },
     {
       "slug": "frame",
