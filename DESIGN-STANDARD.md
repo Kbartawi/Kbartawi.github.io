@@ -1,6 +1,18 @@
 # Portfolio design and release standard
 
-## Current direction
+## Current direction (13 October 2026)
+
+The owner asked for the homepage to feature five AI products, using these exact English names: Cadence (scheduling), Apollo (sales and lead engine), Clarity (live meeting assistant), Scribe (meeting notes) and Sanad (government services assistant). The six-project grid is no longer the homepage. Its profile pages stay reachable by direct link, and the Frame privacy and support pages remain live.
+
+- The homepage source is `src/home/index.html` with `docs/home.css` and `docs/home.js`. `npm run build` copies it to `docs/index.html`.
+- Copy follows Mariam's go-to-market briefs. No prices anywhere. Every call to action is "Request a demo". Do not link to any public console.
+- Clarity is always described as visible, with everyone on the call told. Never describe it as hidden or private to the user.
+- Product visuals are labelled "Illustration". They are not screenshots and must not be presented as real screens.
+- Enterprise and government tone, Dubai first. No invented customers, logos or numbers.
+
+The sections below describe the earlier portfolio and are kept for history.
+
+## Earlier direction (September 2026)
 
 The owner requested a full portfolio upgrade on 17 September 2026: all six projects, professional founder/pilot biography, light and dark themes, richer project pages, actual Dubai Game concept art and clear A-to-Z Frame positioning. This supersedes the earlier rule to keep a three-column grid with 221px art. The earlier reference still informs deliberate typography and meaningful visuals.
 

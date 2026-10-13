@@ -158,7 +158,8 @@ function gallery(p) {
 }
 
 await mkdir(out, { recursive: true });
-await writeFile(resolve(out, 'index.html'), home());
+// The homepage is hand-built in src/home (five AI products, 13 Oct 2026). The legacy project profiles below stay reachable by direct link.
+await writeFile(resolve(out, 'index.html'), await readFile(resolve(out, '../src/home/index.html'), 'utf8'));
 await writeFile(resolve(out, '.nojekyll'), '');
 await writeFile(resolve(out, '404.html'), document('Page not found / Khaled', 'Return to the portfolio.', '/404.html', '<section class="hero"><p class="eyebrow">404 / PAGE NOT FOUND</p><h1>Back to<br><em>the work.</em></h1><a class="button-primary" href="/">Explore the portfolio ↗</a></section>'));
 await mkdir(resolve(out, 'projects'), { recursive: true });
@@ -254,6 +255,6 @@ for (const page of frameInfoPages) {
 await writeFile(resolve(out, 'project-manifest.json'), JSON.stringify({schemaVersion: 1, updatedAt: latestDate, slugs: [...ids]}, null, 2) + '\n');
 await writeFile(resolve(out, 'projects.json'), JSON.stringify(data, null, 2) + '\n');
 await writeFile(resolve(out, 'robots.txt'), 'User-agent: *\nAllow: /\nSitemap: '+origin+'/sitemap.xml\n');
-const entries=[['/',latestDate],...data.projects.map(p=>[profileUrl(p),p.updatedAt]),...frameInfoPages.map(p=>['/projects/frame/'+p.slug+'/',latestDate])];
+const entries=[['/','2026-10-13'],...frameInfoPages.map(p=>['/projects/frame/'+p.slug+'/',latestDate])];
 await writeFile(resolve(out,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${entries.map(([path,updated])=>`<url><loc>${escape(origin+path)}</loc><lastmod>${updated}</lastmod></url>`).join('')}</urlset>\n`);
 console.log('Built the portfolio and '+data.projects.length+' project profiles.');
