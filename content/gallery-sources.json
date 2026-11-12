@@ -363,6 +363,41 @@
       "source": "Actual Frame build 33 simulator screenshot, synthetic development workspace, captured 3 October 2026; reviewed before publishing 4 October 2026.",
       "src": "/media/frame/actual/planner33/Frame33-Today.png",
       "thumb": "/media/frame/actual/planner33/Frame33-Today.png"
+    },
+    {
+      "slug": "mandoob",
+      "id": "mandoob-home",
+      "source": "Kbartawi/Mandoob: docs/screenshots/home.png",
+      "src": "/media/gallery/mandoob-home.webp",
+      "thumb": "/media/gallery/mandoob-home-thumb.webp"
+    },
+    {
+      "slug": "mandoob",
+      "id": "mandoob-question",
+      "source": "Kbartawi/Mandoob: docs/screenshots/question.png",
+      "src": "/media/gallery/mandoob-question.webp",
+      "thumb": "/media/gallery/mandoob-question-thumb.webp"
+    },
+    {
+      "slug": "mandoob",
+      "id": "mandoob-read-back",
+      "source": "Kbartawi/Mandoob: docs/screenshots/read-back.png",
+      "src": "/media/gallery/mandoob-read-back.webp",
+      "thumb": "/media/gallery/mandoob-read-back-thumb.webp"
+    },
+    {
+      "slug": "mandoob",
+      "id": "mandoob-documents",
+      "source": "Kbartawi/Mandoob: docs/screenshots/documents.png",
+      "src": "/media/gallery/mandoob-documents.webp",
+      "thumb": "/media/gallery/mandoob-documents-thumb.webp"
+    },
+    {
+      "slug": "mandoob",
+      "id": "mandoob-question-ar",
+      "source": "Kbartawi/Mandoob: docs/screenshots/question-ar.png",
+      "src": "/media/gallery/mandoob-question-ar.webp",
+      "thumb": "/media/gallery/mandoob-question-ar-thumb.webp"
     }
   ]
 }

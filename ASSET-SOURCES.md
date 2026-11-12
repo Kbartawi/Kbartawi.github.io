@@ -41,3 +41,7 @@ The owner clarified that product photographs should show the software itself. Th
 | Aqd | Tenant/owner details and lease numbers | Actual hosted `/demo`; fictional browser-only sample. Captures made after panel transitions completed. |
 
 No product layout or styling was invented for these screenshots. Captures were inspected individually. Temporary demo authentication/fixtures were confined to isolated `/tmp` copies; canonical application source was not edited. Existing Dubai Game art remains concept work because no verified playable build is available.
+
+## Mandoob — 12 November 2026
+
+The five images come from the Mandoob test app’s screenshot set. They show sample accounts and fictional answers. Full-size WebP files and resized thumbnails retain the original portrait proportions. The embedded video is a web encode of the owner-provided Mandoob demo, including its simulated DEWA portal.

@@ -36,3 +36,21 @@ body.gallery-open{overflow:hidden}
 .viewer-stage{min-height:0;display:grid;place-items:center;background:#101612;flex:1 1 auto}.viewer-image{width:100%;height:auto;max-height:calc(100dvh - 255px);object-fit:contain}.viewer-error{color:#f0f0e5;padding:40px;font-size:14px;line-height:1.8}.viewer-error a{text-decoration:underline;display:block}
 .viewer-details{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:21px 24px;flex-shrink:0}.viewer-caption{max-width:68ch;min-width:0}.viewer-caption h2{font-size:23px;letter-spacing:-.55px;margin:0 0 7px}.viewer-caption p{font-size:12px;line-height:1.7;color:var(--muted);margin:0}.viewer-controls{display:flex;align-items:center;justify-content:flex-end;gap:10px;flex-shrink:0;flex-wrap:wrap;max-width:210px}.viewer-controls button{width:44px;height:44px;background:var(--surface-2);color:var(--ink);border:1px solid var(--line);border-radius:50%;font-size:20px}.viewer-controls button:hover{border-color:var(--accent)}.viewer-counter{font-variant-numeric:tabular-nums;min-width:43px;text-align:center;font-size:12px}.viewer-original{font-size:10px;text-decoration:underline;text-underline-offset:4px;min-height:32px;display:flex;align-items:center}
 @media(max-width:760px){.gallery-section{padding:38px 0 44px}.gallery-grid{grid-template-columns:1fr;gap:30px}.gallery-intro{font-size:12px}.gallery-shot h3{font-size:20px}.gallery-shot figcaption>p{font-size:12px}.gallery-shot figcaption{padding-top:13px}.gallery-meta{font-size:8px}.gallery-expand{right:10px;bottom:10px;width:33px;height:33px}.gallery-viewer{width:calc(100vw - 20px);max-height:calc(100dvh - 24px);border-radius:9px}.viewer-toolbar{padding:7px 12px}.viewer-kind{font-size:8px;letter-spacing:.65px}.viewer-details{display:block;padding:17px}.viewer-caption h2{font-size:22px}.viewer-caption p{font-size:12px}.viewer-image{max-height:calc(100dvh - 295px)}.viewer-controls{max-width:none;justify-content:flex-start;margin-top:17px}.viewer-original{margin-left:auto;min-height:44px}.page-sections{gap:19px}}
+
+.art-mandoob {
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  gap:clamp(12px,3vw,32px);
+  padding:28px 24px 0;
+  background:linear-gradient(145deg,#143d32,#0c241d);
+}
+.art-mandoob>img {
+  width:min(38%,180px);
+  height:auto;
+  border-radius:14px 14px 0 0;
+  border:1px solid #e9e8dc66;
+  box-shadow:0 12px 26px #07181380;
+}
+.art-mandoob>img:nth-child(2) {margin-top:26px}
+.project-showcase .art-mandoob>img {width:min(39%,235px)}

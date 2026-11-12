@@ -4,9 +4,9 @@ Frame is a private personal planner: capture → review → plan → complete. F
 
 **[Open the portfolio](https://kbartawi.github.io/)** · [GitHub profile](https://github.com/Kbartawi)
 
-A founder portfolio covering AI products for customer operations and personal workflows, plus game development in preproduction. Six project profiles explain the intended users and buyers, current technical and commercial readiness, and the next validation milestone. Includes light/dark themes and curated gallery images, maintained from one catalogue.
+A founder portfolio covering AI products for customer operations and personal workflows, plus game development in preproduction. Twelve project profiles explain the intended users and buyers, current technical and commercial readiness, and the next validation milestone. Includes light/dark themes and curated gallery images, maintained from one catalogue.
 
-Explore [Frame’s current development direction](https://kbartawi.github.io/projects/frame/), [Oris’s support workspace](https://kbartawi.github.io/projects/oris/#gallery-product), [Manzl’s leasing dashboard](https://kbartawi.github.io/projects/manzl/#gallery-product), six Quote Operations screens and five Aqd screens. Frame presents actual personal-planner screenshots only; phone acceptance is pending. Other website captures and [eight Dubai Game world studies](https://kbartawi.github.io/projects/dubai-game/#gallery) remain clearly identified.
+Explore [Mandoob’s demo and screenshots](https://kbartawi.github.io/projects/mandoob/), [Frame’s current development direction](https://kbartawi.github.io/projects/frame/), [Oris’s support workspace](https://kbartawi.github.io/projects/oris/#gallery-product), [Manzl’s leasing dashboard](https://kbartawi.github.io/projects/manzl/#gallery-product), six Quote Operations screens and five Aqd screens. Frame presents actual personal-planner screenshots only; phone acceptance is pending. Other website captures and [eight Dubai Game world studies](https://kbartawi.github.io/projects/dubai-game/#gallery) remain clearly identified.
 
 Product screenshots use fictional data: Quote Operations and Aqd were captured in their hosted demos; Oris and Manzl were captured from real application components in isolated local demos. They demonstrate interfaces, not live customer activity or production backend acceptance.
 
@@ -32,10 +32,10 @@ Requires Node.js 20 or newer; build and static checks have no package dependenci
 1. Edit `content/projects.json` for copy, readiness, updates, public links and gallery entries. Use `overview.type: "problem"` for an actual problem and `"concept"` for exploratory work, with plain text in `overview.text`. Use professional, direct copy; distinguish verified progress from plans. Gallery assets include optimized thumbnails plus full-size images in `docs/media/gallery/`; keep source provenance in `content/gallery-sources.json`.
 2. Run `npm run build` and `npm run check`.
 3. Preview with `python3 -m http.server 4177 --directory docs` and open `http://localhost:4177`.
-4. Check all six project pages in both themes at phone, tablet and desktop widths. Test theme persistence, project filters, gallery navigation, keyboard controls, focus return and the image-link fallback without JavaScript. Preserve honest demo/production distinctions.
+4. Check all twelve project pages in both themes at phone, tablet and desktop widths. Test theme persistence, project filters, gallery navigation, keyboard controls, focus return and the image-link fallback without JavaScript. Preserve honest demo/production distinctions.
 5. Commit source and generated `docs/` together.
 
-The build writes the homepage, six project profiles, sitemap, metadata and 404 page. Shared fonts, CSS and selected visual assets remain in `docs/`. `docs/.nojekyll` allows GitHub Pages to serve the files directly. Use `PORTFOLIO_SITE_URL` only when intentionally moving the site origin.
+The build writes the homepage, twelve project profiles, sitemap, metadata and 404 page. Shared fonts, CSS and selected visual assets remain in `docs/`. `docs/.nojekyll` allows GitHub Pages to serve the files directly. Use `PORTFOLIO_SITE_URL` only when intentionally moving the site origin.
 
 ## Publish
 
@@ -48,6 +48,7 @@ Repository: `Kbartawi/Kbartawi.github.io`. GitHub Pages uses **Deploy from a bra
 - **Manzl:** hosted website and seeded leasing prototype; hosted API/data, private access and live channel acceptance are separate gates.
 - **Aqd:** browser-based preparation demo; no private cloud storage, production team accounts, payment collection or government registration.
 - **Frame:** Frame is a private personal planner: capture → review → plan → complete. Full-PRD readiness remains 75%. Build 42 passed 305 native tests with zero failures, signed and uploaded successfully on 4 October 2026 at 13:04 Dubai, and is verified Testing in the existing private Owner Testing group with one tester and saved instructions. Recorded routine days preserve original activities, dates and timezones using shared checks with correction and Undo; unknown one-off completion dates remain disclosed. Physical installation of build 42, history UI, full accessibility, phone voice/AI/alerts and live Calendar/Reminders still need acceptance. Widgets, sync, contacts and dedicated health/finance modules remain incomplete.
+- **Mandoob:** English and Arabic government paperwork preparation in a working test version with private TestFlight. The demo uses fictional data and a simulated DEWA portal. Real submissions and the resident pilot remain unverified.
 - **Dubai Game:** preproduction, paused art review and prototype source; no verified playable consumer release or approved final art.
 
 Public samples use fictional data. Source code for the products is private. Never publish credentials, private customer records or unsupported revenue/traction claims in this repository.
