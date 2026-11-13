@@ -6,9 +6,9 @@ Frame is a private personal planner: capture → review → plan → complete. F
 
 A founder portfolio covering AI products for customer operations and personal workflows, plus game development in preproduction. Twelve project profiles explain the intended users and buyers, current technical and commercial readiness, and the next validation milestone. Includes light/dark themes and curated gallery images, maintained from one catalogue.
 
-Explore [Mandoob’s demo and screenshots](https://kbartawi.github.io/projects/mandoob/), [Frame’s current development direction](https://kbartawi.github.io/projects/frame/), [Oris’s support workspace](https://kbartawi.github.io/projects/oris/#gallery-product), [Manzl’s leasing dashboard](https://kbartawi.github.io/projects/manzl/#gallery-product), six Quote Operations screens and five Aqd screens. Frame presents actual personal-planner screenshots only; phone acceptance is pending. Other website captures and [eight Dubai Game world studies](https://kbartawi.github.io/projects/dubai-game/#gallery) remain clearly identified.
+Explore [Mandoob’s demo and screenshots](https://kbartawi.github.io/projects/mandoob/), [Frame’s current development direction](https://kbartawi.github.io/projects/frame/), [Miara’s support workspace](https://kbartawi.github.io/projects/oris/#gallery-product), [Manzl’s leasing dashboard](https://kbartawi.github.io/projects/manzl/#gallery-product), six Quote Operations screens and five Aqd screens. Frame presents actual personal-planner screenshots only; phone acceptance is pending. Other website captures and [eight Dubai Game world studies](https://kbartawi.github.io/projects/dubai-game/#gallery) remain clearly identified.
 
-Product screenshots use fictional data: Quote Operations and Aqd were captured in their hosted demos; Oris and Manzl were captured from real application components in isolated local demos. They demonstrate interfaces, not live customer activity or production backend acceptance.
+Product screenshots use fictional data: Quote Operations and Aqd were captured in their hosted demos; Miara and Manzl were captured from real application components in isolated local demos. They demonstrate interfaces, not live customer activity or production backend acceptance.
 
 ## Readiness — 20 September 2026
 
@@ -44,7 +44,7 @@ Repository: `Kbartawi/Kbartawi.github.io`. GitHub Pages uses **Deploy from a bra
 ## Project truth
 
 - **Quote Operations:** public fictional sample and local configured AI rehearsal; real customer catalogues, prices, team access and measured pilot results remain acceptance work.
-- **Oris:** deployed application; tenant-specific channels, voice and customer outcomes require current evidence.
+- **Miara:** deployed application; tenant-specific channels, voice and customer outcomes require current evidence.
 - **Manzl:** hosted website and seeded leasing prototype; hosted API/data, private access and live channel acceptance are separate gates.
 - **Aqd:** browser-based preparation demo; no private cloud storage, production team accounts, payment collection or government registration.
 - **Frame:** Frame is a private personal planner: capture → review → plan → complete. Full-PRD readiness remains 75%. Build 42 passed 305 native tests with zero failures, signed and uploaded successfully on 4 October 2026 at 13:04 Dubai, and is verified Testing in the existing private Owner Testing group with one tester and saved instructions. Recorded routine days preserve original activities, dates and timezones using shared checks with correction and Undo; unknown one-off completion dates remain disclosed. Physical installation of build 42, history UI, full accessibility, phone voice/AI/alerts and live Calendar/Reminders still need acceptance. Widgets, sync, contacts and dedicated health/finance modules remain incomplete.

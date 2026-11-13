@@ -186,11 +186,11 @@
     },
     {
       "slug": "oris",
-      "name": "Oris",
+      "name": "Miara",
       "theme": "oris",
       "category": "Customer support",
       "model": "B2B",
-      "modelDescription": "A customer experience platform for business teams.",
+      "modelDescription": "A customer experience platform for business teams. Miara is a product of Oris AI.",
       "audience": "E-commerce brands and customer support teams",
       "buyer": "Customer experience and support leaders",
       "users": "Support agents and the customers they help",
@@ -221,12 +221,16 @@
         "Broader channel coverage",
         "Evidence from customer pilots"
       ],
-      "website": "https://getoris.ai",
+      "website": "https://trymiara.com",
       "image": null,
       "imageAlt": "",
       "demoNote": "Visit the public product website for the current product offering.",
-      "updatedAt": "2026-09-17",
+      "updatedAt": "2026-11-13",
       "updates": [
+        {
+          "date": "2026-11-13",
+          "text": "The product is now called Miara, a product of Oris AI. The public site is trymiara.com. getoris.ai is reserved for the Oris company site."
+        },
         {
           "date": "2026-09-17",
           "text": "Arabic and English support, business knowledge and human handoff are implemented. Current channel acceptance and customer outcomes remain the focus."
@@ -241,7 +245,7 @@
       "commercialReadiness": "Subscription offer published; paying-customer outcomes are not reported here.",
       "cardAudience": "E-commerce and support teams",
       "cardStage": "Pilot validation",
-      "positioning": "AI customer support in Arabic and English, using your business’s policies and information.",
+      "positioning": "Miara, a product of Oris AI: AI customer support in Arabic and English, using your business’s policies and information.",
       "outcome": "The support team can read the conversation, check the context and take over when needed.",
       "deliverables": [
         "Customer replies informed by the business knowledge base",
@@ -291,7 +295,7 @@
         }
       ],
       "gallery": {
-        "heading": "Oris screenshots",
+        "heading": "Miara screenshots",
         "description": "See the actual inbox, an Arabic conversation and the knowledge base, followed by the public website.",
         "items": [
           {
@@ -301,7 +305,7 @@
             "height": 900,
             "title": "Support inbox",
             "caption": "The support inbox brings conversations, channels and status into one place. The records and counts shown are fictional demo data.",
-            "alt": "Actual Oris product UI showing the support inbox with fictional conversations and status counts.",
+            "alt": "Actual Miara product UI showing the support inbox with fictional conversations and status counts.",
             "kind": "Product UI · Local demo",
             "group": "product"
           },
@@ -312,7 +316,7 @@
             "height": 900,
             "title": "Arabic conversation",
             "caption": "An Arabic conversation sits beside its details and escalation controls. Messages, contact details and confidence values are local sample data.",
-            "alt": "Actual Oris product UI showing an Arabic sample conversation with details and escalation controls.",
+            "alt": "Actual Miara product UI showing an Arabic sample conversation with details and escalation controls.",
             "kind": "Product UI · Local demo",
             "group": "product"
           },
@@ -323,7 +327,7 @@
             "height": 900,
             "title": "Knowledge base",
             "caption": "The knowledge-base interface brings upload controls and document status together. The sample records show the intended workflow.",
-            "alt": "Actual Oris knowledge-base product screen with upload controls and fictional document records.",
+            "alt": "Actual Miara knowledge-base product screen with upload controls and fictional document records.",
             "kind": "Product UI · Local demo",
             "group": "product"
           },
@@ -334,7 +338,7 @@
             "height": 800,
             "title": "Website homepage",
             "caption": "The landing page introduces support that moves naturally between Arabic and English.",
-            "alt": "Oris public website introducing Arabic and English customer support.",
+            "alt": "Miara public website introducing Arabic and English customer support.",
             "kind": "Public website screenshot",
             "group": "website"
           },
@@ -345,7 +349,7 @@
             "height": 1000,
             "title": "Website conversation example",
             "caption": "An illustrated WhatsApp exchange shows the intended feel of a helpful, contextual reply.",
-            "alt": "Oris website sample WhatsApp conversation in Arabic.",
+            "alt": "Miara website sample WhatsApp conversation in Arabic.",
             "kind": "Public website screenshot",
             "group": "website"
           },
@@ -356,7 +360,7 @@
             "height": 900,
             "title": "Website setup guide",
             "caption": "The public workflow explains channels, agent procedures and replies through sample interface illustrations.",
-            "alt": "Oris website illustrations of channel setup, procedures and an Arabic reply.",
+            "alt": "Miara website illustrations of channel setup, procedures and an Arabic reply.",
             "kind": "Public website screenshot",
             "group": "website"
           }
